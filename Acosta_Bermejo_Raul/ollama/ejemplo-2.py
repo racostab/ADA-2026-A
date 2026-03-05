@@ -7,7 +7,8 @@ import json
 url = "http://localhost:11434/api/generate"
 
 payload = {
-    "model": "llama3.2",
+    #"model": "llama3.2",
+    "model":'qwen3:4B',
     "prompt": "Explica como funciona un algoritmo que calcule el conjunto potencia.",
     "stream": False
 }
