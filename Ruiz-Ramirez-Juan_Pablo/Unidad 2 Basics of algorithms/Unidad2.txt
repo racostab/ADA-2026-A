@@ -1,0 +1,2 @@
+Laberinto.py = Find a path in a maze
+PowerSet = Power set
