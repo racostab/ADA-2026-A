@@ -1,2 +1,2 @@
 Laberinto.py = Find a path in a maze
-PowerSet = Power set
+Combinaciones.py = Combinaciones [10	Ruiz Ramirez Juan Pablo	Qwen	Counting sort	Combinaciones]
