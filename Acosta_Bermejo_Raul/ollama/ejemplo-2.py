@@ -1,15 +1,28 @@
 #
 # Usando indirectamente el protocolo HTTP para interactuar con el modelo LLaMA a través de la API de Ollama.
-# 
+# Server 
+# OLLAMA_HOST="127.0.0.1:8080" 
 import requests
 import json
 
-url = "http://localhost:11434/api/generate"
+local  = "localhost"
+remote = "100.113.158.78"
 
+urls = [ "http://"+ local  +":11434/api/generate",
+         "http://"+ remote +":11434/api/generate",
+       ]
+
+models = [ "llama3.2",
+           "qwen3:4B",
+         ]
+prompt = [ "3+4",
+           "Explica como funciona un algoritmo que calcula el conjunto potencia."
+         ]
+
+url = urls[1]
 payload = {
-    #"model": "llama3.2",
-    "model":'qwen3:4B',
-    "prompt": "Explica como funciona un algoritmo que calcule el conjunto potencia.",
+    "model":  models[0],
+    "prompt": prompt[0],
     "stream": False
 }
 

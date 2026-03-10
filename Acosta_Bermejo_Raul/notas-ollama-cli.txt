@@ -1,0 +1,59 @@
+
+Ollama CLI
+Commands Cheat Sheet
+===============================================
+
+# Check version
+ollama -h
+ollama --version
+
+#
+ollama pull <model>   codellama:13b
+ollama list
+ollama rm  <model>   codellama:70b
+ollama show  <model>
+
+# copy a model file
+ollama show [modelname] --modelfile > [newname]
+
+# Pull and run a small model
+ollama run <model>    llama3.2
+ollama run <model>   "prompt"
+ollama run deepseek-r1 --temperature 0.8
+
+# To install a modified model file
+ollama create [name] -f [file location]
+
+# Check if the service is running
+ollama serve
+# Start your ollama server, increasing the context window to 8k tokens
+OLLAMA_CONTEXT_LENGTH=8192 ollama serve
+
+ollama ps
+===============================================
+OLLAMA_API_BASE=http://localhost:11434
+
+# Mac/Linux
+export OLLAMA_API_BASE=http://127.0.0.1:11434 
+
+===============================================
+# API Testing
+
+curl http://localhost:11434   # Check if running
+curl http://localhost:11434/api/tags  # List models via API
+
+
+# Generate a completion
+curl http://localhost:11434/api/generate -d '{
+  "model": "llama3.2",
+  "prompt": "Why is the sky blue?",
+  "stream": false
+}'
+
+# Chat completion
+curl http://localhost:11434/api/chat -d '{
+  "model": "llama3.2",
+  "messages": [
+    {"role": "user", "content": "Hello!"}
+  ]
+}'
