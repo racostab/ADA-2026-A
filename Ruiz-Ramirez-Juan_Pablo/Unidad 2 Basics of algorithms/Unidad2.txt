@@ -1,0 +1,2 @@
+Laberinto.py = Find a path in a maze
+Combinaciones.py = Combinaciones [10	Ruiz Ramirez Juan Pablo	Qwen	Counting sort	Combinaciones]
