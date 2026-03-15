@@ -5,24 +5,49 @@
 import requests
 import json
 
+<<<<<<< Updated upstream
 local  = "localhost"
 remote = "100.113.158.78"
 
 urls = [ "http://"+ local  +":11434/api/generate",
          "http://"+ remote +":11434/api/generate",
+         "http://"+ remote +":11434/api/chat",
        ]
 
 models = [ "llama3.2",
            "qwen3:4B",
          ]
 prompt = [ "3+4",
-           "Explica como funciona un algoritmo que calcula el conjunto potencia."
+           "Explica como funciona un algoritmo que calcula el conjunto potencia.",
+           "Implementa el algoritmo del Emparejamiento Estable."+
+           "En lenguaje python version 3.10 o superior"+
+           "Colocal el codigo en una funcion smp."+
+           "No comentes el codigo y no agregues explicaciones"
          ]
 
-url = urls[1]
+url = urls[2]
 payload = {
     "model":  models[0],
     "prompt": prompt[0],
+=======
+#url = "http://localhost:11434/api/generate"
+url = "http://100.113.158.78:11434/api/generate"
+models = ["llama3.2",
+          "qwen3:4B"] 
+prompts = [
+    "Explica como funciona un algoritmo que calcule el conjunto potencia.",
+    "1+2",
+    "Dame el codigo del algoritmo Stable Matching Problem en python. " +
+     "Sin explicaciones, sin comentarios." +
+     "Sin codigo main que lo invoque.",
+]
+
+model_id=0
+prompt_id=2
+payload = {
+    "model": models[model_id],
+    "prompt": prompts[prompt_id],
+>>>>>>> Stashed changes
     "stream": False
 }
 
