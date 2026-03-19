@@ -1,11 +1,12 @@
 #
 # Usando indirectamente el protocolo HTTP para interactuar con el modelo LLaMA a través de la API de Ollama.
 # Server 
-# OLLAMA_HOST="127.0.0.1:8080" 
+# export OLLAMA_HOST="127.0.0.1:8080" 
+# export OLLAMA_HOST="0.0.0.0:11434" 
+# $ ollama serve
 import requests
 import json
 
-<<<<<<< Updated upstream
 local  = "localhost"
 remote = "100.113.158.78"
 
@@ -25,29 +26,10 @@ prompt = [ "3+4",
            "No comentes el codigo y no agregues explicaciones"
          ]
 
-url = urls[2]
+url = urls[1]
 payload = {
     "model":  models[0],
     "prompt": prompt[0],
-=======
-#url = "http://localhost:11434/api/generate"
-url = "http://100.113.158.78:11434/api/generate"
-models = ["llama3.2",
-          "qwen3:4B"] 
-prompts = [
-    "Explica como funciona un algoritmo que calcule el conjunto potencia.",
-    "1+2",
-    "Dame el codigo del algoritmo Stable Matching Problem en python. " +
-     "Sin explicaciones, sin comentarios." +
-     "Sin codigo main que lo invoque.",
-]
-
-model_id=0
-prompt_id=2
-payload = {
-    "model": models[model_id],
-    "prompt": prompts[prompt_id],
->>>>>>> Stashed changes
     "stream": False
 }
 
