@@ -1,0 +1,3 @@
+ssdeep,1.1--blocksize:hash:hash,filename
+96:zDEDEDEDEDEDEDEDEDEDEDEDEDEDEDEDEDEDEDEDEDEDEDEDEDEDEDEDEDEDEDE0:T,"/Users/ronin/Develop/ADA-2026-A/Acosta_Bermejo_Raul/similitud-eje/file1.txt"
+96:zDEDEDEDEDEDEDEDEDEDEDEDEDEDEDEDEDEDEDEDEDEDEDEDEDEDEDEDEDEDEDEx:O,"/Users/ronin/Develop/ADA-2026-A/Acosta_Bermejo_Raul/similitud-eje/file2.txt"
