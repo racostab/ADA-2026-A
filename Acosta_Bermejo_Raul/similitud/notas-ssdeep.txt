@@ -1,0 +1,25 @@
+#---------------------------------
+# Ssdeep Fuzzy hash
+#---------------------------------
+
+# Calcula el hash de 2 archivos
+ssdeep ../similitud-eje/file1.txt ../similitud-eje/file2.txt
+
+# Calcula el hash de 2 archivos sin mostrar la ruta
+ssdeep -l ../similitud-eje/file1.txt ../similitud-eje/file2.txt
+
+# Guardar hashes
+ssdeep ../similitud-eje/file1.txt ../similitud-eje/file2.txt > hashes.txt
+
+#------------------------------------------
+# Compara 2 archivos 
+ssdeep -b -m hashes.txt ../similitud-eje/file2.txt
+
+#---------------------------------
+# Herramienta: pylint
+# https://pylint.readthedocs.io/en/stable/index.html
+# https://peps.python.org/pep-0000/
+#---------------------------------
+
+pip install pylint
+pylint similitud.py
