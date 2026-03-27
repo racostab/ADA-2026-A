@@ -1,0 +1,5 @@
+{
+  "prompt": "Solve this competitive programming problem in Python 3. Read from standard input and write to standard output. Return only one ```python``` code block and nothing else. Problem: Given an array of size N, generate and print all possible combinations of R elements in array. Input: the first line contains N and R. The second line contains the N objects separated by spaces. Output: print all combinations of R elements, one combination per line, preserving ascending order by position in the original array. The input objects may be strings or numbers, so treat them as tokens. Make sure the sample cases from the statement are handled correctly.",
+  "model": "claude-sonnet-4-5",
+  "max_tokens": 900
+}
