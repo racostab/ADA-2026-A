@@ -38,6 +38,4 @@ resultado = comp_conex(grafo)
 print(len(resultado))
 for subgrafo in resultado:
     subgrafo.sort()
-    for i in subgrafo:
-        print(i, end=" ")
-    print()
+    print(*subgrafo)
