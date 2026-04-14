@@ -1,0 +1,21 @@
+\section{Introducción}
+
+El Problema de Emparejamiento Estable (Stable Matching Problem) fue formalizado por Gale y Shapley en 1962 \cite{gale_shapley_1962}. El problema consiste en emparejar dos conjuntos disjuntos de igual tamaño, donde cada participante posee un orden completo de preferencias sobre los elementos del conjunto opuesto. El objetivo es encontrar un emparejamiento que sea estable.
+
+Un emparejamiento es estable si no existe un par bloqueante, es decir, un par de participantes que prefieran estar emparejados entre sí antes que con sus respectivas parejas asignadas. La estabilidad garantiza que ningún par tenga incentivos para desviarse del resultado obtenido.
+
+El algoritmo de Aceptación Diferida propuesto por Gale y Shapley garantiza la existencia de al menos un emparejamiento estable para cualquier instancia válida del problema \cite{gale_shapley_1962}. Desde el punto de vista computacional, este algoritmo tiene complejidad temporal $O(N^2)$ en el peor caso \cite{gusfield_irving_1989}, ya que cada participante puede realizar a lo sumo $N$ propuestas.
+
+El problema tiene aplicaciones relevantes en diseño de mecanismos y asignación de recursos, como en sistemas de residencias médicas y mercados laborales \cite{roth_vande_1990}. En esta práctica se implementa el algoritmo de Gale--Shapley considerando ambas variantes posibles (cuando propone cada conjunto) y se analiza experimentalmente su comportamiento temporal.
+
+\subsection{Objetivos}
+El objetivo general de esta práctica es implementar y evaluar experimentalmente el algoritmo de Gale--Shapley para resolver el Problema de Emparejamiento Estable en su versión básica, considerando dos conjuntos de igual cardinalidad $N$ y listas completas de preferencias.
+
+De manera específica, se busca:
+\begin{itemize}
+    \item modelar correctamente una instancia del SMP a partir de dos conjuntos disjuntos con preferencias completas;
+    \item implementar el algoritmo de Gale--Shapley de forma que pueda ejecutarse en ambas variantes: cuando el primer conjunto realiza las propuestas y cuando las realiza el segundo;
+    \item medir el tiempo asociado al proceso de emparejamiento para diferentes tamaños de entrada, con el fin de observar cómo cambia el costo computacional conforme crece $N$;
+    \item contrastar los resultados experimentales con la complejidad teórica $O(N^2)$ reportada para el algoritmo;
+    \item interpretar los resultados obtenidos y verificar si el comportamiento observado es consistente con la teoría revisada.
+\end{itemize}

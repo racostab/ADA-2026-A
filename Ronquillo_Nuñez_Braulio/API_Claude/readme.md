@@ -1,316 +1,195 @@
 # API_Claude
 
-API local desarrollada con **FastAPI** para consumir **Claude** desde Python y exponer un endpoint HTTP similar a la idea de una API de modelos LLM.
+Proyecto local para consumir Claude desde Python, generar soluciones a problemas de programacion competitiva y validarlas con una rubrica local `@3` y `@5`.
 
----
+## En que consiste
 
-## Objetivo
+El flujo completo del proyecto es este:
 
-Construir una API propia que reciba un prompt por HTTP, consulte Claude mediante la API oficial de Anthropic y devuelva la respuesta en formato JSON.
+1. Una API local en FastAPI recibe un prompt.
+2. Esa API consulta Claude usando la API oficial de Anthropic.
+3. La respuesta se guarda en JSON.
+4. El codigo Python se extrae de la respuesta.
+5. La solucion extraida se prueba con casos oficiales y casos borde.
+6. Una rubrica local resume si la solucion llega a `@3` o `@5`.
 
----
+## Estado actual
 
-## Arquitectura
+- La conexion a Claude ya esta funcionando con `ANTHROPIC_API_KEY` en `.env`.
+- La API local ya responde en `/health` y `/api/chat`.
+- Ya existen soluciones generadas para `Combinations` y `Maze`.
+- Con la rubrica local actual:
+  - `Combinations` pasa `@5`.
+  - `Maze` pasa `@5`.
+
+## Estructura actual
 
 ```text
-Cliente → FastAPI → Claude (Anthropic) → Respuesta JSON
-```
-
-### Componentes
-
-| Componente | Descripción |
-|---|---|
-| **Cliente** | Swagger, curl, Postman, script Python o cualquier app HTTP |
-| **FastAPI** | Recibe la petición, valida el body JSON y ejecuta la llamada a Claude |
-| **Claude / Anthropic SDK** | Envía el prompt al modelo y devuelve la respuesta |
-| **Archivo `.env`** | Guarda la `ANTHROPIC_API_KEY` para autenticar las solicitudes |
-
----
-
-## Estructura del proyecto
-
-```
 API_Claude/
-├─ .venv/
-├─ .env
-├─ api.py
-├─ body.json
-├─ README.md
-└─ .gitignore
+|-- .env
+|-- .gitignore
+|-- .venv/
+|-- README.md
+|-- requirements.txt
+|-- SRC/
+|   |-- __init__.py
+|   |-- api.py
+|   |-- evaluar_rubrica.py
+|   |-- extraer_codigo.py
+|   |-- pedir_y_guardar.py
+|   |-- probar_CLAUDE.py
+|   |-- probar_solucion.py
+|   |-- validar_maze.py
+|   `-- soluciones/
+|       |-- combinations.py
+|       `-- maze.py
+`-- DAT/
+    |-- COMBINATIONS.pdf
+    |-- MAZE.pdf
+    |-- body.JSON
+    |-- body_gnome_sort.json
+    |-- body_maze.json
+    |-- example.md
+    |-- response_CLAUDE GNOME SORT.json
+    |-- response_CLAUDE2 PRUEBA.json
+    |-- prompts/
+    |-- respuestas/
+    `-- tests/
 ```
-
----
 
 ## Requisitos
 
-- Windows
 - Python 3.10 o superior
 - Git Bash o PowerShell
-- API key de Anthropic
+- Una clave valida de Anthropic
 
----
+## Configuracion inicial
 
-## Instalación
+1. Abre una terminal en la carpeta del proyecto.
+2. Activa el entorno virtual.
+3. Verifica que `.env` tenga `ANTHROPIC_API_KEY`.
 
-**1. Ubícate en la carpeta del proyecto:**
-
-```bash
-cd ~/Desktop/Proyectos\ primer\ semestre/ADA-2026-A/Ronquillo_Nuñez_Braulio/API_Claude
-```
-
-**2. Crea el entorno virtual:**
-
-```bash
-python -m venv .venv
-```
-
-**3. Activa el entorno virtual (Git Bash):**
+### Git Bash
 
 ```bash
 source .venv/Scripts/activate
 ```
 
-**4. Instala las dependencias:**
+### PowerShell
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+## Como ejecutar la API
+
+Desde la raiz del proyecto:
 
 ```bash
-python -m pip install --upgrade pip
-python -m pip install fastapi uvicorn anthropic python-dotenv requests
+python -m uvicorn SRC.api:app --reload
 ```
 
----
+La API queda disponible en:
 
-## Configuración de variables de entorno
-
-Crea un archivo `.env` en la raíz del proyecto con el siguiente contenido:
-
-```env
-ANTHROPIC_API_KEY=TU_API_KEY
-```
-
----
-
-## Archivo principal `api.py`
-
-```python
-from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
-from dotenv import load_dotenv
-import anthropic
-import os
-import traceback
-
-load_dotenv()
-
-api_key = os.getenv("ANTHROPIC_API_KEY")
-if not api_key:
-    raise RuntimeError("No se encontró ANTHROPIC_API_KEY en el archivo .env")
-
-client = anthropic.Anthropic(api_key=api_key)
-
-app = FastAPI()
-
-
-class ChatRequest(BaseModel):
-    prompt: str
-    model: str = "claude-sonnet-4-5"
-    max_tokens: int = 300
-
-
-@app.get("/health")
-def health():
-    return {"ok": True, "servicio": "API Claude"}
-
-
-@app.post("/api/chat")
-def chat(req: ChatRequest):
-    try:
-        message = client.messages.create(
-            model=req.model,
-            max_tokens=req.max_tokens,
-            messages=[
-                {"role": "user", "content": req.prompt}
-            ],
-        )
-
-        texto = ""
-        for block in message.content:
-            if getattr(block, "type", None) == "text":
-                texto += block.text
-
-        return {
-            "model": req.model,
-            "response": texto
-        }
-
-    except Exception as e:
-        traceback.print_exc()
-        raise HTTPException(status_code=500, detail=f"{type(e).__name__}: {e}")
-```
-
----
-
-## Cómo ejecutar la API
-
-Levanta el servidor con:
-
-```bash
-python -m uvicorn api:app --reload
-```
-
-> **`api:app`** — `api` es el nombre del archivo `api.py` y `app` es la instancia de `FastAPI()`.
-
-La API quedará disponible en:
-
-```
+```text
 http://127.0.0.1:8000
 ```
 
----
+## Verificacion rapida
 
-## Endpoints disponibles
-
-### `GET /health` — Health check
-
-Verifica que el servicio está corriendo.
-
-**Respuesta esperada:**
-
-```json
-{
-  "ok": true,
-  "servicio": "API Claude"
-}
-```
-
----
-
-### `POST /api/chat` — Chat con Claude
-
-Envía un prompt y recibe la respuesta generada por Claude.
-
-**Body esperado:**
-
-```json
-{
-  "prompt": "Explica qué es una API REST en 3 líneas",
-  "model": "claude-sonnet-4-5",
-  "max_tokens": 200
-}
-```
-
-**Respuesta esperada:**
-
-```json
-{
-  "model": "claude-sonnet-4-5",
-  "response": "..."
-}
-```
-
----
-
-## Uso desde Swagger
-
-FastAPI genera documentación interactiva automáticamente en:
-
-```
-http://127.0.0.1:8000/docs
-```
-
-Desde ahí puedes:
-
-1. Abrir `POST /api/chat`
-2. Seleccionar **Try it out**
-3. Enviar un JSON de prueba
-4. Ver la respuesta generada por Claude
-
-**Ejemplo de body:**
-
-```json
-{
-  "prompt": "Hola Claude, dame una definición corta de API",
-  "model": "claude-sonnet-4-5",
-  "max_tokens": 200
-}
-```
-
----
-
-## Uso desde consola
-
-**`body.json`:**
-
-```json
-{
-  "prompt": "Hola Claude, dame una definición corta de API",
-  "model": "claude-sonnet-4-5",
-  "max_tokens": 200
-}
-```
-
-**Comando curl:**
+### Health check
 
 ```bash
-curl -X POST "http://127.0.0.1:8000/api/chat" \
-  -H "Content-Type: application/json" \
-  --data-binary @body.json
+curl http://127.0.0.1:8000/health
 ```
 
----
-
-## Flujo de operación
-
-```
-1. Cliente envía POST a /api/chat
-2. FastAPI valida el JSON recibido
-3. Se extraen: prompt, model y max_tokens
-4. Se realiza la llamada a Claude con el SDK de Anthropic
-5. Claude genera la respuesta
-6. La API devuelve un JSON con el modelo usado y el texto generado
-```
-
----
-
-## Ejemplo de uso completo
+### Prueba directa contra Claude sin pasar por FastAPI
 
 ```bash
-# 1. Activar entorno virtual
-source .venv/Scripts/activate
-
-# 2. Levantar el servidor
-python -m uvicorn api:app --reload
-
-# 3. Abrir Swagger en el navegador
-#    http://127.0.0.1:8000/docs
-
-# 4. Probar POST /api/chat con el body:
-# {
-#   "prompt": "Explica qué es una API REST en 3 líneas",
-#   "model": "claude-sonnet-4-5",
-#   "max_tokens": 200
-# }
-
-# 5. Respuesta obtenida:
-# {
-#   "model": "claude-sonnet-4-5",
-#   "response": "..."
-# }
+python SRC/probar_CLAUDE.py "Dame una implementacion de Gnome Sort en Python con ejemplo."
 ```
 
----
+## Flujo completo para generar una solucion nueva
 
-## Archivos de soporte recomendados
+### 1. Pedir la solucion y guardarla como JSON
 
-**`.gitignore`:**
+#### Combinations
 
-```
-.env
-.venv/
-__pycache__/
+```bash
+python SRC/pedir_y_guardar.py DAT/prompts/combinations_solver.json DAT/respuestas/combinations.json
 ```
 
----
+#### Maze
 
-## Autor
+```bash
+python SRC/pedir_y_guardar.py DAT/prompts/maze_solver.json DAT/respuestas/maze.json
+```
 
-**Braulio Ronquillo Núñez**
+### 2. Extraer el codigo Python desde la respuesta
+
+#### Combinations
+
+```bash
+python SRC/extraer_codigo.py DAT/respuestas/combinations.json SRC/soluciones/combinations.py
+```
+
+#### Maze
+
+```bash
+python SRC/extraer_codigo.py DAT/respuestas/maze.json SRC/soluciones/maze.py
+```
+
+## Como probar las soluciones
+
+### Pruebas puntuales de Combinations
+
+```bash
+python SRC/probar_solucion.py SRC/soluciones/combinations.py DAT/tests/combinations_case1.in DAT/tests/combinations_case1.out
+python SRC/probar_solucion.py SRC/soluciones/combinations.py DAT/tests/combinations_case2.in DAT/tests/combinations_case2.out
+```
+
+### Pruebas puntuales de Maze
+
+```bash
+python SRC/validar_maze.py SRC/soluciones/maze.py DAT/tests/maze_sample_o1.in
+python SRC/validar_maze.py SRC/soluciones/maze.py DAT/tests/maze_sample_o2.in
+python SRC/validar_maze.py SRC/soluciones/maze.py DAT/tests/maze_sample_o3.in
+```
+
+Si quieres aceptar cualquier camino valido en `O=3`, aunque no sea el mas corto:
+
+```bash
+python SRC/validar_maze.py SRC/soluciones/maze.py DAT/tests/maze_sample_o3.in --allow-any-path
+```
+
+## Rubrica local @3 y @5
+
+La rubrica implementada en `SRC/evaluar_rubrica.py` usa esta suposicion:
+
+- `@3`: pasa los casos oficiales del enunciado.
+- `@5`: pasa los casos oficiales y casos borde adicionales.
+
+Para ejecutarla:
+
+```bash
+python SRC/evaluar_rubrica.py
+```
+
+## Resultado actual de la rubrica
+
+- `Combinations`: `@5`
+- `Maze`: `@5`
+
+## Nota importante sobre Maze
+
+La validacion local de `Maze` asume lo siguiente:
+
+- Para `O = 2`, la respuesta correcta es la longitud del camino mas corto.
+- Para `O = 3`, la respuesta correcta es un camino minimo.
+- El desempate de exploracion se considera con el orden `U, R, D, L`.
+
+Eso nos permite probar la solucion de manera consistente. Si tu profesor usa una rubrica o interpretacion distinta, la podemos ajustar.
+
+## Seguridad
+
+La clave de Anthropic debe quedarse en `.env` y no debe subirse al repositorio.

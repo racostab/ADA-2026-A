@@ -1,0 +1,5 @@
+{
+  "prompt": "Genera una solucion para el problema Maze en Python. Explica la idea, el algoritmo paso a paso y muestra un ejemplo sencillo de entrada y salida.",
+  "model": "claude-sonnet-4-5",
+  "max_tokens": 600
+}

@@ -1,0 +1,23 @@
+\section{Metodologia}
+La metodología empleada en esta práctica consistió en implementar el algoritmo de Gale--Shapley para resolver el Problema de Emparejamiento Estable y, posteriormente, evaluar experimentalmente su comportamiento temporal para distintos tamaños de entrada.
+
+En una primera etapa se desarrolló una implementación eficiente del algoritmo considerando ambas variantes posibles: cuando el conjunto de hombres realiza las propuestas y cuando el conjunto de mujeres lo hace. Para optimizar el desempeño, se utilizó un esquema de \textit{ranking inverso} que permite comparar preferencias en tiempo constante $O(1)$, evitando recorridos lineales en las listas de preferencias.
+
+En una segunda etapa se generaron automáticamente instancias de entrada para valores crecientes de $N$. Cada instancia contiene dos conjuntos de tamaño $N$ con listas completas de preferencias generadas aleatoriamente. La generación de datos se automatizó mediante un script independiente, lo que permitió controlar de manera sistemática el tamaño de las entradas y construir un conjunto de pruebas homogéneo.
+
+Posteriormente, para cada instancia generada, se ejecutó el algoritmo y se registró el tiempo correspondiente al proceso de emparejamiento. Aunque en una implementación completa pueden distinguirse las fases de lectura, procesamiento e impresión, en este análisis se aisló el tiempo del algoritmo principal para que la medición reflejara de forma más precisa el costo computacional del procedimiento de Gale--Shapley.
+
+Las mediciones se realizaron utilizando un temporizador de alta resolución (\texttt{perf\_counter}) y los resultados fueron almacenados en una tabla estructurada que relaciona el tamaño $N$ con el tiempo correspondiente.
+
+Finalmente, los tiempos obtenidos fueron graficados utilizando tanto escala lineal como escala logarítmica para el eje de $N$, con el objetivo de analizar la forma del crecimiento temporal y contrastarlo con la complejidad teórica $O(N^2)$.
+
+\subsection{Herramientas}
+
+Para el desarrollo de la práctica se utilizaron las siguientes herramientas:
+
+\begin{itemize}
+    \item Lenguaje de programación Python 3 para la implementación del algoritmo y generación de instancias.
+    \item Bibliotecas estándar de Python para medición de tiempos y manejo de estructuras de datos.
+    \item Biblioteca \texttt{matplotlib} para la generación de gráficas.
+    \item Entorno de desarrollo local y sistema de control de versiones Git para organización del código.
+\end{itemize}
