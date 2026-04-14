@@ -1,0 +1,28 @@
+# Puntos de articulacion en un grafo
+
+Dado un grafo no dirigido con `V` vertices y `E` aristas, se deben encontrar todos los puntos de
+articulacion del grafo.
+
+Un vertice es un punto de articulacion si al eliminarlo, junto con sus aristas, aumenta el numero de
+componentes conectados del grafo.
+
+Formato de entrada:
+- La primera linea contiene `V E`.
+- Las siguientes `E` lineas contienen una arista por linea: `vi vj`.
+
+Formato de salida:
+- Imprime los puntos de articulacion en una sola linea.
+- Los vertices deben aparecer ordenados de menor a mayor.
+- Si no existe ningun punto de articulacion, la salida queda vacia.
+
+Restricciones:
+- `1 <= V <= 100`
+- `1 <= E <= 100`
+- `1 <= vi, vj <= 100`
+
+Optimizacion:
+- Se usa el algoritmo de Tarjan con DFS.
+- Complejidad en tiempo: `O(V + E)`.
+- Complejidad en memoria: `O(V + E)`.
+
+El ejemplo de entrada y salida se encuentra en `input.txt` y `output.txt`.
