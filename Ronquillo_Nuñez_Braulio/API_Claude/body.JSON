@@ -1,5 +1,0 @@
-{
-    "prompt": "Hola Claude, dame una definición corta de API",
-    "model": "claude-sonnet-4-5",
-    "max_tokens": 200
-}

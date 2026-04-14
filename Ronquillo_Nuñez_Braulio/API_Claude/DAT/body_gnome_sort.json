@@ -1,0 +1,5 @@
+{
+  "prompt": "Explica el algoritmo Gnome Sort, indica su complejidad y dame una implementacion corta en Python con un ejemplo de uso.",
+  "model": "claude-sonnet-4-5",
+  "max_tokens": 500
+}
