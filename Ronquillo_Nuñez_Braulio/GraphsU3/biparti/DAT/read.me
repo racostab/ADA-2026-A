@@ -1,0 +1,28 @@
+# Biparticion de un grafo
+
+Dado un grafo no dirigido, se debe determinar si es bipartito y, en caso afirmativo, construir sus dos
+conjuntos independientes.
+
+Un grafo es bipartito si sus vertices pueden separarse en dos conjuntos `U` y `V` tales que cada arista
+une un vertice de `U` con uno de `V`. Si existe una arista entre dos vertices del mismo conjunto, el grafo
+no es bipartito.
+
+Formato de entrada:
+- La primera linea contiene `V E`.
+- Las siguientes `E` lineas contienen una arista por linea: `vi vj`.
+
+Formato de salida:
+- Si el grafo es bipartito, imprime los dos conjuntos en lineas separadas.
+- Cada conjunto debe aparecer ordenado de menor a mayor.
+- Si el grafo no es bipartito, imprime una sola linea con `EMPTY`.
+
+Restricciones:
+- `1 <= V <= 100`
+- `1 <= E <= 100`
+
+Optimizacion:
+- Se usa BFS con dos colores para recorrer el grafo una sola vez.
+- Complejidad en tiempo: `O(V + E)`.
+- Complejidad en memoria: `O(V + E)`.
+
+El ejemplo de entrada y salida se encuentra en `input.txt` y `output.txt`.
