@@ -42,4 +42,4 @@ if flag == 0:
     print(*sorted(set(rojo)))
     print(*sorted(set(azul)))
 else:
-    print()
+    print("EMPTY")
