@@ -1,0 +1,266 @@
+{
+  "timestamp": "2026-04-29T16:33:33.412583",
+  "model": "mistral:latest",
+  "summary": {
+    "total": 8,
+    "passed": 7,
+    "failed": 1,
+    "success_rate": "87.5%"
+  },
+  "results": [
+    {
+      "name": "Lista vacía",
+      "input": [],
+      "expected": [],
+      "got": [],
+      "passed": true,
+      "time_ms": 0.0043,
+      "comparisons": 0,
+      "swaps": 0,
+      "passes": 0,
+      "error": null
+    },
+    {
+      "name": "Un solo elemento",
+      "input": [
+        3
+      ],
+      "expected": [
+        3
+      ],
+      "got": [
+        3
+      ],
+      "passed": true,
+      "time_ms": 0.0018,
+      "comparisons": 0,
+      "swaps": 0,
+      "passes": 0,
+      "error": null
+    },
+    {
+      "name": "Lista ya ordenada (5 elementos)",
+      "input": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "got": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "passed": true,
+      "time_ms": 0.004,
+      "comparisons": 0,
+      "swaps": 0,
+      "passes": 4,
+      "error": null
+    },
+    {
+      "name": "Lista en orden inverso (5 elementos)",
+      "input": [
+        5,
+        4,
+        3,
+        2,
+        1
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "got": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "passed": true,
+      "time_ms": 0.0028,
+      "comparisons": 20,
+      "swaps": 10,
+      "passes": 4,
+      "error": null
+    },
+    {
+      "name": "Lista con duplicados",
+      "input": [
+        2,
+        2,
+        3,
+        4,
+        5,
+        2,
+        6
+      ],
+      "expected": [
+        2,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "got": [
+        2,
+        2,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "passed": false,
+      "time_ms": 0.002,
+      "comparisons": 6,
+      "swaps": 3,
+      "passes": 6,
+      "error": null
+    },
+    {
+      "name": "Lista con números negativos",
+      "input": [
+        -3,
+        -2,
+        0,
+        1,
+        2
+      ],
+      "expected": [
+        -3,
+        -2,
+        0,
+        1,
+        2
+      ],
+      "got": [
+        -3,
+        -2,
+        0,
+        1,
+        2
+      ],
+      "passed": true,
+      "time_ms": 0.001,
+      "comparisons": 0,
+      "swaps": 0,
+      "passes": 4,
+      "error": null
+    },
+    {
+      "name": "Lista aleatoria pequeña (8 elementos)",
+      "input": [
+        5,
+        3,
+        8,
+        4,
+        6,
+        2,
+        9,
+        7
+      ],
+      "expected": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "got": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "passed": true,
+      "time_ms": 0.0026,
+      "comparisons": 22,
+      "swaps": 11,
+      "passes": 8,
+      "error": null
+    },
+    {
+      "name": "Lista aleatoria grande (15 elementos)",
+      "input": [
+        10,
+        7,
+        13,
+        1,
+        9,
+        2,
+        5,
+        12,
+        8,
+        6,
+        4,
+        11,
+        3,
+        14,
+        15
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "got": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "passed": true,
+      "time_ms": 0.0074,
+      "comparisons": 90,
+      "swaps": 45,
+      "passes": 14,
+      "error": null
+    }
+  ]
+}
