@@ -2,3 +2,4 @@
 .DS_Store
 # Also match .DS_Store in any subdirectory
 **/.DS_Store
+/Acosta_Bermejo_Raul/.venv
