@@ -24,7 +24,7 @@ for response in responses.values():
 def writeFile(content, dir):
     with open(f"{dir}/{file_name}", "w") as f:
         for response in responses.values():
-            f.write(f'{response['response']}\n')
+            f.write(f"{response['response']}\n")
 
 
 

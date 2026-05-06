@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#
+# Usa el requirements.txt para crear un entorno virtual.
+# Para recrearlo: 
+#     $ pip freeze > requirements.txt
+
 # ── Configuración ──────────────────────────────────────────
 VENV_NAME="${1:-.venv}"          # Nombre por defecto: .venv
 PYTHON="${2:-python3}"           # Intérprete por defecto: python3

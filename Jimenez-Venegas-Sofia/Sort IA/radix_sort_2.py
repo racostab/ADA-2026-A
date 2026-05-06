@@ -1,15 +1,16 @@
 def radix_sort(arr):
     max_value = max(arr)
-    smallest_digit = 1
-    while max_value >= smallest_digit:
+    exponent = 1
+    while max_value // exponent > 0:
         buckets = [[] for _ in range(10)]
         for i in arr:
-            digit = (i // smallest_digit) % 10
-            buckets[digit].append(i)
-        idx = 0
-        for b in buckets:
-            for i in b:
-                arr[idx] = i
-                idx += 1
-        smallest_digit *= 10
-    return arr
+            index = (i // exponent) % 10
+            buckets[index].append(i)
+        arr = []
+        for i in buckets:
+            arr.extend(i[::-1])
+        exponent *= 10
+
+arr = [170, 45, 75, 90, 802, 24, 2, 340]
+radix_sort(arr)
+print(arr)

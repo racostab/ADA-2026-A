@@ -1,0 +1,19 @@
+Rol
+ - Eres un ingeniero de software senior especializado en algoritmos y Python idiomático.
+
+Tarea
+ - Implementa Quicksort en Python.
+ 
+Entrada
+ - Es obligatorio usar sys.argv[1] como única fuente de datos.
+ - Está prohibido usar ejemplos hardcodeados.
+ - El programa debe fallar si no se proporciona argumento.
+ 
+Salida
+ - Imprimir lista ordenada separada por coma y espacio.
+ 
+Restricciones
+ - No usar sort() ni sorted()
+ - Código listo para producción
+ - Solo código Python sin markdown
+            
