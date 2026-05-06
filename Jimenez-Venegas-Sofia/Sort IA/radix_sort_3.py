@@ -1,15 +1,18 @@
 def radix_sort(arr):
     max_value = max(arr)
     min_value = min(arr)
-    base = 1
-    while max_value >= base:
-        buckets = [[] for _ in range(10)]
+    size = len(str(max_value))
+    buckets = [[] for _ in range(10)]
+
+    for exp in range(1, size + 1):
         for i in arr:
-            bucket = (i // base) % 10
-            buckets[bucket].append(i)
-        arr = []
-        for i in range(len(buckets)):
+            digit = (i // (10 ** (exp - 1))) % 10
+            buckets[digit].append(i)
+
+        index = 0
+        for i in range(0, len(buckets)):
             for j in buckets[i]:
-                arr.append(j * base + i)
-        base *= 10
-    return arr
+                arr[index] = j
+                index += 1
+
+        buckets = [[] for _ in range(10)]

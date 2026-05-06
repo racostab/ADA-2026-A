@@ -1,0 +1,5 @@
+{
+  "prompt": "Solve this competitive programming problem in Python 3. Read from standard input and write to standard output. Return only one ```python``` code block and nothing else. Problem: Given a maze as a rectangular matrix, find a path from source (Sr, Sc) to target (Tr, Tc). The maze uses space as corridor and # as wall. Moves are only U, R, D, L. Input: first line has R C Sr Sc Tr Tc O. Then come R lines of the maze. Output depends on O: 1 -> print True or False depending on whether a path exists. 2 -> print the length of the shortest path. 3 -> print one shortest path as a string of U, R, D, L, breaking ties by exploring neighbors in the order U, R, D, L. Make the program robust for large inputs and use an iterative solution.",
+  "model": "claude-sonnet-4-5",
+  "max_tokens": 1100
+}

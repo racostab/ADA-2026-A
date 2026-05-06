@@ -1,0 +1,35 @@
+\documentclass[12pt,a4paper]{article}
+\title{Plantilla}
+\usepackage{UPIITA}
+\asignatura{Diseño y analisis de algoritmos}
+\carrera{MCC}
+\titulo{Practica 1: Emparejamiento Estable}
+\alumno{Ronquillo Núñez Braulio Alberto}
+\profesor{Raul Acosta Bermejo}
+\begin{document}
+\maketitlepage % Portada
+
+%\tableofcontents %Índice
+%\newpage
+%\listoffigures   %Índice de figuras
+%\newpage        
+%\listoftables   %Índice de tablas
+
+% Cuerpo del Documento
+%\newpage
+
+% Insertar .tex al documento
+\newpage
+\fontsize{10pt}{12pt}\selectfont
+\twocolumn
+\input{Secciones del documento/1.Introduccion y objetivos}
+\input{Secciones del documento/2.Metodologia}
+\input{Secciones del documento/3.Resultados}
+\input{Secciones del documento/4.Conclusiones}
+
+% Bibliografia o referencias
+\newpage
+\addcontentsline{toc}{section}{Bibliografía}
+\printbibliography[title={Bibliografía}] %Referencias
+
+\end{document}

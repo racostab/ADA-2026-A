@@ -1,0 +1,1 @@
+En esta segunda practica el archivo Mistral_LeChat hace un reuest al LLM y guarda el codigo en cocktail_sort_output genera la salida del promt y en el archivo run_test se realizan distintos casos de prueba donde se guardan en test_results.json.

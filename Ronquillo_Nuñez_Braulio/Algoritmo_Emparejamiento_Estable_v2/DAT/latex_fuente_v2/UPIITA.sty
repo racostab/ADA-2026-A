@@ -1,0 +1,157 @@
+\ProvidesPackage{UPIITA}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+%\PassOptionsToPackage{table,svgnames,xcdraw}{xcolor}
+\usepackage{color}
+\usepackage{subfigure}
+\usepackage{capt-of}
+\usepackage{sidecap}
+\sidecaptionvpos{figure}{c}
+\usepackage{caption}
+\usepackage{commath}
+\usepackage{cancel}
+\usepackage{anysize}
+\usepackage{csquotes}
+\usepackage{tcolorbox}
+\usepackage{lipsum}
+\usepackage{answers}
+\usepackage{nccmath}
+\usepackage[shortlabels]{enumitem}
+\usepackage[acronym,toc]{glossaries}
+\captionsetup[table]{position=top}
+\usepackage{filecontents}
+\tcbuselibrary{skins,breakable}
+\usetikzlibrary{shadings,shadows}
+\usepackage{mathtools, amsfonts, amssymb, amsthm}
+\usepackage{makeidx}
+\usepackage{float,graphicx}
+\usepackage{lmodern}
+\usepackage{gensymb}
+\usepackage{nccmath}
+\usepackage{tikz}
+\usepackage{newclude}
+%==================== Márgenes ==================
+\marginsize{2cm}{2cm}{2cm}{2cm} % Izquierda, derecha, arriba, abajo
+%=================== Insertar PDFs ==============
+\usepackage{pdfpages} 
+%=================== Estilo de Bibliografía =====
+\usepackage[backend=bibtex,style=ieee]{biblatex}
+\usepackage{biblatex}
+\addbibresource{Bibliografia.bib}
+%================== Apéndices ==================
+\usepackage{appendix}
+\renewcommand{\appendixname}{Apéndices}
+\renewcommand{\appendixtocname}{Apéndices}
+\renewcommand{\appendixpagename}{Apéndices} 
+%%%%%%%%%%%%%%%%%% Hipervínculos %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[colorlinks=true,plainpages=true,citecolor=black,linkcolor=black]{hyperref}
+%\usepackage{hyperref} 
+%%%%%%%%%%%%%%%%%%%%  Encabezado y Pie de Página %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fancyhdr} 
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize CIC}
+\fancyhead[R]{\footnotesize IPN}
+\fancyfoot[R]{\footnotesize \@asignatura}
+\fancyfoot[C]{\thepage}
+\fancyfoot[L]{\footnotesize \@carrera}
+\renewcommand{\footrulewidth}{0.4pt}
+
+%============= Para introducir código MATLAB ========
+% configuración para el lenguaje que queramos utilizar
+\usepackage{listings}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5} 
+\lstset{language=Matlab,
+   keywords={break,case,catch,continue,else,elseif,end,for,function,
+      global,if,otherwise,persistent,return,switch,try,while},
+   basicstyle=\ttfamily,
+   keywordstyle=\color{blue},
+   commentstyle=\color{red},
+   stringstyle=\color{dkgreen},
+   numbers=left,
+   numberstyle=\tiny\color{gray},
+   stepnumber=1,
+   numbersep=10pt,
+   backgroundcolor=\color{white},
+   tabsize=4,
+   showspaces=false,
+   showstringspaces=false}
+%======================= Del Inglés al Español =======================
+\newcommand{\sen}{\operatorname{\sen}}	% Definimos el comando \sen para el seno
+%en español
+\newcommand{\asignatura}[1]{
+  \def\@asignatura{#1}
+}
+\newcommand{\carrera}[1]{
+  \def\@carrera{#1}
+}
+\newcommand{\titulo}[1]{
+  \def\@titulo{#1}
+}
+\newcommand{\grupo}[1]{
+  \def\@grupo{#1}
+}
+\newcommand{\profesor}[1]{
+  \def\@profesor{#1}
+}
+\newcommand{\alumno}[1]{
+  \def\@alumno{#1}
+}
+
+
+%=========== Portada ========================
+\newcommand*{\maketitlepage}
+ {\begingroup
+  \begin{center}			
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}	
+\begin{minipage}{0.48\textwidth} \begin{flushleft}
+\includegraphics[scale = 0.25]{cic}
+\end{flushleft}\end{minipage}
+\begin{minipage}{0.48\textwidth} \begin{flushright}
+\includegraphics[scale = 0.35]{IPN}
+\end{flushright}\end{minipage}
+\vspace*{0.2cm}
+\textsc{\huge Instituto Polit\'ecnico\\ \vspace{5px} Nacional}\\[1cm]	
+\textsc{\LARGE Centro de Investigación
+en Computación}\\[1cm]
+
+%--------------------- Nombre de la Asignatura ------------------------------------
+\begin{minipage}{0.9\textwidth} 
+\begin{center}																	
+\textsc{\LARGE \@asignatura}
+\end{center}
+\end{minipage}\\[0.5cm]
+%-------------------- Nombre de la Tarea ----------------------------------------
+ 			\vspace*{1cm}	
+\HRule \\[0.4cm]																
+{ \huge \bfseries\@titulo}\\[0.4cm]
+\HRule \\[1.5cm]																	%------------------- Integrantes -----------------------------------------------
+\begin{minipage}{0.96\textwidth}	
+\begin{flushleft} \large
+%\raggedright
+\emph{Alumno:}\\
+\@alumno\\
+			\vspace*{0.5cm}	
+\end{flushleft}	
+\end{minipage}		
+%-------------------- Profesor ------------------------------------------------
+\begin{minipage}{0.96\textwidth}		
+\vspace{-0.6cm}
+\begin{flushright} \large														
+\emph{Profesor:} \\							
+\@profesor\\
+\end{flushright}																	%------------------- Equipo, Grupo --------------------------------------------
+\end{minipage}	
+\vspace*{1cm}
+ 		\flushleft{\textbf{\Large \@grupo}	}\\
+\vspace{0.5cm} 																	
+%-------------------- Fecha del trabajo --------------------------------------
+\begin{center}
+{\large \today}
+ 			\end{center}			
+\end{center}							 						
+  \endgroup}

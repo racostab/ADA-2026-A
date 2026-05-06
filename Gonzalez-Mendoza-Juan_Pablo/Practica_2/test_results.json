@@ -1,0 +1,289 @@
+{
+  "timestamp": "2026-05-05T18:33:05.351368",
+  "model": "mistral:latest",
+  "summary": {
+    "total": 8,
+    "passed": 7,
+    "failed": 1,
+    "success_rate": "87.5%"
+  },
+  "results": [
+    {
+      "name": "Lista vacía",
+      "input": [],
+      "expected": [],
+      "got": [],
+      "passed": true,
+      "time_ms": 0.0069,
+      "comparisons": 0,
+      "swaps": 0,
+      "passes": 0,
+      "error": null
+    },
+    {
+      "name": "Un solo elemento",
+      "input": [
+        3
+      ],
+      "expected": [
+        3
+      ],
+      "got": [
+        3
+      ],
+      "passed": true,
+      "time_ms": 0.0026,
+      "comparisons": 0,
+      "swaps": 0,
+      "passes": 0,
+      "error": null
+    },
+    {
+      "name": "Lista ya ordenada",
+      "input": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "got": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "passed": true,
+      "time_ms": 0.0112,
+      "comparisons": 6,
+      "swaps": 0,
+      "passes": 2,
+      "error": null
+    },
+    {
+      "name": "Lista en orden inverso",
+      "input": [
+        5,
+        4,
+        3,
+        2,
+        1
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "got": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "passed": true,
+      "time_ms": 0.0067,
+      "comparisons": 6,
+      "swaps": 10,
+      "passes": 2,
+      "error": null
+    },
+    {
+      "name": "Lista con duplicados",
+      "input": [
+        2,
+        2,
+        3,
+        1,
+        4,
+        4,
+        5,
+        6
+      ],
+      "expected": [
+        1,
+        2,
+        2,
+        3,
+        4,
+        4,
+        5,
+        6
+      ],
+      "got": [
+        1,
+        2,
+        2,
+        3,
+        4,
+        4,
+        5,
+        6
+      ],
+      "passed": true,
+      "time_ms": 0.0065,
+      "comparisons": 16,
+      "swaps": 3,
+      "passes": 4,
+      "error": null
+    },
+    {
+      "name": "Lista con números negativos",
+      "input": [
+        -3,
+        -2,
+        0,
+        2,
+        4
+      ],
+      "expected": [
+        -3,
+        -2,
+        0,
+        2,
+        4
+      ],
+      "got": [
+        -3,
+        -2,
+        0,
+        2,
+        4
+      ],
+      "passed": true,
+      "time_ms": 0.0035,
+      "comparisons": 6,
+      "swaps": 0,
+      "passes": 2,
+      "error": null
+    },
+    {
+      "name": "Lista aleatoria pequeña",
+      "input": [
+        7,
+        3,
+        2,
+        8,
+        5,
+        4,
+        1
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8
+      ],
+      "got": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8
+      ],
+      "passed": true,
+      "time_ms": 0.0065,
+      "comparisons": 12,
+      "swaps": 14,
+      "passes": 3,
+      "error": null
+    },
+    {
+      "name": "Lista aleatoria grande",
+      "input": [
+        12,
+        15,
+        11,
+        8,
+        13,
+        10,
+        1,
+        6,
+        14,
+        2,
+        9,
+        5,
+        18,
+        7,
+        3,
+        17,
+        4,
+        16,
+        19,
+        20,
+        21,
+        1,
+        10
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "got": [
+        1,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "passed": false,
+      "time_ms": 0.0393,
+      "comparisons": 132,
+      "swaps": 114,
+      "passes": 11,
+      "error": null
+    }
+  ]
+}

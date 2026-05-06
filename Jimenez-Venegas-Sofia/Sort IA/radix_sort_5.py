@@ -1,16 +1,12 @@
 def radix_sort(arr):
     max_value = max(arr)
-    places = len(str(max_value))
-
-    for place in range(places):
-        buckets = [[] for _ in range(10)]
-
-        for value in arr:
-            bucket = int(str(value)[place]) if str(value)[place] != '-' else 9
-            buckets[bucket].append(value)
-
-        idx = 0
-        for b in buckets:
-            for v in b:
-                arr[idx] = v
-                idx += 1
+    exp = 1
+    while max_value // exp > 0:
+        bucket = [[] for _ in range(10)]
+        for i in arr:
+            bucket[ (i // exp) % 10 ].append(i)
+        arr.clear()
+        for i in range(len(bucket)):
+            arr.extend(bucket[i])
+        exp *= 10
+    return arr
