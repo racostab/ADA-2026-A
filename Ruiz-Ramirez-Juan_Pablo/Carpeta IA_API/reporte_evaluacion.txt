@@ -1,0 +1,22 @@
+============================================================
+REPORTE DE EVALUACIÓN DE CÓDIGO IA
+============================================================
+
+Modelo usado: llama3.2
+Endpoint: http://100.113.158.78:11434/api/generate
+Total casos: 11
+Correctos: 11
+Incorrectos: 0
+Tasa de éxito: 100.0%
+
+Caso 1 (Prueba 2.txt, línea 1): CORRECTO (puntaje: 1)
+Caso 2 (Prueba 2.txt, línea 2): CORRECTO (puntaje: 1)
+Caso 3 (Prueba 2.txt, línea 3): CORRECTO (puntaje: 1)
+Caso 4 (Prueba 2.txt, línea 4): CORRECTO (puntaje: 1)
+Caso 5 (Prueba 2.txt, línea 5): CORRECTO (puntaje: 1)
+Caso 6 (Prueba1.txt, línea 1): CORRECTO (puntaje: 1)
+Caso 7 (Prueba1.txt, línea 2): CORRECTO (puntaje: 1)
+Caso 8 (Prueba1.txt, línea 3): CORRECTO (puntaje: 1)
+Caso 9 (Prueba1.txt, línea 4): CORRECTO (puntaje: 1)
+Caso 10 (Prueba1.txt, línea 5): CORRECTO (puntaje: 1)
+Caso 11 (Prueba1.txt, línea 6): CORRECTO (puntaje: 1)
