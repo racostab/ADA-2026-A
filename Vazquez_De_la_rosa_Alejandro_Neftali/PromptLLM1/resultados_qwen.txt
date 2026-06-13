@@ -1,0 +1,72 @@
+=== EVALUACIÓN PARA: COMBSORT_QWEN ===
+
+===== CODIGO 1 =====
+Prueba 1 - Correcto: True
+Prueba 2 - Correcto: True
+Prueba 3 - Correcto: True
+Prueba 4 - Correcto: True
+Prueba 5 - Correcto: True
+Prueba 6 - Correcto: True
+Prueba 7 - Correcto: True
+Prueba 8 - Correcto: True
+Prueba 9 - Correcto: True
+Prueba 10 - Correcto: True
+-> RESULTADO: ÉXITO.
+
+===== CODIGO 2 =====
+Prueba 1 - Correcto: False
+Prueba 2 - Correcto: False
+Prueba 3 - Correcto: False
+Prueba 4 - Correcto: False
+Prueba 5 - Correcto: False
+Prueba 6 - Correcto: False
+Prueba 7 - Correcto: False
+Prueba 8 - Correcto: False
+Prueba 9 - Correcto: False
+Prueba 10 - Correcto: False
+-> RESULTADO: FALLO.
+
+===== CODIGO 3 =====
+Prueba 1 - Correcto: True
+Prueba 2 - Correcto: True
+Prueba 3 - Correcto: True
+Prueba 4 - Correcto: True
+Prueba 5 - Correcto: True
+Prueba 6 - Correcto: True
+Prueba 7 - Correcto: True
+Prueba 8 - Correcto: True
+Prueba 9 - Correcto: True
+Prueba 10 - Correcto: True
+-> RESULTADO: ÉXITO.
+
+===== CODIGO 4 =====
+Prueba 1 - Correcto: False
+Prueba 2 - Correcto: True
+Prueba 3 - Correcto: True
+Prueba 4 - Correcto: True
+Prueba 5 - Correcto: True
+Prueba 6 - Correcto: True
+Prueba 7 - Correcto: True
+Prueba 8 - Correcto: True
+Prueba 9 - Correcto: True
+Prueba 10 - Correcto: True
+-> RESULTADO: FALLO.
+
+===== CODIGO 5 =====
+Prueba 1 - Correcto: True
+Prueba 2 - Correcto: True
+Prueba 3 - Correcto: True
+Prueba 4 - Correcto: True
+Prueba 5 - Correcto: True
+Prueba 6 - Correcto: True
+Prueba 7 - Correcto: True
+Prueba 8 - Correcto: True
+Prueba 9 - Correcto: True
+Prueba 10 - Correcto: True
+-> RESULTADO: ÉXITO.
+
+===== RESULTADO FINAL =====
+Programas correctos (c): 3 de 5
+Métrica Pass@1: 0.60 (60.0%)
+===========================
+
