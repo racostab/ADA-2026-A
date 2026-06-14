@@ -1,0 +1,9 @@
+Esta carpeta  no contiene los archivos generados como casos de prueba para el algoritmo Gale-Shapley
+es importante mencionar que en la practica se generaron 25 archivos para el experimento pero debido al 
+gran peso de los archvos estos se eliminaros
+es posbile generar de nuevo los 25 achivos solo es necesario ejecutar el codigo que se encuetra en la ruta:
+./SRC/generador.py
+para seleccionar la tasa de crecimiento de los datos de entrada 
+editar el script en la variable :
+numero_de_parejas = numero_de_parejas_exp si deseas un crecimiento cuasi exponencial de los datos 
+numero_de_parejas = numero_de_parejas_lineal si deseas un crecimiento cuasi lineal de los datos 

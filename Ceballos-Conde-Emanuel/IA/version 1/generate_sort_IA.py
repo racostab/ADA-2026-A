@@ -10,8 +10,7 @@ local  = "localhost"
 urls = [ "http://"+ local  +":11434/api/generate",
        ]
 
-models = [ "gpt-oss:120b-cloud",
-           "llama3.2:latest"
+models = [ "gpt-oss:120b-cloud"
          ]
 
 prompt = [ "Genera una funcion en python que realize el algoritmo bubble sort, sin comentarios y que tenga la siguiente estructura Bubble_sort(lista)"
@@ -19,7 +18,7 @@ prompt = [ "Genera una funcion en python que realize el algoritmo bubble sort, s
 
 url = urls[0]
 payload = {
-    "model":  models[1],
+    "model":  models[0],
     "prompt": prompt[0],
     "stream": False
 }
