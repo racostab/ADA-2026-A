@@ -14,7 +14,7 @@ Resumen de Tareas y Prácticas
 1. Notación de Landau
 Investigación teórica sobre la historia, definición formal y uso de la Notación de Landau en la complejidad computacional.
 
-### 2. Ley de Tricotomía en el Análisis Asintótico
+2. Ley de Tricotomía en el Análisis Asintótico
 Análisis formal que demuestra por qué la Ley de Tricotomía matemática no se cumple para todas las funciones en el análisis asintótico, presentando ejemplos de funciones.
 
 3. Práctica: Comportamiento de la Pila de Funciones (Stack)
