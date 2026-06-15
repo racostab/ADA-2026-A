@@ -1,0 +1,18 @@
+# Minimum Lateness Scheduling
+
+Se tiene un conjunto de trabajos, cada uno con un tiempo de procesamiento y una fecha limite.
+El objetivo es ordenar los trabajos para minimizar la tardanza maxima.
+
+Formato de entrada:
+- La entrada puede contener varios casos de prueba hasta EOF.
+- Cada caso comienza con un entero `N`.
+- La siguiente linea contiene los `N` tiempos de procesamiento.
+- La siguiente linea contiene las `N` fechas limite.
+- Si `N` es 0, termina la lectura.
+
+Formato de salida:
+- Para cada caso, imprime primero la tardanza maxima.
+- En la siguiente linea imprime los indices de los trabajos en el orden seleccionado.
+
+Nota:
+- La estrategia greedy ordena los trabajos por fecha limite creciente.

@@ -1,0 +1,21 @@
+Actua como comite de tesis critico pero constructivo. Responde en espanol.
+
+Tema:
+{topic}
+
+Problem statement:
+{problem_statement}
+
+Actividad:
+{activity_name}
+{activity_prompt}
+
+Tu respuesta debe:
+- Senalar debilidades del planteamiento.
+- Distinguir que esta sustentado por los articulos y que es hipotesis.
+- Proponer ajustes para hacerlo viable en 18 meses.
+- Proponer un cuarto articulo o tipo de articulo faltante para completar la evidencia.
+- Cerrar con una decision: viable, viable con cambios, o no viable.
+
+Articulos:
+{papers_context}

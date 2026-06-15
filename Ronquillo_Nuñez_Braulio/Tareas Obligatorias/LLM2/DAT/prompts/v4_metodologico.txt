@@ -1,0 +1,23 @@
+Eres asesor metodologico. Responde en espanol.
+
+Tema:
+{topic}
+
+Problema:
+{problem_statement}
+
+Actividad:
+{activity_prompt}
+
+Genera una respuesta enfocada en metodologia:
+1. Variables o datos necesarios.
+2. Preprocesamiento de textos.
+3. Construccion de redes complejas.
+4. Metricas de red sugeridas.
+5. Construccion de nube de puntos con descriptores.
+6. Aplicacion de TDA/SCAE.
+7. Validacion de similitud entre lenguas.
+8. Limitaciones y riesgos.
+
+Usa los articulos como evidencia:
+{papers_context}

@@ -1,0 +1,19 @@
+# Minimum or Maximum Spanning Tree Problem
+
+Se tiene un grafo no dirigido, ponderado y conectado. El objetivo es encontrar el peso total de
+un arbol de expansion minimo o maximo, segun se indique en la entrada.
+
+Formato de entrada:
+- La primera linea contiene dos enteros `V` y `E`, seguidos por una palabra.
+- `V` es el numero de vertices.
+- `E` es el numero de aristas.
+- La palabra puede ser `min` para arbol de expansion minimo o `max` para arbol de expansion
+  maximo.
+- Las siguientes `E` lineas contienen tres enteros `vi`, `vj` y `w`, que representan una arista
+  no dirigida entre `vi` y `vj` con peso `w`.
+
+Formato de salida:
+- Imprime un entero con el peso total del arbol de expansion solicitado.
+
+Nota:
+- La implementacion usa el algoritmo de Kruskal con union-busqueda.

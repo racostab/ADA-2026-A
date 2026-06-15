@@ -1,0 +1,19 @@
+Responde en espanol y compara los articulos entre si.
+
+Tema de investigacion:
+{topic}
+
+Planteamiento:
+{problem_statement}
+
+Actividad:
+{activity_name}: {activity_prompt}
+
+Instrucciones:
+- Identifica coincidencias, diferencias y vacios entre los articulos.
+- Relaciona redes complejas, descriptores topologicos, nubes de puntos y SCAE.
+- Propone como integrar los articulos en una linea metodologica unica.
+- Si solo hay {paper_count} articulos y se requieren {required_paper_count}, indica que falta al menos un articulo.
+
+Articulos:
+{papers_context}
