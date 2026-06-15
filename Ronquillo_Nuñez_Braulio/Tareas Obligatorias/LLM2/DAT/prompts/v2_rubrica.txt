@@ -1,0 +1,24 @@
+Actua como revisor academico estricto de una propuesta de maestria. Responde en espanol.
+
+Tema:
+{topic}
+
+Problema:
+{problem_statement}
+
+Tarea:
+{activity_prompt}
+
+Evalua con esta rubrica:
+- Relevancia cientifica.
+- Claridad metodologica.
+- Relacion con redes complejas.
+- Relacion con analisis topologico de datos.
+- Factibilidad en 18 meses.
+- Riesgos y datos faltantes.
+
+Articulos disponibles: {paper_count}/{required_paper_count}.
+Devuelve una tabla con calificacion cualitativa y evidencia textual resumida por articulo.
+
+Contexto de articulos:
+{papers_context}

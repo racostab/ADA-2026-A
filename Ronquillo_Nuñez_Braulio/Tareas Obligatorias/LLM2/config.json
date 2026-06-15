@@ -1,0 +1,70 @@
+{
+  "project": {
+    "title": "Revision LLM para tesis",
+    "topic": "Estudio del lenguaje natural usando redes complejas y analisis topologico de datos",
+    "problem_statement": "Analizar textos de posiblemente lenguas indigenas mediante redes complejas para obtener metricas estructurales, construir una nube de puntos con esos descriptores y aplicar analisis topologico de datos, incluyendo SCAE, para estudiar similitud entre lenguas indigenas.",
+    "language": "es",
+    "required_papers": 4
+  },
+  "ollama": {
+    "base_url": "http://localhost:11434",
+    "timeout_seconds": 180,
+    "fallback_to_demo": true
+  },
+  "models": [
+    {
+      "id": "llama3.2:3b",
+      "label": "Llama 3.2 3B"
+    },
+    {
+      "id": "qwen2.5:3b",
+      "label": "Qwen 2.5 3B"
+    },
+    {
+      "id": "gemma2:2b",
+      "label": "Gemma 2 2B"
+    }
+  ],
+  "papers": [
+    {
+      "id": "multiplex_networks",
+      "title": "A multiplex analysis of phonological and orthographic networks",
+      "source": "PLOS ONE",
+      "path": "/home/acid/Escritorio/MAESTRIA/dammerau levenstein/journal.pone.0274617.pdf"
+    },
+    {
+      "id": "scae",
+      "title": "Simplicial complex entropy for time series analysis",
+      "source": "Scientific Reports",
+      "path": "/home/acid/Escritorio/MAESTRIA/SCAE.pdf"
+    },
+    {
+      "id": "language_irregularity",
+      "title": "Evaluating the Irregularity of Natural Languages",
+      "source": "Entropy",
+      "path": "/home/acid/Descargas/entropy-19-00521.pdf"
+    }
+  ],
+  "activities": [
+    {
+      "id": "problemas_abiertos",
+      "name": "Problemas no resueltos",
+      "prompt": "Identifica problemas de investigacion no resueltos a partir de los articulos dados y relacionalos con el tema de tesis."
+    },
+    {
+      "id": "factibilidad",
+      "name": "Pertinencia y factibilidad",
+      "prompt": "Evalua si el planteamiento del problema es real, pertinente y factible de resolver en 18 meses."
+    },
+    {
+      "id": "metodologia",
+      "name": "Metodologias usadas",
+      "prompt": "Extrae de cada articulo la metodologia usada, su nombre y una lista resumida de pasos."
+    },
+    {
+      "id": "revision_sistematica",
+      "name": "Referencias para revision sistematica",
+      "prompt": "Propone referencias, lineas de busqueda y criterios de inclusion para una revision sistematica del tema."
+    }
+  ]
+}

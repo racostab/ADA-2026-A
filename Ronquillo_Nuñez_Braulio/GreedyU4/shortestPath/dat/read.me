@@ -1,0 +1,22 @@
+# Shortest Path Problem
+
+Se tiene un grafo dirigido y ponderado. El objetivo es encontrar las distancias mas cortas desde
+el vertice fuente 1 hacia todos los demas vertices, y despues imprimir el camino mas corto desde
+el vertice 1 hacia un vertice objetivo.
+
+Formato de entrada:
+- La primera linea contiene tres enteros `N`, `M` y `T`.
+- `N` es el numero de vertices.
+- `M` es el numero de aristas.
+- `T` es el vertice objetivo.
+- Las siguientes `M` lineas contienen tres enteros `ai`, `bi` y `wi`, que representan una arista
+  dirigida desde `ai` hacia `bi` con peso `wi`.
+
+Formato de salida:
+- En la primera linea imprime las distancias mas cortas desde el vertice 1 hacia los vertices
+  `2` hasta `N`.
+- Si un vertice no se puede alcanzar, imprime `1000000000`.
+- En la segunda linea imprime el camino desde el vertice 1 hasta el vertice objetivo `T`.
+
+Nota:
+- La implementacion usa el algoritmo de Dijkstra con cola de prioridad.
