@@ -1,0 +1,42 @@
+MODELO: llama3.2
+PROMPT: 3
+================================================================================
+
+**A)** Problemas de investigación no resueltos
+
+En el análisis de los cuatro artículos, se identifican algunos problemas de investigación que aún no han sido resueltos o están en desarrollo. Algunos ejemplos son:
+
+* La optimización del consumo de potencia y la eficiencia energética en las arquitecturas de Sigma Delta (artículo 1)
+* La mejora de la relación señal-ruido (SNR) y la resolución en las aplicaciones de audio (artículos 2 y 3)
+* La implementación de tecnologías de bajo voltaje de alimentación y bajo consumo de potencia en los convertidores analógico-digitales Sigma Delta (artículo 4)
+* La optimización del diseño para aplicaciones con bandas de frecuencia más amplias y menos precisión (artículos 5 y 6)
+
+Estos problemas de investigación están en desarrollo y requieren investigaciones adicionales para encontrar soluciones efectivas.
+
+**B)** Análisis del problema planteado
+
+El problema planteado es real y pertinente, ya que el desarrollo de arquitecturas capaces de operar a bajo voltaje de alimentación y bajo consumo de potencia sigue siendo un desafío en la industria de los convertidores analógico-digitales Sigma Delta.
+
+Es factible resolver este problema en un período de 18 meses, dependiendo del enfoque y el nivel de complejidad del proyecto. Sin embargo, requiere una evaluación detallada de las necesidades específicas del proyecto y la definición de objetivos claros para determinar si se puede alcanzar un avance significativo en este plazo.
+
+**C)** Metodología utilizada por cada artículo
+
+1.  Artikel 1: Utiliza el método de simulación de bajo consumo de potencia utilizando herramientas como Simulink y MATLAB.
+2.  Artikel 2: Empieza con la implementación de una arquitectura de Sigma Delta con un DAC de n bits, y utiliza técnicas de diseño para mejorar su eficiencia energética y reducir el consumo de potencia.
+3.  Artikel 3: Utiliza un enfoque basado en la optimización del consumo de potencia utilizando herramientas como PSPTO y MATLAB.
+4.  Artikel 4: Empieza con una revisión de las limitaciones actuales de Sigma Delta y analiza posibles soluciones utilizando técnicas de diseño y simulación.
+
+**D)** Revisión sistemática de literatura sobre Modulación Sigma Delta
+
+*   Referencias fundamentales que deberían inclirse:
+    *   Artículos clásicos como el trabajo de Temes (1997)
+    *   Publicaciones recientes como los artículos de Shifman et al. (2020) y Jang et al. (2019)
+    *   Libros y monografías sobre Modulación Sigma Delta
+*   Autores recurrentes:
+    *   Temes, G.C.
+    *   Schreier, R.F.
+    *   Shifman, Y.
+    *   Jang, M.Y.
+*   Trabajos considerados base o estado del arte según los artículos analizados:
+    *   El trabajo de Temes (1997) es considerado un clásico en el campo de la Modulación Sigma Delta.
+    *   Los artículos de Shifman et al. (2020) y Jang et al. (2019) son considerados recientes y relevantes para el desarrollo de arquitecturas de Sigma Delta con bajo consumo de potencia y alta eficiencia energética.

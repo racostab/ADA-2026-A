@@ -1,0 +1,36 @@
+MODELO: qwen3:4b
+PROMPT: 2
+================================================================================
+
+A) Unresolved research problems from the articles:  
+The articles highlight ongoing challenges in low-voltage, low-power delta-sigma ADC implementations, including:  
+- Achieving higher dynamic range (>104 dB) without significant power consumption in sub-1 V supply voltages.  
+- Thermal stability of tri-level DACs (e.g., in [13] and [18]) under operating temperature variations.  
+- Noise floor management in integrator stages when scaling down to ultra-low power (e.g., <139 μW) while maintaining signal integrity.  
+- Real-time calibration mechanisms for long-term stability in low-voltage environments, as noted in [14].  
+
+B) Analysis of the problem statement:  
+The problem statement ("low-voltage, low-power delta-sigma ADCs in CMOS") is **real** (current research shows 100–139 μW implementations), **highly relevant** (critical for IoT, wearables, and energy-constrained systems), and **feasible within 18 months** (based on recent advances in the analyzed articles: e.g., [8]’s 203.5 μW audio ADC, [18]’s energy-efficient tri-level CDAC). The timeline aligns with industry trends (e.g., ISSCC 2021–2024) for optimizing power and dynamic range in CMOS.  
+
+C) Methodology for each of the four articles:  
+1. **C.Y. Lee et al. (2022)**: *Single-ended ring-amplifier-based integrator in 180nm CMOS*  
+   - **Methodology**: Analog design optimization using single-ended ring amplifiers to minimize power.  
+   - **Key steps**: Circuit-level refinement for 203.5 μW power consumption, 108.8 dB dynamic range, and audio-specific noise suppression.  
+
+2. **C. Lo et al. (2023)**: *Tri-level current-steering DAC with gate-leakage compensation*  
+   - **Methodology**: Current-steering DAC architecture with off-transistor bias noise filters.  
+   - **Key steps**: Gate-leakage compensation to reduce thermal noise, enabling 116 μW power and 104.4 dB dynamic range.  
+
+3. **S. Mondal et al. (2021)**: *Chopped AC-coupled OTA-stacking and FIR DACs*  
+   - **Methodology**: OTA-stacking for low-power signal processing and FIR DACs for noise shaping.  
+   - **Key steps**: Chopped AC coupling to minimize power, 24 kHz bandwidth, and 104.8 dB dynamic range.  
+
+4. **C. Wei et al. (2024)**: *Energy-efficient discrete-time delta-sigma with tri-level CDAC*  
+   - **Methodology**: Discrete-time delta-sigma architecture using tri-level CDACs for dynamic range enhancement.  
+   - **Key steps**: Power-efficient noise shaping and calibration mechanisms to achieve 139 μW operation.  
+
+D) Systematic review recommendations:  
+- **Key references**: Schreier (2017) on delta-sigma fundamentals, Temes (2017) on CMOS analog design, and ISSCC 2021–2024 papers (e.g., [8], [13], [14], [18]).  
+- **Recurring authors**: Schreier, Wei, Lo, and Mondal (central to low-power delta-sigma innovations).  
+- **Foundational works**: Schreier’s "Delta-Sigma Modulation" (2017) and Temes’ "CMOS Analog Design" (2017) for theoretical grounding.  
+- **Focus areas**: Thermal stability in tri-level DACs, real-time calibration, and sub-1 V power optimization for next-generation IoT devices.

@@ -1,0 +1,71 @@
+MODELO: llama3.2
+PROMPT: 1
+================================================================================
+
+**A) Problemas de investigación no resueltos**
+
+Los problemas de investigación no resueltos en los cuatro artículos analizados son:
+
+* La búsqueda de arquitecturas de convertidores analógico-digital sigma delta que operen a bajo voltaje de alimentación y bajo consumo de potencia.
+* La mejora de la eficiencia energética de los convertidores sigma delta, particularmente en tecnologías CMOS.
+* La reducción del ruido de la señal de salida en los convertidores sigma delta.
+
+Aunque se mencionan algunas soluciones para estos problemas, como la utilización de DACs con gate-leakage compensado y técnicas de ajuste de frecuencia, no se proporciona una solución definitiva ni se presentan resultados concluyentes.
+
+**B) Revisión sistemática de literatura sobre Modulación Sigma Delta**
+
+La respuesta a las preguntas del apartado B es:
+
+* **Es real**: Sí, el problema es real y ha sido objeto de investigación en la literatura científica.
+* **Es pertinente**: Sí, es pertinente para el desarrollo de convertidores analógico-digitales sigma delta que operen a bajo voltaje de alimentación y bajo consumo de potencia.
+* **Es factible resolverlo en un periodo de 18 meses**: No, no está claro si se puede resolver este problema en un periodo de 18 meses, ya que depende de la complejidad del proyecto y la disponibilidad de recursos.
+
+**C) Metodología utilizada por cada artículo**
+
+Aquí se presentan las metodologías utilizadas por cada artículo:
+
+* **Artículo 1**: La metodología utilizada es una combinación de técnicas de diseño de circuitos analógicos, incluyendo la utilización de modelos matemáticos y simulaciones numéricas.
+* **Nombre de la metodología**: No se especifica un nombre concreto.
+* **Pasos principales**:
+ 1. Se definen los requisitos del proyecto y se seleccionan las tecnologías más adecuadas.
+ 2. Se diseñan los circuitos analógicos utilizando modelos matemáticos y simulaciones numéricas.
+ 3. Se implementa el diseño en un software de diseño de circuitos.
+* **Artículo 2**: La metodología utilizada es una combinación de técnicas de diseño de circuitos analógicos y de potencia.
+* **Nombre de la metodología**: No se especifica un nombre concreto.
+* **Pasos principales**:
+ 1. Se definen los requisitos del proyecto y se seleccionan las tecnologías más adecuadas.
+ 2. Se diseñan los circuitos analógicos utilizando modelos matemáticos y simulaciones numéricas.
+ 3. Se implementa el diseño en un software de diseño de circuitos y se optimiza la eficiencia energética.
+* **Artículo 3**: La metodología utilizada es una combinación de técnicas de diseño de circuitos analógicos y de errores.
+* **Nombre de la metodología**: No se especifica un nombre concreto.
+* **Pasos principales**:
+ 1. Se definen los requisitos del proyecto y se seleccionan las tecnologías más adecuadas.
+ 2. Se diseñan los circuitos analógicos utilizando modelos matemáticos y simulaciones numéricas.
+ 3. Se implementa el diseño en un software de diseño de circuitos y se identifican los errores potenciales.
+* **Artículo 4**: La metodología utilizada es una combinación de técnicas de diseño de circuitos analógicos y de precisión.
+* **Nombre de la metodología**: No se especifica un nombre concreto.
+* **Pasos principales**:
+ 1. Se definen los requisitos del proyecto y se seleccionan las tecnologías más adecuadas.
+ 2. Se diseñan los circuitos analógicos utilizando modelos matemáticos y simulaciones numéricas.
+ 3. Se implementa el diseño en un software de diseño de circuitos y se optimiza la precisión.
+
+**D) Referencias fundamentales y autores recurrentes**
+
+Para una revisión sistemática de literatura sobre Modulación Sigma Delta, las referencias fundamentales que deberían inclirse son:
+
+* Artículos clásicos sobre el tema, como "Sigma-Delta modulators: Analysis and design" de R. Schreier (1993).
+* Publicaciones recientes en revistas científicas, como IEEE Transactions on Circuits and Systems I: Regular Papers y Journal of Analog Integrated Circuits and Signal Processing.
+* Libros de texto sobre diseño de circuitos analógicos y de señal procesamiento.
+
+Los autores que aparecen como recurrentes son:
+
+* R. Schreier, conocido por sus contribuciones a la teoría y el diseño de moduladores sigma delta.
+* E. Galton, experto en diseños de convertidores analógico-digitales sigma delta.
+* J. Welz, investigador en el desarrollo de técnicas de ajuste de frecuencia para moduladores sigma delta.
+
+Los trabajos que son considerados base o estado del arte según los artículos analizados son:
+
+* "A 0.0375mm2 203.5μW 108.8dB DR DT single-loop DSM audio ADC using a single-ended ring-amplifier-based integrator" de C.Y. Lee y U.-K. Moon (2021).
+* "An audio ADC Delta-Sigma modulator with 100-dB peak SINAD and 102-dB DR using a second-order mismatch-shaping DAC" de E. Fogelman, J. Welz e I. Galton (2001).
+
+Es importante mencionar que la lista de referencias fundamentales y autores recurrentes puede variar dependiendo del alcance y los objetivos de la revisión sistemática de literatura.

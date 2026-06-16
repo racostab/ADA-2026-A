@@ -1,0 +1,21 @@
+MODELO: qwen3:4b
+PROMPT: 1
+================================================================================
+
+A. Los problemas de investigación no resueltos según estos artículos son:  
+1. Lograr un consumo de energía ultra-bajo (menos de 100 µW) en ADCs delta-sigma a tensiones de suministro inferiores a 0,5 V sin degradación significativa en el rango dinámico.  
+2. Diseñar arquitecturas de DAC que supriman eficazmente las tonadas espurias causadas por desajuste en procesos CMOS de baja tensión.  
+3. Escalar la circuitos para nodos sub-50nm manteniendo alta linealidad y rendimiento de ruido.  
+
+B. El problema planteado es real, relevante y factible en 18 meses.  
+
+C. Para los cuatro artículos analizados:  
+1. **Artículo [18]**: Metodología: ADC delta-sigma discreto con CDAC de tres niveles. Pasos: Diseño del CDAC para reducir el consumo, implementación de técnicas para mejorar el rango dinámico.  
+2. **Artículo [19]**: Metodología: ADC delta-sigma continuo con integrador asistido por negativo-R. Pasos: Análisis del integrador para minimizar el consumo, optimización para bajas tensiones.  
+3. **Artículo [20]**: Metodología: Predicción y evitación de tonadas espurias en DACs de desajuste. Pasos: Modelado del desajuste, implementación de técnicas para suprimir tonadas.  
+4. **Artículo [21]**: Metodología: Moduladores multibit de alto orden con ponderación pseudo de datos. Pasos: Diseño para reducir la tasa de oversampling.  
+
+D. En una revisión sistemática:  
+- **Referencias clave**: [17] (técnicas clásicas de muestreo), [18], [19], [20], [21].  
+- **Autores recurrentes**: Schreier, Temes, Wei.  
+- **Estado del arte**: Enfoque en ADCs delta-sigma energéticamente eficientes con CDAC de tres niveles y técnicas de desajuste para aplicaciones de baja tensión.

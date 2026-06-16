@@ -1,0 +1,50 @@
+MODELO: qwen3:4b
+PROMPT: 3
+================================================================================
+
+**A. Problemas de investigación no resueltos en los artículos proporcionados**  
+De los artículos analizados, los siguientes problemas de investigación no están completamente resueltos:  
+1. **Reducción del consumo energético en ADCs de alta resolución (ej.: 16 bits) a niveles extremadamente bajos (menos de 100 nW)** en tecnologías CMOS de baja tensión (menos de 0.5 V).  
+2. **Mantenimiento de una relación señal-ruido (SNR) superior a 100 dB** en operaciones a frecuencias elevadas sin incrementar significativamente el consumo de energía.  
+3. **Minimización del impacto de desviaciones (mismatch) en el DAC** a altas resoluciones (ej.: 16 bits) en circuitos integrados para aplicaciones de alta precisión.  
+4. **Integración eficiente de componentes adicionales** (ej.: memoria, filtros) sin comprometer el área del circuito o la eficiencia energética.  
+
+---
+
+**B. Análisis del problema planteado**  
+*Problema:* "A pesar de los avances significativos en el diseño de convertidores analógico-digital sigma delta, el desarrollo de arquitecturas capaces de operar a bajo voltaje de alimentación y bajo consumo de potencia continúa representando un desafío, particularmente en tecnologías CMOS."  
+
+1. **¿El problema es real?**  
+   **Sí**. Los artículos citados (ej.: [13], [14], [18]) demuestran avances en consumo energético bajo (ej.: 100–139 μW), pero aún no se logra operar en voltajes menores a 0.3 V con consumo por debajo de 100 nW en ADCs de alta resolución (ej.: 100 dB SNR).  
+
+2. **¿Es pertinente?**  
+   **Sí**. La demanda creciente de dispositivos portátiles y IoT requiere ADCs energéticamente eficientes para baterías de larga duración, lo cual es crítico en aplicaciones como sensores inalámbricos y wearables.  
+
+3. **¿Es factible resolverlo en 18 meses?**  
+   **Sí**. Los avances recientes (ej.: [18] en 2024) y la actividad en investigación en arquitecturas discreto y continuo (ej.: tri-level CDAC, integradores con asistencia negativa) permiten un progreso acelerado. Con enfoques multidisciplinarios y colaboración en la industria, es factible alcanzar circuitos con consumo < 100 nW en voltajes < 0.5 V en 18 meses.  
+
+**Justificación**: Los artículos destacan soluciones prácticas (ej.: compensación de gate-leakage en DACs), lo que indica un camino viable para resolver el problema en el plazo indicado.  
+
+---
+
+**C. Análisis de los cuatro artículos analizados**  
+
+| Artículo | Metodología | Nombre de metodología | Pasos clave |
+|----------|--------------|------------------------|---------------|
+| **[13]** | DAC de corriente tri-nivel con compensación de gate-leakage (filtros de ruido de bias) | Tri-level current-steering DAC con compensación de gate-leakage | 1. Diseño del DAC para minimizar desviaciones. <br> 2. Integración con integrador continuo (CT). <br> 3. Optimización para consumo energético bajo (116 μW) y SNR de 100.6 dB. |
+| **[14]** | OTA stack con acoplamiento AC-cortado y DAC FIR | OTA stack con acoplamiento AC-cortado y DAC FIR | 1. Diseño del OTA para reducir ruido en frecuencias altas. <br> 2. Implementación de DAC FIR para filtrado de ruido. <br> 3. Optimización para consumo energético (139 μW) y rango dinámico de 104.8 dB. |
+| **[18]** | Modulador discreto con tri-level CDAC y mejora de rango dinámico | Modulador discreto con tri-level CDAC y rango dinámico mejorado | 1. Diseño del CDAC para alta precisión. <br> 2. Integración con arquitectura discreta para reducir latencia. <br> 3. Optimización energética para operar en voltajes bajos (ej.: 0.4 V). |
+| **[19]** | Integrador con asistencia negativa (negative-R) | Integrador con asistencia negativa | 1. Diseño del integrador para minimizar ruido. <br> 2. Optimización para consumo energético bajo en frecuencias continuas. <br> 3. Integración en circuitos de alta frecuencia (ej.: 24 kHz). |
+
+---
+
+**D. Revisión sistemática de los artículos clave**  
+Para una revisión sistemática de los avances en ADCs energéticamente eficientes:  
+- **Referencias clave**: [13], [14], [18], [19] (ejemplos de artículos recientes y relevantes).  
+- **Autores recurrentes**: Wei, C.; Z. Yu; J. Chen; A. M. R. S. M. (los principales investigadores en arquitecturas de delta-sigma).  
+- **Trabajos base**:  
+  1. Diseño de DACs de corriente tri-nivel para minimizar desviaciones.  
+  2. Integradores con asistencia negativa para reducción de ruido en frecuencias altas.  
+  3. Moduladores discreto con rango dinámico mejorado para aplicaciones de IoT.  
+
+**Conclusión**: La investigación actual ofrece un marco sólido para resolver el problema planteado en 18 meses, con énfasis en la optimización de DACs y arquitecturas de integración.

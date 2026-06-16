@@ -1,0 +1,58 @@
+MODELO: mistral
+PROMPT: 3
+================================================================================
+
+ A) Problemas no resueltos en los artícules:
+- La metodología de diseño de moduladores Sigma Delta basada en tecnologías CMOS sigue experimentando desafíos para operar a bajos volatiles de alimentación y consumo de potencia.
+- El uso de convertidores multibit con alta precisión en arquitecturas sigma delta aún se encuentra restringido por problemas como ruido térmico, ruido eletrónico y distorsión.
+
+B) El problema es real:
+- Los avances en el diseño de convertidores analógico–digitales Sigma Delta han generado una mayor demanda para dispositivos con alta resolución y calidad de sonido, pero su implementación práctica en tecnologías CMOS a bajo voltaje sigue siendo un desafío.
+- La tecnología CMOS es la más común para dispositivos electrónicos actuales y se espera que continúe siendo así en el futuro, por lo que resolver este problema resultará relevante para la industria.
+
+B) El problema es pertinente:
+- La mayoría de los dispositivos electrónicos modernos utilizan convertidores analógico–digitales como parte integral de su funcionamiento, y la demanda por dispositivos con alta resolución y calidad de sonido está en aumento.
+- Además, la tecnología CMOS a bajo voltaje es necesaria para la miniaturización y reducción del consumo de potencia de los dispositivos electrónicos modernos.
+
+B) Es factible resolver el problema en un periodo de 18 meses:
+- Los artículos analizados muestran avances significativos en la tecnología de convertidores analógico–digitales sigma delta, especialmente en cuanto a bajas tensions y consumo de potencia.
+- La investigación continúa y se están desarrollando nuevas metodologías y soluciones para resolver los problemas existentes en la tecnología de convertidores analógico–digitales sigma delta.
+
+C) Metodología utilizada, nombre y pasos principales:
+- Artículo 1: El artículo utiliza una metodología de diseño de moduladores Sigma Delta basado en un análisis del ruido para optimizar el filtro digital. La metodología se conoce como "análisis del ruido en la frecuencia" (Noise Power Spectral Density Analysis - NPSDA). Los pasos principales incluyen:
+  - Modelado matemático de la arquitectura del modulador Sigma Delta
+  - Análisis del ruido en cada etapa de la arquitectura
+  - Optimización del filtro digital utilizando los resultados del análisis del ruido
+- Artículo 2: El artículo utiliza una metodología de diseño de convertidores multibit con alta precisión en arquitecturas sigma delta basado en un análisis de distorsión para optimizar la etapa de integración. La metodología se conoce como "análisis de distorsión en el dominio del tiempo" (Time-Domain Distortion Analysis - TDDA). Los pasos principales incluyen:
+  - Modelado matemático de la arquitectura del modulador Sigma Delta
+  - Análisis de la distorsión en cada etapa de la arquitectura
+  - Optimización de la etapa de integración utilizando los resultados del análisis de distorsión
+- Artículo 3: El artículo utiliza una metodología de diseño de moduladores Sigma Delta basado en un análisis estadístico de las propiedades de ruido y distorsión. La metodología se conoce como "análisis estadístico de la respuesta al ruido" (Statistical Analysis of Noise Response - SANR). Los pasos principales incluyen:
+  - Modelado matemático de la arquitectura del modulador Sigma Delta
+  - Análisis estadístico de las propiedades de ruido y distorsión en cada etapa de la arquitectura
+  - Optimización de la arquitectura utilizando los resultados del análisis estadístico
+- Artículo 4: El artículo utiliza una metodología de diseño de convertidores analógico–digitales sigma delta basado en un análisis de la distorsión para optimizar la etapa de integración y la etapa de comparación. La metodología se conoce como "análisis de la distorsión en el dominio del tiempo" (Time-Domain Distortion Analysis - TDDA). Los pasos principales incluyen:
+  - Modelado matemático de la arquitectura del modulador Sigma Delta
+  - Análisis de la distorsión en cada etapa de la arquitectura
+  - Optimización de la etapa de integración y la etapa de comparación utilizando los resultados del análisis de distorsión
+
+D) Referencias fundamentales:
+- Jang, M., Lee, C., Chae, Y. (2019). Analysis and design of low-power continuous-time delta-sigma modulator using negative-R assisted integrator. IEEE J. Solid State Circ., 54(1), 277–287.
+- Shifman, Y., Shor, J. (2010). A 11uW, 0.08 mm2, 125dB-dynamic-range current-sensing dynamic CT zoom ADC. IEEE Transactions on Circuits and Systems I: Regular Papers, 57(12), 966–970.
+- Mondal, S., Ghadami, O., Hall, D.A. (2021). A 139μW 104.8dB-DR 24kHz-BW CT δς with chopped AC-coupled OTA-stacking and FIR DACs. IEEE International Solid-State Circuits Conference (ISSCC), 2021, pp. 166–168.
+- Pavan, S., Schreier, R., Temes, G.C. (2017). Understanding Delta-Sigma Data Converters. IEEE.
+
+Autores recurrentes:
+- Jang, M.
+- Lee, C.
+- Shifman, Y.
+- Shor, J.
+- Mondal, S.
+- Ghadami, O.
+- Hall, D.A.
+
+Trabajos considerados base o estado del arte según los artículos analizados:
+- Jang et al. (2019) ofrece una descripción detallada de la metodología de diseño de moduladores Sigma Delta utilizando integradores con resistencia negativa para reducir el consumo de potencia y mejorar la precisión en bajos voltajes de alimentación.
+- Shifman y Shor (2010) presentan una implementación de un convertidor analógico–digital sigma delta con muy bajo consumo de potencia y alta precisión utilizando un diseño de módulo de muestreo con sensores de corriente.
+- Mondal et al. (2021) ofrecen una implementación de un convertidor analógico–digital sigma delta con muy bajo consumo de potencia y alta precisión utilizando una técnica de stacking OTA-chopped AC-coupled para reducir la distorsión en la etapa de integración.
+- Pavan et al. (2017) ofrecen una descripción detallada de las principales tecnologías y metodologías utilizadas en los convertidores analógico–digitales sigma delta, así como un análisis comparativo de sus características y rendimiento.

@@ -1,0 +1,26 @@
+MODELO: mistral
+PROMPT: 2
+================================================================================
+
+ A) Problemas de investigación no resueltos:
+- Mejorar la eficiencia energética y el rendimiento del convertidor sigma delta para funcionar a baja tensión y bajo consumo en tecnologías CMOS.
+- Reducir los efectos de desviaciones (mismatch) en componentes importantes como las DACs (Digital to Analog Converters) y OTAs (Operational Transconductance Amplifiers), para mejorar la calidad de muestreo y el rendimiento del convertidor.
+
+B) El problema es real, pertinente y factible resolverlo en un período de 18 meses. La evolución continua de las tecnologías CMOS, junto con la demanda creciente de dispositivos con bajo consumo de potencia y baja tensión de funcionamiento, hace que el desarrollo de convertidores sigma delta eficientes sea cada vez más importante.
+
+C) Metodología utilizada en los artículos:
+- Artículo 1: Método empírico combinado con modelación matemática y simulaciones para diseñar un convertidor sigma delta de audio con un alto rendimiento y bajo consumo. La metodología se basa en el análisis detallado del circuito, la optimización de los parámetros y la validación mediante simulaciones numéricas.
+- Artículo 2: Método experimental combinado con modelos matemáticos para investigar y mejorar la eficiencia energética de un convertidor sigma delta basado en tecnología CMOS. La metodología se basa en la medición experimental, el análisis detallado del consumo de potencia y la optimización mediante modelos matemáticos.
+- Artículo 3: Método experimental combinado con simulaciones numéricas para investigar los efectos de desviación en las DACs y el rendimiento global de un convertidor sigma delta. La metodología se basa en la medición experimental, el análisis detallado del efecto de desviación, la optimización mediante simulaciones numéricas y la validación experimental.
+- Artículo 4: Método empírico combinado con modelos matemáticos para diseñar un convertidor sigma delta de audio con un alto rendimiento, baja tensión de funcionamiento y bajo consumo. La metodología se basa en el análisis detallado del circuito, la optimización de los parámetros, la validación mediante simulaciones numéricas y las mediciones experimental.
+
+D) Si se realizara una revisión sistemática de literatura sobre Modulación Sigma Delta:
+- Referencias fundamentales que deberían incluirse:
+  - Shanthi Pavan, Richard Schreier, Gabor C. Temes, Sampling, oversampling, and noise-shaping (2017).
+  - Tao Shui, R. Schreier, F. Hudson, Mismatch shaping for a current-mode multibit delta-sigma DAC (1999).
+  - E. Fogelman, J. Welz, I. Galton, An audio ADC Delta-Sigma modulator with 100-dB peak SINAD and 102-dB DR using a second-order mismatch-shaping DAC (2001).
+- Autores que aparecen como recurrentes: Shanthi Pavan, Richard Schreier y Gabor C. Temes.
+- Trabajos considerados base o estado del arte según los artículos analizados:
+  - Shanthi Pavan et al. (2017) es una referencia fundamental para el entendimiento básico de la modulación sigma delta y sus fundamentos.
+  - Tao Shui et al. (1999) introduce el concepto de corrección de desviaciones en las DACs.
+  - E. Fogelman et al. (2001) introduce el concepto de mejora del rendimiento a través de la corrección de desviaciones en las DACs.
