@@ -1,0 +1,49 @@
+MODELO: llama3.2:3b
+PROMPT VERSIÓN: 2
+================================================================================
+
+**A) Problemáticas de investigación no resueltas**
+
+Algunas de las problemáticas de investigación no resueltas que se mencionan en los artículos analizados son:
+
+* La falta de sistemas de detección temprana automatizada basados en sensores.
+* La dependencia del factor humano para la detección de incendios.
+
+Estos problemas se mencionan en varios artículos, como "Carencia de sistemas de detección temprana automatizado basado en sensores" y "Dependencia del factor humano para la detección de incendios".
+
+**B) Evaluación del problema**
+
+1. **¿Es el problema real?**: Sí, el problema de la falta de sistemas de detección temprana automatizada basados en sensores y la dependencia del factor humano para la detección de incendios es real.
+2. **¿Es pertinente?**: Sí, el problema es pertinente ya que afecta directamente a la seguridad y el bienestar humanos en áreas de alto riesgo.
+3. **¿Es factible resolverlo en un periodo de 18 meses?**: Es posible que sea difícil resolver completamente este problema en un periodo de 18 meses, pero se pueden tomar medidas intermedias para avanzar en la resolución de este problema.
+
+**C) Análisis de los artículos**
+
+1. **Metodología y nombre de la metodología**
+	* Artículo 1: No se especifica la metodología utilizada.
+	* Artículo 2: No se especifica la metodología utilizada.
+	* Artículo 3: Utiliza una variedad de métodos, incluyendo simulación, hardware-level y network-level.
+
+2. **Pasos principales empleados por los autores**
+
+1. Artículo 1:
+	+ Describen un sistema de detección temprana automatizado basado en sensores.
+	+ Presentan resultados de pruebas y validación.
+2. Artículo 2:
+	+ Presentan una revisión sistemática de la literatura sobre sistemas de detección temprana.
+	+ Identifican las limitaciones actuales y propuestan soluciones potenciales.
+3. Artículo 3:
+	+ Describen un sistema de detección temprana basado en sensores y una red neuronal artificial.
+	+ Presentan resultados de pruebas y validación.
+
+**D) Revisión sistemática de literatura**
+
+1. **Referencias fundamentales**
+	* Artículos que analicen la efectividad de sistemas de detección temprana automatizados basados en sensores.
+	* Estudios que evalúen la dependencia del factor humano para la detección de incendios.
+2. **Autores recurrentes**
+	* Los autores de los artículos presentados se mencionan como recurrentes en la literatura sobre sistemas de detección temprana.
+3. **Trabajos base o estado del arte**
+	* Artículo 1: No hay trabajos específicamente citados como base o estado del arte, pero se menciona que los autores analizaron una variedad de métodos y resultados para determinar el más efectivo.
+	* Artículo 2: Presenta una revisión sistemática de la literatura, por lo que puede considerarse como un trabajo base o estado del arte en el tema.
+	* Artículo 3: No se menciona explícitamente si es un trabajo base o estado del arte, pero presenta resultados innovadores y bien validados.

@@ -1,0 +1,18 @@
+MODELO: phi
+PROMPT VERSIÓN: 1
+================================================================================
+
+ B)
+Artículo: 
+El problema es real. Los incendios son un facto natural y a menos que sean manchados por el tiempo, podrían afectar la biodiversidad y nuestras vidas en general. El factor humano puede ser uno de los principales causas de incendios deforestales.
+
+Artículo: 
+Dependencia del factor humano para la detección de incendios.
+Los sistemas de detección temprana automatizados son una herramienta importante para mitigar el impacto de incendios. Sin embargo, deben tener en cuenta que la capacidad del humano y los sensoros afectan su rendimiento. Si es desconocido o no funciona bien, las detección de incendiéndices puede ser insegura y afectarían el resultado final.
+
+Artículo: 
+El problema es real. Los incendios son un facto natural y a menos que se areman por el tiempo, podrían afectar la biodiversidad y nuestras vidas en general. El factor humano puede ser uno de los principales causas de incendiéndices deforestales.
+
+Artículo: 
+Dependencia del factor humano para la detección de incendios.
+Los sistemas de detección temprana automatizados son una herramienta importante para mitigar el impacto de incendiños. Sin embargo, deben tener en cuenta que la capacidad del humano y los sensoros afectan su rendimiento. Si es desconocido o no funciona bien, las detección de incendiéndices puede ser insegura y afectarían el resultado final.

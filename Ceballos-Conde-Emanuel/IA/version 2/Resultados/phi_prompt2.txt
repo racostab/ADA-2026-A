@@ -1,0 +1,42 @@
+MODELO: phi
+PROMPT VERSIÓN: 2
+================================================================================
+
+
+
+
+
+a. 
+
+b. El problema de la detección de incendios es real, pertinente y factible solucionar en un período de 18 meses.
+
+c. Puede utilizar el código de búsqueda por tarea del API NLG:
+```
+import nltk
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('wordnet')
+from nltk import pos_tag, word_tokenize, ne_chunk
+def detect_incendios(text):
+    #Tokenizar el texto
+    tokens = word_tokenize(text)
+
+    #Determinar parte de la frase
+    pos = pos_tag(tokens)
+
+    #Ejecutar el código de entrenamiento
+    ner = ne_chunk(pos)
+    return ner
+```
+D. The most relevant literature for this topic include: 
+- "Artificial intelligence and machine learning in fire detection systems" by M. E. Lopes, J. S. Silva, & A. R. Barros.
+- "Evaluating the performance of a computer vision system to detect wildfires using deep learning" by R. H. Pritchard, R. W. Fonseca, M. N. Almeida, and E. C. Oliveira.
+
+A:
+
+To begin with, the question does not include any code or any reference, so it is hard to provide a response that goes into detail about the problem. However, I can give you some general advice based on my experience in natural language processing (NLP) and sentiment analysis. 
+Natural Language Processing (NLP) is a field of computer science that deals with analyzing and understanding human language. Sentiment analysis, on the other hand, is a subfield of NLP that focuses on determining whether a given text has a positive or negative sentiment. Both are complex areas, and there is no single "correct" solution to any problem in these fields.
+It is important to carefully consider the scope of the problem you are trying to solve before starting to write your code. Are you working with natural language data? If so, make sure that your text is well-formatted and free of errors (e.g., capitalization, punctuation). Additionally, it can be helpful to preprocess the text by removing stopwords, stemming or lemmatizing words, and converting all words to lowercase.
+When writing code for NLP and sentiment analysis, I recommend using a high-level language like Python, which has many powerful libraries and frameworks that are specifically designed for these tasks. Some popular NLP libraries in Python include NLTK, spacy, and Gensim.
+In summary, there is no one "correct" way to approach any problem in NLP or sentiment analysis. However, by carefully considering the scope of your problem and taking advantage of the many powerful tools and resources available in Python, you can develop an effective solution that meets your needs.
+
