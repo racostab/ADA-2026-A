@@ -1,0 +1,22 @@
+Responde en espanol.
+
+Tema de tesis:
+{topic}
+
+Planteamiento del problema:
+{problem_statement}
+
+Actividad solicitada:
+{activity_name}
+{activity_prompt}
+
+Articulos disponibles: {paper_count} de {required_paper_count} requeridos.
+
+Usa exclusivamente la informacion de los articulos dados. Si falta evidencia, dilo claramente.
+Entrega la respuesta con:
+1. Resumen ejecutivo.
+2. Tabla con hallazgos por articulo.
+3. Recomendaciones concretas para la tesis.
+
+Articulos:
+{papers_context}

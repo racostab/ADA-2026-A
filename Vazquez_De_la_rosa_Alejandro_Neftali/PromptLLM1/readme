@@ -1,0 +1,3 @@
+Se adjunta versión actualizada de la consulta, generación y evaluación de Prompts. 
+En este caso se utilizaron dos modelos Grok (via API comercial) y qwen (de forma remota fia tailsgate en el servidor del Doctor Profesor Raul Acosta. 
+Grok compartio un script correcto el 100% de los casos mientras que qwen el 60%.

@@ -1,7 +1,45 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+.venv-*/
+venv/
+env/
+ENV/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Test, lint and tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Editor and OS noise
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Generated experiment data
+DAT/generated/
+DAT/runs/
+DAT/processed/
+DAT/outputs/
+**/DAT/generated/
+**/DAT/runs/
+**/DAT/processed/
+**/DAT/outputs/
+
+# LaTeX generated folders from old practices
 Algoritmo_Emparejamiento_Estable/DAT/latex_fuente/
 Algoritmo_Emparejamiento_Estable/DAT/latex_fuente_v2/
-Algoritmo_Emparejamiento_Estable/SRC/__pycache__/
-P2_CC/SRC/__pycache__/
-GraphsU3/cut_Points/SRC/__pycache__/
-graphsU3/biparti/SRC/__pycache__/
-P3_CC/SRC/__pycache__/
+
+# Project-specific generated files
+**/instancias.json

@@ -1,4 +1,0 @@
-{
-  "model": "claude-sonnet-4-5",
-  "response": "Looking at this problem, I need to:\n\n1. Read N and R from the first line\n2. Read N objects from the second line\n3. Generate all combinations of R elements from these N objects\n4. Print each combination on a separate line, preserving the order from the original array\n\nI'll use Python's `itertools.combinations` which generates combinations in lexicographic order based on the input sequence order.\n\n```python\nfrom itertools import combinations\n\n# Read N and R\nn, r = map(int, input().split())\n\n# Read the N objects\nobjects = input().split()\n\n# Generate and print all combinations of R elements\nfor combo in combinations(objects, r):\n    print(' '.join(combo))\n```"
-}

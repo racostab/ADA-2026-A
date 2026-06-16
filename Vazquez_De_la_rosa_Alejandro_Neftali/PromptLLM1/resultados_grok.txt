@@ -1,0 +1,72 @@
+=== EVALUACIÓN PARA: COMBSORT_GROK ===
+
+===== CODIGO 1 =====
+Prueba 1 - Correcto: True
+Prueba 2 - Correcto: True
+Prueba 3 - Correcto: True
+Prueba 4 - Correcto: True
+Prueba 5 - Correcto: True
+Prueba 6 - Correcto: True
+Prueba 7 - Correcto: True
+Prueba 8 - Correcto: True
+Prueba 9 - Correcto: True
+Prueba 10 - Correcto: True
+-> RESULTADO: ÉXITO.
+
+===== CODIGO 2 =====
+Prueba 1 - Correcto: True
+Prueba 2 - Correcto: True
+Prueba 3 - Correcto: True
+Prueba 4 - Correcto: True
+Prueba 5 - Correcto: True
+Prueba 6 - Correcto: True
+Prueba 7 - Correcto: True
+Prueba 8 - Correcto: True
+Prueba 9 - Correcto: True
+Prueba 10 - Correcto: True
+-> RESULTADO: ÉXITO.
+
+===== CODIGO 3 =====
+Prueba 1 - Correcto: True
+Prueba 2 - Correcto: True
+Prueba 3 - Correcto: True
+Prueba 4 - Correcto: True
+Prueba 5 - Correcto: True
+Prueba 6 - Correcto: True
+Prueba 7 - Correcto: True
+Prueba 8 - Correcto: True
+Prueba 9 - Correcto: True
+Prueba 10 - Correcto: True
+-> RESULTADO: ÉXITO.
+
+===== CODIGO 4 =====
+Prueba 1 - Correcto: True
+Prueba 2 - Correcto: True
+Prueba 3 - Correcto: True
+Prueba 4 - Correcto: True
+Prueba 5 - Correcto: True
+Prueba 6 - Correcto: True
+Prueba 7 - Correcto: True
+Prueba 8 - Correcto: True
+Prueba 9 - Correcto: True
+Prueba 10 - Correcto: True
+-> RESULTADO: ÉXITO.
+
+===== CODIGO 5 =====
+Prueba 1 - Correcto: True
+Prueba 2 - Correcto: True
+Prueba 3 - Correcto: True
+Prueba 4 - Correcto: True
+Prueba 5 - Correcto: True
+Prueba 6 - Correcto: True
+Prueba 7 - Correcto: True
+Prueba 8 - Correcto: True
+Prueba 9 - Correcto: True
+Prueba 10 - Correcto: True
+-> RESULTADO: ÉXITO.
+
+===== RESULTADO FINAL =====
+Programas correctos (c): 5 de 5
+Métrica Pass@1: 1.00 (100.0%)
+===========================
+

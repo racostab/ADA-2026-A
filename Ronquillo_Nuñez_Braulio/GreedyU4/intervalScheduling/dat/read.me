@@ -1,0 +1,21 @@
+# Interval Scheduling
+
+Se tiene un conjunto de trabajos, cada uno con tiempo de inicio y tiempo de fin. El objetivo es
+seleccionar la mayor cantidad posible de trabajos que no se traslapen.
+
+Formato de entrada:
+- La entrada puede contener varios casos de prueba hasta EOF.
+- Cada caso comienza con un entero `N`.
+- La siguiente linea contiene los `N` tiempos de inicio.
+- La siguiente linea contiene los `N` tiempos de fin.
+
+Formato de salida:
+- Para cada caso, imprime primero la cantidad maxima de trabajos seleccionados.
+- En la siguiente linea imprime los indices de los trabajos elegidos.
+
+
+Nota:
+- El ejemplo del PDF parece tener una inconsistencia en los indices de salida.
+- Esta implementacion sigue el criterio estandar de compatibilidad: un trabajo se puede tomar si
+  `start >= last_finish`.
+- Para el ejemplo del PDF, esta solucion produce `1 3 7 8`, que es una seleccion valida y optima.

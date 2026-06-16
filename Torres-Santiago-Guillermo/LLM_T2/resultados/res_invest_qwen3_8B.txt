@@ -1,0 +1,334 @@
+MODELO UTILIZADO: qwen3:8B
+
+RESPUESTA 1
+---------------------------------------------------
+
+### **Respuesta a las preguntas:**
+
+---
+
+### **1. Problemas de investigación no resueltos en cada artículo:**
+
+**Artículo: *CMOS-MemristorbasedLIFandSTDPfunctionsforSpikingNeuralNetworksApplication.pdf***  
+- **Problemas no resueltos:**  
+  - La falta de soporte nativo en los kits de diseño (PDKs) para dispositivos memristivos impide la implementación física completa y la validación de benchmarks de redes neuronales esparsas (SNNs) con memristores.  
+  - Aunque se demostró la funcionalidad de la arquitectura en simulación, se requiere un flujo de diseño personalizado para integrar modelos de memristores en entornos EDA como Cadence, lo cual no está completamente resuelto.  
+  - La sensibilidad de los materiales memristivos (como AIST vs. TaOx) a la tensión de control no se optimiza completamente, lo que limita la precisión del aprendizaje en aplicaciones de alta grano.  
+
+**Artículo: *loihi.pdf***  
+- **Problemas no resueltos:**  
+  - La flexibilidad excesiva de la arquitectura Loihi puede generar ineficiencias en la optimización de recursos, especialmente en aplicaciones con requisitos de latencia y energía específicos.  
+  - La implementación de algoritmos de aprendizaje en tiempo real (como STDP) requiere una sincronización asincrónica compleja, lo que no se ha abordado en profundidad en la literatura.  
+  - La escalabilidad de la arquitectura para aplicaciones de gran tamaño (como sistemas de visión o procesamiento de señales) no se ha validado experimentalmente.  
+
+**Artículo: *Memristor-basedDeepSNN.pdf***  
+- **Problemas no resueltos:**  
+  - La integración de la codificación ISI (inter-spike interval) con la arquitectura CIM (Computing-In-Memory) requiere compensar variaciones de corriente y peso en el procesamiento de datos, lo cual no se resuelve completamente.  
+  - La escalabilidad de la arquitectura para aplicaciones de deep learning en entornos reales (como reconocimiento de imágenes) no se ha demostrado a gran escala.  
+  - La dependencia de la eficiencia térmica para reducir la variación de resistencia en los memristores no se ha optimizado para condiciones de operación extremas.  
+
+**Artículo: *Neuromorphic_comp.pdf***  
+- **Problemas no resueltos:**  
+  - La falta de una infraestructura de escalado coherente para sistemas neuromórficos, especialmente en combinación con algoritmos de aprendizaje no supervisado.  
+  - La integración de principios biológicos (como la sparsidad y la dinámica de múltiples escalas) en arquitecturas de hardware no se ha implementado en sistemas reales.  
+  - La compatibilidad entre diferentes niveles de la pila de desarrollo (hardware, software, algoritmos) sigue siendo un desafío para la adopción masiva.  
+
+---
+
+### **2. Planteamiento del problema: ¿Es real, pertinente y factible de resolver en 18 meses?**
+
+**Respuesta:**  
+El planteamiento del problema es **real y pertinente**, ya que la integración de neuronas LIF analógicas con sinapsis memristivas en tecnología CMOS SKY130 responde a la necesidad de sistemas neuromórficos eficientes en energía y escalables. La arquitectura propuesta (conectividad densa y control digital mediante compuertas de transmisión) aborda la optimización de recursos, lo cual es crítico para aplicaciones como el procesamiento de señales en tiempo real.  
+
+**Factibilidad en 18 meses:**  
+- **Positivo:**  
+  - Los artículos mencionan metodologías validadas (como la simulación de circuitos LIF y STDP en CMOS) que pueden acelerar el desarrollo.  
+  - La integración de memristores en arquitecturas CIM (como en *Memristor-basedDeepSNN.pdf*) ha demostrado resultados prometedores en términos de energía y precisión.  
+  - La existencia de referencias como [13] (flujo de diseño para sistemas híbridos CMOS/memristor) sugiere que herramientas para la implementación física ya están disponibles.  
+
+- **Desafíos:**  
+  - La falta de soporte en PDKs para memristores (como en *CMOS-MemristorbasedLIFandSTDPfunctionsforSpikingNeuralNetworksApplication.pdf*) podría retrasar la validación experimental.  
+  - La optimización de la sensibilidad de los materiales memristivos (AIST vs. TaOx) y la integración de algoritmos de aprendizaje (STDP) requiere tiempo adicional.  
+
+**Conclusión:**  
+Es **factible** resolver el problema en 18 meses si se priorizan los componentes críticos (como la simulación de circuitos LIF y la integración de memristores) y se abordan los desafíos de PDKs mediante colaboración con herramientas existentes. Sin embargo, la escalabilidad a aplicaciones reales podría requerir más tiempo.  
+
+---
+
+### **3. Metodología de cada artículo:**
+
+**Artículo: *CMOS-MemristorbasedLIFandSTDPfunctionsforSpikingNeuralNetworksApplication.pdf***  
+1. **Diseño del circuito TSM-LIF:**  
+   - Implementación de una neurona LIF basada en un memristor de conmutación de umbral (TSM), simulando la dinámica de membrana y la generación de picos.  
+2. **Diseño del circuito STDP:**  
+   - Uso de un circuito CMOS para ajustar pesos sinápticos según la diferencia de tiempo entre picos pre y postsinápticos (STDP).  
+3. **Simulación y validación:**  
+   - Evaluación del comportamiento de la neurona LIF y el circuito STDP en el proceso CMOS 45nm, comparando respuestas con diferentes entradas.  
+
+**Artículo: *loihi.pdf***  
+1. **Diseño de la arquitectura asincrónica:**  
+   - Implementación de una red neuronal en una red de conmutación (mesh) con comunicación por eventos (event-driven).  
+2. **Gestión de la sincronización (barrier synchronization):**  
+   - Uso de mecanismos asincrónicos para garantizar la coherencia temporal entre núcleos de procesamiento.  
+3. **Optimización de la conectividad:**  
+   - Diseño de una red de conmutación (NoC) con dos rutas físicas para evitar bloqueos y mejorar la eficiencia de ancho de banda.  
+
+**Artículo: *Memristor-basedDeepSNN.pdf***  
+1. **Diseño del array de memristores con disipación térmica:**  
+   - Integración de un array de memristores con una capa de disipación térmica para reducir la variación de resistencia (~30%).  
+2. **Codificación ISI (inter-spike interval):**  
+   - Uso de una codificación temporal para procesar información espaciotemporal en la entrada.  
+3. **Compensación de corriente y peso:**  
+   - Diseño de un circuito de compensación para ajustar variaciones de corriente y peso en el procesamiento de datos.  
+
+**Artículo: *Neuromorphic_comp.pdf***  
+1. **Análisis de escalabilidad:**  
+   - Evaluación de la capacidad de los sistemas neuromórficos para operar en tamaños, velocidades y energías requeridas para tareas reales.  
+2. **Identificación de características clave:**  
+   - Estudio de propiedades como la sparsidad, la estructura jerárquica y la dinámica multi-escalas para mejorar la eficiencia.  
+3. **Desarrollo de infraestructura:**  
+   - Diseño de herramientas y protocolos para facilitar la adopción de sistemas neuromórficos en múltiples aplicaciones (HPC, IoT, etc.).  
+
+---
+
+### **4. Referencias relevantes y su justificación:**
+
+**Artículo: *CMOS-MemristorbasedLIFandSTDPfunctionsforSpikingNeuralNetworksApplication.pdf***  
+- **[10] Liu et al. (2024):** Modelado de memristores de conmutación de umbral (TSM) para neuronas LIF.  
+  - **Relevancia:** Proporciona la base teórica para el diseño de la neurona LIF en el artículo.  
+- **[13] Maheshwari et al. (2021):** Flujo de diseño para integrar modelos de memristores en EDA.  
+  - **Relevancia:** Soluciona el problema de la falta de soporte en PDKs mencionado en el artículo.  
+
+**Artículo: *loihi.pdf***  
+- **[11] Abbott & Nelson (2000):** Fundamentos de plasticidad sináptica (STDP).  
+  - **Relevancia:** Explica el mecanismo de aprendizaje en la arquitectura asincrónica de Loihi.  
+- **[22] Indiveri et al. (2015):** Arquitecturas neuromórficas para redes neuronales profundas.  
+  - **Relevancia:** Proporciona contexto sobre la evolución de sistemas neuromórficos.  
+
+**Artículo: *Memristor-basedDeepSNN.pdf***  
+- **[19] Zhao et al. (2017):** Codificación basada en intervalos de pico (ISI) para procesadores neuromórficos.  
+  - **Relevancia:** Justifica el uso de ISI en la arquitectura CIM presentada.  
+- **[17] Ielmini & Wong (2018):** Computación en memoria con dispositivos resistivos.  
+  - **Relevancia:** Explica la ventaja de la arquitectura CIM en términos de eficiencia energética.  
+
+**Artículo: *Neuromorphic_comp.pdf***  
+- **[22] Indiveri et al. (2015):** Arquitecturas neuromórficas para redes neuronales profundas.  
+  - **Relevancia:** Proporciona un marco teórico para comparar sistemas neuromórficos.  
+- **[23] Chen et al. (2016):** Aceleradores energéticos para redes neuronales convolucionales.  
+  - **Relevancia:** Muestra cómo la arquitectura neuromórfica puede integrarse con HPC.  
+
+--- 
+
+**Conclusión general:**  
+Los artículos destacan avances significativos en arquitecturas neuromórficas, pero persisten desafíos en la integración de componentes, escalabilidad y validación experimental. La combinación de metodologías existentes y referencias clave permite abordar el problema planteado en un plazo de 18 meses, siempre que se prioricen los componentes críticos y se resuelvan los obstáculos técnicos.
+
+RESPUESTA 2
+---------------------------------------------------
+
+### **Respuesta a las preguntas:**
+
+---
+
+### **1. Problemas de investigación no resueltos en cada artículo:**
+
+#### **Artículo: CMOS-Memristor-based LIF and STDP functions for Spiking Neural Networks Application**
+- **Problemas no resueltos:**
+  - **Integración de dispositivos memristivos en flujos de diseño estándar:** El artículo menciona que la falta de soporte nativo para dispositivos memristivos en kits de diseño (PDKs) impide la implementación física completa de SNNs con memristores. Aunque se sugiere la posibilidad de integración manual mediante herramientas como Cadence, esto requiere desarrollo de flujos de diseño personalizados.
+  - **Benchmarking y validación física:** La simulación es viable, pero la implementación física de SNNs con memristores aún no es posible debido a limitaciones técnicas en la fabricación y la integración de componentes no volátiles.
+  - **Optimización de materiales:** Aunque se comparan TaOx y AIST, se necesitan estudios más profundos para determinar cuál material es óptimo para aplicaciones específicas de aprendizaje.
+
+#### **Artículo: Loihi**
+- **Problemas no resueltos:**
+  - **Flexibilidad vs. eficiencia:** La arquitectura de Loihi es flexible, pero su complejidad podría limitar su eficiencia en aplicaciones específicas. Se requiere optimización para equilibrar flexibilidad y rendimiento.
+  - **Escalabilidad y compatibilidad:** Aunque se describe una arquitectura modular, se menciona que la escalabilidad a sistemas de gran tamaño aún no está completamente resuelta.
+  - **Validación de algoritmos:** La implementación de algoritmos de aprendizaje en sistemas neuromórficos sigue siendo un desafío, especialmente en entornos heterogéneos.
+
+#### **Artículo: Memristor-based Deep SNN**
+- **Problemas no resueltos:**
+  - **Escalabilidad de arquitecturas CIM:** Aunque se logra un rendimiento eficiente en sistemas pequeños, la escalabilidad a sistemas de gran tamaño (como en aplicaciones de visión por computadora) aún requiere investigación.
+  - **Reducción de variación de resistencia:** Aunque se menciona una disminución del 30% en la variación de resistencia gracias a una capa de disipación térmica, se necesitan mejoras para minimizar variaciones en condiciones de operación real.
+  - **Optimización de energía:** Aunque el consumo es bajo (2.51 pJ por conexión sináptica), se requiere mayor eficiencia para aplicaciones de alta densidad.
+
+#### **Artículo: Neuromorphic_comp.pdf**
+- **Problemas no resueltos:**
+  - **Infraestructura y escalabilidad:** La transición de prototipos a sistemas de gran escala requiere una infraestructura robusta, incluyendo herramientas de diseño, validación y fabricación.
+  - **Interoperabilidad con sistemas existentes:** La integración de sistemas neuromórficos con tecnologías tradicionales (como GPUs o CPUs) sigue siendo un desafío.
+  - **Entendimiento biológico:** Aunque se inspira en principios biológicos, se necesita más alineación con mecanismos cerebrales complejos para lograr sistemas de aprendizaje autónomo.
+
+---
+
+### **2. Viabilidad del planteamiento del problema en 18 meses:**
+
+**Planteamiento del problema:** Diseñar una arquitectura neuromórfica en tecnología CMOS SKY130 con neuronas LIF analógicas y sinapsis memristivas, con conectividad densa y control digital para optimizar recursos.
+
+**Respuesta:**
+- **Realidad y pertinencia:** El problema es **real y pertinente**, ya que las SNNs con arquitecturas neuromórficas son una dirección clave para reducir el consumo energético y mejorar la eficiencia en aplicaciones como visión por computadora o procesamiento de señales. La combinación de LIF analógico y memristores es una tendencia consolidada en la literatura (artículos 1 y 3).
+- **Factibilidad en 18 meses:** Es **factible**, pero con **limitaciones**:
+  - **Simulación y prototipo:** La metodología de simulación en CMOS SKY130 (artículo 1) y la implementación de CIM en 180nm (artículo 3) son viables en un plazo de 18 meses, especialmente si se priorizan componentes críticos como la LIF y el control digital.
+  - **Desafíos técnicos:** La integración de memristores en flujos de diseño estándar (artículo 1) y la optimización de la arquitectura Loihi (artículo 2) requerirán esfuerzos adicionales, pero son factibles con recursos adecuados.
+  - **Riesgos:** La escalabilidad a sistemas de gran tamaño y la validación física de SNNs con memristores son desafíos que podrían extender el plazo, pero no son insuperables con el enfoque descrito.
+
+**Conclusión:** El problema es **real, pertinente y factible**, pero requiere un enfoque enfocado en simulación, prototipo y optimización de componentes críticos, con un riesgo manejable de retrasos en etapas de integración física.
+
+---
+
+### **3. Metodología de cada artículo:**
+
+#### **Artículo: CMOS-Memristor-based LIF and STDP functions for Spiking Neural Networks Application**
+- **Pasos de la metodología:**
+  1. **Diseño de circuito TSM-LIF:** Implementación de una neurona LIF basada en un memristor de conmutación de umbral (TSM), simulando el comportamiento biológico mediante ecuaciones de dinámica de carga y descarga.
+  2. **Diseño de circuito STDP:** Integración de un circuito CMOS para aprendizaje por plasticidad temporal, ajustando pesos sinápticos según la diferencia de tiempo entre spikes.
+  3. **Simulación en CMOS SKY130:** Validación del comportamiento de la neurona y el circuito STDP usando herramientas como Cadence Virtuoso.
+  4. **Comparación de materiales memristivos:** Evaluación de TaOx y AIST para determinar su sensibilidad al voltaje de control.
+
+#### **Artículo: Loihi**
+- **Pasos de la metodología:**
+  1. **Diseño asincrónico:** Implementación de una arquitectura asincrónica para procesar eventos (spikes) de manera eficiente.
+  2. **Operación de la red neuronal (mesh):** Uso de una red de conmutación (NoC) para distribuir spikes entre núcleos, con rutas unicast y multicast para evitar bloqueos.
+  3. **Gestión de sincronización:** Uso de barreras de sincronización para garantizar que todos los núcleos avancen al mismo tiempo en cada ciclo.
+  4. **Optimización de conectividad:** Diseño de una red de sinapsis con parámetros dinámicos (pesos, retardo, etiquetas) para adaptarse a diferentes aplicaciones.
+
+#### **Artículo: Memristor-based Deep SNN**
+- **Pasos de la metodología:**
+  1. **Codificación de señales (ISI):** Conversión de datos en eventos de spike mediante inter-spike intervals (ISI) para procesar información espaciotemporal.
+  2. **Arquitectura CIM con memristores:** Diseño de una matriz de memristores para realizar multiplicaciones vector-matriz en memoria, reduciendo la banda ancha.
+  3. **Compensación de corriente:** Uso de un compensador de corriente para mitigar variaciones de peso y fugas de corriente en la matriz.
+  4. **Validación con datos reales:** Pruebas en conjuntos de datos como MNIST para demostrar precisión (90%) y eficiencia energética (2.51 pJ por conexión).
+
+#### **Artículo: Neuromorphic_comp.pdf**
+- **Pasos de la metodología:**
+  1. **Análisis de estado del arte:** Evaluación de avances en neuromorfismo, incluyendo arquitecturas como Loihi, CIM y sistemas de aprendizaje por eventos.
+  2. **Identificación de desafíos:** Análisis de limitaciones en escalabilidad, manufactura, y compatibilidad con sistemas tradicionales.
+  3. **Propuesta de características clave:** Definición de atributos esenciales para sistemas neuromórficos escalables (distribución, sparsity, aprendizaje dinámico).
+  4. **Perspectivas de infraestructura:** Diseño de herramientas y flujos de trabajo para facilitar la adopción a gran escala.
+
+---
+
+### **4. Referencias relevantes y justificación:**
+
+#### **Artículo: CMOS-Memristor-based LIF and STDP functions for Spiking Neural Networks Application**
+- **Referencias relevantes:**
+  - **[10] Liu et al. (2024):** Modelado de memristores TSM para diseño de neuronas LIF. Justificación: Proporciona la base teórica para el circuito TSM-LIF.
+  - **[13] Maheshwari et al. (2021):** Flujos de diseño híbridos CMOS/memristor. Justificación: Muestra cómo integrar modelos de memristores en herramientas EDA como Cadence.
+  - **[7] Zhang et al. (2017):** Modelado de sinapsis memristivas. Justificación: Es fundamental para la implementación del circuito STDP.
+
+#### **Artículo: Loihi**
+- **Referencias relevantes:**
+  - **[11] Abbott & Nelson (2000):** Plasticidad sináptica y su relevancia en aprendizaje. Justificación: Fundamento teórico para algoritmos de aprendizaje en sistemas neuromórficos.
+  - **[22] Indiveri et al. (2015):** Arquitecturas neuromórficas para redes profundas. Justificación: Proporciona contexto sobre el diseño de sistemas de procesamiento de eventos.
+
+#### **Artículo: Memristor-based Deep SNN**
+- **Referencias relevantes:**
+  - **[19] Zhao et al. (2017):** Codificadores de intervalos de spike para procesadores neuromórficos. Justificación: Base para el esquema de codificación ISI.
+  - **[17] Ielmini & Wong (20
+
+RESPUESTA 3
+---------------------------------------------------
+
+### **1. Problemas de investigación no resueltos en cada artículo**  
+**Artículo: CMOS-Memristor-based LIF and STDP functions for Spiking Neural Networks Application**  
+- **Problemas no resueltos**:  
+  - **Implementación física limitada**: Aunque se realizan simulaciones en tecnología CMOS 45nm, no se menciona la integración física de los memristores en el proceso de diseño (PDKs), lo que limita la validación experimental.  
+  - **Optimización de recursos**: No se explora cómo la conectividad densa (fully connected) y la topología dinámica (mediante compuertas de transmisión) afectan la escalabilidad y el consumo energético en aplicaciones reales.  
+  - **Sensibilidad de materiales**: Aunque se compara la sensibilidad de TaOx y AIST, no se aborda el impacto de la variabilidad de resistencia en condiciones de operación real (temperatura, ruido, etc.).  
+
+**Artículo: Loihi**  
+- **Problemas no resueltos**:  
+  - **Flexibilidad vs. eficiencia**: La arquitectura de Loihi permite una gran flexibilidad, pero no se especifica cómo equilibrar esta flexibilidad con la eficiencia energética y la latencia en aplicaciones de procesamiento de datos masivos.  
+  - **Escalabilidad de la red neuronal**: No se detalla cómo manejar la escalabilidad de redes neuronales profundas (deep SNNs) en un chip neuromórfico, especialmente en términos de gestión de recursos y comunicación entre núcleos.  
+  - **Validación de algoritmos**: Aunque se menciona la validación de algoritmos, no se especifica el marco de evaluación para comparar el rendimiento de Loihi con arquitecturas tradicionales (como GPUs o TPUs).  
+
+**Artículo: Memristor-based Deep SNN**  
+- **Problemas no resueltos**:  
+  - **Validación en datos reales**: El enfoque se basa en simulaciones y datos sintéticos (MNIST), pero no se menciona la evaluación en datos reales o en escenarios de inferencia en tiempo real.  
+  - **Estabilidad térmica**: Aunque se menciona una capa de disipación térmica, no se aborda la estabilidad térmica a largo plazo en condiciones de operación intensa.  
+  - **Interoperabilidad con sistemas externos**: No se detalla cómo integrar la arquitectura CIM en sistemas heterogéneos (por ejemplo, combinaciones de CPU/GPU).  
+
+**Artículo: Neuromorphic_comp**  
+- **Problemas no resueltos**:  
+  - **Escalabilidad de infraestructura**: Se identifica la necesidad de infraestructura a gran escala, pero no se propone un marco de desarrollo para implementar sistemas neuromórficos en centros de datos o edge devices.  
+  - **Interoperabilidad con algoritmos tradicionales**: No se explora cómo adaptar algoritmos de aprendizaje profundo (como CNNs) a arquitecturas neuromórficas, especialmente en términos de compatibilidad con frameworks como TensorFlow o PyTorch.  
+  - **Gestión de errores y tolerancia a fallos**: No se menciona cómo manejar errores en la comunicación entre neuronas o la tolerancia a fallos en componentes físicos (como memristores).  
+
+---
+
+### **2. Viabilidad del planteamiento del problema en 18 meses**  
+**Planteamiento del problema**: Diseñar una arquitectura neuromórfica en tecnología CMOS SKY130 con neuronas LIF analógicas, sinapsis memristivas y topología dinámica (mediante compuertas de transmisión).  
+
+**Respuesta**:  
+- **Realidad y pertinencia**: El problema es **real y pertinente**, ya que las arquitecturas neuromórficas con LIF y memristores son una tendencia en el campo de la computación energéticamente eficiente. La necesidad de optimizar recursos mediante topologías dinámicas es clave para aplicaciones como visión artificial o procesamiento de señales en tiempo real.  
+- **Factibilidad en 18 meses**:  
+  - **Simulación y prototipo**: La simulación en CMOS 45nm (como en el primer artículo) es viable en 18 meses, especialmente si se utiliza herramientas como Cadence Virtuoso.  
+  - **Implementación física**: La integración de memristores en PDKs es un reto, pero el segundo artículo (Loihi) muestra que es posible mediante flujos de diseño personalizados.  
+  - **Optimización de recursos**: La topología dinámica (mediante compuertas de transmisión) requiere desarrollo de circuitos digitales de control, lo cual es factible en un plazo de 18 meses con equipos especializados.  
+  - **Validación experimental**: La evaluación en datos reales (como MNIST en el tercer artículo) podría realizarse en 18 meses si se prioriza la validación de simulaciones y prototipos.  
+  - **Limitaciones**: La escalabilidad a sistemas de gran tamaño (como centros de datos) podría requerir más tiempo, pero el planteamiento se enfoca en un chip individual, lo cual es alcanzable.  
+
+**Conclusión**: El problema es **factible de resolver en 18 meses**, especialmente si se prioriza la simulación, la integración de componentes clave (memristores y STDP), y la validación en escenarios controlados. Sin embargo, la escalabilidad a sistemas de gran tamaño requerirá más tiempo.  
+
+---
+
+### **3. Metodología de cada artículo**  
+**Artículo: CMOS-Memristor-based LIF and STDP functions**  
+1. **Diseño de la neurona LIF basada en TSM**:  
+   - Simular el comportamiento de la neurona LIF mediante ecuaciones de TSM (resistencia variable, carga y descarga).  
+   - Integrar un comparador para convertir corriente en voltaje.  
+2. **Diseño del circuito STDP**:  
+   - Implementar STDP mediante capacitores y transistores para ajustar pesos sinápticos según la diferencia de tiempo entre spikes.  
+3. **Simulación en CMOS 45nm**:  
+   - Usar Cadence Virtuoso para validar el comportamiento de la neurona y la red neuronal.  
+4. **Integración de memristores**:  
+   - Comparar materiales (TaOx vs. AIST) para evaluar su sensibilidad a voltajes.  
+
+**Artículo: Loihi**  
+1. **Arquitectura de red neuronal asincrónica**:  
+   - Diseñar una red neuronal asincrónica con núcleos de procesamiento (cores) y una red de interconexión (NoC).  
+2. **Sincronización mediante barreras**:  
+   - Usar sincronización asincrónica para evitar deadlocks en la comunicación entre cores.  
+3. **Gestión de conectividad**:  
+   - Implementar una red de interconexión con dos routers físicos para optimizar la banda ancha.  
+4. **Validación de algoritmos**:  
+   - Probar algoritmos de aprendizaje (como sparse coding) en la arquitectura de Loihi.  
+
+**Artículo: Memristor-based Deep SNN**  
+1. **Codificación temporal (ISI)**:  
+   - Convertir datos en eventos de spike mediante inter-spike intervals (ISI).  
+2. **Arquitectura CIM (Computing-In-Memory)**:  
+   - Integrar un array de memristores para reducir la banda ancha en multiplicaciones matriciales.  
+3. **Compensación de errores**:  
+   - Usar un compensador de corriente para corregir variaciones en pesos y fugas de corriente.  
+4. **Validación experimental**:  
+   - Evaluar el rendimiento en datos MNIST y en aplicaciones de reconocimiento de dígitos.  
+
+**Artículo: Neuromorphic_comp**  
+1. **Análisis de escalabilidad**:  
+   - Evaluar el impacto de la escala en la eficiencia energética, latencia y capacidad de procesamiento.  
+2. **Comparación de arquitecturas**:  
+   - Comparar sistemas neuromórficos con aceleradores tradicionales (como GPUs) en términos de rendimiento y eficiencia.  
+3. **Identificación de desafíos**:  
+   - Analizar barreras técnicas (fabricación, testing, infraestructura) para la adopción masiva de sistemas neuromórficos.  
+4. **Propuesta de infraestructura**:  
+   - Diseñar flujos de desarrollo para integrar sistemas neuromórficos en centros de datos y edge devices.  
+
+---
+
+### **4. Referencias relevantes y justificación**  
+**Artículo: CMOS-Memristor-based LIF and STDP functions**  
+- **[10] Liu et al. (2024)**: Modelado de TSM para neuronas LIF, esencial para la simulación de comportamiento biológico.  
+- **[7] Zhang et al. (2017)**: Modelo de sinapsis memristiva para circuitos neuromórficos, clave para la integración de memristores.  
+- **[13] Maheshwari et al. (2021)**: Flujos de diseño para integrar memristores en EDA, relevante para la implementación física.  
+
+**Artículo: Loihi**  
+- **[11] Abbott & Nelson (2000)**: Fundamentos de plasticidad sináptica (STDP), esencial para entender el aprendizaje en redes neuronales.  
+- **[14] Diehl et al. (2015)**: Optimización de redes spiking mediante balanceo de pesos y umbrales, relevante para la eficiencia energética.  
+
+**Artículo: Memristor-based Deep SNN**  
+- **[19] Zhao et al. (2017)**: Codificación basada en inter-spike intervals (ISI), clave para la representación de datos en SNNs.  
+- **[17] Ielmini & Wong (2018)**: Computación en memoria con dispositivos resistivos, fundamental para la arquitectura CIM.  
+
+**Artículo: Neuromorphic_comp**  
+- **[25] Liu et al. (2020)**: Chip neuromórfico con arquitectura CIM, ejemplo de implementación práctica.  
+- **[1] Liu et al. (2017)**: Revisión de arquitecturas de redes neuronales profundas, relevante para comparar con sistemas neuromórficos.  
+
+**Justificación**: Estas referencias son críticas para comprender la base teórica (modelado de neuronas, STDP), la implementación práctica (memristores, CIM) y los desafíos técnicos (escalabilidad, infraestructura) en el campo de las arquitecturas neuromórficas.
+

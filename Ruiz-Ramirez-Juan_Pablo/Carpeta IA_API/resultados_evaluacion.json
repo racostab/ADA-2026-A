@@ -1,0 +1,271 @@
+[
+  {
+    "caso": 1,
+    "archivo": "Prueba 2.txt",
+    "linea": 1,
+    "original": [
+      9,
+      8,
+      7,
+      6,
+      5
+    ],
+    "obtenido": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "valido": true,
+    "puntaje": 1,
+    "esperado": null,
+    "error_ejecucion": false
+  },
+  {
+    "caso": 2,
+    "archivo": "Prueba 2.txt",
+    "linea": 2,
+    "original": [
+      2,
+      1,
+      4,
+      3,
+      0
+    ],
+    "obtenido": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "valido": true,
+    "puntaje": 1,
+    "esperado": null,
+    "error_ejecucion": false
+  },
+  {
+    "caso": 3,
+    "archivo": "Prueba 2.txt",
+    "linea": 3,
+    "original": [
+      4,
+      5,
+      1,
+      6,
+      8
+    ],
+    "obtenido": [
+      1,
+      4,
+      5,
+      6,
+      8
+    ],
+    "valido": true,
+    "puntaje": 1,
+    "esperado": null,
+    "error_ejecucion": false
+  },
+  {
+    "caso": 4,
+    "archivo": "Prueba 2.txt",
+    "linea": 4,
+    "original": [
+      10,
+      11,
+      2,
+      6,
+      3
+    ],
+    "obtenido": [
+      2,
+      3,
+      6,
+      10,
+      11
+    ],
+    "valido": true,
+    "puntaje": 1,
+    "esperado": null,
+    "error_ejecucion": false
+  },
+  {
+    "caso": 5,
+    "archivo": "Prueba 2.txt",
+    "linea": 5,
+    "original": [
+      100,
+      24,
+      22,
+      115,
+      79
+    ],
+    "obtenido": [
+      22,
+      24,
+      79,
+      100,
+      115
+    ],
+    "valido": true,
+    "puntaje": 1,
+    "esperado": null,
+    "error_ejecucion": false
+  },
+  {
+    "caso": 6,
+    "archivo": "Prueba1.txt",
+    "linea": 1,
+    "original": [
+      1,
+      4,
+      6,
+      2,
+      7,
+      9
+    ],
+    "obtenido": [
+      1,
+      2,
+      4,
+      6,
+      7,
+      9
+    ],
+    "valido": true,
+    "puntaje": 1,
+    "esperado": null,
+    "error_ejecucion": false
+  },
+  {
+    "caso": 7,
+    "archivo": "Prueba1.txt",
+    "linea": 2,
+    "original": [
+      3,
+      0,
+      1,
+      5,
+      2,
+      4
+    ],
+    "obtenido": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "valido": true,
+    "puntaje": 1,
+    "esperado": null,
+    "error_ejecucion": false
+  },
+  {
+    "caso": 8,
+    "archivo": "Prueba1.txt",
+    "linea": 3,
+    "original": [
+      10,
+      20,
+      30,
+      5,
+      15
+    ],
+    "obtenido": [
+      5,
+      10,
+      15,
+      20,
+      30
+    ],
+    "valido": true,
+    "puntaje": 1,
+    "esperado": null,
+    "error_ejecucion": false
+  },
+  {
+    "caso": 9,
+    "archivo": "Prueba1.txt",
+    "linea": 4,
+    "original": [
+      1,
+      4,
+      6,
+      8,
+      10,
+      11,
+      2
+    ],
+    "obtenido": [
+      1,
+      2,
+      4,
+      6,
+      8,
+      10,
+      11
+    ],
+    "valido": true,
+    "puntaje": 1,
+    "esperado": null,
+    "error_ejecucion": false
+  },
+  {
+    "caso": 10,
+    "archivo": "Prueba1.txt",
+    "linea": 5,
+    "original": [
+      3,
+      4,
+      6,
+      2,
+      1,
+      0,
+      1
+    ],
+    "obtenido": [
+      0,
+      1,
+      1,
+      2,
+      3,
+      4,
+      6
+    ],
+    "valido": true,
+    "puntaje": 1,
+    "esperado": null,
+    "error_ejecucion": false
+  },
+  {
+    "caso": 11,
+    "archivo": "Prueba1.txt",
+    "linea": 6,
+    "original": [
+      6,
+      7,
+      2,
+      8,
+      10,
+      23,
+      1
+    ],
+    "obtenido": [
+      1,
+      2,
+      6,
+      7,
+      8,
+      10,
+      23
+    ],
+    "valido": true,
+    "puntaje": 1,
+    "esperado": null,
+    "error_ejecucion": false
+  }
+]

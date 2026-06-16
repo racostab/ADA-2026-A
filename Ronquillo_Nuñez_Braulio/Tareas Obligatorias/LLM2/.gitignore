@@ -1,0 +1,6 @@
+DAT/processed/*.txt
+DAT/processed/*.json
+DAT/outputs/*.json
+__pycache__/
+.venv/
+.venv-linux/
