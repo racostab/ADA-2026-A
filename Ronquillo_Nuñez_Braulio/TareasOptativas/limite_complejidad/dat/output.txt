@@ -1,0 +1,8 @@
+orden_creciente =
+log_n
+n_minus_1 = two_log_n
+n_log_n
+n_3_2
+n_2
+two_n
+pi_n

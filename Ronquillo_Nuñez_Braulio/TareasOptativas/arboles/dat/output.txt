@@ -1,0 +1,7 @@
+valido = si
+motivo = ok
+nodos = 5
+altura = 3
+preorder = A B D E C
+inorder = D B E A C
+postorder = D E B C A

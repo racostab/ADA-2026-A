@@ -4,8 +4,8 @@ from pydantic import BaseModel
 
 from .analyzer import run_analysis
 from .config import load_config, load_prompt_templates
-from .ollama_client import check_ollama
 from .pdf_processor import process_papers, load_processed_papers
+from .provider_client import check_providers
 
 
 app = FastAPI(title="LLM2 Revision Cientifica", version="1.0.0")
@@ -29,7 +29,7 @@ def status():
     processed = load_processed_papers(config)
     prompts = load_prompt_templates()
     ok_papers = [paper for paper in processed.get("papers", []) if paper.get("status") == "ok"]
-    ollama_status = check_ollama(config["ollama"]["base_url"])
+    provider_status = check_providers(config)
     return {
         "project": config["project"],
         "models": config["models"],
@@ -38,8 +38,8 @@ def status():
         "papers": processed["papers"],
         "paper_count": len(ok_papers),
         "required_papers": config["project"].get("required_papers", 4),
-        "ollama": ollama_status,
-        "fallback_to_demo": bool(config["ollama"].get("fallback_to_demo", False)),
+        "providers": provider_status,
+        "fallback_to_demo": bool(config.get("llm", {}).get("fallback_to_demo", False)),
     }
 
 
@@ -72,7 +72,7 @@ HTML = """
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LLM2 - Revision cientifica local</title>
+  <title>LLM2 - Revision cientifica con APIs</title>
   <style>
     :root {
       --bg: #f5f7fb;
@@ -148,7 +148,7 @@ HTML = """
 </head>
 <body>
   <header>
-    <h1>LLM2 - Revision cientifica con modelos locales</h1>
+    <h1>LLM2 - Revision cientifica con Gemini y Claude</h1>
     <p class="subtitle">Tema: lenguaje natural, redes complejas y analisis topologico de datos.</p>
   </header>
   <main>
@@ -170,7 +170,7 @@ HTML = """
       </label>
       <label class="check">
         <input id="mock" type="checkbox">
-        Simular sin Ollama
+        Simular sin API
       </label>
       <button id="runBtn">Ejecutar analisis</button>
       <button class="secondary" id="processBtn">Procesar PDFs</button>
@@ -240,9 +240,11 @@ HTML = """
       els.warnings.innerHTML = missing > 0
         ? `<p><span class="pill warn">Faltan ${missing} articulo(s)</span> La tarea pide ${data.required_papers}; actualmente hay ${data.paper_count} procesado(s).</p>`
         : `<p><span class="pill good">Articulos completos</span> Hay ${data.paper_count}/${data.required_papers} articulos.</p>`;
-      els.warnings.innerHTML += data.ollama.available
-        ? `<p><span class="pill good">Ollama activo</span> Modelos detectados: ${data.ollama.models.join(", ") || "ninguno"}.</p>`
-        : `<p><span class="pill warn">Ollama no disponible</span> ${data.ollama.error} ${data.fallback_to_demo ? "La app usara modo fallback/demo automaticamente." : ""}</p>`;
+      const providerRows = Object.entries(data.providers || {}).map(([id, info]) => {
+        const status = info.available ? "good" : "warn";
+        return `<span class="pill ${status}">${info.label}: ${info.available ? "key lista" : info.api_key_env + " faltante"}</span>`;
+      }).join(" ");
+      els.warnings.innerHTML += `<p>${providerRows} ${data.fallback_to_demo ? "Si falta una key, la app usara fallback/demo automaticamente." : ""}</p>`;
 
       els.model.innerHTML = option("all", "Todos") + data.models.map(m => option(m.id, m.label)).join("");
       els.prompt.innerHTML = option("all", "Todos") + data.prompts.map(p => option(p.id, p.name)).join("");
@@ -271,7 +273,7 @@ HTML = """
 
       els.results.innerHTML = data.results.map(r => `
         <tr>
-          <td>${r.model_label}<br><code>${r.model_id}</code></td>
+          <td>${r.model_label}<br><code>${r.model_id}</code><br><span class="muted">${r.provider_label || r.provider_id || ""}</span></td>
           <td>${r.prompt_name}</td>
           <td>${r.activity_name}</td>
           <td>${pill(r.status)}</td>
@@ -305,7 +307,7 @@ HTML = """
 
     els.runBtn.addEventListener("click", async () => {
       els.runBtn.disabled = true;
-      els.status.textContent = els.mock.checked ? "Ejecutando simulacion..." : "Consultando Ollama. Puede tardar varios minutos.";
+      els.status.textContent = els.mock.checked ? "Ejecutando simulacion..." : "Consultando APIs externas. Puede tardar varios minutos.";
       try {
         const res = await fetch("/api/analyze", {
           method: "POST",
