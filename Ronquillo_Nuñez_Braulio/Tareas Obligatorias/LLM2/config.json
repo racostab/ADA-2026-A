@@ -6,23 +6,58 @@
     "language": "es",
     "required_papers": 4
   },
-  "ollama": {
-    "base_url": "http://localhost:11434",
-    "timeout_seconds": 180,
-    "fallback_to_demo": true
+  "llm": {
+    "timeout_seconds": 420,
+    "fallback_to_demo": true,
+    "providers": {
+      "mistral": {
+        "label": "Mistral / Le Chat",
+        "api_key_env": "MISTRAL_API_KEY",
+        "base_url": "https://api.mistral.ai/v1",
+        "temperature": 0.2,
+        "max_output_tokens": 5000
+      },
+      "gemini": {
+        "label": "Google Gemini",
+        "api_key_env": "GEMINI_API_KEY",
+        "base_url": "https://generativelanguage.googleapis.com/v1beta",
+        "temperature": 0.2,
+        "max_output_tokens": 6000,
+        "max_continuations": 2,
+        "retry_attempts": 2,
+        "retry_wait_seconds": 4
+      },
+      "claude": {
+        "label": "Anthropic Claude",
+        "api_key_env": "ANTHROPIC_API_KEY",
+        "base_url": "https://api.anthropic.com/v1",
+        "anthropic_version": "2023-06-01",
+        "temperature": 0.2,
+        "max_output_tokens": 6000
+      }
+    }
   },
   "models": [
     {
-      "id": "llama3.2:3b",
-      "label": "Llama 3.2 3B"
+      "id": "mistral:mistral-small-latest",
+      "provider": "mistral",
+      "provider_label": "Mistral / Le Chat",
+      "model": "mistral-small-latest",
+      "label": "Mistral Small Latest"
     },
     {
-      "id": "qwen2.5:3b",
-      "label": "Qwen 2.5 3B"
+      "id": "gemini:gemini-2.5-flash-lite",
+      "provider": "gemini",
+      "provider_label": "Google Gemini",
+      "model": "gemini-2.5-flash-lite",
+      "label": "Gemini 2.5 Flash-Lite"
     },
     {
-      "id": "gemma2:2b",
-      "label": "Gemma 2 2B"
+      "id": "claude:claude-haiku-4-5",
+      "provider": "claude",
+      "provider_label": "Anthropic Claude",
+      "model": "claude-haiku-4-5",
+      "label": "Claude Haiku 4.5"
     }
   ],
   "papers": [

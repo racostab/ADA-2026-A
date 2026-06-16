@@ -1,0 +1,10 @@
+eventos:
+call main: profundidad 1
+call suma: profundidad 2
+set a=9 en suma
+call doble: profundidad 3
+overflow en exceso
+return doble: profundidad 2
+pila final:
+0: suma(a=9, b=5)
+1: main()

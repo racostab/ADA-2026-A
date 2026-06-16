@@ -4,8 +4,8 @@ from pathlib import Path
 import uuid
 
 from .config import OUTPUTS_DIR, ensure_dirs, load_prompt_templates
-from .ollama_client import ask_ollama
 from .pdf_processor import load_processed_papers
+from .provider_client import ask_model
 
 
 def build_papers_context(processed: dict, max_chars_per_paper: int = 4500) -> str:
@@ -67,7 +67,7 @@ def demo_response(config: dict, activity: dict, paper_count: int, original_error
         if paper_count < required
         else f"Hay {paper_count}/{required} articulos requeridos."
     )
-    error_note = f"\n\nAviso tecnico: no se ejecuto Ollama. Motivo: {original_error}" if original_error else ""
+    error_note = f"\n\nAviso tecnico: no se ejecuto la API del modelo. Motivo: {original_error}" if original_error else ""
 
     return (
         "Respuesta demo generada por el sistema local de respaldo.\n\n"
@@ -104,9 +104,9 @@ def run_analysis(config: dict, model_id: str, prompt_id: str, activity_id: str, 
 
     results = []
     run_id = datetime.now().strftime("%Y%m%d-%H%M%S") + "-" + uuid.uuid4().hex[:8]
-    base_url = config["ollama"]["base_url"]
-    timeout = int(config["ollama"].get("timeout_seconds", 180))
-    fallback_to_demo = bool(config["ollama"].get("fallback_to_demo", False))
+    llm_config = config.get("llm", {})
+    timeout = int(llm_config.get("timeout_seconds", 180))
+    fallback_to_demo = bool(llm_config.get("fallback_to_demo", False))
 
     for model in selected_models:
         for prompt in selected_prompts:
@@ -127,7 +127,7 @@ def run_analysis(config: dict, model_id: str, prompt_id: str, activity_id: str, 
                     if mock:
                         response = demo_response(config, activity, len(ok_papers))
                     else:
-                        response = ask_ollama(base_url, model["id"], full_prompt, timeout)
+                        response = ask_model(config, model, full_prompt, timeout)
                 except Exception as exc:
                     error = str(exc)
                     if fallback_to_demo:
@@ -142,6 +142,8 @@ def run_analysis(config: dict, model_id: str, prompt_id: str, activity_id: str, 
                         "run_id": run_id,
                         "created_at": started.strftime("%Y-%m-%d %H:%M:%S"),
                         "model_id": model["id"],
+                        "provider_id": model.get("provider", ""),
+                        "provider_label": model.get("provider_label", model.get("provider", "")),
                         "model_label": model.get("label", model["id"]),
                         "prompt_id": prompt["id"],
                         "prompt_name": prompt["name"],

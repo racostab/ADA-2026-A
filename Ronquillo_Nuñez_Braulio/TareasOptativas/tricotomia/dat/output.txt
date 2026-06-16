@@ -1,0 +1,5 @@
+f(n) = n
+g(n) = n^(1 + sin(n))
+min f/g = 0.001015 en n = 988
+max f/g = 960.771876 en n = 966
+conclusion = no hay tricotomia asintotica

@@ -1,0 +1,2 @@
+g(n) = O(f(n))
+lim f(n)/g(n) = infinito
