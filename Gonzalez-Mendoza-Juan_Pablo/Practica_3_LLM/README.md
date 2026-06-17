@@ -6,12 +6,12 @@ Este proyecto es una herramienta en Python diseñada para automatizar el proceso
 
 Este programa fue diseñado cumpliendo estrictamente con las especificaciones y la rúbrica de la tarea:
 
-1. **Uso de múltiples modelos gratuitos**: Soporta cualquier modelo local instalado en Ollama. Por defecto, ejecuta el análisis completo realizando llamadas sucesivas a `mistral:latest`, `llama3:latest` y `gemma:latest`.
+1. **Uso de múltiples modelos**: Soporta cualquier modelo local instalado en Ollama. Por defecto, ejecuta el análisis completo realizando llamadas sucesivas a `mistral:latest`, `llama3:latest` y `gemma:latest`.
 2. **Cero *Hardcoding***: Absolutamente nada está estático en el código. Las rutas de los documentos, el tema de la tesis, el planteamiento del problema y la selección de modelos se introducen dinámicamente como argumentos en la terminal.
 3. **Múltiples versiones de Prompts**: Se implementó el parámetro `--prompt_version`, permitiendo al usuario alternar entre prompts directos (`v1`) y prompts con un enfoque de "persona experta/sinodal estricto" (`v2`).
-4. **Procesamiento Local de PDFs**: Utiliza la librería `PyMuPDF` (`fitz`) para extraer el texto de los artículos PDF directamente en tu máquina. Ningún documento científico se envía a servidores de terceros, garantizando privacidad absoluta de las lecturas.
+4. **Procesamiento Local de PDFs**: Utiliza la librería `PyMuPDF` (`fitz`) para extraer el texto de los artículos PDF directamente en tu máquina. Ningún documento científico se envía a servidores de terceros.
 
-##  Características Extra: Soporte LaTeX y Citas BibTeX (IEEE)
+##  Consideraciones importantes de añadir: Soporte con LaTeX y generador de citas BibTeX (IEEE)
 
 Para aportar valor real a la escritura del documento de tesis de los usuarios, se diseñaron dos funcionalidades avanzadas:
 
@@ -44,7 +44,7 @@ python main.py \
   --prompt_version v2
 ```
 
-## Ejemplo de Interacción (Preguntas y Respuestas)
+## Ejemplo de Interacción con lq IA
 
 El programa consulta internamente los artículos pasándole al modelo fragmentos contextuales. A continuación, un ejemplo ilustrativo de cómo retorna la información:
 
