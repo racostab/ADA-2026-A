@@ -2,11 +2,9 @@ import os
 import re
 import subprocess
 import sys
-
 import ollama
 
 def clean_code_output(text: str) -> str:
-    """Quita fences ``` y recorta explicaciones típicas al final."""
     text = text.strip()
 
     # Bloque markdown ```lang ... ``` o ``` ... ```
