@@ -1,43 +1,51 @@
-#
-# Usando indirectamente el protocolo HTTP para interactuar con el modelo LLaMA a través de la API de Ollama.
-# Server 
-# export OLLAMA_HOST="127.0.0.1:8080" 
-# export OLLAMA_HOST="0.0.0.0:11434" 
-# $ ollama serve
 import requests
 
-local  = "localhost"
+local = "localhost"
 remote = "100.113.158.78"
 
-urls = [ "http://"+ local  +":11434/api/generate",
-         "http://"+ remote +":11434/api/generate",
-         "http://"+ remote +":11434/api/chat",
-       ]
+urls = [
+    f"http://{local}:11434/api/generate",
+    f"http://{remote}:11434/api/generate"
+]
 
-models = [ "llama3.2",
-           "qwen3:4B",
-           "deepseek-r1:32b",
-         ]
+modelos = [
+    "deepseek-coder:latest",
+    "deepseek-r1:latest",
+    "qwen3:4b",
+    "llama3:latest"
+]
 
-prompt = [ 
-            "Dame el algoritmo del ordenamiento por selection sort."+
-            "en lenguaje python version 3.10 o superior"+
-            "colocal el codigo en una funcion SelectionSort."+
-            "no comentes el codigo y no agregues explicaciones"+
-            "debe poder recibir una lista de numeros y devolver la lista ordenada.",
-         ]
 
-url = urls[1]
-payload = {
-    "model":  models[0],
-    "prompt": prompt[0],
-    "stream": False
-}
+def generar_codigo(modelo, prompt):
+    payload = {
+        "model": modelo,
+        "prompt": prompt,
+        "stream": False
+    }
 
-response = requests.post(url, json=payload)
+    try:
+        response = requests.post(
+            urls[0],
+            json=payload,
+            timeout=300
+        )
 
-if response.status_code == 200:
-    data = response.json()
-    print(data["response"])
-else:
-    print("Error:", response.status_code, response.text)
+        if response.status_code != 200:
+
+            print("\nError de Ollama")
+            print("URL:", urls[0])
+            print("Status:", response.status_code)
+            print("Respuesta:")
+            print(response.text)
+
+            return None
+
+        datos = response.json()
+
+        return datos["response"]
+
+    except requests.exceptions.RequestException as e:
+        print("\nError de conexion con Ollama")
+        print(e)
+
+        return None
