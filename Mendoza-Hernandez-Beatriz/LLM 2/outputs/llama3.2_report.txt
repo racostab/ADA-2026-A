@@ -1,0 +1,117 @@
+
+
+================================================================================
+evaluate_problem.txt
+================================================================================
+
+Here is a comprehensive evaluation of the project:
+
+**Novelty (9/10)**: The project proposes a novel approach to designing efficient CNN accelerators on FPGA platforms. The use of polyhedral-based data dependence analysis and loop unrolling techniques to optimize computation-engine optimization is an innovative contribution.
+
+**Relevance (8.5/10)**: The project addresses a pressing need in the field of computer vision, where deep learning models are increasingly being deployed on resource-constrained devices. The proposed approach can help improve the performance and efficiency of CNNs on FPGA platforms, making it relevant to the research community and industry.
+
+**Feasibility (7/10)**: The project involves several technical challenges, such as optimizing loop unrolling and handling data sharing relations. While the authors have proposed a sound methodology, the feasibility of completing the project within 18 months may be uncertain due to the complexity of the tasks involved. Additional resources or expert guidance might be required to overcome some of the technical hurdles.
+
+**Expected contribution (9/10)**: The project has the potential to make a significant impact on the field of computer vision and FPGA-based deep learning. The proposed approach can help improve the performance, efficiency, and scalability of CNNs on resource-constrained devices, leading to faster inference times and reduced power consumption.
+
+To complete the project within 18 months, I would recommend:
+
+1. **Enhancing feasibility**: Provide additional resources or expert guidance to overcome technical challenges, such as optimizing loop unrolling and handling data sharing relations.
+2. **Refining methodology**: Further refine the proposed methodology through iterative testing and evaluation to ensure its efficacy and scalability.
+3. **Interdisciplinary collaboration**: Foster collaboration between experts from academia, industry, and research institutions to leverage diverse expertise and accelerate progress.
+4. **Risk management**: Identify potential risks and develop contingency plans to mitigate them, ensuring that the project stays on track despite unforeseen setbacks.
+
+With careful planning, resource allocation, and a bit of luck, it is possible to complete this project within 18 months. However, I would caution against over-optimism, as the technical challenges involved may require additional time to overcome.
+
+================================================================================
+methodology.txt
+================================================================================
+
+It seems like you've provided a lot of text, but it appears to be incomplete. The format of the text is not consistent throughout, and some parts are missing.
+
+However, I can try to help you summarize the main points of your text in a more organized and complete format. Here's my attempt:
+
+**Accelerator Design Exploration**
+
+The chapter discusses the design exploration of a CNN accelerator on an FPGA platform. The accelerator consists of several major components: processing elements (PEs), on-chip buffers, external memory, and on-/off-chip interconnect.
+
+**Design Challenges**
+
+There are several design challenges that need to be addressed:
+
+1. Loop tiling is mandatory to fit a small portion of data on-chip.
+2. The organization of PEs and buffer banks and interconnects between them should be carefully considered to process on-chip data efficiently.
+3. The data processing throughput of PEs should match the off-chip bandwidth provided by the FPGA platform.
+
+**Optimization Techniques**
+
+The chapter presents several optimization techniques to explore the design space:
+
+1. **Loop Tiling**: Loop tiling is applied to tile loop iterators (row, col, to, and ti) into smaller loops (trr, tcc, too, and tii). The data sharing relations between these loops are classified into three categories: irrelevant, independent, and dependent.
+2. **Data Reuse Technique**: Data reuse technique is used to reduce external memory traffic and formulate the computation-to-communication ratio with tiling factors.
+3. **Design Space Definition**: The design space is defined as a set of legal design variants that meet the requirements of the CNN implementation.
+
+**Hardware Implementation**
+
+The chapter discusses how to generate hardware implementations based on the optimization techniques applied:
+
+1. **Independent Data Sharing Relation**: Direct connections are generated between buffers and computation engines.
+2. **Irrelevant Data Sharing Relation**: Broadcast connections are generated.
+3. **Dependent Data Sharing Relation**: Interconnects with complex topology are generated.
+
+I hope this summary is helpful! Let me know if you have any further questions or if there's anything else I can help you with.
+
+================================================================================
+systematic_review.txt
+================================================================================
+
+
+
+================================================================================
+unresolved_problems.txt
+================================================================================
+
+I'll provide a response based on the provided text.
+
+**Accelerator Design Exploration**
+
+In this section, we present an overview of our accelerator structure and design challenges on an FPGA platform. We propose optimization techniques to explore the design space.
+
+**Design Overview**
+
+The CNN accelerator design is composed of several major components:
+
+1. Processing Elements (PEs): The basic computation unit for convolution.
+2. On-chip Buffer: Caches data before being fed to PEs.
+3. External Memory: Stores all data for processing.
+4. On-/Off-chip Interconnect: Dedicated for data communication between PEs and on-chip buffers.
+
+**Design Challenges**
+
+1. Loop Tiling: Mandatory to fit a small portion of data on-chip, affecting data reuse and parallelism.
+2. PE and Buffer Organization: Careful consideration is needed to process data efficiently.
+3. Data Processing Throughput: Must match the off-chip bandwidth provided by the FPGA platform.
+
+**Optimization Methodology**
+
+We start by applying loop tiling (Figure 5). Loop iterators i and j are not tiled due to the small size of convolution window size K in CNN. Other loop iterators are tiled into tile loops and point loops.
+
+Next, we discuss computation engine optimization and formulate the computational performance with tilling factors.
+
+Then, we use data reuse technique to reduce external memory traffic and formulate the computation-to-communication ratio with tiling factors.
+
+We define the design space, where we present the computation-memory-access-matched-design under FPGA board specification.
+
+Finally, we discuss how to select a best uniform accelerator for the entire multi-layer CNN application.
+
+**Computation Optimization**
+
+We use standard polyhedral-based data dependence analysis to derive legal design variants of equivalently CNN implementations through loop scheduling and loop tile size enumeration. We aim to enable efficient loop unrolling/pipelining while fully utilizing computation resources provided by the FPGA hardware platform.
+
+The optimization involves:
+
+1. Loop Unrolling: Increasing the utilization of massive computation resources in FPGA devices.
+2. Data Sharing Relations: Classifying data sharing relations into three categories: irrelevant, independent, and dependent.
+3. Hardware Implementations: Generating direct connections for independent data sharing, broadcast connections for irrelevant data sharing, and interconnects with complex topology for dependent data sharing.
+
+The generated hardware implementation can be found in Figure 7.
