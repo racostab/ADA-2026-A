@@ -1,0 +1,108 @@
+\documentclass[conference]{IEEEtran}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{url}
+
+\title{Limites para Ordenar Complejidades Algoritmicas}
+\author{\IEEEauthorblockN{Ronquillo Nunez Braulio}
+\IEEEauthorblockA{Analisis y Diseno de Algoritmos}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+El ordenamiento de funciones de complejidad es una tarea basica en analisis de
+algoritmos. Para comparar dos costos se puede estudiar el limite del cociente
+entre sus funciones. Este reporte desarrolla el criterio por limites, presenta
+una jerarquia usual de crecimiento y describe un programa que ordena
+expresiones de complejidad de menor a mayor clase asintotica.
+\end{abstract}
+
+\begin{IEEEkeywords}
+limites, complejidad, Big-O, jerarquia asintotica, algoritmos.
+\end{IEEEkeywords}
+
+\section{Introduccion}
+Cuando se comparan algoritmos, no basta con observar un caso pequeno. Un
+algoritmo con constantes altas puede superar a otro cuando $n$ crece, y un
+algoritmo rapido en entradas pequenas puede volverse impracticable si su
+crecimiento es exponencial. Por eso se estudian funciones como $\log n$, $n$,
+$n\log n$, $n^2$, $2^n$ y $n!$.
+
+NIST define Big-O como una medida teorica del tiempo o memoria necesarios para
+un algoritmo segun el tamano de entrada \cite{nist_big_o}. Esta idea se puede
+complementar con limites para decidir cuando una funcion domina a otra.
+
+\section{Criterio por Limites}
+Sean $f(n)$ y $g(n)$ funciones positivas. Se analiza
+\begin{equation}
+L=\lim_{n\to\infty}\frac{f(n)}{g(n)}.
+\end{equation}
+Si $L=0$, entonces $f$ crece estrictamente menos que $g$. Si $L$ es una
+constante positiva y finita, ambas funciones son del mismo orden. Si
+$L=\infty$, entonces $f$ crece mas que $g$.
+
+La regla de L'Hospital puede ayudar en ciertos cocientes indeterminados, pero
+debe aplicarse con cuidado. MathWorld indica que la regla compara limites de
+derivadas bajo condiciones especificas y tambien muestra casos donde la
+aplicacion mecanica puede fallar por oscilacion \cite{mathworld_lhopital}.
+
+\section{Jerarquia Usual}
+Una escala comun de crecimiento es:
+\begin{equation}
+1 \prec \log n \prec n \prec n\log n \prec n^2 \prec n^3 \prec 2^n \prec n!.
+\end{equation}
+Esta jerarquia no cubre todas las funciones posibles, pero es suficiente para
+clasificar muchas complejidades introductorias. La notacion $\Theta$ formaliza
+la idea de misma clase asintotica mediante cotas superior e inferior por
+constantes \cite{nist_theta}.
+
+\begin{table}[htbp]
+\caption{Clases usadas por el programa}
+\centering
+\begin{tabular}{ll}
+\toprule
+Clase & Ejemplo \\
+\midrule
+Constante & $1$ \\
+Logaritmica & $\log n$ \\
+Lineal & $n$ \\
+Lineal-logaritmica & $n\log n$ \\
+Polinomial & $n^2$, $n^3$ \\
+Exponencial & $2^n$ \\
+Factorial & $n!$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Implementacion}
+El programa recibe una lista de expresiones escritas con nombres predefinidos.
+Cada expresion se asocia con un rango numerico que representa su posicion en
+la jerarquia. Luego se ordena la lista por ese rango. Cuando dos expresiones
+comparten rango, se imprimen como equivalentes en la misma clase.
+
+Esta solucion es deliberadamente didactica: en lugar de hacer algebra
+simbolica completa, codifica una tabla de clases para practicar el concepto de
+dominancia asintotica.
+
+\section{Complejidad}
+Si se reciben $k$ expresiones, el costo dominante es el ordenamiento, por lo
+que el tiempo es $O(k\log k)$. La memoria adicional es $O(k)$ para almacenar
+las expresiones y sus claves de comparacion.
+
+\section{Conclusion}
+El analisis por limites da una base formal para ordenar complejidades. Aunque
+el programa usa una jerarquia cerrada, reproduce la idea central: comparar el
+crecimiento dominante y agrupar funciones equivalentes bajo $\Theta$.
+
+\begin{thebibliography}{00}
+\bibitem{nist_big_o} P. E. Black, ``big-O notation,'' Dictionary of Algorithms and Data Structures, NIST, 2019. [Online]. Available: \url{https://www.nist.gov/dads/HTML/bigOnotation.html}
+\bibitem{nist_theta} P. E. Black, ``Theta,'' Dictionary of Algorithms and Data Structures, NIST, 2016. [Online]. Available: \url{https://www.nist.gov/dads/HTML/theta.html}
+\bibitem{mathworld_lhopital} E. W. Weisstein, ``L'Hospital's Rule,'' MathWorld--A Wolfram Resource. [Online]. Available: \url{https://mathworld.wolfram.com/LHospitalsRule.html}
+\bibitem{mit_algorithms} E. Demaine, J. Ku, and J. Solomon, ``6.006 Introduction to Algorithms: Lecture Notes,'' MIT OpenCourseWare, 2020. [Online]. Available: \url{https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/pages/lecture-notes/}
+\end{thebibliography}
+
+\end{document}

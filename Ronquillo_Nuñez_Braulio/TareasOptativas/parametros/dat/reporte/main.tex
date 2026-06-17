@@ -1,0 +1,107 @@
+\documentclass[conference]{IEEEtran}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{booktabs}
+\usepackage{url}
+
+\title{Parametros, Marcos de Activacion y Pila de Ejecucion}
+\author{\IEEEauthorblockN{Ronquillo Nunez Braulio}
+\IEEEauthorblockA{Analisis y Diseno de Algoritmos}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+El paso de parametros en funciones puede analizarse mediante una pila de
+ejecucion. Cada llamada crea un marco de activacion que contiene parametros,
+variables locales y control de retorno. Este reporte describe la estructura
+LIFO, su relacion con llamadas anidadas y recursivas, y la simulacion
+implementada para observar operaciones de llamada, asignacion y retorno.
+\end{abstract}
+
+\begin{IEEEkeywords}
+parametros, pila, LIFO, marco de activacion, recursion.
+\end{IEEEkeywords}
+
+\section{Introduccion}
+Cuando un programa invoca una funcion, el flujo de ejecucion se suspende en
+el punto de llamada y se transfiere control a otro bloque de codigo. Para
+recuperar el estado anterior se utiliza una estructura conceptual conocida
+como pila de ejecucion. Esta pila almacena informacion de cada llamada activa.
+
+NIST define una pila como una coleccion donde solo puede retirarse el elemento
+agregado mas recientemente; sus operaciones basicas son \texttt{push} y
+\texttt{pop}, y se conoce como LIFO \cite{nist_stack}. Esta propiedad encaja
+con las llamadas de funcion: la ultima funcion invocada es la primera que debe
+terminar.
+
+\section{Marco Teorico}
+Un marco de activacion representa una llamada particular. Aunque los detalles
+dependen del lenguaje y compilador, el modelo abstracto incluye:
+\begin{itemize}
+\item parametros de entrada,
+\item variables locales,
+\item direccion de retorno,
+\item informacion temporal para evaluar expresiones.
+\end{itemize}
+En llamadas anidadas, cada nuevo marco se apila sobre el anterior. Cuando la
+funcion termina, se desapila su marco y el control regresa al llamador.
+
+Este mecanismo tambien explica la recursion. Cada llamada recursiva posee sus
+propias variables locales, aunque ejecute el mismo codigo. El limite practico
+esta dado por el tamano maximo de pila; si se excede, aparece un error de
+desbordamiento.
+
+\section{Modelo del Programa}
+La simulacion implementada usa tres operaciones principales:
+\begin{table}[htbp]
+\caption{Operaciones simuladas}
+\centering
+\begin{tabular}{ll}
+\toprule
+Operacion & Efecto \\
+\midrule
+\texttt{CALL f} & inserta un marco de funcion \\
+\texttt{SET x v} & asigna una variable local \\
+\texttt{RETURN} & elimina el marco superior \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+La pila se representa con una lista. El extremo final de la lista funciona
+como tope. Esta decision permite que insertar y retirar el marco superior sea
+una operacion directa. El programa reporta la evolucion de la pila y detecta
+acciones invalidas, como intentar retornar cuando no existe una llamada activa.
+
+\section{Criterios de Calidad}
+El ejercicio permite revisar tres criterios de calidad:
+\begin{enumerate}
+\item \textit{Orden correcto}: la estructura debe conservar el orden LIFO.
+\item \textit{Aislamiento}: una variable local solo debe afectar el marco
+actual.
+\item \textit{Control de tamano}: la simulacion debe advertir si se supera la
+profundidad maxima permitida.
+\end{enumerate}
+Estos criterios son relevantes porque un error en cualquiera de ellos cambia
+el significado de las llamadas de funcion.
+
+\section{Complejidad}
+Para $q$ operaciones, el costo total es $O(q)$ si se omite el costo de imprimir
+la pila completa. El espacio usado es $O(h)$, donde $h$ es la maxima
+profundidad de llamadas activas. En el peor caso, si nunca se ejecuta
+\texttt{RETURN}, $h=q$.
+
+\section{Conclusion}
+La pila de ejecucion ofrece una forma clara de estudiar el paso de parametros.
+El comportamiento LIFO garantiza que cada funcion termine antes de regresar al
+contexto que la invoco. La simulacion ayuda a visualizar recursividad,
+variables locales y errores de control de llamadas.
+
+\begin{thebibliography}{00}
+\bibitem{nist_stack} P. E. Black, ``stack,'' Dictionary of Algorithms and Data Structures, NIST, 2019. [Online]. Available: \url{https://www.nist.gov/dads/HTML/stack.html}
+\bibitem{mit_algorithms} E. Demaine, J. Ku, and J. Solomon, ``6.006 Introduction to Algorithms: Lecture Notes,'' MIT OpenCourseWare, 2020. [Online]. Available: \url{https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/pages/lecture-notes/}
+\bibitem{ods_stack} P. Morin, ``Open Data Structures,'' Athabasca University Press, 2013. [Online]. Available: \url{https://opendatastructures.org/}
+\end{thebibliography}
+
+\end{document}

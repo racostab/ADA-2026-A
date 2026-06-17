@@ -1,0 +1,114 @@
+\documentclass[conference]{IEEEtran}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{url}
+
+\title{Tricotomia y Comparabilidad Asintotica}
+\author{\IEEEauthorblockN{Ronquillo Nunez Braulio}
+\IEEEauthorblockA{Analisis y Diseno de Algoritmos}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+La tricotomia afirma que, para dos numeros reales, exactamente una de tres
+relaciones es verdadera: menor, igual o mayor. En analisis asintotico esta
+idea no siempre se conserva, porque las funciones pueden oscilar y no admitir
+un orden total simple. Este reporte estudia la diferencia entre comparacion
+puntual y comparacion asintotica, mostrando por que algunas funciones no son
+clasificables de forma directa mediante $O$, $\Omega$ o $\Theta$.
+\end{abstract}
+
+\begin{IEEEkeywords}
+tricotomia, asintotico, Big-O, limites, oscilacion.
+\end{IEEEkeywords}
+
+\section{Introduccion}
+En aritmetica elemental, dos cantidades reales son comparables: si $a$ y $b$
+son reales, entonces $a<b$, $a=b$ o $a>b$. Esta propiedad es natural para
+numeros fijos. Sin embargo, en algoritmos se comparan funciones completas, no
+solo valores individuales. Por ello, una funcion puede ser menor que otra para
+algunos valores de $n$ y mayor para otros.
+
+El uso de notaciones asintoticas como $O$ y $\Theta$ requiere observar el
+comportamiento eventual de las funciones. NIST define Big-O como una medida
+teorica del costo de ejecucion o memoria para un problema de tamano $n$
+\cite{nist_big_o}. Esa definicion depende de constantes y de un punto $n_0$,
+por lo que no se decide con una sola evaluacion.
+
+\section{Marco Teorico}
+Una relacion como $f(n)=O(g(n))$ no exige que $f(n)\leq g(n)$ para todo $n$,
+sino que exista una constante $c$ tal que $f(n)\leq c g(n)$ eventualmente.
+De manera similar, $f(n)=\Theta(g(n))$ exige cotas inferior y superior por
+multiplos constantes de $g$ \cite{nist_theta}.
+
+La tricotomia fallaria si se interpreta como una clasificacion total entre
+clases asintoticas. Hay pares de funciones para los cuales el cociente
+\begin{equation}
+R(n)=\frac{f(n)}{g(n)}
+\end{equation}
+no tiende a cero, a una constante positiva ni a infinito. En esos casos,
+la comparacion por limite no produce una de las tres conclusiones usuales.
+
+\section{Ejemplo Oscilatorio}
+Considere
+\begin{equation}
+f(n)=n,\qquad g(n)=n^{1+\sin n}.
+\end{equation}
+Entonces
+\begin{equation}
+\frac{f(n)}{g(n)}=n^{-\sin n}.
+\end{equation}
+Como $\sin n$ toma valores positivos y negativos infinitamente muchas veces,
+el cociente puede hacerse muy pequeno o muy grande en distintas subsecuencias.
+Por eso no hay un limite ordinario que permita clasificar el par con el
+criterio simple.
+
+MathWorld observa que incluso herramientas de limites como la regla de
+L'Hospital pueden requerir cuidado cuando aparecen comportamientos
+oscilatorios \cite{mathworld_lhopital}. Esta advertencia es importante:
+en analisis asintotico no basta con aplicar mecanicamente una regla.
+
+\section{Programa Implementado}
+El programa simula el ejemplo anterior hasta un limite $N$. Para cada entero
+$n$ calcula $f(n)$, $g(n)$ y el cociente $f(n)/g(n)$. Despues reporta el valor
+minimo y maximo observados. Si los extremos se alejan de forma significativa,
+se concluye que el ejemplo no se comporta como una relacion asintotica simple.
+
+\begin{table}[htbp]
+\caption{Lectura de resultados}
+\centering
+\begin{tabular}{ll}
+\toprule
+Comportamiento & Interpretacion \\
+\midrule
+Cociente estable & Posible $\Theta$ \\
+Cociente decreciente & Posible $O$ estricta \\
+Cociente creciente & Posible $\Omega$ estricta \\
+Cociente oscilatorio & No hay tricotomia simple \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Complejidad}
+Si el programa evalua enteros de $2$ a $N$, realiza $N-1$ iteraciones. Cada
+iteracion ejecuta operaciones aritmeticas constantes. La complejidad temporal
+es $O(N)$ y la memoria adicional es $O(1)$.
+
+\section{Conclusion}
+La tricotomia de numeros reales no se traslada directamente a funciones bajo
+notacion asintotica. En algoritmos, la comparacion debe demostrarse con
+definiciones formales, cotas o limites bien justificados. Las funciones
+oscilatorias muestran que puede no existir una clasificacion total simple.
+
+\begin{thebibliography}{00}
+\bibitem{nist_big_o} P. E. Black, ``big-O notation,'' Dictionary of Algorithms and Data Structures, NIST, 2019. [Online]. Available: \url{https://www.nist.gov/dads/HTML/bigOnotation.html}
+\bibitem{nist_theta} P. E. Black, ``Theta,'' Dictionary of Algorithms and Data Structures, NIST, 2016. [Online]. Available: \url{https://www.nist.gov/dads/HTML/theta.html}
+\bibitem{mathworld_lhopital} E. W. Weisstein, ``L'Hospital's Rule,'' MathWorld--A Wolfram Resource. [Online]. Available: \url{https://mathworld.wolfram.com/LHospitalsRule.html}
+\bibitem{mit_algorithms} E. Demaine, J. Ku, and J. Solomon, ``6.006 Introduction to Algorithms: Lecture Notes,'' MIT OpenCourseWare, 2020. [Online]. Available: \url{https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/pages/lecture-notes/}
+\end{thebibliography}
+
+\end{document}
