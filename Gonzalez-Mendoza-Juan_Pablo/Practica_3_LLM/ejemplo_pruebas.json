@@ -1,0 +1,48 @@
+{
+  "descripcion_del_entorno": {
+    "explicacion": "Esta sección ilustra cómo el script espera que se organicen los archivos en la computadora del usuario antes de la ejecución.",
+    "estructura_carpetas_esperada": [
+      "/home/jp/Documentos/Tesis/Protocolo/State of Art/",
+      "├── IEEE/",
+      "│   ├── articulo_slam_1.pdf",
+      "│   └── articulo_vision_2.pdf",
+      "├── Springer/",
+      "│   └── survey_robotics_3.pdf",
+      "└── ACM/",
+      "    └── navigation_algorithm_4.pdf"
+    ],
+    "ubicacion_script_principal": "/home/jp/Documentos/A26/1_Algoritmos_Anti/Practica_3_LLM/main.py"
+  },
+  "prueba_funcionamiento_completa": {
+    "entradas": {
+      "descripcion": "El comando exacto que el usuario escribe en la terminal y los datos que el programa toma de este.",
+      "comando": "python main.py --pdf_dir \"/home/jp/Documentos/Tesis/Protocolo/State of Art\" --thesis_topic \"Algoritmos Evolutivos en Navegación\" --problem_statement \"Mejorar los tiempos de convergencia en terrenos planetarios\" --models mistral:latest --num_articles 4 --prompt_version v2",
+      "argumentos_parseados_internamente": {
+        "pdf_dir": "/home/jp/Documentos/Tesis/Protocolo/State of Art",
+        "thesis_topic": "Algoritmos Evolutivos en Navegación",
+        "problem_statement": "Mejorar los tiempos de convergencia en terrenos planetarios",
+        "models": ["mistral:latest"],
+        "num_articles": 4,
+        "prompt_version": "v2"
+      }
+    },
+    "comportamiento_interno": {
+      "1_pdf_processor": "Localiza los 4 archivos PDFs dentro de la ruta indicada y usa PyMuPDF para extraer el texto puro a una variable String en memoria local.",
+      "2_llm_agent": "Inyecta el String de texto, el thesis_topic y el problem_statement en 5 prompts diferentes de acuerdo a la version 'v2' (Modo Sinodal/Experto).",
+      "3_ollama_local": "Se invoca vía API local al modelo mistral:latest, evitando el envío de documentos científicos por internet."
+    },
+    "salida_esperada_en_json": {
+      "mistral:latest": {
+        "A_Problemas_No_Resueltos": "- La complejidad computacional de mapeo tridimensional no permite operar en tiempo real en Rovers de bajo consumo de energía.\n- Falta de estudios bajo perturbaciones dinámicas de terreno en misiones análogas prolongadas.",
+        "B_Viabilidad_Problema": "Veredicto: Medianamente factible.\nJustificación: Mejorar la convergencia es sumamente pertinente para la exploración espacial. Sin embargo, para un plazo de 18 meses, si no se especifica si las pruebas serán puramente en simulación (Gazebo/ROS) o en hardware real, podría sobrepasar el tiempo estipulado. Se sugiere acotar el problema a validaciones en simulación.",
+        "C_Metodologias": "1. Artículo 1 (Smith et al.): Visual LiDAR SLAM.\n   - Pasos: Calibración de sensores, Extracción de características de nube de puntos, Optimización global de grafos.\n2. Artículo 2 (Doe et al.): Filtros de Partículas Adaptativos.\n   - Pasos: Inicialización de enjambre de partículas, evaluación de pesos probabilísticos, remuestreo dinámico.",
+        "D_Revision_Sistematica": "- Palabras clave imprescindibles que debes buscar: Planetary Rover Navigation, Sensor Fusion SLAM, Visual-Inertial Odometry.\n- Enfoques a considerar: Revisar literatura sobre SLAM semántico frente a SLAM geométrico tradicional.",
+        "E_Generar_Cita": "@article{Smith2023,\n  title={VisualLiDAR SLAM for Rover Navigation in Planetary Environments},\n  author={Smith, J. and Williams, R.},\n  journal={IEEE Robotics and Automation Letters},\n  year={2023}\n}\n\n@inproceedings{Doe2022,\n  title={Adaptive Particle Filters for Unstructured Terrains},\n  author={Doe, A. and Brown, B.},\n  booktitle={Proceedings of the ACM Conference on Robotics},\n  year={2022}\n}"
+      }
+    },
+    "archivos_generados_esperados": {
+      "resultados_revision.json": "Archivo en formato JSON estructurado conteniendo las salidas crudas que vimos arriba.",
+      "reporte_revision.tex": "Documento LaTeX autogenerado que embebe este JSON dentro de un esqueleto \\documentclass{article} listo para compilar en PDF."
+    }
+  }
+}
