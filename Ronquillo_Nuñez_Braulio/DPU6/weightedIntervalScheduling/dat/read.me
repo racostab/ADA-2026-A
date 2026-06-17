@@ -1,0 +1,21 @@
+# Weighted Interval Scheduling
+
+Se tiene una lista de trabajos. Cada trabajo tiene tiempo de inicio `st`,
+tiempo de finalizacion `ft` y una ganancia `pro`. El objetivo es elegir un
+subconjunto de trabajos que no se traslapen y que tenga ganancia total maxima.
+
+Formato de entrada:
+- La entrada puede contener varios casos de prueba hasta EOF.
+- Cada caso empieza con un entero `NJ`, el numero de trabajos.
+- Las siguientes `NJ` lineas contienen tres enteros: `st`, `ft` y `pro`.
+
+Formato de salida:
+- Para cada caso, imprime la ganancia maxima.
+- En la siguiente linea imprime los indices originales de los trabajos elegidos.
+- Los indices se imprimen con arreglo 1-indexado y orden ascendente.
+
+Nota:
+- Dos trabajos son compatibles cuando el tiempo de finalizacion del primero es
+  menor o igual al tiempo de inicio del siguiente.
+- La implementacion usa programacion dinamica ordenando los trabajos por tiempo
+  de finalizacion.
