@@ -1,0 +1,118 @@
+\documentclass[conference]{IEEEtran}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{url}
+
+\title{Notacion de Landau para Analisis Asintotico}
+\author{\IEEEauthorblockN{Ronquillo Nunez Braulio}
+\IEEEauthorblockA{Analisis y Diseno de Algoritmos}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+La notacion de Landau es una herramienta central para describir el crecimiento
+de funciones asociadas al costo de un algoritmo. En lugar de estudiar tiempos
+medidos en una computadora especifica, el analisis asintotico observa el
+comportamiento cuando el tamano de entrada crece. Este reporte presenta las
+definiciones de $O$, $\Omega$ y $\Theta$, su interpretacion con limites y la
+forma en que se implemento un programa para comparar polinomios mediante sus
+terminos dominantes.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Landau, Big-O, complejidad, analisis asintotico, polinomios.
+\end{IEEEkeywords}
+
+\section{Introduccion}
+El analisis de algoritmos busca abstraer detalles de plataforma como lenguaje,
+procesador o memoria cache. Para lograrlo, se modela el costo de un algoritmo
+como una funcion $T(n)$, donde $n$ representa el tamano de la entrada. La
+notacion de Landau permite expresar cotas de crecimiento sin depender de
+constantes multiplicativas ni de terminos que desaparecen frente al termino
+dominante.
+
+Segun NIST, $f(n)=O(g(n))$ indica que $f$ queda acotada por un multiplo
+constante de $g$ a partir de cierto punto \cite{nist_big_o}. MathWorld resume
+los simbolos de Landau como una familia de notaciones para describir funciones
+cuando la variable tiende a infinito \cite{mathworld_landau}. En algoritmos,
+esto se traduce en una comparacion teorica entre soluciones.
+
+\section{Marco Teorico}
+Sea $f(n)$ el costo de un algoritmo y $g(n)$ una funcion de referencia. La
+cota superior asintotica se define como
+\begin{equation}
+f(n)=O(g(n)) \iff \exists c>0,\exists n_0:0\leq f(n)\leq c g(n)
+\end{equation}
+para todo $n\geq n_0$. Esta relacion no afirma igualdad exacta; solo indica
+que $g$ domina a $f$ hasta una constante. Por otro lado, $\Omega(g(n))$ se
+interpreta como cota inferior y $\Theta(g(n))$ como cota ajustada. NIST define
+$\Theta$ mediante constantes $c_1$, $c_2$ y $k$ tales que
+\begin{equation}
+0\leq c_1g(n)\leq f(n)\leq c_2g(n)
+\end{equation}
+para todo $n\geq k$ \cite{nist_theta}.
+
+En el caso de polinomios, el termino de mayor exponente determina la clase
+asintotica. Por ejemplo,
+\begin{equation}
+4n^3+2n^2+7n+9=\Theta(n^3).
+\end{equation}
+Los terminos menores no cambian la clase porque su cociente contra $n^3$
+tiende a cero.
+
+\section{Criterio por Limites}
+Una forma practica de comparar dos funciones positivas es analizar
+\begin{equation}
+L=\lim_{n\to\infty}\frac{f(n)}{g(n)}.
+\end{equation}
+Si $L=0$, entonces $f$ crece menos que $g$. Si $0<L<\infty$, ambas funciones
+son del mismo orden. Si $L=\infty$, entonces $f$ domina a $g$. Este criterio
+es especialmente claro en polinomios, exponenciales y logaritmos.
+
+\begin{table}[htbp]
+\caption{Interpretacion del cociente asintotico}
+\centering
+\begin{tabular}{ll}
+\toprule
+Resultado del limite & Relacion \\
+\midrule
+$0$ & $f(n)=O(g(n))$ estricta \\
+$c>0$ & $f(n)=\Theta(g(n))$ \\
+$\infty$ & $g(n)=O(f(n))$ estricta \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Implementacion}
+El programa implementado recibe dos polinomios. Cada polinomio se representa
+como una lista de pares $(coeficiente, exponente)$. El algoritmo localiza el
+termino dominante de cada funcion y compara primero los exponentes. Si los
+exponentes son distintos, el polinomio con mayor exponente domina. Si son
+iguales, se compara el cociente de coeficientes y se concluye una relacion
+$\Theta$.
+
+\section{Analisis de Complejidad}
+Si cada polinomio contiene $m$ terminos, basta recorrer las listas para
+encontrar el mayor exponente. Por tanto, el tiempo es $O(m)$ y el espacio
+adicional es $O(1)$. La decision es correcta para polinomios porque el termino
+dominante controla el limite del cociente.
+
+\section{Conclusion}
+La notacion de Landau formaliza la comparacion entre algoritmos cuando el
+tamano de entrada crece. En esta practica, el caso de polinomios permite ver
+la idea esencial: constantes y terminos menores desaparecen frente al termino
+dominante. Por eso, un programa que compara exponentes principales reproduce
+el criterio teorico de crecimiento asintotico.
+
+\begin{thebibliography}{00}
+\bibitem{nist_big_o} P. E. Black, ``big-O notation,'' Dictionary of Algorithms and Data Structures, NIST, 2019. [Online]. Available: \url{https://www.nist.gov/dads/HTML/bigOnotation.html}
+\bibitem{nist_theta} P. E. Black, ``Theta,'' Dictionary of Algorithms and Data Structures, NIST, 2016. [Online]. Available: \url{https://www.nist.gov/dads/HTML/theta.html}
+\bibitem{mathworld_landau} E. W. Weisstein, ``Landau Symbols,'' MathWorld--A Wolfram Resource. [Online]. Available: \url{https://mathworld.wolfram.com/LandauSymbols.html}
+\bibitem{mit_algorithms} E. Demaine, J. Ku, and J. Solomon, ``6.006 Introduction to Algorithms: Lecture Notes,'' MIT OpenCourseWare, 2020. [Online]. Available: \url{https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/pages/lecture-notes/}
+\end{thebibliography}
+
+\end{document}
