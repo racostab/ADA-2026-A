@@ -1,0 +1,1 @@
+En esta carpeta se encontrara un código en python para convertit pdfs en texto, un codigo utilizando un modelo de iA para procesarlos y darnos unas preguntas sobre que problemas no se solucionan, tambien los documentos ocupados, transformados y una nota con la respuesta del modelo.
