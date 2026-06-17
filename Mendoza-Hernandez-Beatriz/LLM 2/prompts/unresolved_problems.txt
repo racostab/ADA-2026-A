@@ -1,0 +1,12 @@
+Analyze the following scientific papers.
+
+Identify:
+
+1. Open research problems.
+2. Limitations.
+3. Gaps in the literature.
+4. Future research directions.
+
+Articles:
+
+{papers}

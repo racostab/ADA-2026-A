@@ -1,0 +1,16 @@
+Given the following problem statement:
+
+{problem_statement}
+
+And considering the provided papers:
+
+{papers}
+
+Evaluate:
+
+1. Novelty
+2. Relevance
+3. Feasibility
+4. Expected contribution
+
+Could it be completed in 18 months?

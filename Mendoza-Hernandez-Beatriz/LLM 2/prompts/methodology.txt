@@ -1,0 +1,9 @@
+For each article:
+
+1. Identify the methodology.
+2. Extract the main steps.
+3. Summarize each step.
+
+Articles:
+
+{papers}
