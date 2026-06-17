@@ -1,0 +1,13 @@
+{
+  "models": [
+    "llama3.2",
+    "mistral",
+    "gemma3"
+  ],
+
+  "pdf_folder": "papers",
+
+  "prompt_folder": "prompts",
+
+  "output_folder": "outputs"
+}
