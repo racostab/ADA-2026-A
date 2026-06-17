@@ -1,0 +1,134 @@
+========================================================
+REPORTE DETALLADO DE REVISIÓN CIENTÍFICA (POR ARTÍCULO)
+Modelo utilizado: mistral:7B (Plataforma: Ollama Local)
+========================================================
+
+--------------------------------------------------------
+ARTÍCULO 1: Articulo_1.pdf
+Tema detectado: La investigación principal de este artículo científico es sobre los memristores y sus aplicaciones para computación. Los memristores son dispositivos electrónicos que pueden almacenar y procesar información con características superiores a las de la tecnología de circuitos integrados convencionales. El artículo revisa el progreso reciente en la desarrollo y comprensión de los memristores y detalla las desafíos restantes para su comercialización como memorias y lógica de computadora.
+--------------------------------------------------------
+
+A) Problemas de investigación no resueltos:
+ 1. En el artículo de Joshua Yang, Dmitri B. Strukov y Duncan R. Stewart, se presenta una revisión sobre los mecanismos químicos y físicos de memristores, aunque la comprensión clara de los mecanismos detrás de estos dispositivos sigue siendo un desafío considerable para su comercialización como memoria y lógica computacional.
+2. En el artículo de Joshua Yang, Dmitri B. Strukov y Duncan R. Stewart, se menciona la necesidad de una comprensión precisa de los especies móviles, su ubicación, motivo y modo de movimiento bajo excitaciones eléctricas, sin embargo, esto sigue siendo un problema abierto.
+3. En el artículo de Joshua Yang, Dmitri B. Strukov y Duncan R. Stewart, se menciona la posibilidad de que otros impurezas, como hidrógeno, juguen un papel importante en el switching, sin embargo, esto sigue siendo una cuestión abierta y requiere más evidencia directa para su clarificación.
+4. En el artículo de Joshua Yang, Dmitri B. Strukov y Duncan R. Stewart, se menciona que la formación de un nuevo fase en el material insulator durante los procesos iniciales de electroformado o fabricación del dispositivo es responsable del switching, sin embargo, la identificación del material de transición real es un reto importante para entender el mecanismo del switching.
+5. En el artículo de Joshua Yang, Dmitri B. Strukov y Duncan R. Stewart, se menciona la necesidad de experimentos utilizando trazadores isotópicos para obtener más evidencia directa sobre los detalles del movimiento de especies móviles en los oxidos representativos.
+
+B) Respuesta al problema planteado:
+ 1. El problema es real ya que los artículos de referencia mencionan la existencia y las propiedades únicas de los memristores y su potencial aplicación en tecnología de computación. Además, se discuten las barreras que impiden su comercialización.
+2. El problema es pertinente dado que existe un demanda continua por mejorar la performance de las tecnologías de computación. Memristores ofrecen características de rendimiento clave que exceden a la tecnología de circuitos integrados convencionales y podrían proporcionar soluciones para mejorar la performance y reducir el consumo energético de las computadoras.
+3. Es factible resolver el problema en un periodo de 18 meses, dado que los artículos de referencia mencionan avances significativos en el entendimiento y optimización del mecanismo microscópico de memristive switching, así como la progresión reciente en la comprensión de los principales obstáculos que impiden su comercialización.
+
+C) Metodología utilizada:
+ 1. Artículo de Joshua Yang, Dmitri B. Strukov y Duncan R. Stewart: Memristive devices for computing. La metodología utilizada es Investigación experimental y teórica.
+2. Artículo de diversos autores: Memristive devices for computing. La metodología utilizada es Investigación experimental y revisión de literatura.
+
+D) Referencias fundamentales, autores recurrentes y trabajos considerados base o estado del arte:
+ 1. Autores recurrentes: Joshua Yang, Dmitri B. Strukov, Duncan R. Stewart
+2. Trabajos considerados base o estado del arte según los artículos analizados:
+   a) "Memristive devices for computing" de Joshua Yang, Dmitri B. Strukov y Duncan R. Stewart, publicado en Nature Nanotechnology (Vol 8, January 2013).
+
+Los autores recurrentes son Joshua Yang, Dmitri B. Strukov y Duncan R. Stewart, y el trabajo considerado base o estado del arte es "Memristive devices for computing", publicado en Nature Nanotechnology (Vol 8, January 2013).
+
+--------------------------------------------------------
+ARTÍCULO 2: Articulo_2.pdf
+Tema detectado: The article discusses the investigation of nanoscale resistive switching devices (memristors) and the growth dynamics of conducting filaments in these devices. The theme of the study can be summarized as: Conducting filament growth in nanoscale resistive memories.
+--------------------------------------------------------
+
+A) Problemas de investigación no resueltos:
+ 1. En el artículo de Yang et al., se presenta una investigación sobre los nanoscale resistive switching devices y su naturaleza de filamentos conductores, sin embargo, la dinámica de crecimiento de los filamentos sigue siendo un problema abierto (observation of conducting filament growth dynamics).
+
+2. En el artículo de Yang et al., se presenta una investigación sobre los nanoscale resistive switching devices y su naturaleza de filamentos conductores, sin embargo, la localización del inicio del crecimiento del filamento durante la programación sigue siendo un problema abierto (where the filament begins to grow during programming).
+
+3. En el artículo de Yang et al., se presenta una investigación sobre los nanoscale resistive switching devices y su naturaleza de filamentos conductores, sin embargo, la forma en que el canal conductor se desconecta durante el apagado sigue siendo un problema abierto (how the conducting channel is disconnected during erasing).
+
+4. En el artículo de Yang et al., se presenta una investigación sobre los nanoscale resistive switching devices y su naturaleza de filamentos conductores, sin embargo, la importancia del interfaz entre la película dielectrico y la electróde inerte para optimizar los dispositivos sigue siendo un problema abierto (the importance of the interface between the dielectric film and the inert electrode for continued device optimization).
+
+5. En el artículo de Yang et al., se presenta una investigación sobre los nanoscale resistive switching devices y su naturaleza de filamentos conductores, sin embargo, la importancia del interfaz entre la película dielectrico y la electróde activo para optimizar los dispositivos sigue siendo un problema abierto (the importance of the interface between the dielectric film and the active electrode for continued device optimization).
+
+6. En el artículo de Yang et al., se presenta una investigación sobre los nanoscale resistive switching devices y su naturaleza de filamentos conductores, sin embargo, la importancia del interfaz entre la película dielectrico y la electróde inerte para optimizar el mecanismo de apagado sigue siendo un problema abierto (the importance of the interface between the dielectric film and the inert electrode for continued optimization of the erasing mechanism).
+
+7. En el artículo de Yang et al., se presenta una investigación sobre los nanoscale resistive switching devices y su naturaleza de filamentos conductores, sin embargo, la importancia del interfaz entre la película dielectrico y la electróde activo para optimizar el mecanismo de encendido sigue siendo un problema abierto (the importance of the interface between the dielectric film and the active electrode for continued optimization of the programming mechanism).
+
+B) Respuesta al problema planteado:
+ 1. El problema es real ya que se trata de entender y caracterizar la dinámica de crecimiento de filamentos conductores en dispositivos de memoria resistiva a nanoescala, un tema de gran interés para la investigación actual en materia de memorias no volátiles y circuitos lógicos reconfigurables.
+2. El problema es pertinente dado que las descripciones y observaciones proporcionadas aportan información clave sobre cómo se forman los filamentos, donde comienza su crecimiento durante el proceso de programación y cómo el canal conductor se desconecta durante la erosión.
+3. Es factible resolver el problema en un periodo de 18 meses, dado que las investigaciones descritas utilizan métodos experimentales como imágenes de microscopía electrónica de transmisión directa y estudios detallados de la composición y estructura de los filamentos, lo que permite analizar la dinámica del crecimiento de los filamentos en dispositivos con diferentes materiales y configuraciones.
+
+C) Metodología utilizada:
+ 1. Artículo de Yang et al.: Observación de crecimiento de filamentos conductores en memorias de resistencia nanoscálicas. La metodología utilizada es Experimentación y Análisis de Transmisión Electrónica de Microscopía (TEM).
+2. Artículo no proporcionado: Investigación sobre dispositivos de memoria resistiva basados en estructuras metal/isolante/metal (MIM) y sus aplicaciones en memorias no volátiles y lógica reconfigurable. La metodología utilizada es Simulación y Experimentación.
+
+D) Referencias fundamentales, autores recurrentes y trabajos considerados base o estado del arte:
+ 1. Autores recurrentes: Yuchao Yang, Peng Gao, siddharth Gaba, Ting Chang, Xiaoqing Pan, Wei Lu
+2. Trabajos considerados base o estado del arte según los artículos analizados:
+   a) "Conducting filament growth in nanoscale resistive memories" de Yuchao Yang et al., publicado en Nature Communications. DOI: 10.1038/ncomms1737
+   b) No se encontraron otros trabajos específicamente mencionados como base o estado del arte, sin embargo, se hace referencia a varios artículos anteriores en el texto que pueden servir como base para la investigación.
+
+--------------------------------------------------------
+ARTÍCULO 3: Articulo_3.pdf
+Tema detectado: The main topic of this scientific article is Encoding Techniques for Signal Processing in Spiking Neural Networks.
+--------------------------------------------------------
+
+A) Problemas de investigación no resueltos:
+ 1. In the article by Auge et al., it is discussed that while spiking neural networks have shown promising results in solving complex problems and being energy efficient, there are still several challenges that need to be addressed. One of these challenges is the question of how to convert analog and digital data into spikes, which has not been uniformly answered in industrial applications.
+
+2. The article also mentions that while rate coding and temporal coding are two main coding approaches for spiking neural networks, there is a lack of standardization in the nomenclature and categorization used in the literature. There hasn't been a publication that summarizes and standardizes the different approaches of the research community regarding encoding techniques for signal processing in spiking neural networks.
+
+3. The article further discusses various encoding schemes such as digital, count, temporal contrast (TC), intensity time, rate density, and population rate coding. However, it does not provide a comprehensive solution or a definitive answer on which encoding scheme is best suited for specific types of data or network structures. Further research is needed to determine the optimal encoding scheme for various applications.
+
+4. Lastly, while the article provides a biological background for different encoding schemes, it does not present a thorough comparison between the biological and artificial implementations of these encoding schemes. A more detailed comparison could help in understanding the differences and trade-offs between the two and potentially lead to improvements in the design of artificial spiking neural networks.
+
+B) Respuesta al problema planteado:
+ 1. El problema es real ya que la investigación está enfocada en el análisis de diversas técnicas de codificación de señales utilizadas en Redes Neuronales con Espíques (RNE), lo que es una área activa de investigación en la computación neuromórfica.
+2. El problema es pertinente dado que el objetivo es proporcionar una visión general de las técnicas existentes de codificación, establecer una nomenclatura uniforme y ilustrar su aplicabilidad en diferentes aplicaciones, lo que puede ayudar a la comprensión y comparación entre ellos.
+3. Es factible resolver el problema en un periodo de 18 meses, dado que la investigación está basada en una revisión exhaustiva del estado del arte en técnicas de codificación de señales para RNE, lo que puede permitir a los investigadores y desarrolladores entender mejor las diferentes opciones disponibles.
+
+C) Metodología utilizada:
+ 1. Artículo de Daniel Auge, Julian Hille, Etienne Mueller y Alois Knoll: A Survey of Encoding Techniques for Signal Processing in Spiking Neural Networks. La metodología utilizada es una revisión literaria (survey).
+
+2. Artículo de [Autor/es] no proporcionado en el texto de referencia: A Survey of Encoding Techniques for Signal Processing in Spiking Neural Networks. La metodología utilizada es una simulación (simulation) y experimentación (experimentation) basados en los artículos y trabajos publicados previos sobre encoding techniques para redes neuronales espike.
+
+D) Referencias fundamentales, autores recurrentes y trabajos considerados base o estado del arte:
+ 1. Autores recurrentes: Daniel Auge, Julian Hille, Etienne Mueller, Alois Knoll
+
+2. Trabajos considerados base o estado del arte según los artículos analizados:
+   a) "A Survey of Encoding Techniques for Signal Processing in Spiking Neural Networks" de Daniel Auge, Julian Hille, Etienne Mueller, y Alois Knoll, publicado en Neural Processing Letters.
+   b) "Temporal coding schemes used by the human brain" de J. S. Meister, publicado en Trends in Neurosciences.
+
+--------------------------------------------------------
+ARTÍCULO 4: Articulo_4.pdf
+Tema detectado: The principal theme of investigation in this article is Which Model to Use for Cortical Spiking Neurons?
+--------------------------------------------------------
+
+A) Problemas de investigación no resueltos:
+ 1. En el artículo de Izhikevich (2004), se presenta una comparación y contraste de varios modelos de neurones espikes, sin embargo, el problema de cómo los neurones están conectados sigue siendo un problema abierto.
+
+2. En el artículo, también se discute la importancia de las neuronas que exhiben burbujas en el procesamiento de información del cerebro, sin embargo, no se proporciona una solución completa para cómo los modelos de red de neurones espikes deben abordar a las neuronas intrínsecamente burbuja.
+
+3. Se discute la importancia de los osciladores subterráneos en el procesamiento de información del cerebro, pero no se proporciona una solución completa para cómo incorporar este comportamiento en los modelos de red de neurones espikes.
+
+4. En el artículo también se discute la importancia de la variabilidad del umbral biológico en las neuronas, pero no se proporciona una solución completa para cómo incorporar esta característica en los modelos de red de neurones espikes.
+
+5. Se discute la importancia de la detección de coincidencia en las neuronas, sin embargo, el problema de cómo incorporar este comportamiento en los modelos de red de neurones espikes sigue siendo un problema abierto.
+
+6. En el artículo también se discute el fenómeno del reborde espiga y el reborde burbuja en las neuronas, sin embargo, no se proporciona una solución completa para cómo incorporar este comportamiento en los modelos de red de neurones espikes.
+
+7. Se discute la importancia de la adaptación de la frecuencia de disparo en las neuronas, pero no se proporciona una solución completa para cómo incorporar esta característica en los modelos de red de neurones espikes.
+
+8. En el artículo también se discute la importancia del umbral variable en las neuronas, sin embargo, no se proporciona una solución completa para cómo incorporar este comportamiento en los modelos de red de neurones espikes.
+
+B) Respuesta al problema planteado:
+ 1. El problema es real ya que el artículo discute la cuestión de determinar qué modelo es más adecuado para representar las neuronas corticales que emiten pulsos (spiking neurons), lo cual refleja una preocupación real en la comunidad científica.
+2. El problema es pertinente dado que el artículo se basa en la comparación y contrastación de diferentes modelos de neuronas espikantes, buscando identificar aquellos que pueden reproducir una mayor cantidad de características neurocomputacionales de las neuronas reales.
+3. Es factible resolver el problema en un periodo de 18 meses, dado que el artículo ofrece una clasificación y evaluación de los modelos de neuronas espikantes basada en su eficiencia computacional (medida por el número de operaciones de punto flotante necesarias para simular el modelo durante un espacio de tiempo de 1 ms). Además, se discute la utilidad de cada modelo para grandes redes neuronales corticales.
+
+C) Metodología utilizada:
+ 1. Artículo de Izhikevich: Which Model to Use for Cortical Spiking Neurons? La metodología utilizada es Análisis y comparación de modelos.
+2. En este artículo, el autor discute la bioplausibilidad y eficiencia computacional de diferentes modelos de neuronas espiking y bursting. Compara y contrasta los modelos según la cantidad de características neuro-computacionales que pueden reproducir y su eficiencia en términos de operaciones de punto flotante necesarias para simular el modelo durante un período de 1 ms. El artículo incluye análisis y comparación de varios modelos de neuronas espiking y bursting, así como una discusión sobre su utilidad en la simulación de redes neuronales corticales a gran escala. La metodología utilizada es experimental por medio de simulaciones computacionales.
+
+D) Referencias fundamentales, autores recurrentes y trabajos considerados base o estado del arte:
+ 1. Autores recurrentes: Eugene M. Izhikevich
+2. Trabajos considerados base o estado del arte según los artículos analizados:
+   a) "Which Model to Use for Cortical Spiking Neurons?" de Eugene M. Izhikevich, publicado en IEEE TRANSACTIONS ON NEURAL NETWORKS, VOL. 15, NO. 5, SEPTEMBER 2004.

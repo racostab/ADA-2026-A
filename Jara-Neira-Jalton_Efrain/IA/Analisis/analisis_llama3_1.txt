@@ -1,0 +1,153 @@
+========================================================
+REPORTE DETALLADO DE REVISIÓN CIENTÍFICA (POR ARTÍCULO)
+Modelo utilizado: llama3.2 (Plataforma: Ollama Local)
+========================================================
+
+--------------------------------------------------------
+ARTÍCULO 1: Articulo_1.pdf
+Tema detectado: El tema principal de investigación es: Desarrollo y comprensión de dispositivos memristivos
+--------------------------------------------------------
+
+A) Problemas de investigación no resueltos:
+1. Aunque el artículo de Joshua Y ang, Dmitri B. Strukov y Duncan R. Stewart proporciona una excelente revisión sobre los dispositivos memristivos para la computación, los desafíos de entender completamente las mecánicas químicas y físicas que subyacen a su comportamiento siguen siendo abiertos.
+
+2. La clasificación de los dispositivos memristivos en aniones y cationes no es clara, ya que muchos materiales pueden mostrar comportamiento de ambos tipos, lo que dificulta la comprensión de las mecánicas de switching.
+
+3. La identificación del material móvil responsable del switching sigue siendo un desafío, ya que muchos factores como la electroformación, el calentamiento por Joule y los cambios químicos en la interfaz electrode-material pueden influir en el comportamiento del dispositivo.
+
+4. El papel de los dopantes nativos, como las vacancias de oxígeno o los iones intersticiales, en el switching no está completamente claro, ya que más investigaciones directas son necesarias para confirmar su identidad y función.
+
+5. La comprensión del comportamiento de los dispositivos memristivos en diferentes estructuras y materiales sigue siendo limitada, lo que dificulta la creación de dispositivos con características optimizadas.
+
+6. La relación entre el material switching y el electrodes o substratos no está completamente establecida, lo que hace necesaria más investigación para comprender las interacciones entre estos componentes.
+
+7. El comportamiento de los dispositivos memristivos en diferentes temperaturas y campos eléctricos sigue siendo un tema sin resolver, ya que la comprensión de sus mecánicas de switching puede depender de estas condiciones.
+
+B) Respuesta al problema planteado:
+1. El problema es real ya que la investigación sobre dispositivos memristivos como memoria resistiva y lógica computacional ha sido objeto de interés en las últimas décadas debido a su potencial para mejorar el rendimiento del procesamiento de información.
+
+2. El problema es pertinente dado que la comprensión profunda de los mecanismos electroléctricos de estos dispositivos es crucial para su desarrollo y comercialización, y se han identificado importantes desafíos para entender y controlar la transición entre estados de resistencia en estos dispositivos.
+
+3. Es factible resolver el problema en un periodo de 18 meses, dado que existen avances significativos en la investigación y caracterización de materiales nanoscales, y se han publicado artículos como el mencionado en Nature Nanotechnology que abordan los desafíos y oportunidades para entender y controlar la transición entre estados de resistencia en dispositivos memristivos.
+
+C) Metodología utilizada:
+1. Nature Nanotechnology: "Memristive devices for computing" - La metodología utilizada es la simulación/experimentación, ya que el artículo describe la investigación y desarrollo de memristores y sus aplicaciones en la tecnología computacional.
+
+2. J. Joshua Yang et al. - "Memristive materials and nanoscale devices" - La metodología utilizada es principalmente la revisión exhaustiva/revisión de literatura, ya que el artículo intenta identificar las características y mecanismos de los dispositivos memristivos y discutir las limitaciones para su comercialización.
+
+D) Referencias fundamentales, autores recurrentes y trabajos considerados base o estado del arte:
+1. Autores recurrentes: Joshua J. Y ang, Dmitri B. Strukov, Duncan R. Stewart
+
+2. Trabajos considerados base o estado del arte según los artículos analizados:
+  a) "Memristive devices for computing" de J. Joshua Y ang, Dmitri B. Strukov y Duncan R. Stewart, publicado en Nature Nanotechnology.
+  b) "Memristive materials and nanoscale devices" de J. Joshua Y ang, Dmitri B. Strukov y Duncan R. Stewart, publicado en Nature Nanotechnology.
+
+--------------------------------------------------------
+ARTÍCULO 2: Articulo_2.pdf
+Tema detectado: El tema principal de investigación es: Filamentos conductores en dispositivos resistivos nanoscópicos
+--------------------------------------------------------
+
+A) Problemas de investigación no resueltos:
+1. El problema de la formación de conductores en los dispositivos resistentes a corriente no ha sido completamente resuelto, ya que se han observado diferentes formas de crecimiento de los conductores y se desconoce el mecanismo exacto por el cual ocurren.
+
+2. La localización del inicio del crecimiento del conductor sigue siendo un tema de debate, ya que según las investigaciones mencionadas, el conductor puede comenzar a crecer desde la electrode inerte o activa, dependiendo del material utilizado y la configuración del dispositivo.
+
+3. El mecanismo exacto por el cual se forma y se disuelve el conductor durante el proceso de erasure no ha sido completamente comprendido, ya que se han observado filamentos con geometrías diferentes a las previstas por las teorías existentes.
+
+4. La importancia de la interfaz entre la dielectrica e electrodes inertenos sigue siendo un tema de investigación en curso, ya que según las investigaciones mencionadas, esta interfaz es crucial para el funcionamiento correcto de los dispositivos resistentes a corriente.
+
+5. El impacto de la cation mobilty en la formación y crecimiento de los conductores no ha sido completamente comprendido, aunque se ha observado que esta variable juega un papel crítico en este proceso.
+
+B) Respuesta al problema planteado:
+1. El problema es real ya que los artículos presentados proporcionan evidencia empírica y análisis detallados sobre la dinámica de crecimiento de las filamentos conductores en dispositivos de resistencia resbalosa a nanoscale, lo que sugiere que el fenómeno de formación de estos filamentos es real y puede ser influenciado por factores como la movilidad cional en el filme dielectrico.
+
+2. El problema es pertinente dado que los artículos presentados abordan un tema de investigación relevante en el campo de la nanotecnología y las memorias no volátiles, lo que indica que la investigación sobre este tema puede tener un impacto significativo en la industria y la sociedad.
+
+3. Es factible resolver el problema en un periodo de 18 meses, dado que los artículos presentados proporcionan una base sólida para la investigación y desarrollo de dispositivos de resistencia resbalosa a nanoscale, y se pueden identificar objetivos específicos y metas alcanzables en un plazo tan corto. Sin embargo, es importante destacar que el desarrollo de nuevos dispositivos y tecnologías suele ser un proceso complejo y requerir múltiples etapas de investigación y desarrollo, por lo que es posible que sea necesario adaptar o ajustar los objetivos y metas en función de los resultados obtenidos durante el proceso.
+
+C) Metodología utilizada:
+1. Artículo de Yuchao Yang et al.: Presenta evidencia unánime de la formación de filamentos conductores a escala nanoscale durante el cambio resistivo en dispositivos MIM (metal/insulato/metal). La metodología utilizada es la observación y análisis de imágenes de transmisión electrónica de alta resolución (TEM) ex situ y in situ, combinadas con análisis estructural y composicional.
+
+2. Artículo de Yuchao Yang et al.: Estudia la formación de filamentos conductores en dispositivos MIM y presenta evidencia sobre su dinámica de crecimiento. La metodología utilizada es la observación de imágenes TEM ex situ e in situ, combinadas con análisis estructural y composicional de diferentes materiales y configuraciones.
+
+D) Referencias fundamentales, autores recurrentes y trabajos considerados base o estado del arte:
+1. Autores recurrentes: Yuchao Yang, Peng Gao, siddharth Gaba, Ting Chang, Xiaoqing Pan, Wei Lu.
+
+2. Trabajos considerados base o estado del arte según los artículos analizados:
+a) "observation of conducting filament growth in nanoscale resistive memories" de Yuchao Yang et al., publicado en Nature Communications.
+b) No se encuentran otros trabajos que sean considerados como base o estado del arte según los artículos analizados. Sin embargo, el artículo de Yang et al. se refiere a investigaciones previas sobre filamentos conductores y citan estudios como "formation of conducting filaments" de varios autores, pero no proporciona un referente específico en este sentido.
+
+Es importante mencionar que ambos artículos presentan resultados originales y contribuyen significativamente al entendimiento de la formación de filamentos conductores en dispositivos resistivos nanoscópicos. El primer artículo de Yang et al. presenta evidencia directa de forma de transmisión electrónica de microscopía (TEM) del crecimiento de los filamentos y su análisis estructural y composicional, mientras que el segundo artículo proporciona una visión general más amplia del tema y discute las implicaciones de sus resultados en la optimización de dispositivos resistentes.
+
+--------------------------------------------------------
+ARTÍCULO 3: Articulo_3.pdf
+Tema detectado: El tema principal de investigación es: Encoding techniques para procesamiento de señales en redes neuronales espigadoras.
+--------------------------------------------------------
+
+A) Problemas de investigación no resueltos:
+1. Aún no se ha resuelto el problema de cómo conviertir los datos analógicos y digitales en spikes de manera eficiente y efectiva.
+
+2. La cuestión de si la precisión del tiempo y el orden de los picos es crucial para transmitir la información sigue siendo un tema abierto en la investigación sobre redes neuronales espigadas.
+
+3. No se ha establecido una forma universal de nombrar y categorizar las técnicas de codificación, lo que genera confusión y dificulta la comparación de resultados entre investigaciones.
+
+4. La relación entre los patrones de codificación biológicos y las redes neuronales espigadas sigue siendo un área de investigación en desarrollo, y se necesitan más estudios para comprender cómo aplicar estas técnicas en la práctica.
+
+5. La optimización de las redes neuronales espigadas sigue siendo un desafío, ya que la elección del mejor algoritmo de codificación y arquitectura de red puede afectar significativamente el rendimiento y la eficiencia de la red.
+
+6. Aún no se ha resuelto el problema de cómo realizar la transición efectiva entre las redes neuronales espigadas convencionales y las redes neuronales espigadas en hardware, lo que genera un obstáculo importante para su implementación real.
+
+7. La investigación sobre las aplicaciones prácticas de las redes neuronales espigadas sigue siendo limitada, y se necesitan más estudios para entender cómo estas redes pueden ser aplicadas en campos como la inteligencia artificial, la robótica y la medicina.
+
+B) Respuesta al problema planteado:
+1. El problema es real ya que el campo de las redes neuronales espigadas (SNNs) está en constante evolución y se han identificado diferentes desafíos y oportunidades en su implementación, como la necesidad de desarrollar algoritmos y protocolos adaptados a las características específicas de cada tipo de dato, y la falta de un nomenclador y categorización uniformes para las técnicas de codificación.
+
+2. El problema es pertinente dado que el desarrollo de SNNs tiene aplicaciones en diferentes campos, como la inteligencia artificial, la robótica, la biología y la medicina, y la creación de una comunidad de investigación y práctica más unificada y colaborativa para su desarrollo es un objetivo importante.
+
+3. Es factible resolver el problema en un periodo de 18 meses, dado que se pueden identificar y analizar las diferentes técnicas de codificación existentes, establecer un nomenclador y categorización uniformes, desarrollar algoritmos y protocolos adaptados a las características específicas de cada tipo de dato, y colaborar con la comunidad de investigación y práctica para su implementación y validación.
+
+C) Metodología utilizada:
+1. Artículo de Daniel Auge et al.: Se presenta una revisión de técnicas de codificación para procesamiento de señales en redes neuronales espigadoras (SNNs). La metodología utilizada es simulación y análisis de literatura, con el objetivo de proporcionar un marco teórico y uniforme para la categorización de las diferentes técnicas de codificación.
+
+2. Artículo de Daniel Auge et al.: En este trabajo se explora el concepto de codificación en redes neuronales espigadoras (SNNs) y se presentan los resultados de una investigación sobre la eficacia de diferentes técnicas de codificación para procesamiento de señales en SNNs. La metodología utilizada es simulación y análisis experimental, con el objetivo de evaluar las performance de diferentes técnicas de codificación en tareas de procesamiento de señales.
+
+D) Referencias fundamentales, autores recurrentes y trabajos considerados base o estado del arte:
+1. Autores recurrentes: Daniel Auge, Julian Hille, Etienne Mueller, Alois Knoll.
+
+2. Trabajos considerados base o estado del arte según los artículos analizados:
+   a) "A Survey of Encoding Techniques for Signal Processing in Spiking Neural Networks" de Daniel Auge, Julian Hille, Etienne Mueller y Alois Knoll, publicado en Neural Processing Letters (2021).
+   b) "The human visual system needs 150 ms to process object recognition tasks, which supports this suggestion since rate codes would be too slow to explain these fast responses [95]." Es un trabajo citado pero no es el artículo completo, por lo que no se incluye en la lista de trabajos considerados como base o estado del arte.
+
+--------------------------------------------------------
+ARTÍCULO 4: Articulo_4.pdf
+Tema detectado: El tema principal de investigación es: Modelos de neuronas espinosas en el cerebro o Análisis y comparación de modelos de neuronas espinosas.
+--------------------------------------------------------
+
+A) Problemas de investigación no resueltos:
+1. Aunque Izhikevich discute la importancia de los modelos de spike-timing en las redes de neuronas corticales, el desafío de determinar cómo esta relación afecta la comunicación entre neuronas no está resuelto.
+
+2. La clasificación de las neuronas excitables en diferentes clases (como la clase 1 y la clase 2) según su respuesta a la fuerza de estimulación no proporciona una explicación clara sobre los mecanismos subyacentes detrás de estas diferencias.
+
+3. El modelo de espesor de Hodgkin-Huxley sigue siendo un enfoque ampliamente utilizado para modelar la dinámica de las neuronas, pero su complejidad y falta de una explicación clara sobre cómo funciona el mecanismo de potencial de membrana no han sido superadas.
+
+4. La teoría de los subpotenciales oscilatorios no proporciona una explicación clara sobre cómo estas oscilaciones influyen en la función de las neuronas y cómo se pueden utilizar para procesar información.
+
+5. La resonancia de las neuronas y su efecto en la respuesta a las frecuencias específicas no ha sido completamente comprendida, lo que dificulta el desarrollo de modelos precisos que describan este fenómeno.
+
+B) Respuesta al problema planteado:
+1. El problema es real ya que la investigación en el campo de las neuronas corticales biológicas y los modelos computacionales para simular sus comportamientos es un área activa y emergente en la comunidad científica, y se han publicado varios artículos y estudios sobre este tema en revistas científicas como IEEE Transactions on Neural Networks.
+
+2. El problema es pertinente dado que entender cómo funcionan las neuronas corticales biológicas y desarrollar modelos computacionales para replicar sus comportamientos puede tener implicaciones significativas en el campo de la inteligencia artificial, la neurociencia y la medicina, entre otros.
+
+3. Es factible resolver el problema en un período de 18 meses, dado que se pueden utilizar técnicas de simulación computacional avanzadas, como la programación paralela y la optimización numérica, para evaluar y comparar diferentes modelos de simulación de neuronas corticales, y se pueden implementar estudios de laboratorio y experimentos para validar los resultados. Además, la existencia de frameworks y herramientas de software para la simulación de redes neuronales puede facilitar el proceso de investigación y desarrollo.
+
+C) Metodología utilizada:
+1. Artículo de Eugene M. Izhikevich: La autoridad presentada en el artículo es la de un experto en neurociencia y sistemas dinámicos, mientras que la metodología utilizada es una comparación sistemática y análisis detallado de diferentes modelos de neuronas espigadoras y su eficiencia computacional. El autor utiliza simulaciones, gráficas y estadística para evaluar los modelos y determinar cuál es el más adecuado para simular redes neuronales corticales.
+
+2. Artículo de Eugene M. Izhikevich: La metodología utilizada en este artículo es una revisión sistemática y comparativa de diferentes modelos de neuronas espigadoras, considerando sus características neurocomputacionales, eficiencia computacional y aplicabilidad a grandes simulaciones de redes neuronales corticales. El autor utiliza un enfoque interdisciplinario que combina elementos de la neurociencia, la física y la ingeniería para evaluar los modelos y determinar su utilidad para entender el comportamiento de las neuronas espigadoras en sistemas biológicos.
+
+D) Referencias fundamentales, autores recurrentes y trabajos considerados base o estado del arte:
+1. Autores recurrentes: Eugene M. Izhikevich, 
+
+2. Trabajos considerados base o estado del arte según los artículos analizados:
+   a) "Which Model to Use for Cortical Spiking Neurons?" de Eugene M. Izhikevich, publicado en IEEE Transactions on Neural Networks, Vol. 15, No. 5, Septiembre 2004.

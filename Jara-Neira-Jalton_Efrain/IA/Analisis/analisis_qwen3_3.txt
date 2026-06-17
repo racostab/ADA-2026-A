@@ -1,0 +1,109 @@
+========================================================
+REPORTE DETALLADO DE REVISIÓN CIENTÍFICA (POR ARTÍCULO)
+Modelo utilizado: qwen3:4B (Plataforma: Ollama Local)
+========================================================
+
+--------------------------------------------------------
+ARTÍCULO 1: Articulo_1.pdf
+Tema detectado: Memristor switching mechanisms
+--------------------------------------------------------
+
+A) Problemas de investigación no resueltos:
+1. En el artículo de Yang, Strukov y Stewart, se presenta una revisión de los avances en dispositivos memristivos para computación, sin embargo, el desafío de identificar los mecanismos microscópicos fundamentales del switching sigue siendo un problema abierto.  
+
+2. En el artículo de Yang, Strukov y Stewart, se presenta una revisión de los avances en dispositivos memristivos para computación, sin embargo, el desafío de determinar con evidencia directa las especies móviles responsables del comportamiento de switching sigue siendo un problema abierto.  
+
+3. En el artículo de Yang, Strukov y Stewart, se presenta una revisión de los avances en dispositivos memristivos para computación, sin embargo, el desafío de comprender la dinámica microscópica del movimiento de especies móviles bajo excitaciones eléctricas sigue siendo un problema abierto.
+
+B) Respuesta al problema planteado:
+1. El problema es real ya que el texto de Nature Nanotechnology (2013) explicita que "la comprensión de su comportamiento eléctrico ha sido limitada por la naturaleza química, estocástica y localizada de los efectos", y señala que "la comprensión de los mecanismos subyacentes que gobiernan su conmutación" sigue siendo incompleta, lo que representa "un obstáculo significativo para su aplicación comercial masiva" según el artículo.  
+2. El problema es pertinente dado que el texto destaca que los memristores pueden escalar a menos de 10 nm y ofrecer "rápida conmutación no volátil de baja energía", siendo una tecnología prometedora para memoria y lógica computacional, pero su comercialización está bloqueada por este obstáculo técnico, lo que impacta directamente en la demanda de tecnologías escalables para computación eficiente.  
+3. Es factible resolver el problema en un periodo de 18 meses, dado que el texto describe avances recientes en "caracterización y crecimiento de materiales nanoscápicos" y propone enfoques específicos como "experimentos con trazadores isotópicos" para identificar especies móviles y mecanismos, y señala que "en el pasado década han liderado a un progreso significativo en la comprensión y optimización de la conmutación microscópica", lo que sugiere que un esfuerzo focalizado en 18 meses podría desarrollar modelos predictivos robustos.
+
+C) Metodología utilizada:
+1. Artículo de J. Joshua Yang, Dmitri B. Strukov y Duncan R. Stewart: Revisión sistemática de la literatura sobre dispositivos memristivos. La metodología utilizada es Revisión sistemática de literatura.
+
+D) Referencias fundamentales, autores recurrentes y trabajos considerados base o estado del arte:
+1. Autores recurrentes: J. Joshua Yang, Dmitri B. Strukov, Duncan R. Stewart  
+
+2. Trabajos considerados base o estado del arte:  
+   a) "Memristive devices for computing" de J. Joshua Yang, Dmitri B. Strukov y Duncan R. Stewart, publicado en Nature Nanotechnology, volumen 8, enero 2013.  
+   b) "Experimental realization of memristors" de investigadores no especificados, publicado en 2008 (referido en texto como el trabajo que estableció el enlace entre teoría y experimento).
+
+--------------------------------------------------------
+ARTÍCULO 2: Articulo_2.pdf
+Tema detectado: Conducting filament growth mechanism
+--------------------------------------------------------
+
+A) Problemas de investigación no resueltos:
+1. En el artículo de Yang et al., se presenta la observación directa de filamentos conductores nanométricos en dispositivos de memoria resistiva mediante microscopía electrónica, sin embargo, el desafío de identificar la ubicación exacta del inicio del crecimiento del filamento durante la programación sigue siendo un problema abierto.
+
+2. En el artículo de Yang et al., se presenta la detección de dos modos distintos de crecimiento de filamentos conductores en materiales con microestructuras diferentes, sin embargo, el desafío de explicar las causas fundamentales que generan estos modos de crecimiento en sistemas específicos sigue siendo un problema abierto.
+
+3. En el artículo de Yang et al., se presenta que la región más estrecha del filamento se encuentra cerca de la interfaz dielectrizo/electrodo inactivo, sin embargo, el desafío de comprender el mecanismo específico de desconexión del canal durante la eliminación sigue siendo un problema abierto.
+
+B) Respuesta al problema planteado:
+1. El problema es real ya que los textos de referencia confirman que las investigaciones previas solo identificaban la existencia de filamentos conductores sin capturar su dinámica en tiempo real sin destruir los dispositivos, como señala el estudio de Yang et al. (2012) que utilizó microscopía electrónica de transmisión (TEM) para revelar el crecimiento de filamentos desde el electrodos activo hacia el inactivo y su región más estrecha cerca de la interfaz dielectro/elecetro-inert, resolviendo así la contradicción con teorías como la electroquímica de metales.  
+2. El problema es pertinente dado que el hallazgo crítico sobre la ubicación de la región más estrecha de los filamentos cerca de la interfaz dielectro/elecetro-inert es esencial para optimizar la estabilidad y rendimiento de memoria no volatile en aplicaciones clave como lógica reconfigurable y computación neuromórfica, como se destaca en el contexto de dispositivos MIM (metal/dielectric/metal) estudiados en los textos.  
+3. Es factible resolver el problema en un periodo de 18 meses, dado que los textos describen un enfoque sistemático y técnicamente establecido (microscopía electrónica de transmisión ex-situ e in-situ) aplicado a múltiples materiales y estructuras de dispositivos, demostrando que la dinámica de crecimiento y desconexión puede ser analizada sin destruir los dispositivos, con metodologías actualmente disponibles en laboratorios especializados para implementar estudios similares en plazo realista.
+
+C) Metodología utilizada:
+1. Artículo de Yuchao Yang, Peng Gao, Siddharth Gaba, Ting Chang, Xiaoqing Pan & Wei Lu: Estudio de filamentos conductores en dispositivos resistivos a escala nanométrica. La metodología utilizada es Experimentación con microscopía electrónica de transmisión (TEM) ex-situ e in-situ.
+
+D) Referencias fundamentales, autores recurrentes y trabajos considerados base o estado del arte:
+1. Autores recurrentes: Yuchao Yang, Peng Gao, Siddharth Gaba, Ting Chang, Xiaoqing Pan, Wei Lu
+2. Trabajos considerados base o estado del arte según los artículos analizados:
+   a) "observation of conducting filament growth in nanoscale resistive memories" de Yuchao Yang, Peng Gao, Siddharth Gaba, Ting Chang, Xiaoqing Pan y Wei Lu, publicado en Nature Communications.
+
+--------------------------------------------------------
+ARTÍCULO 3: Articulo_3.pdf
+Tema detectado: spiking neural encoding
+--------------------------------------------------------
+
+A) Problemas de investigación no resueltos:
+1. En el artículo de Daniel Auge, Julian Hille, Etienne Mueller, Alois Knoll, se presenta una revisión detallada de técnicas de codificación en redes neuronales espiking para transformar datos en eventos de spikes, sin embargo, el desafío de estandarizar la nomenclatura y categorización de los esquemas de codificación sigue siendo un problema abierto.  
+2. En el artículo de Daniel Auge, Julian Hille, Etienne Mueller, Alois Knoll, se presenta una comparación de esquemas de codificación como codificación por tasa y codificación temporal para diferentes tipos de datos, sin embargo, el desafío de seleccionar la técnica óptima para aplicaciones específicas de datos y arquitecturas de red sigue siendo un problema abierto.  
+3. En el artículo de Daniel Auge, Julian Hille, Etienne Mueller, Alois Knoll, se presenta una discusión sobre la adaptación de esquemas de codificación a requerimientos de hardware neuromórfico, sin embargo, el desafío de implementar eficientemente las técnicas de codificación en dispositivos especializados sigue siendo un problema abierto.  
+4. En el artículo de Daniel Auge, Julian Hille, Etienne Mueller, Alois Knoll, se presenta una caracterización de cómo los sistemas biológicos utilizan diferentes esquemas de codificación para procesar estímulos, sin embargo, el desafío de abordar la conversión uniforme de datos analógicos y digitales en eventos de spikes para aplicaciones industriales sigue siendo un problema abierto.
+
+B) Respuesta al problema planteado:
+1. El problema es real ya que el artículo de Auge et al. (2021) confirma explícitamente la falta de nomenclatura y categorización uniformes en la literatura, destacando que "la nomenclatura y categorización utilizada en las publicaciones no es uniforme" y que "hasta la fecha no existe una publicación que resuma y estandarice los diferentes enfoques de la comunidad de investigación". 
+
+2. El problema es pertinente dado que el artículo identifica directamente la barrera para la industrialización de SNNs como consecuencia de esta ambigüedad, afirmando que "las aplicaciones industriales aún carecen de soluciones parcialmente porque la cuestión de cómo convertir datos entrantes en eventos de spikes discretos no puede responderse de manera uniforme".
+
+3. Es factible resolver el problema en un periodo de 18 meses, dado que el artículo propone ya una taxonomía uniforme y categorización que sirve de base para estandarización, y la comunidad de investigación en SNNs está activa en este ámbito, como evidencia del trabajo de este survey que ya fue publicado en 2021 y ha sido adoptado en implementaciones prácticas.
+
+C) Metodología utilizada:
+1. Artículo de Daniel Auge, Julian Hille, Etienne Mueller y Alois Knoll: Revisión de técnicas de codificación de señales en redes neuronales espiking con propuesta de nomenclatura uniforme para clasificar esquemas de encoding. La metodología utilizada es Revisión sistemática de literatura.
+
+D) Referencias fundamentales, autores recurrentes y trabajos considerados base o estado del arte:
+1. Autores recurrentes: Daniel Auge, Julian Hille, Etienne Mueller, Alois Knoll
+2. Trabajos considerados base o estado del arte según los artículos analizados:
+   a) "A Survey of Encoding Techniques for Signal Processing in Spiking Neural Networks" de Daniel Auge, Julian Hille, Etienne Mueller, Alois Knoll, publicado en Neural Processing Letters.
+
+--------------------------------------------------------
+ARTÍCULO 4: Articulo_4.pdf
+Tema detectado: Model selection for cortical networks
+--------------------------------------------------------
+
+A) Problemas de investigación no resueltos:
+1. En el artículo de Eugene M. Izhikevich, se presenta una comparación detallada de modelos neuronales (Hodgkin-Huxley, modelos de integración y disparo cuadrático, redes pulsadas) para evaluar su plausibilidad biológica y eficiencia computacional en simulaciones corticales, sin embargo, el desafío de replicar completamente las 20 características neurocomputacionales observadas en neuronas biológicas (como bursting, adaptación de frecuencia, variabilidad del umbral) sigue siendo un problema abierto.  
+2. En el artículo de Eugene M. Izhikevich, se presenta un análisis de cómo los modelos neuronales deben capturar la dinámica de respuesta a estímulos (tonic spiking, phasic spiking, bursting) y su relación con la información temporal, sin embargo, el desafío de modelar adecuadamente la variabilidad del umbral neuronal (threshold variability) en redes de alta dimensión sigue siendo un problema abierto.  
+3. En el artículo de Eugene M. Izhikevich, se presenta una evaluación de la eficiencia computacional de los modelos neuronales (número de operaciones flotantes) para simulaciones a escala cortical, sin embargo, el desafío de encontrar un modelo que reproduzca simultáneamente todas las características neurocomputacionales críticas (como resonancia, oscilaciones subumbral y dinámicas de rebound) con eficiencia computacional óptima sigue siendo un problema abierto.  
+4. En el artículo de Eugene M. Izhikevich, se presenta una discusión sobre las implicaciones de la conectividad neuronal en redes corticales, sin embargo, el desafío de determinar la estructura y dinámica de conexiones biológicamente plausibles a escala de millones de neuronas para simulaciones de redes corticales reales sigue siendo un problema abierto.  
+5. En el artículo de Eugene M. Izhikevich, se presenta una comparación de modelos para procesamiento de información temporal mediante spikes, sin embargo, el desafío de replicar con precisión las oscilaciones subumbral y su interacción con la resonancia en redes corticales a escala de billones de neuronas sigue siendo un problema abierto.
+
+B) Respuesta al problema planteado:
+1. El problema es real ya que el artículo de Izhikevich (2004) identifica explícitamente el desafío de seleccionar modelos de neuronas espinosas biológicamente plausibles y computacionalmente eficientes para simular redes corticales a gran escala, destacando que una elección inadecuada puede generar resultados que no reflejen procesos de información en el cerebro, como se menciona en la introducción del trabajo.  
+
+2. El problema es pertinente dado que el estudio compara modelos como Hodgkin-Huxley, integrador cuadrático y redes pulsadas en términos de características neurocomputacionales reales (ej.: clasificación de excitabilidad, latencia de spiking, oscilaciones subumbral) y eficiencia operativa (medida en FLOPs por milisegundo), lo cual es crítico para simulaciones a gran escala con resolución temporal realista, como se detalla en la sección de características neurocomputacionales y la Tabla 2 del artículo.  
+
+3. Es factible resolver el problema en un periodo de 18 meses, ya que el artículo establece un marco comparativo robusto (Figura 2) que permite evaluar modelos existentes en términos de características biológicas y eficiencia computacional, y con herramientas actualizadas como NEURON o Brian2, se puede implementar una guía práctica para seleccionar el modelo óptimo en tiempo razonable, sin necesidad de crear nuevos modelos desde cero, como se sugiere en la metodología propuesta para simulaciones corticales en el trabajo.
+
+C) Metodología utilizada:
+1. Artículo de Eugene M. Izhikevich: Comparación de modelos neuronales para evaluar su utilidad en simulaciones de redes corticales. La metodología utilizada es Simulación
+
+D) Referencias fundamentales, autores recurrentes y trabajos considerados base o estado del arte:
+1. Autores recurrentes: Eugene M. Izhikevich
+2. Trabajos considerados base o estado del arte según los artículos analizados:
+   a) "Which Model to Use for Cortical Spiking Neurons?" de Eugene M. Izhikevich, publicado en IEEE Transactions on Neural Networks.
