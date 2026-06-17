@@ -37,8 +37,8 @@ Para arrancar el script, debes proporcionarle el directorio raíz donde tengas t
 ```bash
 python main.py \
   --pdf_dir "rutas/a/tus/articulos" \
-  --thesis_topic "Machine Learning aplicado a inferencia en grafos" \
-  --problem_statement "Mejorar la inferencia en grafos muy grandes en tiempo real" \
+  --thesis_topic "Tu proyecto de investigación0" \
+  --problem_statement "Puntualmente tu problema" \
   --models mistral:latest llama3:latest gemma:latest \
   --num_articles 4 \
   --prompt_version v2
