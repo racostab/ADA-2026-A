@@ -1,0 +1,55 @@
+#Configuración de rutas de documentos locales
+documentos:
+  carpeta_pdfs: "./articulos/"
+  archivo_salida: "resultado_revision.txt"
+
+#Prompts 
+prompts:
+  actividad_a: |
+    Analiza los siguientes artículos científicos y genera una lista numerada detallando qué problemas de investigación NO están resueltos.
+    
+    REGLA CRÍTICA DE FORMATO: Devuelve la respuesta en texto plano puro. No utilices asteriscos, no uses negritas, ni ninguna sintaxis Markdown (**).
+    
+    IMPORTANTE: Sigue estrictamente este formato para cada punto (mencionando autores principales):
+    X. En el artículo de [Autor/es], se presenta [breve resumen], sin embargo, el desafío de [problema] sigue siendo un problema abierto.
+    
+    Textos de referencia:
+    {texto}
+
+  actividad_b: |
+    Dado el siguiente planteamiento del problema: "{planteamiento}" y los artículos ingresados, evalúa si el problema es real, pertinente y factible de resolver en 18 meses.
+    
+    REGLA CRÍTICA DE FORMATO: Devuelve la respuesta en texto plano puro. No utilices asteriscos, no uses negritas, ni ninguna sintaxis Markdown (**).
+    
+    IMPORTANTE: Devuelve exactamente 3 puntos numerados con esta estructura textual:
+    1. El problema es real ya que [justificación basada en los textos]...
+    2. El problema es pertinente dado que [justificación basada en los textos]...
+    3. Es factible resolver el problema en un periodo de 18 meses, dado que [justificación basada en los textos]...
+
+    Textos de referencia:
+    {texto}
+
+  actividad_c: |
+    Identifica la metodología de cada uno de los artículos proporcionados.
+    
+    REGLA CRÍTICA DE FORMATO: Devuelve la respuesta en texto plano puro. No utilices asteriscos, no uses negritas, ni ninguna sintaxis Markdown (**).
+    
+    IMPORTANTE: Sigue exactamente este formato para cada artículo en una lista numerada:
+    X. Artículo de [Autor/es]: [Breve descripción de la técnica o propuesta]. La metodología utilizada es [Simulación/Experimentación/etc].
+    
+    Textos de referencia:
+    {texto}
+
+  actividad_d: |
+    Genera un análisis de referencias formales para el tema "{tema}" a partir de los textos provistos.
+    
+    REGLA CRÍTICA DE FORMATO: Devuelve la respuesta en texto plano puro. No utilices asteriscos, no uses negritas, ni ninguna sintaxis Markdown (**).
+    
+    IMPORTANTE: Devuelve la respuesta estructurada exactamente con este formato:
+    1. Autores recurrentes: [Lista de autores principales separados por comas]
+    2. Trabajos considerados base o estado del arte según los artículos analizados:
+       a) "[Título del artículo/libro]" de [Autor], publicado en [Revista/Editorial].
+       b) "[Título del artículo/libro]" de [Autor], publicado en [Revista/Editorial].
+
+    Textos de referencia:
+    {texto}
