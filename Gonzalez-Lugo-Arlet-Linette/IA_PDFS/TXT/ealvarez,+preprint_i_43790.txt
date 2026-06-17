@@ -1,0 +1,1499 @@
+Investigaciones Geográficas, Boletín del Instituto de Geografía, UNAM
+ISSN 0188-4611, núm. 88, 2015, pp. 122-145, dx.doi.org/10.14350/rig.43790
+Inestabilidad de laderas e infraestructura vial: análisis
+de susceptibilidad en la Sierra Nororiental de Puebla, México
+Recibido: 6 de enero de 2014. Aceptado en versión final: 28 de octubre de 2014.
+José Alejandro Galindo Serrano*
+Irasema Alcántara Ayala**
+Resumen. En México y diversas partes del mundo los de la región de interés, y los resultados fueron analizados a
+desastres asociados a la inestabilidad de laderas generan través de un índice de recurrencia de PRM. Finalmente, se
+impactos negativos en el ámbito socio-económico y ambien- efectuó el análisis espacial de la susceptibilidad a PRM de
+tal. Además de las pérdidas de vida, y el daño a la cubierta varios tramos carreteros de la Sierra Nororiental, con base
+vegetal, las afectaciones a las viviendas y la infraestructura en el análisis de proximidad y de superposición.
+son frecuentes; en los últimos años, la destrucción y deterioro El inventario de PRM generado se integró por 166
+en la infraestructura vial ha sido de particular importancia. procesos de remoción en masa y 40 zonas potencialmente
+Entre las diferentes áreas del país que de manera recurrente inestables. Las áreas de muy alta susceptibilidad corres-
+suelen ser afectadas por inestabilidad de laderas, se encuentra ponden a zonas con un relieve muy accidentado, mientras
+la Sierra Norte del estado de Puebla. Pérdidas humanas y que las regiones planas coinciden con zonas de muy baja
+económicas directas e indirectas, resultado de la ocurrencia susceptibilidad. La variación de los resultados expresados en
+de procesos de remoción en masa (PRM) desencadenados los mapas de susceptibilidad elaborados a partir de ambas
+principalmente por lluvias intensas, en comunidades vulne- metodologías implica que la zonificación resultado del
+rables expuestas de esta región, han tenido lugar desde hace análisis multicriterio tiende a producir valores más bajos en
+algunas décadas. El impacto en la infraestructura ha cobrado la zona urbana, mientras que en el peso de evidencia, se le
+gran relevancia, especialmente desde 1999, razón por la cual confieren valores menores a zonas montañosas que pueden
+este estudio se centró en el análisis de la susceptibilidad a caracterizarse como potencialmente inestables debido a su
+procesos de remoción de masa en las principales carreteras naturaleza geológico-geomorfológica, pero que adolecen de
+de la región de la Sierra Nororiental de Puebla. registros o evidencias concretas.
+Dicho análisis involucró la elaboración de un inventario
+de PRM, así como de la cartografía temática empleada como Palabras clave: Procesos de remoción en masa, suscepti-
+insumo para la aplicación del análisis multicriterio y pesos bilidad, infraestructura vial, análisis multicriterio, pesos
+de evidencia. Se obtuvieron dos mapas de susceptibilidad de evidencia.
+* Colegio de Geografía, Facultad de Filosofía y Letras, Universidad Nacional Autónoma de México, Circuito Escolar,
+Ciudad Universitaria, 04510, Coyoacán, México, D. F. E-mail: alexgalindo_87@hotmail.com
+** Departamento de Geografía Física, Instituto de Geografía, Universidad Nacional Autónoma de México, Circuito de la
+Investigación Científica, Ciudad Universitaria, 04510, Coyoacán, México, D. F. E-mail. irasema@igg.unam.mx
+Cómo citar:
+Galindo S., J. A. e I. Alcántara-Ayala (2015), “Inestabilidad de laderas e infraestructura vial: análisis de susceptibilidad
+en la Sierra Nororiental de Puebla, México”, Investigaciones Geográficas, Boletín, núm. 88, Instituto de Geografía, UNAM,
+México, pp. 122-145, dx.doi.org/10.14350/rig.43790.
+Inestabilidad de laderas e infraestructura vial: análisis de susceptibilidad en la Sierra Nororiental de Puebla, México
+Slope instability and road infrastructure: susceptibility analysis of
+mass movement processes in the Sierra Nororiental, Puebla, Mexico
+Abstract. In Mexico and around the world, disasters asso- were caused by human factors, and were situated in slope
+ciated with slope instability generate negative impacts on cuts or artificial excavations of small dimensions, which
+the socio-economic and environmental contexts. Besides due to map scale and the interval of contour lines were not
+the loss of life and damage to vegetation cover, the damages properly represented.
+to homes and infrastructure are common. In recent years, Moreover, according to the multi-criteria analysis,
+the destruction and deterioration of road infrastructure has 69.27% of MMP were located in the range of high and very
+been of particular importance. high susceptibility, 23.49% are in areas of medium suscep-
+The Sierra Norte de Puebla is among the different tibility and the remaining 7.22% were concentrated on low
+areas of the country that are recurrently affected by slope and very low areas of susceptibility. MMP that are in the
+instability. Direct and indirect human and economic losses low range are of small size and result from the constructions
+result of the occurrence of mass movement processes (MMP) and cuts for roads, that is to say, to factors or parameters
+–mainly triggered by heavy rains– in vulnerable exposed that were not considered directly in this analysis.
+communities in this region, have taken place since some de- The high susceptibility areas correspond to areas with
+cades. The impact on infrastructure has become important, very rugged terrain, while the flat regions coincide with areas
+especially since 1999. Therefore, this study is focused on of very low susceptibility. The variation of the results expres-
+the analysis of susceptibility to mass movement processes sed in the susceptibility maps produced by applying both
+on the main roads of the Northeast region of the Sierra methodologies implies that the zoning of multi-criteria
+de Puebla. analysis tends to produce lower values in urban areas, while
+This analysis involved the development of an inventory the weight of evidence, conferred lower values to mountain
+of MMP as well as of the thematic maps used as input for the areas that can be characterized as potentially unstable due to
+implementation of multi-criteria and weights of evidence its geological-geomorphological nature, but lacks of records
+analysis. Two maps of susceptibility of the region of interest or concrete evidence.
+were obtained and the results were analyzed by a recurrence This study represents a first step in the analysis of slope
+index of MMP. Finally, the spatial analysis of susceptibility instability triggered by rainfall in the road infrastructure in
+to MMP for several road sections of the Sierra Nororiental, the Sierra Nororiental de Puebla (North Eastern Range of
+based on the analysis of proximity and overlap, was made. Puebla). It is therefore important that future studies of mul-
+The inventory was generated based on two procedures. tidisciplinary nature and especially the contribution of civil
+The first was through direct observation in the field and engineering perspective consider the interaction between the
+data collection by using a global positioning system (GPS). physical environment and road infrastructure. As such, it
+The second was through remote sensing using SPOT satellite will be of great significant to address issues including slope
+images and Google Earth. The inventory included 166 cutting height, angle of slope, drainage works cleaning, type
+landslides and 40 potentially unstable areas. of cross section of the road, functionality of the retention
+According to the recurrence index of MMP developed works, type of soil and rock, rock fractures, discontinuities,
+in order to analyze the produced maps, results obtained by the level of cutting of vegetation coverage, erosion processes,
+applying the method of weights of evidence, showed that and rainfall- infiltration dynamics.
+72.28% of MMP occurred in the ranges of high and very high
+susceptibility, 24.1% in areas of medium susceptibility and Key words: Mass movement processes, susceptibility, road
+3.6% in the low range. The MMP categorized as low range infrastructure, multi-criteria analysis, weights of evidence.
+INTRODUCCIÓN Dado lo anterior, el estudio de los desastres
+asociados a diversas amenazas naturales desde
+En México y diversas partes del mundo los desas- diferentes enfoques ha cobrado gran relevancia.
+tres asociados a la inestabilidad de laderas generan Especial atención debe darse al análisis del impacto
+impactos negativos en el ámbito socio-económico que se genera en las vías de comunicación o redes
+y ambiental. Además de las pérdidas de vida, y el carreteras, ya que además de ser consideradas como
+daño a la cubierta vegetal, las afectaciones a las patrimonio –y por ende es necesario proteger su
+viviendas y la infraestructura son frecuentes; en integridad y funcionamiento– (García, 2003), éstas
+los últimos años, la destrucción y deterioro en la constituyen un elemento de suma importancia
+infraestructura vial ha sido de particular impor- para que se lleven a cabo diversas funciones socio-
+tancia (Zevallos, 1994; Audemard y Singer, 2002; económicas, entre las que destacan: a) integración
+Ching y Liao, 2006; Jaithish, 2010; Petley, 2010). de comunidades y territorios, b) desarrollo de las
+Investigaciones Geográficas, Boletín 88, 2015 ][ 123
+José Alejandro Galindo Serrano e Irasema Alcántara Ayala
+actividades cotidianas de la población; c) acceso
+de las comunidades a servicios básicos sociales;
+d) favorecimiento de las actividades productivas;
+e) representan el motor de la economía de cualquier región, y f) constituyen uno de los principales
+Sector/
+medios de acceso para atender situaciones de
+Concepto
+emergencia en caso de desastre.
+Entre las diferentes áreas del país que de manera
+recurrente suelen ser afectadas por inestabilidad
+de laderas, se encuentra la Sierra Norte del estado de
+Puebla. Pérdidas humanas y económicas directas e
+indirectas, resultado de la ocurrencia PRM desen-
+cadenados principalmente por lluvias intensas, en
+comunidades vulnerables expuestas de esta región,
+han tenido lugar desde hace algunas décadas. Sin
+embargo, uno de los eventos más importantes
+ocurrió en octubre de 1999.
+A consecuencia de lluvias torrenciales en los
+estados de Puebla, Hidalgo y Veracruz, se desenca-
+denaron cientos de procesos de remoción en masa
+(Bitrán, 2001; Alcántara, 2004; Lugo et al., 2005).
+En el estado de Puebla, los daños se extendieron a
+81 municipios debido al desbordamiento de ríos,
+procesos de ladera e inundaciones. Los sectores con
+mayores daños fueron la infraestructura y servicios,
+con dos tercios de las pérdidas totales; entre ellos
+destacan las afectaciones al sistema de comunicacio-
+nes y transportes, mismas que ascendieron a 974.3
+millones de pesos y representaron el 41.9% del
+total de las pérdidas asociadas al desastre (Bitrán,
+2001), (Tabla 1).
+De manera reciente, en septiembre de 2013,
+las lluvias generadas por los huracanes Ingrid y
+Manuel en el territorio nacional, también afectaron
+considerablemente esta región poblana. Derivado
+de esta problemática, este estudio se centró en el
+análisis de la susceptibilidad a procesos de remo-
+ción de masa en las principales carreteras de la
+región de la Sierra Nororiental de Puebla. Dicho
+análisis involucró la elaboración de un inventario
+de PRM, así como de la cartografía temática que se
+empleó como insumo para la posterior aplicación
+del análisis multicriterio y pesos de evidencia. Con
+base en ambos métodos se realizaron dos mapas
+de susceptibilidad de la región de interés, y sus
+correspondientes índices de recurrencia de PRM.
+Finalmente, se efectuó el análisis espacial de la
+124 ][ Investigaciones Geográficas, Boletín 88, 2015
+soñaD sotcerid soñaD sotceridni latoT % LATOT
+Tabla 1. Impacto ocasionado por el desastre de 1999 en la
+Sierra Norte de Puebla: daños en millones de pesos
+Millones de pesos mexicanos
+Sectores
+505 15 520 22.4
+Sociales
+Vivienda 486.1 486.1 20.9
+Educación 16.4 15 31.4 1.3
+Salud 2.5 2.5 0.1
+Infraestructura
+1540 1 1541 66.3
+y Servicios
+Agua y
+84.6 1.8 86.4 3.7
+saneamiento
+Energía (CFE) 481.1 481.1 20.7
+Transporte y
+974.3 974.3 41.9
+comunicaciones
+Sectores
+190.7 35 225.7 9.7
+Productivos
+Agricultura 132.5 35 167 7.2
+Ganadería 15.4 15.4 0.7
+Forestal 35 35 1.5
+Pesca
+7.8 7.8 0.3
+(acuicultura)
+Atención a la
+38.6 38.6 1.6
+Emergencia
+Total 2 235.7 89.6 2 325.3 100
+Fuente: Bitrán, 2001.
+susceptibilidad a PRM de varios tramos carreteros
+de la Sierra Nororiental, considerando análisis de
+proximidad y de superposición.
+LA SIERRA NORORIENTAL DE PUEBLA
+Marco geográfico general
+El área en estudio (Figura 1) se localiza al noreste
+del estado de Puebla (entre 19° 45’ y 19° 57’,
+97° 16’ y 97° 35’); se encuentra en la zona de
+Inestabilidad de laderas e infraestructura vial: análisis de susceptibilidad en la Sierra Nororiental de Puebla, México
+97º30'W 97º20'W
+Hueytamalco
+Hueyapan
+Yaonáhuac
+Teteles de
+Ávila Castillo
+Tlatlauquitepec
+Atempan
+Teziutlán
+Chignautla
+San Juan
+Xiutetelco
+Zaragoza
+97º30'W 97º20'W
+transición de dos unidades fisiográficas, la Sierra La geología del lugar es muy diversa debido a
+Madre Oriental y el Sistema Volcánico Transver- que se encuentra en la zona de transición de dos
+sal. Comprende diez municipios de los 28 que provincias fisiográficas (Figura 2). El basamento
+corresponden a la región de la Sierra Nororiental, está constituido por rocas metamórficas del es-
+anteriormente denominada región de Teziutlán quisto Chililis (esquistos de clorita-moscovita) y
+(COTEIGEP, 2010). Los municipios son: Zaragoza, metalava andesítica del Pérmico Inferior que aflora
+Tlatlauquitepec, Yaonáhuac, Atempan, Hueyapan, en la porción norte del área y corresponde a la base
+Tételes de Ávila Castillo, Chignautla, Teziutlán, del Terreno tectonoestratigráfico Maya. Dicho
+Xiutetelco y Hueytamalco. basamento está cubierto de manera discordante
+El relieve presenta como característica principal por rocas jurásicas de la Formación Huayacocotla,
+un descenso constante de sur a norte, la altitud del la cual está formada por una alternancia de lutitas
+área oscila entre los 500 y 2 700 msnm. Al sur se y areniscas, así como por la Formación Cahuasas,
+encuentran planicies onduladas medianamente de edad Bajociano-Bathoniano, compuesta por li-
+diseccionadas, hacia el norte la disección del terreno molita, conglomerado, y esporádicos horizontes de
+va aumentando; en el centro se presentan lomeríos arenisca, y por rocas ígneas terciarias. Estas últimas
+medianamente diseccionados interrumpidos por están conformadas por los depósitos provenientes
+la Cerro Chignautla (2 560 m) situado al oeste de del campo volcánico de Los Humeros, ampliamen-
+la ciudad de Teziutlán, y los cerros Xonocuohuta te expuestos en la porción noreste, constituidos por
+(2 500 m) y las Ánimas (2 400 m) en el poniente andesita y andesita basáltica del Plioceno. Entre los
+de la ciudad de Tlatlauquitepec; en el norte hay depósitos de los Humeros se distingue la Formación
+la presencia de sierras fuertemente diseccionadas. Teziutlán del Plioceno, constituida por andesitas,
+Investigaciones Geográficas, Boletín 88, 2015 ][ 125
+N'05º91
+N'05º91
+A la presa La Soledad
+Red carretera evaluada A Nautla
+Red carretera
+Cabecera municipal
+Área de estudio
+Municipios
+A Chignahuapan
+A Perote
+0 1 2 4
+km
+A Puebla
+Figura 1. Localización del área en estudio.
+José Alejandro Galindo Serrano e Irasema Alcántara Ayala
+97º30'W 97º24'W 97º18'W
+Hueytamalco
+Hueyapan
+Yaonáhuac
+Atempan
+Tlatlauquitepec
+Teteles de
+Ávila Castillo
+Teziutlán
+Chignautla
+Xiutetelco
+Zaragoza
+97º30'W 97º24'W 97º18'W
+andesitas basálticas, y raramente basalto y algunos palmente por una toba riolítica que se presenta en
+horizontes de toba basáltica. También aflora la sus tres estados de piro-consolidación (de la base a
+Formación San Antonio formada por andesitas, la cima: densa, mediana y ausente). En los sectores
+basaltos y piroclastos de composición basáltica del sur y suroriental se deposita pumicita la cual perte-
+Plioceno tardío-Pleistoceno temprano; le sobreyace nece al Pleistoceno. Finalmente la actividad volcá-
+de manera discordante la Formación Apaxtepec, de nica culmina con un derrame de basalto de olivino
+edad Plioceno tardío-Pleistoceno, constituida por localizado en la porción suroriental pertenecientes
+escoria basáltica y pequeños derrames de basalto. también al Plioceno. Existen asimismo algunas
+Cubriendo las unidades anteriores discordantemen- rocas cristalinas, entre las que destaca el Tronco
+te en la porción sur y centro se encuentra una toba de Tlatlauquitepec de edad Mioceno, el cual
+riolítica que corresponde a la Formación Riolita aflora en el municipio del mismo nombre y está
+Oyameles del Plioceno tardío y Pleistoceno tempra- constituido principalmente por granodiorita y
+no. La Ignimbrita Xaltipán, del Pleistoceno, aflora pórfido riolítico (Ángeles y Sánchez, 2002; SGM,
+extensamente en la región y está constituida princi- 2010, 2011).
+126 ][ Investigaciones Geográficas, Boletín 88, 2015
+N'45º91
+N'84º91
+N'45º91
+N'84º91
+0 1 2 4
+km
+Rocas ígenas Andesita-Basalto Caliza-Lutita Elementos estructurales Anticlinal
+Baslto Andesita-Toba andesítica Limonita-Conglomerado Falla normal Fractura
+Pumicita Granodiorita-Pórfido riolítico Lutita-Arenisca Falla normal inferida Fractura inferida
+Ignimbrita-Toba riolítica Granito Rocas metamórficas Falla inversa o cabalgadura Simbología complementaria
+Riolita-Dacita Rocas sedimentarias Esquisto-Metalava Falla lateral Cabecera municipal
+Piroclasto Caliza Falla normal inferida lateral Vialidades
+Fuentes: INEGI, 1984, SGM, 2010 y 2011.
+Figura 2. Geología del área de interés.
+Inestabilidad de laderas e infraestructura vial: análisis de susceptibilidad en la Sierra Nororiental de Puebla, México
+La zona en estudio se encuentra dentro de la Inestabilidad de laderas en la
+Regiones Hidrográficas 27A y 27B, la primera infraestructura vial: un breve recuento
+correspondiente al río Nautla y la segunda al río La red carretera de México nació en 1925. No
+Tecolutla (INEGI, 2011). La configuración de obstante, en aquel entonces la región de Teziutlán
+la red fluvial es de tipo paralelo con dirección (Sierra Nororiental) solo contaba con brechas y
+suroeste-noreste, entre los principales ríos destacan veredas. Fue hasta el periodo de 1940-1960 que
+el Acongo, Ocotlán, Xochihuatzaloyan, Maquina dicha región fue dotada de infraestructura, etapa
+Vieja, Xucayucan y Xoloatl, los cuales desembocan en la cual la red nacional se incrementó y la co-
+en el río Tecolutla. También destacan los ríos El municación del territorio nacional alcanzó el 33%
+Calvario, Jalacingo y Tezayacapa que son afluentes (SCT, 1996).
+del río Nautla. En 1955 el huracán Janet provocó algunos PRM
+La zona presenta tres tipos de clima. En la parte en la zona en estudio, y afectó diversas carreteras
+más alta al suroeste es templado subhúmedo, el y las comunicaciones, e indirectamente propició
+templado húmedo tiene presencia en la zona al un desabasto alimenticio. Las pérdidas humanas y
+sur y centro donde se localiza la mayoría de las materiales no fueron considerables debido a que la
+cabeceras municipales y el semicálido húmedo en distribución de los PRM se centraba principalmente
+las partes más bajas al norte. La temperatura media en lugares poco poblados. Décadas más tarde, las
+anual en las partes altas es de 14° C, mientras que intensas lluvias de octubre de 1999 desencadena-
+en la parte más baja es de 20° C, siendo mayo el ron cientos de PRM, mismos que en combinación
+mes más cálido y enero el más frío. La precipitación con poblaciones vulnerables expuestas involucró
+total anual es de entre los 1 000 y 3 500 mm, en pérdidas humanas y materiales considerables; la
+donde el mes más seco es marzo y el que presenta magnitud de este evento fue tan importante que
+mayor precipitación es septiembre (INEGI, 1993a). llegó a ser considerado como el desastre de la década
+De acuerdo con la clasificación de la FAO (Bitrán, 2001).
+UNESCO (IUSS, 2007) el tipo de suelo que predo- En octubre de 2005, a consecuencia del hura-
+mina es el andosol ócrico en la porción noreste y el cán Stan, cuyo impacto fue notable en los estados
+andosol húmico en la porción suroeste; estos suelos de Hidalgo, Puebla, Guerrero, Oaxaca, Chiapas
+de origen volcánico están constituidos principal- y Veracruz, la generación de lluvias desencadenó
+mente de ceniza, la cual contiene un alto contenido nuevamente inundaciones y procesos de remoción
+de alófano, que le confiere ligereza y untuosidad al en masa en las Sierras Norte y Nororiental de Pue-
+suelo, además, estos suelos de color oscuro tienen bla. Hubo 25 poblaciones incomunicadas y una
+alta capacidad de retención de humedad y son muy veintena de viviendas arrasadas por la creciente
+susceptibles a la erosión. Tienen bajos rendimientos de los ríos; en el municipio de Xochiapulco un
+agrícolas debido a que retienen considerablemente deslizamiento sepultó una vivienda y perdieron la
+el fósforo, y el uso más favorable para su conserva- vida tres personas (CENAPRED, 2006).
+ción es el forestal (INEGI, 2004). El total de daños cuantificados en el estado de
+El tipo de vegetación es muy variado, en la zona Puebla fue de aproximadamente 917,3 millones
+norte en donde hay presencia de fuertes pendientes, de pesos. Los daños en la infraestructura física
+se encuentran bosques mesófilos de montaña que representaron más del 60% del total de los daños
+han sido afectados por actividades antrópicas en las registrados a consecuencia del huracán; el sector
+que destacan la inducción de cultivos y pastizales; más afectado fue el de las comunicaciones y trans-
+en las elevaciones de la zona centro y sur se localizan portes (Tabla 2). Se presentaron afectaciones en
+bosques de pino, de pino-encino y encino-pino; las vías de comunicación de 77 municipios; 426
+en las zonas planas de toda el área en estudio hay caminos con una longitud de 3 544 kilómetros
+presencia de zonas agrícolas de temporal acompa- fueron dañados. La red estatal fue la que presentó
+ñadas con pastizales cultivados en la zona oriente mayores afectaciones con un monto estimado de
+(INEGI, 1993b). 374 millones de pesos para resarcir los daños. La
+Investigaciones Geográficas, Boletín 88, 2015 ][ 127
+José Alejandro Galindo Serrano e Irasema Alcántara Ayala
+las vialidades de la zona de interés. En la cabecera
+municipal de Teziutlán, el movimiento de mayor
+impacto se registró en la Avenida Juan Pablo II,
+vialidad importante que comunica al barrio de
+Sector/ Ahuateno con el de Francia al poniente de la ciu-
+Concepto dad (Rodríguez, 2010). En el Kilómetro 129 de la
+carretera federal Amozoc-Teziutlán, en un paraje
+denominado La Escondida, se registró un desliza-
+miento que obstruyó la vialidad por varias horas,
+hasta que el material fue retirado. Otro proceso de
+remoción ocurrió en el Kilómetro 5 de la carretera
+Teziutlán-Perote en un sitio denominado Las Coles
+y pese al riesgo que representó este evento se man-
+tuvo abierta la circulación de vehículos (Noticias
+de Puebla, 2010).
+En septiembre de 2011, las constantes lluvias
+provocaron la caída de grandes bloques de roca
+sobre la carpeta asfáltica en el Kilómetro 130+500
+de la autopista Puebla-Teziutlán, tramo que se en-
+cuentra en el municipio de Chignautla; este evento
+ocurrió en la noche por lo que no hubo percances
+y únicamente quedó un carril habilitado para la
+circulación (Diario de Teziutlán, 2011).
+En agosto de 2012, la depresión tropical Ernes-
+to ocasionó diversos eventos asociados a PRM en
+la infraestructura carretera de la región (Arriola,
+2012), entre ellos destacan:
+1. Quedó bloqueado el Libramiento Oriente de
+Teziutlán en el tramo las Coles-La Legua a la
+altura de Ixtipan a causa de un deslizamiento
+de tierra.
+red municipal también sufrió graves afectaciones, 2. En la carretera federal Teziutlán-Nautla a la
+su atención requirió un monto de 167 millones altura del Kilómetro 17 denominado como
+de pesos (Ibid.). Los daños a la infraestructura Cruz Verde, un deslizamiento y desborda-
+carretera afectaron a una población de más de un miento de talud bloqueó los dos carriles.
+millón de personas, de las cuales una cantidad 3. En el circuito Juan Pablo II hubo socavamiento
+considerable permaneció incomunicada por un en un puente.
+periodo prolongado. 4. En la carretera Teziutlán-Perote, a la altura
+El 27 de julio de 2004 se inauguró el último de Xoloco correspondiente al Kilómetro 3, se
+tramo de la autopista Puebla-Teziutlán, que co- presentó un considerable encharcamiento.
+rresponde al tramo Zaragoza-Teziutlán; a lo largo 5. En San Juan Tezongo, localidad que se en-
+de esta vialidad cada año en temporada de lluvias cuentra al norte de la ciudad de Teziutlán, los
+(principalmente en los meses de septiembre y oc- caminos presentaron socavamiento.
+tubre), se presentan diversos PRM (Figura 3). 6. En el municipio de Tlatlauquitepec, en la
+En septiembre de 2010, la presencia del Hura- Carretera Federal Núm. 129, a la altura del
+cán Karl provocó la ocurrencia de algunos PRM en Kilómetro 27 denominado como “Banco
+128 ][ Investigaciones Geográficas, Boletín 88, 2015
+soñaD sotcerid soñaD sotceridni latoT LATOT
+%
+Tabla 2. Impacto ocasionado por el huracán Stan en 2005
+en Puebla: daños en millones de pesos
+Millones de pesos mexicanos
+Sectores
+246.8 18.6 265.5 28.9
+Sociales
+Vivienda 163.4 4.7 168.1 18.3
+Educación 64.6 1.4 66.1 7.2
+Salud 11.6 12.4 24 2.6
+Infraestructura
+hidráulica 7.1 0 7.1 0.8
+(CNA)
+Infraestructura 540.8 17.1 558 60.8
+Sector electric 0.3 0.01 0.31 0
+Obras públicas 0 0.9 0.9 0.1
+Transporte y
+540.5 16.2 556.7 60.7
+comunicaciones
+Sectores
+19.8 0 19.8 2.2
+Productivos
+Agropecuario 19.8 0 19.8 2.2
+Atención a la
+0 73.9 73.9 8.1
+Emergencia
+Total 807.5 109.7 917.3 100
+Fuente: CENAPRED, 2006.
+Inestabilidad de laderas e infraestructura vial: análisis de susceptibilidad en la Sierra Nororiental de Puebla, México
+Figura 3. Deslizamiento en el
+Kilómetro 115 de la autopista
+Puebla-Teziutlán (foto: Alejandro
+Galindo).
+Negro” ocurrió un deslizamiento sobre la oeste del área en estudio tiene una configuración
+carretera. lineal, es decir, la principal vía de comunicación,
+7. En Jiliapa, que se ubica al norte de la cabecera la carretera federal Amozoc-Teziutlán, cruza por la
+municipal de Tlatlauquitepec, un árbol cayó mayoría de las principales localidades y atraviesa
+sobre la red de distribución de energía eléc- la zona de suroeste a este. Al este de la zona en
+trica provocando que toda la comunidad se estudio hay una configuración de tipo nucleado,
+quedara sin luz. varias vías de comunicación importantes confluyen
+8. En el tramo carretero Atotocoyan-Mazatepec, en un centro urbano importante, en este caso, la
+al norte de Hueyapan, cerca de la Presa la ciudad de Teziutlán.
+Soledad, un árbol cayó sobre la vialidad blo- Las carreteras de tipo estatal y municipal se
+queando ambos carriles. derivan de las federales en forma de ramificaciones
+y arcos; las ramificaciones comunican a localidades
+La cabecera municipal de Teziutlán se caracteri- pequeñas con las principales carreteras y los arcos
+za por poseer una dinámica comercial importante tienen la función de ser libramientos de las locali-
+debido a su producción ganadera, agrícola y fru- dades más grandes. La autopista Puebla-Teziutlán
+tícola (INAFED, 1998). Al mismo tiempo, al ser tiene un recorrido semi-paralelo a la carretera
+una ciudad con diversos tipos de servicios y varias Amozoc-Teziutlán sin cruzar ninguna localidad
+fuentes de empleo, existe un importante desplaza- importante hasta desembocar en la ciudad de
+miento de personas provenientes de las localidades Teziutlán, pero está conectada con tramos alimen-
+y cabeceras municipales de la región, entre las que tadores a la misma; esto le da una configuración de
+destaca Hueytamalco; esta situación ha originado tipo focal al suroeste de la zona y de tipo nucleado
+un considerable flujo comercial y de pasajeros en al este de la misma.
+la red carretera actual. Para el desarrollo de esta investigación fueron
+Como se puede observar en la Figura 4, la considerados 17 tramos carreteros que comunican a
+configuración espacial de la red carretera y los las diez cabeceras municipales localizadas en el área
+asentamientos es muy compleja. De acuerdo con en estudio, las cuales pertenecen a la Región de la
+la importancia de las vías de comunicación, la parte Sierra Nororiental de Puebla (Tabla 3).
+Investigaciones Geográficas, Boletín 88, 2015 ][ 129
+José Alejandro Galindo Serrano e Irasema Alcántara Ayala
+97º30'W 97º24'W 97º18'W
+A Presa la Soledad
+Hueytamalco
+A
+Nautla
+Hueyapan
+Yaonáhuatl
+Tlatlauquitepec Teteles de
+Ávila Castillo
+A Zacapoaxtla
+Atempan
+Teziutlán
+Chignautla
+Xiutetelco
+A Perote
+Zaragoza
+A Amozoc A Puebla
+97º30'W 97º24'W 97º18'W
+METODOLOGÍA con el uso de un sistema de posicionamiento global
+(GPS). El segundo fue a través de percepción re-
+Inventario de PRM y base de datos mota (PR), mediante el uso de imágenes de satélite
+El inventario de PRM es una herramienta funda- SPOT del año 2011, que junto con Google Earth y
+mental para la generación de cartografía de inesta- el sistema de información geográfica (SIG) ArcGis
+bilidad de laderas (Hansen, 1984; Parise, 2000), y 9.3 fueron fundamentales para la generación de
+en particular para la evaluación de amenazas; éste los datos.
+puede ser definido como la relación ordenada de la La observación de campo y uso de GPS incluyó
+ocurrencia y características de los procesos de remo- recorridos en tres sectores principales:
+ción en masa en un territorio determinado (Alcán-
+tara y Murillo, 2008). 1. El recorrido inició en el Kilómetro 114 de la
+El análisis de susceptibilidad aquí presentado Carretera Federal N° 129 correspondiente al
+requirió la elaboración de un inventario, el cual tramo Amozoc-Teziutlán en la localidad de
+fue realizado con base en dos procedimientos. El Acuaco en el municipio de Zaragoza y se con-
+primero de ellos fue a través de observación directa cluyó en el Kilómetro 128 de la misma en la
+en campo y la recolección de los respectivos datos cabecera municipal de Teziutlán. Esta carretera
+130 ][ Investigaciones Geográficas, Boletín 88, 2015
+N'45º91
+N'84º91
+N'45º91
+N'84º91
+0 1 2 4
+km
+Tipos de vialidades SimbologÌa complementaria
+Federal (Cuota) Estatal LÌmite municipal
+Federal Municipal Cabecera municipal
+Figura 4. Red carretera de la región Sierra Nororiental de Puebla.
+Inestabilidad de laderas e infraestructura vial: análisis de susceptibilidad en la Sierra Nororiental de Puebla, México
+Tabla 3. Caracterización generalizada de los tramos carreteros de la Sierra Nororiental de Puebla analizados
+Investigaciones Geográficas, Boletín 88, 2015 ][ 131
+omarT
+nóicartsinimdA
+oremúN
+)mk(
+dutignoL
+ocisíf
+odatsE
+nóicatnemivaP
+nóicnuF
+Comunicar a la ciudad de
+Autopista Puebla- Federal
+129D 62.4 Bueno Asfalto Teziutlán directamente con la
+Teziutlán Concesionada
+capital del estado de Puebla.
+Comunicar a los municipios
+Bueno Asfalto
+Carretera Amozoc- de las regiones Valle de
+Federal 129 157.9 Regular Concreto
+Teziutlán Serdán y Sierra Nororiental
+Malo hidráulico
+con la región de Angelópolis.
+Comunicar a la ciudad
+de Teziutlán con el Golfo
+Carretera Teziutlán-
+Federal 129 93.4 Bueno Asfalto de México e importantes
+Nautla
+localidades del centro del
+estado de Veracruz.
+Comunicar a las ciudades de
+Carretera Teziutlán-
+Federal 131 48 Regular Asfalto Teziutlán y Altotonga con la
+Perote
+ciudad de Perote.
+Comunicar a la cabecera
+Carretera Teziutlán-
+Estatal 214 2.5 Bueno Asfalto municipal de Teziutlán con la
+Aire Libre
+localidad de Aire Libre.
+Comunicar a diversas
+Carretera Aire Libre- localidades del municipio de
+Estatal 209 14.5 Bueno Asfalto
+Hueyapan-Tételes Hueyapan con su cabecera
+municipal.
+Comunicar directamente
+Asfalto
+la cabecera municipal de
+Hueyapan-Yaonáhuac Municipal S/N 2.9 Bueno Concreto
+Yaonáhuac con la cabecera de
+hidráulico
+Hueyapan
+Conectar a la cabecera
+Entronque Carretera municipal de Yaonáhuac con
+Amozoc-Teziutlán/ Estatal 210 0.8 Regular Asfalto la principal vialidad de la
+Yaonáhuac zona, la carretera Amozoc-
+Teziutlán.
+Ser una alternativa vial
+Libramiento Efrén para evitar transitar por el
+Municipal S/N 1.4 Malo Asfalto
+Ramos Salazar centro de la localidad de
+Tlatlauquitepec.
+Entronque Km. 122.5 Comunicar la cabecera
+Autopista Puebla- Municipal S/N 4.8 Bueno Asfalto municipal con la autopista
+Teziutlán/Atempan Puebla-Teziutlán.
+José Alejandro Galindo Serrano e Irasema Alcántara Ayala
+Tabla 3. Continuación
+comunica las cabeceras municipales de Zara- municipal Yaonahuac-Hueyapan, la carretera
+goza Tlatlauquitepec, Atempan, Tételes de estatal Hueyapan-Tételes y la carretera mu-
+Ávila Castillo, Chignautla y Teziutlán. En este nicipal Entronque Km 122.5 de la autopista
+trayecto se recorrieron carreteras de carácter es- Virreyes/Teziutlán-Atempan.
+tatal y municipal, las cuales tienen un carácter 2. La segunda parte del recorrido se inició al
+de alimentadoras a la carretera federal. Éstas norte de la ciudad de Teziutlán en la carretera
+son: el Libramiento Tlatlauquitepec-Hospital estatal Teziutlán-Aire Libre con sus ramales,
+General, la carretera estatal Entronque carre- que son caminos de tipo municipal y comuni-
+tera federal N° 129-Yaonahuac, la carretera can a las localidades de Acateno y Coyotzingo.
+132 ][ Investigaciones Geográficas, Boletín 88, 2015
+omarT
+nóicartsinimdA
+oremúN
+)mk(
+dutignoL
+ocisíf
+odatsE
+nóicatnemivaP
+nóicnuF
+Entronque carretera
+Amozoc-Teziutlán/ Comunicar a la cabecera
+Tramo alimentador Municipal S/N 1.9 Bueno Asfalto municipal de Zaragoza con la
+a autopista Puebla- autopista Puebla-Teziutlán.
+Teziutlán
+Comunicar el centro de la
+Entronque carretera
+ciudad de Teziutlán con
+Teziutlán-Nautla/ Municipal S/N 6.2 Regular Asfalto
+la localidad de San Juan
+Acateno
+Acateno.
+Comunica a la carretera
+Carretera Amozoc- Teziutlán-Aire Libre con la
+Muy
+Teziutlán/ Coyotzingo- Municipal S/N 3.5 Asfalto Federal Teziutlán-Nautla
+malo
+Ahuateno enlazando a las localidades de
+Atoluca y El Carrizal.
+Comunicar a la localidad de
+Entronque carretera El Mohón localizada en el
+Teziutlán-Nautla/ Federal 129 6.9 Malo Asfalto Kilómetro 19 de la carretera
+Ramal a Hueytamalco número 129, con la cabecera
+municipal de Hueytamalco.
+Enlaza al Kilómetro 5 de la
+Libramiento Oriente carretera Teziutlán- Perote
+Estatal 215 6.3 Regular Asfalto
+de Teziutlán con el Kilómetro 5 de la
+Teziutlán-Nautla.
+Muy Concreto Ser un libramiento para evitar
+Circuito Juan Pablo II Municipal S/N 2.8
+Bueno hidráulico entrar al centro de Teziutlán.
+Entronque carretera Comunicar a la Presa La
+Asfalto
+Amozoc-Teziutlán/ Bueno Soledad y a la localidad de
+Municipal S/N 25.2 Concreto
+Tlatlauquitepec- Regular Atotocoyan con la carretera
+hidráulico
+Mazatepec federal Amozoc-Teziutlán.
+Inestabilidad de laderas e infraestructura vial: análisis de susceptibilidad en la Sierra Nororiental de Puebla, México
+Después se prosiguió con la carretera estatal b) Edafología
+Aire Libre-Hueyapan-Teteles. Posteriormen- El mapa de edafología se realizó de la misma ma-
+te se recorrió la carretera federal N° 131 nera que el mapa geológico. Para ello se georrefe-
+Teziutlán-Perote, al sureste de la ciudad de renció la carta edafológica Veracruz (INEGI, 1984)
+Teziutlán, en la cual se levantaron datos del escala 1:250 000. Se realizó la extracción del área
+Kilómetro 0 al 11. En este último se encuentra de interés y se digitalizaron las unidades edáficas;
+el límite estatal entre Puebla y Veracruz; esta se asignaron datos a cada unidad, que incluyen las
+vialidad comunica a la cabecera municipal unidades dominantes y subunidades, por último
+de Xiutetelco con la de Teziutlán. Después se convirtió a formato raster (Figura 5a).
+se transitó por el Libramiento Oriente de la
+ciudad de Teziutlán que comunica al Km 5 c) Uso del suelo
+la carretera federal Teziutlán-Perote con el El mapa de uso del suelo se elaboró por medio de
+Km 5 de la carretera federal Teziutlán-Nautla. una clasificación digital supervisada con base en
+3. En la última etapa del levantamiento de datos tres imágenes de satélite SPOT en el software ENVI
+se trabajó del Km 0 al 20 de la carretera federal 4.7. Dichas imágenes fueron tomadas el día 26 de
+N° 129 Teziutlán-Nautla al noreste del área en octubre de 2011 y tienen una resolución espacial
+estudio. Al concluir con este tramo se continuó de 10 m. En las regiones de interés se asignaron
+con un ramal de esta misma que comunica a cinco unidades o categorías: de color verde las
+la cabecera municipal de Hueytamalco. Final- zonas forestales, en amarillo las zonas urbanas, de
+mente, el trabajo de campo se concluyó con anaranjado las zonas agrícolas, en verde olivo los
+el recorrido de la autopista Puebla-Teziutlán, pastizales y de color café las zonas de suelo desnudo.
+a partir del Km 132 al oeste de la ciudad de La clasificación obtenida se transformó a formato
+Teziutlán al Km 111, localizado al sureste de la raster para poder ser procesada en el software Arc-
+cabecera municipal de Zaragoza. Map (Figura 5b).
+La identificación de los PRM a través de PR se d) Pendientes
+realizó con el uso del software Google Earth. Este El mapa de pendientes se realizó a partir de las
+programa permite visualizar cualquier punto de curvas de nivel del conjunto de datos vectoriales
+la superficie terrestre por medio de un mosaico correspondientes a las cartas topográficas Teziutlán
+de diversas imágenes de satélite, entre las que E14B15 y Altotonga E14B16 escala 1:50 000 pro-
+destacan las de Digital Globe/Geo Eye; éstas venientes del INEGI. En el software ArcGis 9.3 se
+ofrecen una resolución espacial de 2.44 m en elaboró una interpolación basada en los valores de
+las imágenes multiespectrales y de 60 cm en las altitud de las curvas de nivel para generar un mo-
+pancromáticas. delo digital de terreno (MDT). A partir de este
+modelo se derivó la pendiente, tomando en cuenta
+Mapas temáticos las relaciones existentes entre los valores de un pixel
+a) Geología y sus ocho vecinos; de esta manera se establecen
+Mediante uso del software ArcGis 9.3 de ESRI. los valores de pendiente que existen entre valores
+Se utilizaron como base dos cartas geológicas en altimétricos y las configuraciones que describen
+formado digital del Servicio Geológico Mexicano (Peet y Sahota, 1985; Philipp y Smadja, 1994;
+(SGM); las hojas Teziutlán E14-B15 (SGM, 2011) Cocquerez y Philipp, 1995). Una vez obtenida la
+y Altotonga E14-B16 (SGM, 2010), ambas a escala capa de pendientes se asignaron seis rangos a los
+1: 50 000. Dichas cartas fueron georreferenciadas pixeles con sus respectivos colores (Figura 5c).
+y digitalizadas para posteriormente generar una
+capa de información en formato vectorial, la e) Densidad de disección
+cual finalmente se transformó en formato raster El mapa de densidad de disección se generó usando
+(Figura 2). como base el conjunto de datos vectoriales de la red
+Investigaciones Geográficas, Boletín 88, 2015 ][ 133
+José Alejandro Galindo Serrano e Irasema Alcántara Ayala
+97º30'W 97º24'W 97º18'W
+Hueytamalco
+Hueyapan
+Yaonáhuac
+Atempan
+Tlatlauquitepec
+Teteles de
+Ávila Castillo
+Teziutlán
+Chignautla
+Xiutetelco
+Zaragoza
+97º30'W 97º24'W 97º18'W
+134 ][ Investigaciones Geográficas, Boletín 88, 2015
+N'45º91
+N'84º91
+N'45º91
+N'84º91
+97º30'W 97º24'W 97º18'W
+Hueytamalco
+Hueyapan
+Yaonáhuac
+Atempan
+Tlatlauquitepec
+Teteles de
+Ávila Castillo
+Teziutlán
+Chignautla
+Xiutetelco
+0 1 2 4
+km Zaragoza
+97º30'W 97º24'W 97º18'W
+Tipo de suelo Simbología complementaria
+Acrisol órtico Luvisol órtico Andosol órtico Cabecera municipal
+Litosol Regosol eútrico Andosol húmico Vialidades
+N'45º91
+N'84º91
+N'45º91
+N'84º91
+(a) Edafología (b) Uso de suelo
+0 1 2 4
+km
+Uso del suelo Simbología complementaria
+Zona forestal Zona urbana Sin cubierta vegetal Cabecera municipal
+Pastizal inducido Zona agrícola Vialidades
+(d) Densidad de disección
+97º30'W 97º24'W 97º18'W
+Hueytamalco
+Hueyapan
+Yaonáhuac
+Atempan
+Tlatlauquitepec
+Teteles de
+Ávila Castillo
+Teziutlán
+Chignautla Xiutetelco
+Zaragoza
+97º30'W 97º24'W 97º18'W
+(e) Profundidad de disección (f) Geomatría de laderas
+N'45º91
+N'84º91
+N'45º91
+N'84º91
+97º30'W 97º24'W 97º18'W
+Hueytamalco
+Hueyapan
+Yaonáhuac
+Atempan
+Tlatlauquitepec
+Teteles de
+Ávila Castillo
+Teziutlán
+Chignautla Xiutetelco
+0 1 2 4 km Zaragoza
+97º30'W 97º24'W 97º18'W
+Pendiente en grados Simbología complementaria
+<2 4-8 16-32 Cabecera municipal
+2-4 8-16 >32 Vialidades
+N'45º91
+N'84º91
+N'45º91
+N'84º91
+0 1 2 4 km
+Densidad de disección (km/km2 ) Simbologíacomplementaria
+0- 0.8 1.5-2.0 3.0-4.0 Cabecera municipal
+0.8-1.5 2.0-3.0 >4.0 Vialidades
+97º30'W 97º24'W 97º18'W
+Hueytamalco
+Hueyapan
+Yaonáhuac
+Atempan
+Tlatlauquitepec
+Teteles de
+Ávila Castillo
+Teziutlán
+Chignautla Xiutetelco
+Zaragoza
+97º30'W 97º24'W 97º18'W
+N'45º91
+N'84º91
+N'45º91
+N'84º91
+97º30'W 97º24'W 97º18'W
+Hueytamalco
+Hueyapan
+Yaonáhuac
+Atempan
+Tlatlauquitepec
+Teteles de
+Ávila Castillo
+Teziutlán
+Chignautla Xiutetelco
+0 1 2 4 km Zaragoza
+97º30'W 97º24'W 97º18'W
+DisecciÛn del relieve (m) Simbología complementaria
+<100 160-220 280-400 Cabecera municipal
+100-160 220-280 >400 Vialidades
+N'45º91
+N'84º91
+N'45º91
+N'84º91
+(c) Pendientes
+0 1 2 4 km
+Geometría o forma de laderas Simbología complementaria
+Concava Cabecera municipal
+Convexa Vialidades
+Plana
+Figura 5. Cartografía temática desarrollada: (a) Edafología; (b) Uso del suelo; (c) Pendientes; (d) Densidad de disección;
+(e) Profundidad de disección; (f) Geometría de ladera.
+Inestabilidad de laderas e infraestructura vial: análisis de susceptibilidad en la Sierra Nororiental de Puebla, México
+hidrográfica escala 1:50 000 de las cuencas de los el modelo digital de terreno; de acuerdo con la
+ríos Nautla y Tecolutla de la Región Hidrográfica disposición y valores altimétricos a cada pixel el
+27 (INEGI, 2011). El parámetro de la densidad se software asigna un valor de azimut (0° a 360°) se
+obtiene dividiendo la longitud total de las corrien- agrupan en ocho categorías (N, NE, E, SE, S, SW,
+tes fluviales (km) de determinada superficie entre W, NW), con esto se genera una capa raster la cual
+el área (km²) de dichas superficies asignadas. Se se reclasifica para que los pixeles agrupados en cada
+generó un archivo raster y se asignó a cada pixel categoría tengan un mismo valor.
+un valor de densidad (km/ km²), para finalmente
+ser agrupados en seis rangos (Figura 5d). Análisis multicriterio
+Es una herramienta de análisis en la toma de deci-
+f) Profundidad de disección siones que ha sido desarrollado y empleado desde
+Este mapa se generó usando de base las dos cartas la década de los sesenta. Este considera la influencia
+topográficas correspondientes a las hojas Teziutlán de diversos parámetros simultáneamente sobre un
+E14-B15 (INEGI, 2008) y Altotonga E14-B16 proceso o fenómeno en forma numérica, tomando
+(INEGI, 2005), escala 1:50 000. En ambas hojas se en cuenta la opinión de especialistas involucrados
+delimitó el área en estudio; sobre ésta se trazó una en el tema (Díaz, 1998); con esto es posible identi-
+malla con cuadros de 4 x 4 cm, lo que equivale a ficar la importancia de cada uno de los parámetros
+4 km² en el mapa, y en cada cuadro se identificaron (Saaty, 1984). En los últimos años, la aplicación de
+los valores de la curvas de nivel que se encontraban esta herramienta se ha incrementado con el uso de
+en talweg y el parteaguas. Con ambos valores se hizo los SIG, principalmente en aspectos de riesgos vol-
+una diferencia y se obtuvo el valor de la disección cánicos (Aceves, 2007), identificación de áreas para
+(m). Una vez obtenidos los valores de profundidad restauración ecológica (Geneletti, 2007), determi-
+de disección de toda el área de interés, se obtuvo nar zonas de susceptibilidad a PRM (Komac, 2006;
+la distribución de los puntos con sus respectivos Castellanos y Van Westen, 2008; Yalcin, 2008;
+valores de disección en formato vectorial, y se hizo Borja y Alcántara, 2009; Flores y Alcántara, 2012),
+una interpolación de los puntos para generar una entre otras aplicaciones.
+capa raster. Finalmente se reclasificaron los valores Para llevar a cabo la aplicación del análisis
+de los pixeles en seis categorías (Figura 5e). multicriterio, los parámetros empleados fueron
+derivados de la elaboración o adecuación de ocho
+g) Geometría de la ladera capas de información geográfica: tipo de roca, sue-
+El mapa de geometría de la ladera se generó en los, uso de suelo, pendiente, densidad de disección,
+el software ArcGis usando como base el modelo profundidad de disección, geometría y orientación
+digital de terreno creado al elaborar el mapa de de la ladera. Posteriormente, de acuerdo con Saaty
+pendientes; al disminuir los valores altimétricos (1984), se estableció una escala común de clasifi-
+de los pixeles en relación con sus vecinos, el valor era cación para cada parámetro o factor (Tabla 4); y
+negativo (pendiente cóncava), al aumentar, el valor se elaboró una matriz de pares (Tabla 5), la cual se
+era positivo (pendiente convexa) y al mantenerse basa en una técnica de comparación por pares para
+constantes el valor era 0 (plano). De este modo, desarrollar un conjunto de pesos de cada parámetro
+todos los pixeles obtienen un valor asociado con la mediante una entrevista realizada a seis especialistas
+configuración o geometría del terreno. Por último, en el tema.
+los pixeles fueron reclasificados de acuerdo con las Una vez concluidas las entrevistas, se calculó el
+tres categorías mencionadas anteriormente, se les peso específico. El proceso de asignación de pesos
+asignó color para finalmente crear mapa (Figura 5f). considera que la problemática tiene un valor igual
+a 1, los valores de peso deben estar entre 0 y 1, la
+h) Dirección de laderas suma total de los valores debe ser 1 (Caloni, 2010).
+La capa de dirección de la ladera se realizó de ma- Posteriormente se obtuvo el peso específico de cada
+nera automatizada en el software ArcGis mediante factor y se representó en porcentaje.
+Investigaciones Geográficas, Boletín 88, 2015 ][ 135
+José Alejandro Galindo Serrano e Irasema Alcántara Ayala
+Tabla 4. Escala base para realizar la comparación de importancia de cada parámetro (Saaty, 1984)
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17
+1/9 1/8 1/7 1/6 1/5 1/4 1/3 1/2 1 2 3 4 5 6 7 8 9
+Extremadamente Fuertemente Moderadamente Ligeramente
+Tabla 5. Matriz de pares empleada en el análisis multicriterio
+De acuerdo con la opinión de los especialistas restal y en categoría alta donde no hay presencia de
+encuestados con base en el análisis multicriterio, la cubierta y los suelos son desnudos. Las unidades
+geología (26.7%) y la pendiente (25.5%) son los de suelo se agruparon al igual que el tipo de roca por
+parámetros que más influyen en la inestabilidad las características físicas de los suelos y al número
+de laderas en la zona en estudio; la densidad de de PRM que se encontraban en cada unidad. Las
+disección (11.9 %) y la profundidad de disección unidades de la geometría del relieve y la orientación
+(11%) tienen una influencia media en la ocurrencia de las laderas se categorizaron de acuerdo con las
+de PRM y la geometría del relieve (8.9%), el uso del observaciones directas de campo.
+suelo (6.4%), la orientación de la ladera (5.9%) y Posterior a la clasificación de las unidades de
+el tipo de suelo (4.4%) son de menor influencia. cada capa de información, se procedió a realizar la
+Las clases o unidades de cada parámetro o capa suma de todas las capas de información. Se aña-
+de información se agruparon en tres categorías con dió la influencia de la inestabilidad de laderas de
+base en su influencia en la inestabilidad del terreno; cada clase tomando en cuenta el peso específico
+alta (1), media (0) y baja (-1). La asignación de los de cada capa, y finalmente se obtuvo el mapa de
+rangos en el tipo de rocas se realizó de acuerdo con susceptibilidad a procesos de remoción en masa
+las características físicas de cada tipo, tales como categorizado en cinco rangos: muy baja, baja,
+dureza, porosidad o presencia de fracturas y al nú- media, alta y muy alta.
+mero de PRM que han ocurrido en determinadas
+unidades litológicas. Pesos de evidencia
+Los rangos de los parámetros morfométricos, Pesos de evidencia o Weights of evidence (WOE) es
+incluidos la pendiente, la densidad de disección y un método estadístico basado en el teorema de Ba-
+la profundidad de disección, se agruparon gradual- yes, el cual expresa la probabilidad incondicional y
+mente al incremento de los valores de los mismos. condicional de que ocurra un evento. Este método
+Las unidades de uso de suelo se agruparon en cate- es aplicable cuando se dispone de suficientes datos
+goría baja en donde hay presencia de la cubierta fo- para estimar la importancia relativa de determi-
+136 ][ Investigaciones Geográficas, Boletín 88, 2015
+laugI
+Ligeramente Moderadamente Fuertemente Extremadamente
+<<<<<<<<<<<<<Menos importante>>>>>>>>>>>>> <<<<<<<<<<<<<Más importante>>>>>>>>>>>>>
+Uso del Profundidad Densidad Geometría Orientación
+Geología Edafología Pendiente
+suelo de disección de disección del relieve de la ladera
+Geología 1
+Edafología 1
+Uso del Suelo 1
+Pendiente 1
+Profundidad de disección 1
+Densidad de disección 1
+Geometría de relieve 1
+Orientación de la ladera 1
+Inestabilidad de laderas e infraestructura vial: análisis de susceptibilidad en la Sierra Nororiental de Puebla, México
+nados fenómenos a través de medios estadísticos A4 es el total de pixeles del área en estudio me-
+(Bonham, 1994). nos la suma de los pixeles de la clase y el número
+La probabilidad incondicional de un evento es total de deslizamientos.
+determinada por los mismos tipos de eventos que Log es el logaritmo natural.
+e
+ocurrieron en el pasado durante un periodo de El número de PRM de cada clase se obtuvo
+tiempo determinado. Por ejemplo, la probabilidad de forma automatizada con el uso del software
+de que ocurra un proceso de ladera en una unidad de ArcGis mediante la sobreposición de las capas de
+área (o pixel) puede ser estimada con base en la información con el inventario, es decir, que de ca-
+frecuencia con la que los materiales han sido ines- da punto (PRM) se extrajo la clase o unidad a la
+tables en el pasado; esto puede ser determinado que pertenecía cada capa de información. Otros
+tomando la relación entre el área o el número total valores fundamentales para realizar las operaciones
+de píxeles donde se presentan PRM y el número fueron el número de pixeles de cada clase o unidad,
+total de píxeles del área en estudio. el número total de PRM (166) y el número total de
+Esta probabilidad puede ser modificada uti- píxeles de toda el área en estudio. Posteriormente,
+lizando cualquier fuente de información, de esta se realizaron las operaciones para el cálculo del
+manera puede ser actualizada con la adición de nue- peso final.
+vas evidencias, de modo que al agregar una nueva
+prueba las probabilidades del suceso cambian y se Índice de recurrencia de PRM
+genera una probabilidad condicional denominada Con la finalidad de analizar los resultados de los
+“probabilidad posterior” (Bonham, 2002). mapas de susceptibilidad generados a partir del
+En la formulación de probabilidades se obtiene análisis multicriterio y los pesos de evidencia, se
+un peso de evidencia positivo (W+) que indica la elaboró un índice de recurrencia de PRM, mismo
+presencia de los elementos de análisis y un peso ne- que se calculó a partir de la fórmula:
+gativo, el cual refleja la ausencia de dichos elemen-
+tos (W-). Con la diferencia de estos pesos se obtiene t
+Ir =
+un peso final para cada unidad o factor analizado de ∑t
+acuerdo con la cantidad de PRM existentes.
+Para la aplicación de este método también se en donde:
+utilizaron las ocho capas de información geográfica Ir= Índice de recurrencia.
+en formato raster mencionadas en al anterior apar- t= pr/a
+tado y el inventario de PRM en formato vectorial. pr= Procesos de remoción en masa por rango
+Las fórmulas empleadas para el cálculo del peso de susceptibilidad.
+positivo y negativo de cada clase o unidad de cada a= Área por rango de susceptibilidad (kilóme-
+factor fueron: tros cuadrados).
+( A 2 ) Análisis espacial de susceptibilidad
+A + A
+(W+) = (W-) = log 1 2 a PRM en la red carretera
+e
+A
+4 Finalmente, a partir de los resultados de la aplica-
+A + A
+3 4 ción del análisis multicriterio y peso de evidencia,
+en donde: se efectuó el análisis espacial de la susceptibilidad
+A1 es el número de procesos de remoción en a PRM de varios tramos carreteros con base en dos
+masa de cada unidad. de las cinco herramientas analíticas propuestas por
+A2 es el número total de deslizamientos menos Backhoff (2002): el análisis de proximidad (Figura
+los deslizamientos que caen en cada clase o unidad. 6a) y el análisis de superposición (Figura 6b).
+A3 es el número de pixeles de la clase menos
+el número de deslizamientos que caen en esa clase
+o unidad.
+Investigaciones Geográficas, Boletín 88, 2015 ][ 137
+José Alejandro Galindo Serrano e Irasema Alcántara Ayala
+Yaonáhuac
+Teteles de
+Ávila Castillo
+Proximidad
+Buffer
+Atempan
+Proximidad
+Figura 6. Esquema de análisis espacial de proximidad (a) y sobreposición (b).
+RESULTADOS ños fragmentos de suelo y roca. A través de PR se
+identificaron 30 PRM y se corroboraron 42 puntos
+En el trabajo de campo se obtuvo un total de 94 que indican los PRM que ocurrieron en octubre de
+puntos que corresponden 54 a PRM que se identi- 1999 y corresponden a una base de datos generada
+ficaron y 40 a zonas potenciales. Las zonas poten- por personal de Protección Civil del Estado de
+ciales se determinaron de acuerdo con los síntomas Puebla. El inventario de PRM generado se integró
+que presenta una ladera inestable tales como fisuras, por 166 procesos de remoción en masa y 40 zonas
+inclinación de árboles y desprendimiento de peque- potencialmente inestables (Figura 7).
+97º30'W 97º24'W 97º18'W Figura 7. Inventario de PRM de
+### # # Hueytamalco la Sierra Nororiental de Puebla.
+## # # ## ## ^#
+#
+##
+#
+#
+# ### ^
+### ^##^
+#
+# ^^#
+# #
+# ## Yaonáhuac Hueyapan ###
+####
+# # # ### # # ^ ## # # #
+# Atempan #
+Tlatlau ## q ### uitepec ## # # # # # ^ T Á e v t i e la le C s a d s e ti llo # # # ### # # # # # # # #
+^####
+^
+^^
+#
+#
+#
+^###
+# #
+#
+^^^ ^^
+##
+##
+# # #
+^# ## #
+C
+#
+hig
+#
+n
+#
+au
+# ^
+t
+^
+la
+^## ###
+#
+# # # #
+#
+#####
+#
+#
+#
+# #
+# #
+#
+#
+# #T # ezi # utlán
+Xiutetelco
+^ Z^aragoza
+97º30'W 97º24'W 97º18'W
+138 ][ Investigaciones Geográficas, Boletín 88, 2015
+N'45º91
+N'84º91
+N'45º91
+N'84º91
+02 1 4
+km
+#
+Trabajo de campo ^ Trabajo de campo Simbología complementaria
+# (zona potencial)
+Percepción remota Límite municipal
+#
+Protección Civil del Estado Cabecera municipal
+Inestabilidad de laderas e infraestructura vial: análisis de susceptibilidad en la Sierra Nororiental de Puebla, México
+Figura 8. Análisis multicriterio de
+97º30'W 97º24'W 97º18'W
+### # # Hueytamalco susceptibilidad a PRM en la Sierra
+## # # ## ## ## Nororiental de Puebla.
+# ## #
+#
+# ### ######
+###
+#
+#
+#
+###
+# Hueyapa # n ##
+####
+# # # #
+## Yaonáhuac # ### # # # ## #
+# Atempan #
+Tlatlau ## q ## u # itepec ## # # # # # # T Á e v t i e la le C s a d s e ti llo # # # ### # # # # # # # #
+#####
+#
+##
+#
+#
+#
+####
+# #
+# # # # #
+#
+#
+#
+## # # #
+## ## ## ## ###### ###
+#
+# # # #
+#
+#####
+#
+#
+#
+# #
+# #
+##
+#
+#T # ezi # utlán
+Xiutetelco
+# Za # ragoza
+97º30'W 97º24'W 97º18'W
+Investigaciones Geográficas, Boletín 88, 2015 ][ 139
+N'45º91
+N'84º91
+N'45º91
+N'84º91
+De acuerdo con los resultados mostrados en municipales con excepción de Tlatlauquitepec y
+los mapas de susceptibilidad elaborados con base Teziutlán, se encuentran en una zona con bajo
+en el análisis multicriterio (Figura 8) y pesos de grado de susceptibilidad; los barrancos originados
+evidencia (Figura 9) para toda la zona de inte- por los escurrimientos que cruzan de sur a norte
+rés, se observan diferencias y similitudes. Entre el municipio de Tlatlauquitepec presentan un alto
+las semejanzas destaca que todas las cabeceras grado de susceptibilidad, mientras que las laderas
+0 1 2 4
+km
+Grado de susceptibilidad S#imbología complementaria
+Muy bajo Medio Muy alto Procesos de remoción en masa
+Bajo Alto Cabecera municipal
+97º30'W 97º24'W 97º18'W
+### # # Hueytamalco
+## # # ## ## ##
+# ## #
+#
+# ### ######
+###
+#
+#
+#
+###
+# Hueyapa # n ##
+####
+# # # #
+## Yaonáhuac # ### # # # ## #
+# Atempan #
+Tlatlau ## q ## u # itepec ## # # # # # # T Á e v t i e la le C s a d s e ti llo # # # ### # # # # # # # #
+#####
+#
+##
+#
+#
+#
+####
+# #
+# # # # #
+#
+#
+#
+## # # #
+## ## ## ## ###### ###
+#
+# # # #
+#
+#####
+#
+#
+#
+# #
+# #
+##
+#
+#T # ezi # utlán
+Xiutetelco
+# Za # ragoza
+97º30'W 97º24'W 97º18'W
+N'45º91
+N'84º91
+N'45º91
+N'84º91
+Figura 9. Susceptibilidad a PRM
+en la Sierra Nororiental de Puebla
+mediante la aplicación de Pesos
+de Evidencia.
+0 1 2 4
+km
+Grado de susceptibilidad S#imbología complementaria
+Muy bajo Medio Muy alto Procesos de remoción en masa
+Bajo Alto Cabecera municipal
+José Alejandro Galindo Serrano e Irasema Alcántara Ayala
+orientales de la Sierra Chignautla localizada al oeste no se tiene registro o evidencia alguna de PRM,
+de la cabecera municipal de Teziutlán presentan por lo que su peso negativo es muy significativo.
+alto grado y las planicies que se encuentran al sur De manera general, en ambos mapas se puede
+del área en estudio se caracterizan por tener un bajo apreciar que las áreas de muy alta susceptibilidad
+grado de susceptibilidad. corresponden a zonas con un relieve muy acciden-
+Una de las diferencias más significativas es la tado, mientras que las regiones planas coinciden
+cabecera municipal de Teziutlán; el mapa de pesos con zonas de muy baja susceptibilidad.
+de evidencia indica que el sector centro tiene grado Los resultados del análisis de susceptibilidad a
+de susceptibilidad medio y la periferia de la ciudad PRM en la red carretera de la Sierra Nororiental de
+se encuentra en rango alto. En el mapa derivado Puebla, mediante el análisis multicriterio (Figura
+del análisis multicriterio, el centro queda como 10) y pesos de evidencia (Figura 11), indican que
+una zona de bajo grado y la periferia en un gra- las zonas con un grado muy alto de susceptibilidad
+do medio; los barrancos son los únicos marcados pudieron ser identificadas en toda la región con
+como altamente susceptibles a inestabilidad. excepción de dos casos particulares (Figura 12). El
+Otra zona sobresaliente es el área que se ubica al primero de ellos es el tramo carretero que corres-
+noroeste de la cabecera de Tlatlauquitepec, misma ponde a la parte central de la ciudad de Teziutlán,
+que corresponde a las laderas orientales de una serie el cual se identifica como un área con bajo grado de
+de elevaciones orientadas de norte a sur. De acuerdo susceptibilidad mediante el análisis multicriterio,
+con el análisis multicriterio, éstas se clasifican como en tanto que con el método de pesos de evidencia
+de alto grado y muy alto grado debido en gran me- se le designa un alto grado de susceptibilidad;
+dida a las altas pendientes, mientras que en el mapa observaciones de campo, sin embargo, indican
+de pesos de evidencia quedan dentro de la catego- un bajo grado de susceptibilidad (Figura 12a y
+ría de muy baja susceptibilidad. Esta área marcada 12b). El segundo caso corresponde al tramo La
+como de muy baja susceptibilidad corresponde Unión-Atotocoyan de la carretera Tlatlauquitepec-
+a tres unidades litológicas (granodiorita-pórfido Mazatepec, localizado al norte del área en estudio.
+riolítico, granito y lituta-arenisca), en las cuales El análisis multicriterio le confiere un alto grado
+97º30'W 97º24'W 97º18'W Figura 10. Susceptibilidad a PRM
+en la red carretera de la Sierra
+Hueytamalco
+Atotocoyan! Nororiental de Puebla con base
+3! en análisis multicriterio.
+19!!El MohÛn La Unión!
+Hueyapan
+14!
+Yaonáhuac Aire Libre! !8 !San Juan Acateno ! El Milagro
+Tlatlauquitepec 139 ! Á Te v t i e la le C s a d s e ti llo San Diego! Ca E rr l !i zal !La Legua (6)
+133
+! Atempan 2!
+123! !San Ambrosio
+!147
+12!9 G
+1
+lo
+32
+ri
+!
+eta
+A
+!
+huateno!
+Teziu ! t Ix lá ti n pan
+! Chignautla 157 !123 3! 10! !Lim. Pue.-Ver.
+! Xiutetelco
+Las Coles (5) !
+Zaragoza ! San MartÌn
+117
+Acuaco!
+111!
+97º30'W 97º24'W 97º18'W
+140 ][ Investigaciones Geográficas, Boletín 88, 2015
+N'45º91
+N'84º91
+N'45º91
+N'84º91
+0 1 2 4
+km
+Grado de susceptibilidad Simbología complementaria
+Muy bajo Alto Red carretera Límite municipal
+Bajo Muy alto ! Localidad o kilómetro Área de influencia (200 m)
+Medio Cabecera municipal
+Inestabilidad de laderas e infraestructura vial: análisis de susceptibilidad en la Sierra Nororiental de Puebla, México
+97º30'W 97º24'W 97º18'W Figura 11. Susceptibilidad a PRM
+en la red carretera de la Sierra
+Hueytamalco
+Atotocoyan! Nororiental de Puebla mediante la
+3! aplicación de pesos de evidencia.
+19!!El MohÛn La Unión!
+Hueyapan
+14!
+Yaonáhuac Aire Libre! !8 !San Juan Acateno ! El Milagro
+Tlatlauquitepec 139 ! T Á e v t i e la le C s a d s e ti llo San Diego! Ca E rr l !i zal !La Legua (6)
+133
+! Atempan 2!
+123! !San Ambrosio
+!147
+12!9 G
+1
+lo
+32
+rie
+!
+ta
+A
+!
+huateno!
+Teziu ! t Ix lá ti n pan
+! Chignautla 157 !123 3! 10! !Lim. Pue.-Ver.
+! Xiutetelco
+Las Coles (5) !
+Zaragoza ! San Martín
+117
+Acuaco!
+111!
+97º30'W 97º24'W 97º18'W
+de susceptibilidad, mientras que el otro método
+sugiere lo contrario; en campo, la inestabilidad de
+laderas es evidente (Figura 12c y 12d).
+Cabe destacar que con base en ambas metodo-
+logías fue posible identificar los tramos carreteros
+más susceptibles a PRM, éstos son:
+1. En la autopista Puebla-Teziutlán el tramo que
+cruza el municipio de Tlatlauquitepec (del
+km 112 al 120) y el de Chignautla (del km 126
+al 132).
+2. En la carretera Teziutlán-Perote la zona deno-
+minada las Coles (Figura 13).
+Investigaciones Geográficas, Boletín 88, 2015 ][ 141
+N'45º91
+N'84º91
+N'45º91
+N'84º91
+0 1 2 4
+km
+Grado de susceptibilidad Simbología complementaria
+Muy bajo Alto Red carretera Límite municipal
+Bajo Muy alto ! Localidad o kilómetro Área de influencia (200 m)
+Medio Cabecera municipal
+Figura 12. Susceptibilidad a PRM en la autopista Puebla-
+Teziutlán, tramo Zaragoza-Teziutlán ((a): análisis
+multicriterio; (b): pesos de evidencia), y carretera federal
+Amozoc-Teziutlán, tramo Acuaco-Teziutlán ((c): análisis
+multicriterio; (d): pesos de evidencia). Figura 13. Carretera Teziutlán-Perote, km 5, Las Coles.
+José Alejandro Galindo Serrano e Irasema Alcántara Ayala
+3. En la carretera Amozoc-Teziutlán los tramos
+próximos a la ciudad de Tlatlauquitepec.
+4. En la carretera Teziutlán-Nautla el tramo
+comprendido entre La Legua y El Mohón.
+5. En el Ramal a Hueytamalco del km 0 al 5
+(Figura 14).
+6. En la localidad de Aire Libre.
+7. En la localidad de Atotocoyan.
+8. En las vialidades que se encuentran en la pe-
+riferia de la ciudad de Teziutlán.
+DISCUSIÓN Y CONCLUSIONES
+Figura 14. Muro de contención en el km 4 del Ramal a
+En México, la construcción de infraestructura vial Hueytamalco.
+implica de manera evidente la desestabilización de
+las laderas, de tal forma que a lo largo de estas vías sentan modelos que se aproximan a la realidad y
+de comunicación, las laderas permanecen poten- expresan, al mismo tiempo, la necesidad de realizar
+cialmente inestables por dos razones cardinales. investigaciones detalladas de sitio que permitan
+La primera de ellas se vincula directamente con comprender de mejor manera la dinámica natural
+el método de construcción empleado, su calidad de las laderas, así como la influencia de elementos
+y conveniencia, en tanto que la segunda, con los y acciones antrópicas en las mismas.
+umbrales de resistencia de la infraestructura, de El inventario de PRM se integró por 166 pro-
+los taludes y de las laderas, ante los efectos de la cesos de remoción en masa y 40 zonas potencial-
+precipitación y la sismicidad. Cabe destacar, sin mente inestables. De manera general, en los dos
+embargo, que en el área en estudio no se han docu- mapas producidos se puede apreciar que las áreas
+mentado casos que sugieran un papel significativo de muy alta susceptibilidad corresponden a zonas
+de la sismicidad como mecanismo detonante de con un relieve muy accidentado, mientras que
+procesos de remoción en masa. las regiones planas coinciden con zonas de muy
+La infraestructura vial es de vital importancia baja susceptibilidad. No obstante, es importante
+para el desarrollo socio-económico, en los ámbitos señalar que existe una variación en los resultados
+local, regional, nacional e internacional; el flujo de expresados en los mapas de susceptibilidad ela-
+recursos humanos y financieros está fuertemente borados a partir de ambas metodologías. Dicha
+vinculado a su funcionalidad y funcionamiento. variación implica que la zonificación resultado
+La movilidad de la población, de los bienes y del análisis multicriterio tiende a producir valores
+servicios, tanto en condiciones cotidianas, como más bajos en la zona urbana, mientras que en el
+durante la ocurrencia de desastres depende de su peso de evidencia se le confieren valores menores a
+configuración, características y dinámica, por lo zonas montañosas que pueden caracterizarse como
+que es necesario realizar evaluaciones de suscepti- potencialmente inestables debido a su naturaleza
+bilidad, amenaza y riesgos asociados a la ocurrencia geológico-geomorfológica, pero que adolecen de
+de procesos de remoción en masa. registros o evidencias concretas.
+Los métodos empleados en este análisis de Con la intención de analizar los resultados de-
+susceptibilidad a PRM en la red carretera de la rivados de la aplicación de los métodos estadísticos
+Sierra Nororiental de Puebla son una herramienta para generar los mapas de susceptibilidad, fue im-
+importante para determinar áreas potencialmente portante elaborar un índice de recurrencia de PRM.
+inestables. Sin embargo, de manera natural involu- De acuerdo con éste, en el mapa de susceptibilidad
+cran cierto grado de incertidumbre, ya que repre- a PRM realizado por medio del método de pesos de
+142 ][ Investigaciones Geográficas, Boletín 88, 2015
+Inestabilidad de laderas e infraestructura vial: análisis de susceptibilidad en la Sierra Nororiental de Puebla, México
+evidencia, el 72.28% del total de PRM se presenta- Puebla, indican que las zonas con un grado muy
+ron en los rangos de alta y muy alta susceptibilidad, alto de susceptibilidad pudieron ser identificadas
+el 24.1% en áreas de susceptibilidad media y el en toda la región con excepción de dos casos par-
+3.6% en el rango de bajo. Los PRM que se en- ticulares. Áreas que requieren por lo tanto mayor
+cuentran en el rango catalogado como bajo fueron atención por su alta susceptibilidad a PRM son: en
+originados por factores antrópicos, y se encontraron la autopista Puebla-Teziutlán, el tramo que cruza el
+en cortes o excavaciones artificiales de pequeñas municipio de Tlatlauquitepec (del Km 112 al 120)
+dimensiones, las cuales por la escala del mapa y el de Chignautla (del Km 126 al 132); la zona
+y la equidistancia de las curvas de nivel (20 m) “Las Coles” de la carretera Teziutlán-Perote; los
+no fueron representadas de manera adecuada tramos próximos a la ciudad de Tlatlauquitepec en
+(Tabla 6). la carretera Amozoc-Teziutlán; el tramo compren-
+Los resultados expuestos en la Tabla 7 derivados dido entre La Legua y El Mohón en la Carretera
+del mapa de susceptibilidad a PRM realizado por Teziutlán-Nautla; el Ramal a Hueytamalco ubica-
+el análisis multicriterio, indican que el 69.27% de do del Km 0 al 5; las localidades de Aire Libre y
+los PRM se localizaron en el rango de alto y muy Atotocoyan, y las vialidades que se encuentran en
+alto, el 23.49% están en zonas de susceptibilidad la periferia de la ciudad de Teziutlán.
+media y el restante 7.22% se encuentra en zonas El presente estudio representa un primer paso
+bajas y muy bajas. Los PRM que se encuentran en el en el análisis de inestabilidad de laderas desenca-
+rango bajo son de pequeña dimensión y resultado denada por precipitación en la infraestructura vial
+de construcciones y cortes para caminos, es decir, de la Sierra Nororiental de Puebla. Es importante
+no están relacionados con los factores o parámetros entonces que estudios posteriores de tipo multidis-
+considerados directamente en este análisis. ciplinario y en especial con el aporte de la perspec-
+Los resultados del análisis de susceptibilidad a tiva de la ingeniería civil consideren la interacción
+PRM en la red carretera de la Sierra Nororiental de entre el medio físico y la infraestructura vial. Para
+Tabla 6. Índice de recurrencia para el método pesos de evidencia
+Susceptibilidad Área km2 Área (%) PRM PRM (%) Índice de recurrencia
+Muy alto 78 914 10.75 10 6.02 0.138
+Alto 203 142 27.66 110 66.27 0.589
+Medio 1 917 564 26.11 40 24.10 0.227
+Bajo 1 429 464 19.47 6 3.61 0.046
+Muy Bajo 1 175 404 16.01 0 0.00 0.000
+Total 7 342 992 100 166 100 1
+Tabla 7. Índice de recurrencia para el método análisis multicriterio
+Susceptibilidad Área km2 Área (%) PRM PRM (%) Índice de recurrencia
+Muy alto 244 764 3.33 49 29.518 0.679
+Alto 918 332 12.51 66 39.759 0.244
+Medio 2 226 788 30.33 39 23.494 0.059
+Bajo 2 507 688 34.15 11 6.627 0.015
+Muy Bajo 144 542 19.68 1 0.602 0.002
+Total 7 342 992 100 166 100 1
+Investigaciones Geográficas, Boletín 88, 2015 ][ 143
+José Alejandro Galindo Serrano e Irasema Alcántara Ayala
+ello, será necesario abordar aspectos tales como la Alcántara Ayala, I. (2004), “Hazard assessment of rain-
+altura del corte, el ángulo del talud, la limpieza de fall induced landsliding in Mexico”, Geomorphology,
+no. 61, pp. 19-40.
+las obras de drenaje, las irregularidades en la carta
+Alcántara Ayala, I. y F. G. Murillo García (2008), “Procesos
+de corte, el tipo de sección transversal del camino,
+de remoción en masa en México: hacia una propuesta de
+la funcionalidad de las obras de retención, el tipo elaboración de un inventario nacional”, Investigaciones
+de suelo y roca, el nivel de fracturamiento de la Geográficas, Boletín, núm. 66, Instituto de Geografía,
+roca, orientación y características de las discon- UNAM, México, pp. 47-64.
+Ángeles Moreno, E. y S. Sánchez Martínez (2002), Geología,
+tinuidades, el nivel de cobertura del corte por la
+geoquímica y geología estructural de las rocas del basa-
+vegetación, el nivel de erosión y la dinámica preci-
+mento del macizo de Teziutlán, estado de Puebla, tesis de
+pitación-infiltración. Asimismo, sería igualmente Licenciatura, Facultad de Ingeniería, UNAM, México.
+conveniente realizar investigaciones específicas Arriola Bernave, H. (2012), “Se reportan deslaves en Tlat-
+lauquitepec y Teziutlán”, Noticias de Teziutlán, La Pura
+para determinar los umbrales de precipitación que
+Verdad, 10 de agosto [http://noticiasteziutlan.blogspot.
+puedan detonar la inestabilidad de las laderas a lo
+mx/2012/08/deslaves-en-teziutlan-por-fuertes.html].
+largo de los distintos tipos de vialidades. Audemard, F. A. y A. Singer (2002), “El alud torrencial de
+Dada la natural extensión de la infraestructura 6 septiembre de 1987 en la cuenca del río El Limón, al
+vial en zonas montañosas y la frecuente incidencia norte de Maracay, Venezuela Septentrional”, Desastres
+Naturales en América Latina, Fondo de Cultura Econó-
+de procesos de remoción en masa desencadenados
+mica, pp. 385-408.
+por precipitación o sismicidad, la aplicación de
+Backhoff P., M. A. (2002), El Sistema de Información Geo-
+metodologías derivadas del uso de la gran variedad estadística para el Transporte. Desarrollo y aplicaciones
+de sensores remotos existentes, continuará siendo Multitemáticas, tesis de Maestría, Facultad de Filosofía
+necesaria y de gran valor. No obstante, es impor- y Letras, UNAM, México.
+Bitrán, D. (2001), “Características del impacto socioeconó-
+tante no desatender las evaluaciones en campo, ya
+mico de los principales desastres ocurridos en México
+que éstas son fuente primordial del entendimiento
+en el período 1980-99”, Serie Impacto socioeconómico
+de la dinámica de la inestabilidad de laderas, ade- de los desastres en México, núm. 1, Centro Nacional de
+más de una de las formas esenciales de validación Prevención de Desastres, México.
+de resultados. Bonham Carter, G. F. (1994), Geographic Information
+Systems for Geoscientists: Modeling with GIS, Pergamon
+Press, Canada.
+Bonham Carter, G. F. (2002), “Geographic information
+AGRADECIMIENTOS systems for geoscientist: modeling with GIS”, in Me-
+rriam, D. F. (ed.), Computer Methods in the Geosciences,
+Pergamon/Elsevier, New York, pp. 302-334.
+Los autores agradecen al CONACYT el apoyo fi-
+Borja Baeza, R. C. and I. Alcántara Ayala (2009), “Suscepti-
+nanciero otorgado para la realización del Proyecto
+bility to mass movement processes in the municipality of
+156242: “MISTLI: Monitoreo, Instrumentación y Tlatlauquitepec, Sierra Norte de Puebla”, Investigaciones
+Sistematización Temprana de Laderas Inestables”, Geográficas, Boletín, núm. 73, Instituto de Geografía,
+al Instituto de Geografía de la UNAM, por haber UNAM, México, pp. 7-21.
+Caloni, N. (2010), “Análisis espacial de evaluación multi-
+concedido su apoyo dentro del programa Becas
+criterio en la generación de alternativas viales para el
+MacGregor, así como a los dos revisores anónimos,
+trazado de la autopista Luján-Mercedes”, Geografía y Sis-
+cuyas sugerencias fueron de gran relevancia para la temas de Información. Aspectos conceptuales y aplicaciones,
+culminación del artículo. Universidad Nacional de Luján, Argentina, pp. 487-519.
+Castellanos Abella, E. A and C. J. Van Westen (2008),
+“Qualitative landslide susceptibility assessment by
+multicriteria analysis: a case study from San Antonio
+REFERENCIAS del Sur, Guantánamo, Cuba”, Geomorphology, vol. 94,
+pp. 453-466.
+Aceves, F. (2007), Mapa de riesgo volcánico basados en CENAPRED (2006), Características e impacto socioeconómi-
+sistemas de información geográfica: Volcán Nevado de co de los huracanes “Stan” y “Wilma” en la República Mexi-
+Toluca, tesis de Doctorado, Posgrado en Ciencias de la cana en el 2005, Secretaría de Gobernación, México.
+Tierra, UNAM.
+144 ][ Investigaciones Geográficas, Boletín 88, 2015
+Inestabilidad de laderas e infraestructura vial: análisis de susceptibilidad en la Sierra Nororiental de Puebla, México
+Ching, J. and L. Hung J. (2006), “Predicting landslides pro- INEGI (2008), Carta Topográfica Hoja Teziutlán E14-
+babilities along mountain road in Taiwan”, International B15, escala 1:50 000, Instituto Nacional de Estadística,
+Symposium on New Generation Design Codes for Geote- Geografía e Informática, México.
+chnical Engineering Practice, Taipei, Taiwan, pp. 1-11. INEGI (2011), Red Hidrográfica, escala 1:50 000, edición
+Cocquerez, J. P. and S. Philipp (1995), Analyse d´ images: 2.0 [http://www.inegi.org.mx/geo/contenidos/recnat/
+filtrage et segmentation, Ed. Masson. hidrologia/Descarga.aspx].
+COTEIGEP (2010), Mapas Regionales, Comité Téc- IUSS (2007), Base Referencial Mundial del Recurso Sue-
+nico de Estadística y de Información Geográfica del lo, Grupo de Trabajo WRB, primera actualización
+Estado de Puebla [http://www.coteigep.pue.gob.mx/]. 2007, Informes sobre Recursos Mundiales de Suelos
+Diario de Teziutlán (2011), “Lluvias dejan deslaves en No. 103, International Union of Soil Sciences, FAO,
+carreteras y pista” 8 de septiembre [diariodeteziutlan. Roma.
+blogspot.mx/2011/09/lluvias-dejan-deslaves-en- Jaithish, J. (2010), Landslide occurances at Maierato, Italy. An
+carreteras-y.html]. engineering geological view, Universidad de Pensilvania.
+Díaz Salgado, J. (1998), Evaluación del potencial acuícola Komac, M. (2006), “A landslide susceptibility model using
+costero mediante la aplicación de un sistema de informa- the Analytical Hierarchy Process method and multiva-
+ción geográfica: dos estudios caso en Oaxaca y Chiapas, riate statistics in perialpine Slovenia”, Geomorphology,
+tesis de Licenciatura, Facultad de Filosofía y Letras, vol. 74, pp. 17-28.
+UNAM, México. Lugo, J., J. J. Zamorano, L. Capra, M. Inbar e I. Alcántara
+Flores Olvera, P. and I. Alcántara Ayala (2012), “Suscepti- Ayala (2005), “Los procesos de remoción en masa en la
+bility to shallow landslides of soil in the municipality of Sierra Norte de Puebla, octubre de 1999, causas y efec-
+Temoaya, Mexico: multicriteria analysis”, Investigaciones tos”, Revista Mexicana de Ciencias Geológicas, Instituto
+Geográficas, Boletín, núm. 77, Instituto de Geografía, de Geología, vol. 22, no. 2, pp. 212-228.
+UNAM, México, pp. 31-47. Noticias de Puebla (2010), “Karl provoca dos muertos, 17
+García, M. G. (2003), Sistema de información para el análisis derrumbes e inundaciones en Puebla”, 17 de septiem-
+especial de riesgos en la Red Nacional de Carreteras, tesis bre [www.e_consulta.com/index.php?option=com_co
+de Maestría, Facultad de Filosofía y Letras, UNAM, ntent&task=view&id=58973&Itemid=285].
+México. Parise, M. (2000), “Landslide mapping techniques and their
+Geneletti, D. (2007), “An approach based on spatial use in the assessment of the landslide hazard”, Phys.
+multicriteria analysis to map the nature conservation Chem. Earth, vol. 26, no. 9, pp. 697-703.
+value of agricultural land”, Journal of Environmental Peet, F. G. and T. S. Sahota (1985), “Surface curvature as a
+Management, vol. 83, no. 2, pp. 228-235. measure of image textura”, IEEE Transactions on Pattern
+Hansen, A. (1984), “Landslide hazard analysis”, in Analysis and Machine Intelligence, pp. 734-738.
+Brunsden, D. and D. Prior D., Slope instability, Petley, D. (2010), The mechanism of the Highway 3 landslide
+pp. 553-595. in Taiwan, 26 de abril [www.landslideblog.org].
+INAFED (1998), Enciclopedia de los Municipios de México Philipp, S. and M. Smadja (1994), “Approximation of gra-
+Puebla, Centro Nacional de Desarrollo Municipal, nular textures by cuadratic surfaces”, Pattern recognition,
+Gobierno del Estado de Puebla, México [http://www. pp. 1051-1063.
+inafed.gob.mx]. Rodríguez, O. (2010), “Decretan alerta roja en Teziutlán
+INEGI (1984), Carta Edafológica Hoja Veracruz E14-3, por paso del huracán Karl”, Noticias de Puebla [http://
+escala 1:250 000, Secretaría de Programación y Presu- www.e-consulta.com].
+puesto, Instituto Nacional de Estadística, Geografía e Saaty, T. L. (1984), Décider face à la complexité, Ed. Entre-
+Informática, México. prise Moderne d’Edition, Paris.
+INEGI (1993a), Teziutlán, Estado de Puebla, Cuaderno SCT (1996), Criterio para jerarquizar la conservación
+estadístico municipal, Secretaría de Gobernación del de carreteras con base a su importancia económica,
+Estado de Puebla, H. Ayuntamiento de Teziutlán e Ins- Instituto Mexicano del Transporte, Querétaro, Secretaría
+tituto Nacional de Estadística, Geografía e Informática, de Comunicaciones y Transporte, México.
+México. SGM (2010), Carta Geológico Minera Teziutlán E14-B16.
+INEGI (1993b), Síntesis Geográfica del Estado de Puebla, Ins- SGM (2011), Carta Geológico Minera Teziutlán E14-B15.
+tituto Nacional de Estadística, Geografía e Informática, Yalcin, A. (2008), “GIS-based landslide susceptibility map-
+México. ping using analytical hierarchy process and bivariate
+INEGI (2004), Guía para la Interpretación de Cartografía statistics in Ardesen (Turkey): comparisons of results
+Edafología, Instituto Nacional de Estadística, Geografía and confirmations”, Catena, no. 72, pp. 1-12.
+e Informática, México. Zevallos Moreno, O. (1994), Lecciones del deslizamiento “La
+INEGI (2005), Carta Topográfica Hoja Altotonga E14- Josefina”, Ecuador, Sistema Nacional para la Prevención
+B16, escala 1:50 000, Instituto Nacional de Estadística, y Atención de Desastres Colombia.
+Geografía e Informática, México.
+Investigaciones Geográficas, Boletín 88, 2015 ][ 145

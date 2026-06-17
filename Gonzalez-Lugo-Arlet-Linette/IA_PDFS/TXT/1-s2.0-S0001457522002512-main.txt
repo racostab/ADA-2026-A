@@ -1,0 +1,830 @@
+AccidentAnalysisandPrevention177(2022)106816
+Contents lists available at ScienceDirect
+Accident Analysis and Prevention
+journal homepage: www.elsevier.com/locate/aap
+Safe route-finding: A review of literature and future directions
+Soheil Sohrabia,*, Yanmo Wengb, Subasish Dasc, Stephanie German Paalb
+aSafe Transportation Research and Education Center, University of California, Berkeley, CA 94720, USA
+bZachry Department of Civil and Environmental Engineering, Texas A&M University, College Station, TX 77843, USA
+cTexas State University, 601 University Drive, San Marcos, TX 78666, USA
+A R T I C L E I N F O A B S T R A C T
+Keywords: While road navigation systems seek to determine the shortest routes between a given set of origin and destination
+Route-finding points, there are certain situations in which the fastest route increases the risk of being involved in road crashes.
+Navigation This implies the necessity of integrating safe route-finding into road navigation systems. This study is designed to
+Safety
+synthesize the literature on safe route-finding and identify the gaps in the literature for future research. Spe-
+Safe routes
+cifically, a scoping literature review methodology is applied to understand how safety is incorporated in route-
+finding, even beyond motor vehicle navigation systems. Three databases (Scopus, Web of Science, and IEEE
+Xplore) are explored, and controlling for inclusion criteria, 40 studies are included in this review. The findings of
+this review indicated five areas through which safety was considered in route-finding: motor vehicle navigation,
+public safety, public health, pedestrian and cyclist navigation, and hazardous material transportation. The
+measurement of safety was found challenging with inconsistencies in safety quantification approaches. The safe
+route-finding algorithms were investigated based on their predictive/reactive, static/dynamic, and centralized/
+decentralized characteristics. Based on the critical review of the safe route-finding algorithms, availability of
+real-time data sources, accurate real-time and disaggregated crash risk prediction models, trade-off between time
+and safety in road navigation tools, and centralized safe route-finding are highlighted as the requirements and
+challenges in considering safety in road navigation systems. This study outlines a research agenda to address the
+identified challenges in safe route-finding.
+1. Introduction planning features was another significant improvement to in-car navi-
+gation. With the introduction of smartphones and navigation apps,
+Navigation has a long history that allegedly started with seafaring advanced road navigation systems became nearly ubiquitous. Another
+and later found its way into land, aeronautics, or space navigation. In all innovative feature was calculating the travel time based on traffic con-
+cases, the navigator’s position was located in comparison to known lo- ditions and directing users to the shortest route, i.e., the route that
+cations or patterns, either in the form of dead reckoning or celestial minimizes travel time. The route planning was based on the shortest
+navigation. Later, due to limitations in road signage, navigation systems route-finding algorithms (Gallo and Pallottino, 1988). Nowadays, road
+naturally became appealing to drivers. The first car navigation system, navigation systems’ route planning goes beyond finding the shortest
+which could direct drivers from specific locations on a rolling map, was route, but rather includes the most fuel-efficient and environmentally
+introduced in 1909 (Company, 1910). Since then, the car navigation friendly routes (Ding et al., 2017, Holden et al., 2020, Zeng et al., 2017).
+system has evolved, and several built-in or nomadic devices have been Since the 1960s, road navigation systems have been considered a
+introduced. Not only have the devices themselves been evolved, but also driving assistant technology that promotes safety (Auer et al., 2016).
+the capabilities of the system and the algorithms behind it have been The preliminary versions of road navigation systems could provide users
+modified. The invention of the Global Positioning System (GPS) in 1973 with turn-to-turn guidance that helped drivers to make safer driving
+(Bray, 2014, Canales, 2018), for instance, drastically affected the car (maneuver, lane changing, etc.) decisions. More recent versions of road
+navigation industry as the car navigation systems switched from dead navigation systems alert drivers of road dangers such as lane closures,
+reckoning to satellite-based navigation (although, evidently, almost two speed limits, flood events, crashes, etc. Despite these advances in road
+decades after the introduction of GPS). Adding route-finding and route- navigation systems, safety is not yet considered in route planning.
+* Corresponding author.
+E-mail address: sohrabi@berkeley.edu (S. Sohrabi).
+https://doi.org/10.1016/j.aap.2022.106816
+Received 16 April 2022; Received in revised form 11 August 2022; Accepted 18 August 2022
+Availableonline15September2022
+0001-4575/PublishedbyElsevierLtd.
+S. Sohrabi et al. A c c i d e n t A n a l y s i s a n d P r e v e n t i o n 177(2022)106816
+Sohrabi and Lord (2022) designed a study to examine the safety of database that covers more than 79 million records from several areas,
+suggested routes by navigation apps and concluded that the fastest route such as life sciences, biomedical sciences, engineering, social sciences,
+is not necessarily the safest route. This study showed that an 8% increase arts and humanities, natural sciences, health sciences, engineering,
+in travel time could be associated with a 23% reduction in the likelihood computer science, and materials sciences.3
+of being involved in a crash (Sohrabi and Lord, 2022). They argued that The databases were searched to identify published and indexed ar-
+road navigation seeks to minimize the traveler’s travel time, sometimes ticles, letters, reports, book chapters, and books using any combination
+with the cost of navigating them through local roads with poor geometry of a set of keywords in their title, abstract, and keywords. The keywords
+design, limited road marking and signage, higher interactions with are summarized into two groups in Table 1. All material considered in
+vulnerable road users (cyclists/pedestrians), and higher traffic conflicts, the review was published as of October 2021.
+to name a few (Sohrabi and Lord, 2022). After screening the titles and abstracts of the identified records, the
+This study is designed to address the gap in incorporating safety in full text was assessed based on the inclusion criteria. The inclusion
+route planning by exploring and synthesizing the literature about safety criteria were designed to ensure the literature answers the review
+in route-finding. A scoping literature review methodology is employed questions. Three inclusion criteria were defined:
+to (1) systematically identify safe navigation systems, their applications,
+and the methodologies behind them, (2) classify safe route-finding al- 1. Must discuss safety in route-finding as a system, and studies which
+gorithms, and (3) recognize requirements and research gaps for future only discuss route-finding algorithms are not included.
+investigations. This review goes beyond motor vehicle navigation sys- 2. Must investigate the route-finding in land transportation as opposed
+tems and explores the safety of various types of navigation applications, to aviation and maritime transport.
+namely, pedestrian route planning, hazardous material (HAZMAT) 3. Must propose an algorithm or quantification methods rather than
+routing, and social safe route finding, with the rationale that safe route- commentary publications.
+finding algorithms and methodologies can be transferable to road nav-
+igation. As environment-friendly route-finding has eventually found its 3. Results
+way after a decade of research, this review is expected to accelerate the
+integration of safe route-finding into navigation apps. Such a system can 3.1. Search results
+promote safety by preventing crashes and saving lives. In addition, this
+study proposes a research agenda for future research on incorporating Overall, 5,955 publications were found–2,246, 989, and 2,720
+safety in road navigation systems. Incorporating safety in route finding publications from the Web of Science, IEEE Xplore, and Scopus,
+can promote safety by preventing road crashes. respectively. Among those, 40 publications met the inclusion criteria
+and were reviewed. Fig. 1 summarizes the implemented scoping review
+2. Literature review methodology using the PRISMA scoping review flow diagram (Tricco et al., 2018).
+Fig. 2 depicts the annual number of publications since 2010. An
+A scoping review framework is employed in this study (the scoping increasing number of publications were observed, which implies higher
+review method was previously proposed by Arksey and O’Malley research attention to safe route-finding in recent years.
+(2005)). The rationale behind choosing a scoping review is based on the In the subsequent sections, the results of this review are reported,
+fact that the safe route-finding literature is broad rather than deep. summarizing the literature based on the definition of safety, the mea-
+According to definitions scoping reviews have a larger scope, charac- surement of safety, and the safe route-finding algorithms (Table 2
+terized by a broader research question and more inclusive eligibility summarizes the literature).
+criteria (Munn and Peters, 2018, Sargeant and O’Connor, 2020). The
+scoping review provided a preliminary literature review to identify
+areas where there may be a sufficient depth of literature to warrant a 3.2. Definition of safety
+systematic review (Sargeant and O’Connor, 2020). This review does not
+aggregate, describe the concepts and methods, or assess the quality of The literature shares a common objective: to maximize the safety in
+literature, but maps the literature about safe route-finding and identifies route-finding. Nevertheless, the objective of the optimization problem
+key concepts, gaps, and limitations (Munn and Peters, 2018). varied based on their definition of safety. The context of safe routing is
+The first step in a scoping review is to identify the research question also based on different travel modes. Consideration and context of safe
+to be answered (Arksey and O’Malley, 2005). This review aims to find routing for vehicles, non-motorists, and public transportation vary
+the answer to the fundamental question: “How is safety incorporated in widely. Safe routing for vehicles mostly depends on time, distance,
+safe route-finding literature?” Specifically, this study was interested in safety, and associated critical factors. Safe routing for non-motorists also
+identifying the algorithms and methodologies behind safe route-finding. includes time, distance, and safety, however, there is a need for addi-
+A search strategy was developed to retrieve relevant research evi- tional information such as walkability and crime scores of the networks,
+dence from three electronic research databases—Scopus, Web of Sci-
+ence, and Institute of Electrical and Electronics Engineers (IEEE) Xplore, Table 1
+and reference lists of the retrieved publications. IEEE Xplore is a Keywords summary.
+research database that covers more than 5 million journal articles, Category Keywords
+conference proceedings, standards, and related materials on multiple
+Route- Navigation system; Routing; Phone navigation; Car navigation;
+disciplines, including, but not limited to, computer science, electrical
+finding Bicycle navigation; Vehicle navigation; Automobile navigation;
+engineering and electronics, and allied fields.1 IEEE Xplore is sponsored Pedestrian navigation; Road navigation; Route finding; Path finding;
+by the IEEE and other partner publishers. Scopus is Elsevier’s research Road finding; Road guidance; Route guidance; Vehicle guidance; Car
+database, which covers more than 75 million records from 50,000 guidance; Navigation device; Route planning; Urban navigation;
+Vehicle information system; Navigation device
+publishers in four core areas: life sciences, social sciences, physical sci-
+Safety Safe; Crash; Collision; Accident; Crime; Hazard
+ences, and health science2. The Web of Science, sponsored by the
+Institute of Scientific Information, is a publisher-independent research
+1 Source: https://innovate.ieee.org/about-the-ieee-xplore-digital-library/.
+2 Source: https://www.elsevier.com/solutions/scopus/why-choose-scopus. 3 Source: https://clarivate.libguides.com/webofscienceplatform/coverage.
+2
+S. Sohrabi et al. A c c i d e n t A n a l y s i s a n d P r e v e n t i o n 177(2022)106816
+Fig. 1. Study identification and selection mechanism of the implemented scoping review.
+trails, bike paths, and sidewalks. Five definitions for safety were found in injury or death (e.g., shooting, sex crime, robbery, etc.) (Galbrun et al.,
+the literature: Crime risk, health risk, vehicle crash risk, pedestrian or 2016, Levy et al., 2020, Puthige et al., 2021, Soni et al., 2019, Utamima
+cyclist crash risk, and HAZMAT transportation risk (Fig. 3). and Djunaidy, 2017).
+The frequency and distribution of the defined categories across the The safe route through which the risk of being exposed to COVID-19
+literature is shown in Fig. 4a).4 Roughly 41% of included studies are is minimized was studied in the literature (Mishra et al., 2021, Cantarero
+related to the vehicle crash risk, and 21% discussed the pedestrian/ et al., 2021, Khanfor et al., 2020). The general rule to reduce the risk of
+cyclist crash risk. The next major category is the crime risk-related exposure to COVID is to maintain social distancing and avoid crowded
+studies which account for 25% of total studies. The health risk and communities or zones. Several methods were used in the literature to
+HAZMAT transportation risk accounts for 7% of the literature. Fig. 4 (b) identify the high-exposure hotspots and avoid them. Mishra et al. (2021)
+depicts an increasing trend in the number of records that vary over time. identified COVID-19 exposure hotspots such as medical zones, high-
+Safe route-finding was found in public safety literature. Finding a density residential areas, and roads with a higher potential for connec-
+route (mainly in an urban setting) with minimum risk of being a victim tivity of people. Khanfor et al. (2020) developed a pedestrian route-
+of a crime is studied in the literature (Utamima and Djunaidy, 2017, finding approach to avoid areas where social distancing is not well-
+Byon et al., 2010, Mata et al., 2016, Kaur et al., 2021, Radojiˇci´c et al., practiced. The proposed framework is backed up by the data from
+2018, Bura et al., 2019, Soni et al., 2019, Alpkoçak and Cetin, 2020, internet-of-thing devices in smart cities (Khanfor et al. (2020). Cantarero
+Levy et al., 2020, Puthige et al., 2021, Galbrun et al., 2016). Mainly, the et al. (2021) defined high-exposure areas as an area with a high density
+route with the minimum number of historical crimes was introduced as of population and occupations.
+the safest route (Alpkoçak and Cetin, 2020, Byon et al., 2010, Kaur et al., The literature is dominated by studies that explore the route that
+2021, Mata et al., 2016). Some studies, however, differentiate the type minimizes the risk of vehicle crashes (Ito and Koji, 2020, Li et al., 2014,
+of crimes and target a specified crime for their safe route-finding anal- Sarraf and McGuire, 2018, Abdelhamid et al., 2016, El-Wakeel et al.,
+ysis, e.g., robbery (Radojiˇci´c et al. (2018) and crimes that might cause 2018, He and Qin, 2017, Hoseinzadeh et al., 2020, Zhou et al., 2017,
+Abdelrahman et al., 2019, Hayes et al., 2020, Krumm and Horvitz, 2017,
+Li et al., 2016, Takeno et al., 2016, Kamal Alsheref, 2019, Soni et al.,
+2019, Liu et al., 2017, Puthige et al., 2021, Chen and Lou, 2021). The
+4 Two studies double-counted in Figure 5a, as they target both crime risk and safest route is usually considered to be the route with lower historical
+vehicle crash risk Soni, S., Shankar, V. G. & Chaurasia, S. 2019. Route-the safe:
+crash rates (Li et al. (2016), but the severity of crashes was also
+A robust model for safest route prediction using crime and accidental data. Int.
+considered in some studies. Like the safe routes for vehicles, the safety of
+J. Adv. Sci. Technol, 28, 1415-1428;Puthige, I., Bansal, K., Bindra, C., Kapur, M.,
+Singh, D., Mishra, V. K., Aggarwal, A., Lee, J., Kang, B.-G. & Nam, Y. 2021. pedestrian and cyclists are studied in the literature. The pedestrian and
+cyclist safe route seeks to maximize the safety of pedestrians and cyclists
+Safest Route Detection via Danger Index Calculation and K-Means Clustering.
+3
+S. Sohrabi et al. A c c i d e n t A n a l y s i s a n d P r e v e n t i o n 177(2022)106816
+Lozano Domínguez and Mateo Sanguino, 2021). The safe routing for
+non-motorists generally considers additional data inputs such as side-
+walk presence, the network of sidewalks, trails, and walkability scores.
+The risk of crashes has been associated with lighting (Ouyang et al.
+(2014) and weather conditions (Shah et al., 2020), among others.
+The HAZMAT transportation risk was also included in route-finding
+(Eren and Tuzkaya, 2021, Preda et al., 2013). Preda et al. (2013)
+developed a HAZMAT transpiration route-finding for various types of
+HAZMAT. Eren and Tuzkaya (2021) proposed safe route-finding for
+COVID-19-related HAZMAT. The safest route for HAZMAT is usually
+considered to be a route with less risk of HAZMAT exposure and
+emissions.
+3.3. Safety measurement
+In the reviewed studies, there is a large variation in how safety is
+measured and quantified. In a nutshell, the safety was measured based
+on (1) data-driven analyses of the crash frequency, crash rate, or prob-
+ability of incidents or crashes, (2) a scoring technique, and (3) safety-
+indicator variables as a proxy of risk.
+Fig. 2. Publications by year (as of October 2021).
+3.3.1. Data-driven measurement of safety
+In the first group, historical crash data was commonly used for the
+in terms of the risk of road crashes (Santhanavanich et al., 2020, Shah
+analyses. Takeno et al. (2016) used the dangerous point and degree of
+et al., 2020, Bao et al., 2017, Ouyang et al., 2014, Yew et al., 2010,
+risk to measure safety. The suggested safe route avoids dangerous lo-
+Kusano and Inoue, 2013, Chandra, 2014, Shubenkova et al., 2018,
+cations with higher crash frequencies. The degree of risk is served as a
+Table 2
+A summary of the reviewed studies.
+Study Definition of Safety Measurement of Safety Algorithm
+Predictive/ Static/ Centralized/
+reactive dynamic decentralized
+(Santhanavanich et al., 2020) Pedestrian or cyclist crash risk Data-driven Reactive Dynamic decentralized
+(Sarraf and McGuire, 2018) Vehicle crash risk Scoring Predictive Static decentralized
+(Mata et al., 2016) Crime risk Data-driven Predictive Dynamic decentralized
+(Kaur et al., 2021) Crime risk Scoring Reactive Dynamic decentralized
+(Radojiˇci´c et al., 2018) Vehicle crash risk Data-driven Predictive Static decentralized
+(Takeno et al., 2016) Vehicle crash risk Data-driven Predictive Static decentralized
+(Bao et al., 2017) Pedestrian or cyclist crash risk Scoring Reactive Static decentralized
+(Chen and Lou, 2021) Vehicle crash risk Data-driven Predictive Static decentralized
+(Khanfor et al., 2020) Health risk Safety indicator Predictive Static decentralized
+(Mishra et al., 2021) Health risk Scoring Predictive Static decentralized
+(Ito and Koji, 2020) Vehicle crash risk Scoring Reactive Dynamic decentralized
+(Utamima and Djunaidy, 2017) Crime risk Data-driven Reactive Static decentralized
+(Li et al., 2014) Vehicle crash risk Data-driven Reactive Dynamic decentralized
+(Cantarero et al., 2021) Health risk Safety indicator Predictive Dynamic decentralized
+(Shah et al., 2020) Pedestrian or cyclist crash risk Scoring Reactive Dynamic decentralized
+(Abdelhamid et al., 2016) Vehicle crash risk Data-driven Predictive Dynamic decentralized
+(Preda et al., 2013) HAZMAT risk Scoring Predictive Static decentralized
+(El-Wakeel et al., 2018) Vehicle crash risk Safety indicator Reactive Dynamic decentralized
+(He and Qin, 2017) Vehicle crash risk Data-driven Predictive Static decentralized
+(Byon et al., 2010) Crime risk Scoring Predictive Static decentralized
+(Hoseinzadeh et al., 2020) Vehicle crash risk Data-driven Predictive Dynamic decentralized
+(Zhou et al., 2017) Vehicle crash risk Data-driven Predictive Static decentralized
+(Abdelrahman et al., 2019) Vehicle crash risk Data-driven Predictive Dynamic decentralized
+(Hayes et al., 2020) Vehicle crash risk Data-driven Predictive Static decentralized
+(Bura et al., 2019) Crime risk Data-driven Predictive Static decentralized
+(Krumm and Horvitz, 2017) Vehicle crash risk Data-driven Predictive Static decentralized
+(Li et al., 2016) Vehicle crash risk Data-driven Predictive Dynamic decentralized
+(Kamal Alsheref, 2019) Vehicle crash risk Scoring Predictive Static decentralized
+(Soni et al., 2019) Vehicle crash risk/Crime risk Scoring Predictive Static decentralized
+(Eren and Tuzkaya, 2021) HAZMAT risk Scoring Predictive Static decentralized
+(Alpkoçak and Cetin, 2020) Crime risk Data-driven Predictive Static decentralized
+(Ouyang et al., 2014) Pedestrian or cyclist crash risk Safety indicator Predictive Dynamic decentralized
+(Yew et al., 2010) Pedestrian or cyclist crash risk Data-driven Predictive Static decentralized
+(Liu et al., 2017) Vehicle crash risk Data-driven Predictive Dynamic decentralized
+(Levy et al., 2020) Crime risk Data-driven Predictive Static decentralized
+(Puthige et al., 2021) Vehicle crash risk/Crime risk Data-driven Predictive Static decentralized
+(Chandra, 2014) Pedestrian or cyclist crash risk Data-driven Predictive Static decentralized
+(Lozano Domínguez and Mateo Sanguino, 2021) Pedestrian or cyclist crash risk Safety indicator Predictive Static decentralized
+(Shubenkova et al., 2018) Pedestrian or cyclist crash risk Safety indicator Predictive Static decentralized
+(Galbrun et al., 2016) Crime risk Data-driven Predictive Static decentralized
+4
+S. Sohrabi et al. A c c i d e n t A n a l y s i s a n d P r e v e n t i o n 177(2022)106816
+Fig. 3. Risk categories.
+Fig. 4. Illustration of grouped safety objectives: (a) Frequency of publications by objectives; (b) Frequency of yearly publications by objectives.
+parameter when calculating the cost function of a route development into the reward function of the reinforcement learning algorithm5.
+algorithm. Hoseinzadeh et al. (2020) measured safety in terms of Safety is defined as a function of the average distance from previously
+average crash number, route volatility, and driving style. They defined known crime spots during the learning step. Based on the crime-related
+an impedance index that combines safety and time in route finding. reward function, the reinforcement learning algorithm generates the
+Zhou et al. (2017) defined the danger index to represent the collision routes avoiding the crime point. Alpkoçak and Cetin (2020) used the
+density of the street and illustrate the danger intensity in a certain street. crime rate to measure and compare the safety of the regions. In this
+The danger index is calculated as the count of the collision number research, the crime rate is defined as the ratio of the number of incidents
+divided by the street length. Puthige et al. (2021) first defined the crash occurring in the region to the number of populations of this region. Bura
+score based on the severity of a crime and then gave each type of crime a et al. (2019) used the number of crime records to measure safety. The
+rated weight and further calculated the crime score. The final danger crime records are mapped to the corresponding region and used for
+index is used for measuring overall safety. The danger index is defined as finding the route with fewer crime records along the route.
+the summation of the crash score and crime score divided by the path More advanced data-driven models estimated the probability of an
+distance, and the index is further considered as the weight of a multi- incident using prediction models. Mata et al. (2016) applied the Bayes
+objective shortest-path model. Santhanavanich et al. (2020) mapped model to cluster the types of crime. Based on the Bayes clustering
+the historical traffic crash data to the geodatabase, then found the high-
+risk areas (crash hot spots). The developed route planning algorithm
+plans to circumvent these hotspots of the risk area. Utamima and Dju-
+5 Reinforcement learning contains several components contains agent, envi-
+naidy (2017) defined the dangerous point with a certain radius based on
+ronment, state, rewards, policy, and value function. The agent is the decision-
+the crime data (i.e., type, location, description). The dangerous area is
+maker; Environment is the physical world where the agent learns the action;
+further developed based on the crime point and surrounding radius. The
+Action is a set of actions that which agent performs; State is the agent’s current
+developed route selection algorithm avoids these dangerous zones. Yew
+situation; Reward is the feedback that the environment gave to the agent after
+et al. (2010) measured safety based on the ratio of the number of re- an action; Policy is the method to map agent’s state to action; Value function is
+ported incidents to the amount of exposure. Risk rate can be regarded as the future reward that agent will obtain after a certain action. Reinforcement
+a probability and further used in the route-finding algorithm. Hayes learning is a machine learning technique that an agent keeps learning in an
+et al. (2020) used the crash rate to represent the safety level. It is interactive environment from the agent’s action based on a series of trial and
+calculated as the number of crashes that occur on a given road in the past error methods.
+12 months divided by the maximum number of crashes that happened
+on a single road in the selected region. The driver customized weight is
+applied to the crash ratio and further considered as a part of the cost
+function for the route-finding algorithm. Levy et al. (2020) added safety
+5
+S. Sohrabi et al. A c c i d e n t A n a l y s i s a n d P r e v e n t i o n 177(2022)106816
+algorithm6, the probability of an event occurring on a given day and 3.3.2. Scoring technique
+time and at a specific location was calculated. The generated probability In the second group, safety is measured based on a scoring technique,
+can be used for measuring safety. Additionally, if there is no available mainly in the form of a scaled value. Kaur et al. (2021) measured safety
+crime data in an area, the Bayes model will make an estimation to find based on scoring the relative parameters. Each segment has a safety
+the safety points in this area. The weight of these points will be assigned score which ranges from 0 to 15. They defined several rules to change
+and serve as the parameters for the safe route algorithm. Radojiˇci´c et al. the safety score for each segment based on the safety-related parameters.
+(2018) defined risk as a probability of an event occurring along the For instance, the safety score increases if there is a police station along
+defined route. The risk probability changes as the vehicle travel distance the road, or, if a road segment passes through a deserted region, the
+increase. The cumulated risk index for a route is formed with various value decreases by two. The safest route includes road segments with
+safety-related parameters and travel distance information. This cumu- higher scores. Bao et al. (2017) analyzed the impact of each safety fac-
+lated value is included in the objective function, which is used for route tor. After evaluating the impact of parameters, each segment is assigned
+determination. To measure safety, Li et al. (2016) and Li et al. (2014) a safety score. The higher the safety score value, the safer a route can be.
+defined the risk index as follows: The overall route safety score is the summation of the sub-route safety
+∑ score. These safety scores will be served as the weight of the shortest
+RRI(i)=F( n ij S j /AADT i ) (1) route-finding algorithm to determine the route. Mishra et al. (2021)
+j=1,2,3
+measured the safety based on several hazard factors and each hazard
+where i is the road segment number, RRI(i)is the risk index for the i factor was assigned a numerical value. Proximity to the containment
+th segment, j=1,2,3 denotes the severity level of fatality, injury, and zone was one of the factors considered in this study, and it decreases
+property damage only, respectively, nij is the predicted number of levels with every 100 m as the distance increases up to 300 m. The second
+j to occur over road segment i in a certain period, Sj represents the cost of hazard factor was proximity to the medical facilities, which is assigned
+a crash type, F(•)is a function that scales the cost of most homogenous as 0.08 for the edges with the proximity of 100 m near the medical fa-
+segments to an index between 0 and 10, and AADTi represents the cilities and decreases as distance increases. The last hazard factor
+annual average daily traffic on the road segment i. The weighted sum of considered was the traffic risk and the betweenness centrality, which
+the cumulative travel time and RRIs were used for the cost function for was normalized and scaled into the range of 0 to 0.06 to represent the
+safe route-finding. Abdelhamid et al. (2016) estimated the probability of traffic risk. The final safety score was calculated as the summation of all
+being involved in crashes based on the characteristics of the road of these factors. Byon et al. (2010) targeted the crime risk and counted
+segment and the behavior of the vehicle driver. Abdelrahman et al. the number of death cases associated with each zone. The zone with the
+(2019) used the number of crashes, near-crash, and baseline events highest counted deaths received a rating of 5. The zone with the lowest
+captured in the driving environment for calculating the probability of death count received a rating of 1. The safest route passes through the
+crashes. Krumm and Horvitz (2017) estimated the probability of a zones with lower crime scores. Soni et al. (2019) measured safety using
+single-vehicle crash on a certain road segment over a given hour. Then, an overall numeric risk score. Specifically, the crime and crash score for
+the crash probability of a route is defined as a set of independent Ber- a certain point was calculated first by assigning the different weights for
+noulli trials7, with one trial for the crash road segment. Galbrun et al. different types of crime and crashes. Then, the averaged crime and crash
+(2016) assigned a risk score to each edge that is proportional to the were estimated based on all the considered points and regions. The risk
+probability of crime events happening on the corresponding road score was further calculated as the summation of the averaged crime and
+segment. The spatial density for the crime event is first estimated via the crash score. Shah et al. (2020) targeted pedestrian safety and incorpo-
+Gaussian kernel density estimation8, then the estimated density function rated traffic and weather data to measure safety. They defined the safety
+is summed up to obtain the crime activity density, which is proportional factor as a scoring value (i.e., High, Medium, Low) based on the traffic
+to the probability of observing a crime event on the given edge. The final and weather condition. Eren and Tuzkaya (2021) obtained the Medical
+risk score is obtained by normalizing the crime activity density. Liu et al. Waste Management (MWM) safety score (valued between 1 and 10).
+(2017) measure the crash probability as: Kamal Alsheref (2019) selected traffic crashes as the safety parameter.
+The intensity of importance to safety is measured by Saaty’s 9-point
+p(si) =1(cid:0) p(ci) (2) scale9 (Zanakis et al., 1998). Then, the safety intensity was further
+Where p(si )is the crash probability of the road i and p(ci )is the crash used in the weight calculation in the route selection algorithm.
+probability of the road i. The no-crash probability for the entire route is
+estimated as the product of the crash probability of all the segments 3.3.3. Safety indicator
+within a route. The safest route score is further determined based on the In the last group, safety is measured based on the indicators of safety.
+crash probability of the route; a higher safety score represents a safer Khanfor et al. (2020) measured safety as a part of the weight of edges of
+route. the road map graph used for developing the safety route. The safety
+weight is a numeric value that combines the impact of the surrounding
+co-location/co-work-based relation (CLOR) communities and devices
+belonging to the same social friendship and ownership relation (SFOR)
+6 The Bayes clustering algorithm is a Bayes algorithm used for the purpose of community of the pedestrian’s device. The SFOR and CLOR can be
+clustering. The Bayes algorithm considers specific features that are identified regarded as indicators of safety considering the social distance issue of
+and assigned to a specific cluster. Particularly in this research, the clustering COVID-19. Cantarero et al. (2021) developed an approach that identifies
+approach obtains some probabilities that represent the estimation for specific the density of citizens and level of occupation and combines this infor-
+crimes that were previously classified semantically. Also, the Bayes algorithm mation with the behavior of citizens. The level of danger is defined based
+can be used for obtaining a likelihood of an event occurring with several given
+conditions based on the Bayes theorem.
+7 A Bernoulli trial is a test that can result in one of two outcomes: success or
+failure. In one of these trials, "success" indicates you got the result you were 9 Saaty’s 9-point scale is the standard measurement scale used for the analytic
+looking for. Here, the “success” trial can be treated as the trial with the crash in hierarchy process (AHP). AHP is considered a multi-criteria decision-making
+a single road segment. technique using psychology and math. The steps of AHP include: (1) defining
+8 Kernel density estimation is a non-parametric method for estimating an the problem, options, and criteria; (2) Creating a matrix based on the pairwise
+unknown probability density function using a kernel function. Here, the comparison; (3) Compute the importance weight of each criterion; (4) Selecting
+Gaussian kernel is selected which means the data points follow a Gaussian the best option. Here, the AHP is used for modeling the route selection problem
+curve. in a hierarchical form and further recommending the route.
+6
+S. Sohrabi et al. A c c i d e n t A n a l y s i s a n d P r e v e n t i o n 177(2022)106816
+on vulnerability, transmission risk, and level of occupation. The output decentralized designs. The subsequent sections summarize the literature
+of the Danger Model contains a numerical danger index that serves as a based on the characteristics of the algorithms.
+measurement of safety. Shubenkova et al. (2018) investigated multiple
+safety parameters, including both the objective parameters (e.g., un- 3.4.1. Predictive vs reactive algorithms
+regulated crossing) and subjective parameters (e.g., health condition). Route-finding algorithms can be classified according to the reactive
+All the safety parameters were given a numerical value and a corre- or predictive nature of the algorithm (Schmitt and Jula, 2006). Fig. 5a
+sponding weight. The overall complex indicator was used for measuring shows the frequency of the predictive and reactive algorithms in the
+safety by summing up the product of the value of each safety parameter reviewed studies. Predictive algorithms account for 78.05 % of litera-
+and its corresponding weight. Ouyang et al. (2014) measured the safety ture, while 21.95 % of the reviewed studies used reactive algorithms. A
+of cyclists based on slope, road type, road width, signs on the road, and distribution of predictive/reactive algorithms over time is depicted in
+road lighting. Each factor was broken into multiple levels and safety Fig. 5b.
+weights are assigned to each level. All weights were set between 0 and 1, The reactive algorithm determines the path based on observed data
+with 1 meaning the safest condition and 0 meaning the least safe con- without employing any future information (Schmitt and Jula, 2006).
+dition. The single unified safety coefficient was further estimated as the The predictive algorithm employs a predictive model to predict the
+product of the weights. El-Wakeel et al. (2018) detected and categorized future conditions of the route. Galbrun et al. (2016) used the gaussian
+road surface types and anomalies. The average road quality, which kernel density estimation to estimate the probability of observing the
+represents the safety, is labeled qualitatively and further used for route- crime event in the given segment. Krumm and Horvitz (2017) estimated
+finding. Rain events on roads were considered a risky situation by Ito the future crash probability via the Bernoulli trials. Mata et al. (2016)
+and Koji (2020), and numerical traffic risk, scaled from 1 to 10 to the used the Bayes algorithm to predict the probability of a crime event
+roads, was defined on the basis of historical rain events. He and Qin occurring on a given day and time and at a specific location. Abdel-
+(2017) incorporated the ratio of the deceleration rate to avoid a crash to rahman et al. (2019) predicted the risk based on the joint effect of
+the maximum available deceleration rate as the proxy for traffic safety. detected behavior and environmental context. Besides the conventional
+A safety hazard index was further defined for roadway segments and statistical predictive models, the machine learning models can also be
+intersections. Chandra (2014) developed crash indicators for cyclists used to predict the safety conditions for the future route. For instance,
+and older drivers as a function of traffic attributes such as speed and Levy et al. (2020) developed a deep reinforcement learning algorithm to
+density, driver attributes such as perception-reaction time, and street generate the path, indicating the future safety of the route with a given
+attributes of length and the tire-to-road friction coefficient. time and start and end points. Also, the input of a predictive algorithm
+might contain several safety parameters, and the output will be an
+3.4. Route-finding algorithms overall safety index for the segment or the route to represent the safety
+(Li et al., 2014, Li et al., 2016, Radojiˇci´c et al., 2018).
+The Dijkstra algorithm and its variants were mainly used in the
+literature to find the optimal routes (Santhanavanich et al., 2020, Mishra 3.4.2. Static vs Dynamic algorithms
+et al., 2021, Utamima and Djunaidy, 2017, Cantarero et al., 2021, Sarraf Depending on whether or not the route-finding system reacts to real-
+and McGuire, 2018, Abdelhamid et al., 2016, Byon et al., 2010, Zhou time information, the route-finding algorithm can be divided into two
+et al., 2017, Mata et al., 2016, Krumm and Horvitz, 2017, Takeno et al., types: static and dynamic (Schmitt and Jula, 2006, Herbert and Mili,
+2016, Yew et al., 2010, Liu et al., 2017, Galbrun et al., 2016). The 2008, Dong, 2011, Khanjary and Hashemi, 2012). Fig. 6 (a) shows the
+original Dijkstra algorithm was designed to solve the shortest route- frequency of static and dynamic algorithms in the studied papers. 63.41
+finding problem. The cost function is modified to incorporate safety in % of the reviewed studies are static algorithms (Mishra et al., 2021,
+route-finding. The modified Dijkstra algorithm aims to minimize the Utamima and Djunaidy, 2017, Sarraf and McGuire, 2018, Preda et al.,
+cost function to find the path with the minimum cost from a single 2013, He and Qin, 2017, Byon et al., 2010, Zhou et al., 2017, Mata et al.,
+source vertex to all other vertices in a weighted, directed graph. The 2016, Radojiˇci´c et al., 2018, Hayes et al., 2020, Bura et al., 2019, Krumm
+inputs for the modified Dijkstra algorithm usually contain a single or and Horvitz, 2017, Takeno et al., 2016, Kamal Alsheref, 2019, Soni
+multiple safety-related parameters and the geographic data, and the et al., 2019, Bao et al., 2017, Eren and Tuzkaya, 2021, Alpkoçak and
+output usually will be several routes recommendation. Byon et al. Cetin, 2020, Yew et al., 2010, Levy et al., 2020, Puthige et al., 2021,
+(2010) modified the Dijkstra algorithm by incorporating safety param- Chandra, 2014, Chen and Lou, 2021, Khanfor et al., 2020, Shubenkova
+eters (e.g., crime rate, road slope, scenic view, and elevation of a ground et al., 2018, Galbrun et al., 2016, Lozano Domínguez and Mateo San-
+surface) into the cost functions. By minimizing the modified cost func- guino, 2021). The other 36.59 % of the total reviewed publications are
+tions, the output of this algorithm is the safest route with less crime and the dynamic algorithms (Santhanavanich et al., 2020, Ito and Koji,
+better road conditions. A* algorithm was also utilized in the literature 2020, Li et al., 2014, Cantarero et al., 2021, Shah et al., 2020, Abdel-
+with a modified heuristic function (Hayes et al., 2020, Alpkoçak and hamid et al., 2016, El-Wakeel et al., 2018, Hoseinzadeh et al., 2020,
+Cetin, 2020). Similar to the Dijkstra algorithm, the input parameters Abdelrahman et al., 2019, Kaur et al., 2021, Li et al., 2016, Ouyang
+contain the geographic information for the origin and destination points et al., 2014, Liu et al., 2017, Kusano and Inoue, 2013). Fig. 6 (b) dem-
+and the safety-related parameters. onstrates the time series of the publications showing the static and dy-
+Another approach for finding the safest route is to rank the shortest namic algorithms. Except for the year 2010, there are both static and
+path and its alternatives based on safety (Ito and Koji, 2020, Hoseinza- dynamic algorithms in each year. The difficulties of processing the real-
+deh et al., 2020, Bura et al., 2019, Bao et al., 2017, Liu et al., 2017, time data might explain the lower number of publications with the dy-
+Puthige et al., 2021, Chandra, 2014). Also, machine learning (ML) can namic algorithms compared to the static algorithms.
+be used not only for generating the safety measurement but also for Additionally, the datasets used in the static algorithms and dynamic
+predicting a safe route. The deep reinforcement learning algorithm is algorithms are different. Fig. 7 summarizes the datasets used in the
+one of the ML-based techniques that was used in the literature to find the literature for static and dynamic route-finding. The datasets can be
+shortest path (Levy et al. (2020). The input parameters are usually co- classified into three groups: geographic information datasets, historic
+ordinate information about the route start point and endpoint and the datasets, and real-time datasets. The geographic datasets were incor-
+safety-related parameters (e.g., crime events, vehicle speed, road con- porated in both static and dynamic route-finding. The geographic
+dition). The output of the ML algorithm is the safest path. database includes information about the start and endpoints of the route
+The safe route-finding algorithms can be categorized on their pre- and the road network. Geographical datasets are sourced from Open-
+dictive/reactive, static/dynamic algorithms, and centralized/ StreetMap, Bings map, and Google map (Santhanavanich et al., 2020,
+7
+S. Sohrabi et al. A c c i d e n t A n a l y s i s a n d P r e v e n t i o n 177(2022)106816
+Fig. 5. (a) Study frequencies by predictive and reactive algorithm; (b) Yearly study frequencies by the predictive and reactive algorithm.
+Fig. 6. (a) Study frequencies by static and dynamic algorithm; (b) Yearly study frequencies by static and dynamic algorithm.
+Mishra et al., 2021, Utamima and Djunaidy, 2017, Cantarero et al., algorithms (all papers included in this review were using a decentralized
+2021, Shah et al., 2020, Sarraf and McGuire, 2018, El-Wakeel et al., algorithm).
+2018, He and Qin, 2017, Zhou et al., 2017, Hayes et al., 2020, Bura et al.,
+2019, Krumm and Horvitz, 2017, Takeno et al., 2016, Soni et al., 2019, 3.5. Publications after the review time
+Alpkoçak and Cetin, 2020, Liu et al., 2017, Levy et al., 2020, Puthige
+et al., 2021, Khanfor et al., 2020, Galbrun et al., 2016, Lozano Domí- While missing the most recent publication in review studies is
+nguez and Mateo Sanguino, 2021), among others. Besides geographical inevitable, we updated our search with a focus on road safety to include
+datasets, the static algorithm also used historical data for safety mea- the most recent literature. As a result, four publications were found
+surements. For example, the static algorithm-related studies in the crime (Huang et al., 2022, Sohrabi and Lord, 2022, Jiang et al., 2022) that
+risk category used historical crime records (see Fig. 7 for more exam- meet our inclusion criteria.
+ples), whereas the dynamic algorithms incorporate real-time data. Huang et al. (2022) proposed a conflict-based approach for travel
+Various real-time datasets are found in the literature- namely, the news route safety estimation. This approach measures safety in terms of traffic
+websites (Mata et al., 2016, Kaur et al., 2021), the official report (Li conflicts at the road segments and intersections. A dynamic, predictive
+et al., 2014, Hoseinzadeh et al., 2020, Li et al., 2016), various sensors algorithm was used in this study. The traffic conflicts are predicted using
+and GPS data (Ito and Koji, 2020, El-Wakeel et al., 2018, Abdelrahman machine learning techniques, including road and intersection charac-
+et al., 2019, Ouyang et al., 2014, Kusano and Inoue, 2013), and data teristics and dynamic traffic characteristics. The safe route is then found
+from APIs (Santhanavanich et al., 2020, Cantarero et al., 2021, Shah using a fuzzy logic method, calculating the risk level of taking a route
+et al., 2020, Abdelhamid et al., 2016, Liu et al., 2017). with regards to the intersection and road segment conflict rates.
+Sohrabi and Lord (2022) measured safety in terms of the theoretical
+3.4.3. Centralized vs Decentralized algorithms probability of being involved in crashes, as a complement of no-crash
+Route-finding algorithms can be distinguished according to their (survival) probability. They assumed crash events are a result of a
+objectives. In the decentralized algorithm, the decision-making is made Poisson process, and the crash frequency at a road segment can be
+by an individual user, and, therefore, the system maximizes the users’ characterized by a negative binomial distribution. The distribution,
+benefit (Schmitt and Jula, 2006, Khanjary and Hashemi, 2012). In a which provides the probability of crashes, is estimated based on the road
+centralized system, however, the algorithm aims to optimize the benefit characteristics and aggregated traffic conditions. They also developed
+of all users (or society) (Schmitt and Jula, 2006, Khanjary and Hashemi, models for adverse and clear weather conditions, which make their al-
+2012). The safe route-finding literature is dominated by decentralized gorithm a semi-static, predictive algorithm.
+8
+S. Sohrabi et al. A c c i d e n t A n a l y s i s a n d P r e v e n t i o n 177(2022)106816
+Fig. 7. Datasets used for static and dynamic algorithm.
+Jiang et al. (2020) proposed a model that measures the safety of algorithms are static, mainly because of limitations in the availability of
+roads, integrating road segment-level crash rates and vehicle-level data for dynamic route-finding. Safe route-finding algorithms can be
+conflict probability. Road segment-level crash rates are estimated by based on predicting the state of safety in the system (or route) or
+developing the safety performance functions. Vehicle-level conflict observed safety. Reactive route-finding is based solely on the current
+probability is estimated using Neural Network, taking into account real- conditions, without insight into future conditions. Predictive routing
+time data from driver behaviors, roadway characteristics, vehicle systems, on the other hand, can give insight into the future condition of a
+queuing status, distance-related measures, and speed-related measures. road network, but at the cost of extensive prediction modeling. Safe
+The safety of the road is further measured as “risk scores,” integrating route-finding algorithms can also be distinguished according to the
+crash rates and conflict probability using fuzzy logic. A follow-up study definition of their ultimate goals: a centralized system aims to maximize
+by Jiang et al. (2022) complements the dynamic, predictive algorithm benefits for the road network, while a decentralized system aims to
+by proposing a heuristic algorithm to solve a real-time routing problem optimize benefits for the individual user. Table 3 summarizes the types
+that minimizes travel time while maximizing the average risk score. The of route-finding algorithms for each safe route-finding system.
+proposed algorithm is tested using real historical crash data and simu-
+lated driver-based data.
+4.2. Safe route-finding in road navigation
+4. Discussion Safe route-finding algorithms aim to inform users about the safety of
+alternative routes between the desired origin and destination. Road
+4.1. Lessons learned from the literature crashes are rare events subject to temporal instability (Mannering,
+2018), which implies the limitations of solely relying on historical data
+This review identified five areas in which safety was incorporated for estimating the risk of crashes. Also, the risk of crashes was associated
+into routing problems. The literature about safe route-finding in road with roadway characteristics, weather conditions, user behavior, and
+navigation can be traced back to 2014, and since then, not many studies traffic conditions (Petridou and Moustaki, 2000, Lord et al., 2021, Qiu
+have targeted this topic. An inconsistency was found in the measure-
+ment of safety in the literature. Data-driven analysis of frequency, rate, Table 3
+and risk of incidents was widely used in the literature to measure safety. Different types of route-finding algorithms for each safe route-finding system.
+Scoring on the basis of ordinal values was another approach to quantify
+Definition Dynamic/ Predictive/ Centralized/
+safety in the literature. As the measurement of safety can be challenging,
+static reactive decentralized
+measurable indicator parameters (surrogate safety measurements) were
+Vehicle Crash risk Both Both Decentralized
+also used as a proxy for safety. The Dijkstra algorithm, with some
+Health risk Both Predictive Decentralized
+modification, was commonly used to find the shortest route, i.e., the Cyclist/pedestrian Both Both Decentralized
+route with minimum risk. Depending on whether or not the navigation crash risk
+system reacts to up-to-date information, route-finding algorithms can be HAZMAT risk Static Predictive Decentralized
+Crime risk Both Both Decentralized
+divided into two types: static and dynamic. Most of the identified
+9
+S. Sohrabi et al. A c c i d e n t A n a l y s i s a n d P r e v e n t i o n 177(2022)106816
+and Nixon, 2008), which can change over time. As such, safe route- Table 4
+finding needs to account for the changes in determinants of crashes Example data sources for safe route-finding.
+during the trip and provide insights into the future for both route-finding Data Elements Data Source
+and detouring. Ideally, safe route-finding is designed as a dynamic,
+Speed Measures
+predictive algorithm. A dynamic, predictive algorithm needs to provide
+Posted speed limit or travel time State DOT, HERE, SHRP 2-RID
+a robust prediction of the risk of crashes in real-time data. Avg. operating speed, percentile speed, & State DOT, INRIX, INRIX XD, HERE,
+Switching from reactive to predictive algorithms requires employing speed variance NPMRDS
+crash prediction models. Traditional crash prediction models are foun- Continuous 5-minute, 15-minute, hourly,
+daily, monthly & annual speed
+ded on the assumption that crash events follow a binary trial, and for a
+Vehicle trajectory data or waypoint data INRIX, Wejo, StreetLight
+large number of vehicles the incidents can be modeled by the Poisson Percent of vehicles exceeding speed limit State DOT
+process (Lord et al., 2005). The distribution of crashes during a specific
+period of time (usually one or multiple years) was shown to draw from a
+Roadway Inventory Data
+negative binomial distribution, where the expected value of the distri- Segment length State DOT, HPMS, SHRP2-RID,
+bution function represented the expected number of crashes at a specific Number of lanes GoogleEarth
+road segment (Lord et al., 2005). These models take into account the Shoulder and lane width
+Horizontal and vertical alignment
+aggregated environmental, behavioral, and traffic information for esti-
+Median barrier
+mating the expected number of crashes (Washington et al., 2020), which
+Roadside fixed objects (barrier, guardrail,
+limits their application for dynamic routing. Real-time crash prediction poles)
+models (see (Hossain et al., 2019) for an overview of the models) have Traffic control devices, pavement condition
+the potential to update in real-time and take into account the volatility
+of traffic. While the majority of these models aggregate the traffic in- Weather Characteristics
+formation in small time intervals (Hossain et al., 2019), new models Continuous hourly, daily, monthly and NOAA, Road Weather Information
+annual precipitation & visibility data System (RWIS)
+have been proposed for vehicle-level crash risk predictions (Basso et al.,
+2021). Vehicle-level models would be able to consider user-specific
+factors in route selection, namely, driving experience, driver back- Traffic Volume Measures
+AADT State DOT, TMAS, HPMS, SHRP2-
+ground, and vehicle characteristics, that can elevate the reliability of
+RID, StreetLight Data Inc.
+risk estimations. Hourly traffic volume TMAS, StreetLight
+In the roadway safety literature, crashes are mainly used as a mea-
+surement of safety (Lord et al., 2021). Due to challenges in the avail-
+Crash Measures
+ability and quality of crash databases, surrogate safety measures (e.g., Crash time and date State DOT, HSIS, SHRP2-RID
+time to collision and traffic conflicts) were also used as a proxy for road Crash location
+safety (Lord et al., 2021). Safety measurement based on scoring, how- Crash type and severity
+Crash contributing factors (e.g., speeding)
+ever, is prone to subject bias. While a variety of safety measurements can
+Lighting and weather conditions
+be used to measure the safety of road segments, quantifying the safety of
+the route (usually consisting of several road segments) is required for
+Real-Time Traffic Data for the U.S.
+identifying the safe route.
+1.70 million cases (2016–2019) [every 90 s] MapQuest Traffic Application
+For safe route finding related works, it is important to develop a Programming Interface (API)
+comprehensive database. Two major types of databases are required for 0.54 million cases (2016–2019) [every 90 s] Bing Map Traffic API
+incorporating safety in road navigation: 1) road network or road in-
+ventory database, and 2) database on operational measures (e.g., oper- Real-Time Incident Data
+ating speed, travel time, historical crash or event information on the Crowdsourced data Waze
+roadway segment). Table 4 lists the key data elements and potential
+sources for each of these data elements. Interested readers can consult
+wiper usage, acceleration, deceleration, hard braking, sudden stoppage,
+Tarko et al. (2021) for a comprehensive list of emerging data sources for
+and near collision. While some of these data sources can report real-time
+improving safety (Tarko et al., 2021). Roadway inventory data usually data (to support a dynamic algorithm), MapQuest10 and Bing Map
+contains information of roadway features (e.g., segment length, roadbed Traffic AI11 can be used to acquire real-time traffic data. Crowdsourced
+width, median type, shoulder type, shoulder width). In many cases, the
+databases such as Waze can be potential sources for real-time incidents.
+roadway features are provided in separate layers. Many state databases
+For safe routing algorithm design, it is necessary to acquire data from
+do not provide additional geometric data such as super elevation, curve
+both public and private data sources. Table 4 lists some of the key data
+radius, and posted speed limit. OpenStreetMap and other private data
+elements and related data sources.
+vendors (e.g., HERE) can used by researchers to acquire additional
+Commercialized route-finding systems are mainly designed to
+geometric data. For operation measures, researchers need to acquire
+maximize benefits for the user (i.e., minimizing travel time), not for the
+data on two major metrics, travel time/traffic volume-related features,
+road transport system. To support these systems, a safe route-finding
+and recurrent/non-recurrent event-related features (e.g., road in-
+algorithm needs to maximize safety at the user level.
+cidents). Fig. 8 summarizes the required databases for static and dy-
+namic safe route-finding. Some of the potential open-source datasets can
+be collected from Departments of Transportation (DOTs), the Highway 4.3. Challenges and future directions
+Performance Monitoring System (HPMS), the Highway Safety Informa-
+tion System (HSIS), the Roadway Inventory Database (RID) and the Based on the comprehensive literature review and the discussion in
+companion Naturalistic Driving Study (NDS) data (from the 2nd Stra- sections 4.1 and 4.2, this study proposes a research agenda for future
+tegic Highway Research Program or SHRP2), Traffic Monitoring Anal- research to address the gaps and requirements for developing safe route-
+ysis Systems (TMAS), and National Performance Management Research finding algorithms.
+Data Set (NPMRDS). Researchers can also purchase or acquire data from
+commercial private data vendors including HERE, INRIX, Wejo, and
+StreetLight. Some private data vendors (e.g., Wejo) also provide data 10 Source: https://www.mapquest.com/.
+from vehicle on-board devices. The data elements include trajectory, 11 https://www.bingmapsportal.com/.
+10
+S. Sohrabi et al. A c c i d e n t A n a l y s i s a n d P r e v e n t i o n 177(2022)106816
+Fig. 8. Static and dynamic safe route-finding data requirements.
+The level of complexity and reliability of route-finding varies ac- centralized system can force drivers to take safer routes, which can
+cording to the algorithm classifications mentioned above. For example, invade the liberty of users.
+dynamic, predictive route finding is a more complex algorithm with a Table 5 summarizes the proposed research agenda.
+higher level of reliability compared to static route-finding, but to ach-
+ieve reliable estimations of the risk of crashes and, consequently, the 5. Summary and conclusion
+safest route, accurate prediction models are required to estimate the risk
+of crashes in real-time. Despite the advances in real-time crash predic- This study addresses the gaps in considering safety in road
+tion models, more research is required to ensure robust, reliable pre-
+dictions. Also, the vehicle-level crash prediction models can elevate the
+reliability of safety measurements by including a higher level of gran- Table 5
+ularity in risk estimations. Measurement of route safety and incorpo- Proposed Research Agenda.
+rating it into route-finding algorithms is another challenge in safe route-
+Problem Research Topic
+finding algorithms that requires further investigations.
+Accurate crash prediction models The safe route-finding algorithm should
+For real-time routing, real-time information about traffic conditions,
+be designed as a predictive algorithm to
+road incidents (e.g., closures due to flooding, crashes, and mainte- account for changes in the risk of being
+nance), and weather conditions are required. Such data (traffic condi- involved in crashes. Future research is
+tion and road closure) is not publicly available, which makes developing required to improve the accuracy of
+dynamic, predictive safe route-finding algorithms challenging. While prediction models.
+Disaggregated crash prediction models Developing vehicle-level crash
+collecting real-time information about traffic and road conditions can be
+for measuring safety prediction models by providing the users
+costly, crowdsourced data can be considered an alternative data source with modified information about their
+for real-time data (Amin-Naseri et al., 2018, Lin and Li, 2020). trips based on the user’s driving style,
+The trade-off between time and safety is critical. In the case the safest historical record of crashes, potential
+weaknesses, etc.
+route is not consistent with the fastest route, the users face a dilemma
+Short duration crash prediction models Developing short-duration (e.g., daily,
+about whether to choose the safest route or the fastest one. While the hourly) crash prediction models to
+choice between safety and time is subjective to the driver’s sensitivity, it provide more real-time aspects of safety
+is expected to affect other road users. Understanding the decision- on the navigation tools.
+making process of users (to choose between safety and travel time) Measurement of route safety Introducing new methods to aggregate
+road segment and vehicle-level risks at
+would help with proactive plans (e.g., educational activities) to promote
+the route level.
+safety on roads (de Leur and Sayed, 2003). Collecting crash and traffic data in real- Investigate the potential of using
+Unlike route-finding based on travel time, a decentralized, safe time to support dynamic, predictive crowdsourced data in safe route-finding
+route-finding algorithm can harm other users. Crashes usually involve route-finding algorithms
+Trade-off between safety and time Investigate the sensitivity of users to the
+more than one vehicle, and road crashes may cause road closure and
+risk of being involved in crashes and
+traffic congestions that impose delays on other road users. Therefore, travel time
+incorporating safety in route-finding and egoism decision-making of Centralized or decentralized navigation Exploring the potential safety impacts of
+users can raise ethical concerns. Centralized safe-route-finding algo- system two types of safe route-finding
+rithms can address this concern; however, one can argue that the algorithms, centralized and
+decentralized, and the
+11
+S. Sohrabi et al. A c c i d e n t A n a l y s i s a n d P r e v e n t i o n 177(2022)106816
+navigation systems and reviews the existing knowledge around safe Systems with Digital Elevation Models and Crime Rate Geospatial Data. Transp. Res.
+route-finding (even beyond road navigation). A scoping review meth- Rec. 2183, 94–102.
+Canales, J. 2018. Navigating the history of GPS. Nature Publishing Group.
+odology was implemented, and 41 studies were included in this review. Cantarero, R., Rubio, A., Romero, M.J.S., Dorado, J., Ferna´ndez, J., Lopez, J.C., 2021.
+Based on this comprehensive review, the gaps in the literature were COVID19-Routes: A Safe Pedestrian Navigation Service. IEEE Access 9,
+identified, and an agenda for future research were proposed. Addressing
+93433–93449.
+Chandra, S., 2014. Safety-based path finding in urban areas for older drivers and
+the limitations in the availability of data, developing robust safety bicyclists. Transp. Res. Part C: Emerg. Technol. 48, 143–157.
+measurement methods, and addressing the potential challenges in Chen, N., Lou, B.N., 2021. A self-driving tour service system based on traffic safety and
+increasing safety in navigation apps are highlighted as major needs for accessibility. In: Advances in Transportation Studies, p. 53.
+Company, U.S.C., 1910. Cycle Automobile Trade J.
+further investigations.
+de Leur, P., Sayed, T., 2003. A framework to proactively consider road safety within the
+This review has certain limitations. Although safe route-finding has road planning process. Can. J. Civ. Eng. 30, 711–719.
+been studied in many domains, the literature about safe route-finding in Ding, Y., Chen, C., Zhang, S., Guo, B., Yu, Z. & Wang, Y. Greenplanner: Planning
+personalized fuel-efficient driving routes using multi-sourced urban data. 2017
+the context of roadway safety is scarce. We tried to synthesize and map
+2017. IEEE, 207-216.
+the safe route-finding literature beyond the roadway safety domain to Dong, W., 2011. An overview of in-vehicle route guidance system. Aust. Transp. Res.
+identify transferable knowledge and accelerate incorporating safety in Forum.
+El-Wakeel, A.S., Noureldin, A., Hassanein, H.S., Zorba, N., 2018. In: IDriveSense:
+road navigation. The developed review protocol, however, needs to be
+Dynamic route planning involving roads quality information. IEEE, pp. 1–6.
+revisited once more studies are available. A scoping review method was Eren, E., Tuzkaya, U.R., 2021. Safe distance-based vehicle routing problem: Medical
+used in this study to map the existing knowledge about safe route- waste collection case study in COVID-19 pandemic. Comput. Ind. Eng. 157, 107328.
+finding and identify the gaps and challenges in incorporating safety in Galbrun, E., Pelechrinis, K., Terzi, E., 2016. Urban navigation beyond shortest route: The
+case of safe paths. Inf. Syst. 57, 160–171.
+road navigation. Future studies and systematic reviews are required to Gallo, G., Pallottino, S., 1988. Shortest path algorithms. Ann. Oper. Res. 13, 1–79.
+augment understanding of safe-route findings for different modes Hayes, S., Wang, S. & Djahel, S. Personalized Road Networks Routing with Road Safety
+(pedestrian, bicyclist, vehicle, and public transport), particularly the Consideration: A Case Study in Manchester. 2020 2020. IEEE, 1-6.
+He, Z., Qin, X., 2017. Incorporating a safety index into pathfinding. Transp. Res. Rec.
+measurement of safety and routing methodologies. 2659, 63–70.
+Herbert, W., Mili, F., 2008. Route guidance: state of the art vs. state of the practice. In:
+2008 IEEE Intelligent Vehicles Symposium. IEEE, pp. 1167–1174.
+CRediT authorship contribution statement
+Holden, J., Reinicke, N., Cappellucci, J., 2020. RouteE: A Vehicle Energy Consumption
+Prediction Engine. Society of Automotive Engineers Technical Paper Series.
+Soheil Sohrabi: Conceptualization, Methodology, Investigation, Hoseinzadeh, N., Arvin, R., Khattak, A.J., Han, L.D., 2020. Integrating safety and
+Visualization, Writing – original draft, Writing – review & editing, Su- mobility for pathfinding using big data generated by connected vehicles. J. Intell.
+Transp. Syst. 24, 404–420.
+pervision. Yanmo Weng: Writing – original draft, Writing – review & Hossain, M., Abdel-Aty, M., Quddus, M.A., Muromachi, Y., Sadeek, S.N., 2019. Real-time
+editing. Subasish Das: Conceptualization, Investigation, Writing – crash prediction models: State-of-the-art, design pathways and ubiquitous
+original draft, Writing – review & editing, Supervision. Stephanie requirements. Accid. Anal. Prev. 124, 66–84.
+Ito, S. & Koji, Z. Assessing a risk-avoidance navigation system based on localized
+German Paal: Validation, Writing – review & editing. torrential rain data. 2020 2020. EDP Sciences, 03006.
+Jiang, S., Jafari, M., Kharbeche, M., Jalayer, M., Al-Khalifa, K.N., 2020. Safe route
+mapping of roadways using multiple sourced data. IEEE Trans. Intell. Transp. Syst.
+Jiang, S., Zhang, Y., Liu, R., Jafari, M., Kharbeche, M., 2022. Data-Driven Optimization
+Declaration of Competing Interest for Dynamic Shortest Path Problem Considering Traffic Safety. IEEE Trans. Intell.
+Transp. Syst.
+The authors declare that they have no known competing financial Kamal Alsheref, F., 2019. Route Recommendation Model Via An Analytic Hierarchy
+Process (AHP). Journal of Advanced Res. Dyn. Control Syst. 11, 17–24.
+interests or personal relationships that could have appeared to influence Kaur, R., Goyal, V., Guntur, V. M. V., Saini, A., Sanadhya, K., Gupta, R. & Ratra, S. A
+the work reported in this paper. Navigation System for Safe Routing. 2021 2021. IEEE, 240-243.
+Khanfor, A., Friji, H., Ghazzai, H. & Massoud, Y. A Social IoT-Driven Pedestrian Routing
+Approach During Epidemic Time. 2020 IEEE Global Conference on Artificial
+Data availability
+Intelligence and Internet of Things (GCAIoT), 12-16 Dec. 2020 2020. 1-6.
+Khanjary, M. & Hashemi, S. M. Route guidance systems: review and classification. 2012
+No data was used for the research described in the article. 6th Euro American Conference on Telematics and Information Systems (EATIS),
+2012 Valencia, Spain. IEEE, 1-7.
+Krumm, J. & Horvitz, E. Risk-aware planning: Methods and case study for safer driving
+References routes. 2017 2017.
+Kusano, S., Inoue, M., 2013. In: Safety route guidance system using participatory sensing.
+Abdelhamid, S., Elsayed, S. A., AbuAli, N. & Hassanein, H. S. Driver-centric route IEEE, pp. 363–364.
+Levy, S., Xiong, W., Belding, E., Wang, W.Y., 2020. SafeRoute: Learning to Navigate
+guidance. 2016 2016. IEEE, 1-6.
+Abdelrahman, A., Hassanein, H. S. & Abu-Ali, N. IRouteSafe: Personalized cloud-based S an tr d e e T ts e c S h a n fe o l l y o g i y n ( a T n I S U T r ) b a 1 n 1 , E 1 n – v 1 i 7 ro . nment. ACM Transactions on Intelligent Systems
+Alpk r o o ç u a t k e , p A l . a & nn C in e g ti n b , a A se . d S a o f n e r M is a k p p R ro o fi ut le in s g o U f s d i r n i g v e H rs e . u 2 ri 0 s 1 ti 9 c 2 A 0 lg 1 o 9 r . i t I h E m EE B , a 1 s - e 6 d . on Regional Li, Z., Kolmanovsky, I., Atkins, E., Lu, J., Filev, D. & Michelini, J. Cloud aided safety-
+based route planning. 2014 2014. IEEE, 2495-2500.
+Crime Rates. 2019 2020. Springer, 335-346.
+Li, Z., Kolmanovsky, I., Atkins, E., Lu, J., Filev, D.P., Michelini, J., 2016. Road Risk
+Amin-Naseri, M., Chakraborty, P., Sharma, A., Gilbert, S.B., Hong, M., 2018. Evaluating
+Modeling and Cloud-Aided Safety-Based Route Planning. IEEE Trans. Cybern. 46,
+t
+fr
+h
+o
+e
+m
+r e
+W
+lia
+a
+b
+z
+i
+e
+l
+.
+i t
+T
+y
+r
+,
+a
+c
+n
+o
+s
+v
+p
+e
+.
+r
+R
+ag
+e
+e
+s
+,
+.
+a
+R
+n
+e
+d
+c.
+a
+2
+d
+6
+d
+7
+e
+2
+d
+,
+v
+3
+a
+4
+l
+–
+u
+4
+e
+3
+o
+.
+f crowdsourced traffic incident reports 2473–2483.
+Arksey, H., O’Malley, L., 2005. Scoping studies: Towards a methodological framework. Lin, Y., Li, R., 2020. Real-time traffic accidents post-impact prediction: Based on
+crowdsourcing data. Accid. Anal. Prev. 145, 105696.
+Auer I , n A t. ., J . F S ee o s c e . , R S e . s , . L M oc e k t w ho o d o o d l , . S 8 . , & 19 H –3 a 2 m . ilton, B. A. 2016. History of intelligent Liu, Q., Kumar, S. & Mago, V. SafeRNet: Safe transportation routing in the era of Internet
+of vehicles and mobile crowd sensing. 2017 14th IEEE Annual Consumer
+transportation systems. United States. Department of Transportation. Intelligent Communications & Networking Conference (CCNC), 8-11 Jan. 2017 2017. 299-304.
+Transportation.
+Lord, D., Washington, S.P., Ivan, J.N., 2005. Poisson, Poisson-gamma and zero-inflated
+Bao, S., Nitta, T., Yanagisawa, M., Togawa, N., 2017. A Safe and Comprehensive Route
+regression models of motor vehicle crashes: balancing statistical fit and theory.
+Finding Algorithm for Pedestrians Based on Lighting and Landmark Conditions. In: Accid. Anal. Prev. 37, 35–46.
+IEICE Transactions on Fundamentals of Electronics, Communications and Computer
+Sciences, pp. 2439–2450. L L o o r z d a , n D o . D , o Q m in í , n X gu ., e G z, e J e . d M ip . a & lly M , S a . t , e 2 o 0 S 2 a 1 n . g H u i i g n h o w , T a . y d s . a J f . e t 2 y 0 2 an 1 a . l W yt a ic lk s i a n n g d S e m c o u d re e : l i S n a g f . e E R ls o e u v t i i e n r g .
+Basso, F., Pezoa, R., Varas, M., Villalobos, M., 2021. A deep learning approach for real- Planning Algorithm and Pedestrian’s Crossing Intention Detector Based on Fuzzy
+time crash prediction using vehicle-by-vehicle data. Accid. Anal. Prev. 162, 106409.
+Logic App. Sensors, 21, 529.
+Bray, H., 2014. You are here: from the compass to GPS, the history and future of how we
+Mannering, F., 2018. Temporal instability and the analysis of highway accident data.
+Bura fi , n D d . , o S u i r n s g e h lv , e M s. . B & a s N ic a n B d o a o l k , s P ( . A P Z r ) e . d icting Secure and Safe Route for Women using Mata A , n F a ., l . T M or e r t e h s . - R A u c i c z . , R M e . s , . G 1 u 7 z , m 1– ´a 1 n 3 , . G ., Quintero, R., Zagal-Flores, R., Moreno-Ibarra, M.,
+Google Maps. 2019 International Conference on Machine Learning, Big Data, Cloud
+Loza, E., 2016. A Mobile Information System Based on Crowd-Sensed and Official
+and Parallel Computing (COMITCon), 14-16 Feb. 2019 2019. 103-108.
+Crime Data for Finding Safe Routes: A Case Study of Mexico City. Mobile Inf. Syst.
+Byon, Y.-J., Abdulhai, B., Shalaby, A., 2010. Incorporating Scenic View, Slope, and Crime 2016, 1–11.
+Rate into Route Choices: Emphasis on Three-Dimensional Geographic Information
+12
+S. Sohrabi et al. A c c i d e n t A n a l y s i s a n d P r e v e n t i o n 177(2022)106816
+Mishra, S., Singh, N., Bhattacharya, D., 2021. Application-Based COVID-19 Micro- Shubenkova, K., Boyko, A., Buyvol, P., 2018. The technique of choosing a safe route as an
+Mobility Solution for Safe and Smart Navigation in Pandemics. ISPRS Int. J. Geo-Inf. element of smart mobility. Transp. Res. Procedia 36, 718–724.
+10, 571. Sohrabi, S., Lord, D., 2022. Navigating to safety: Necessity, requirements, and barriers to
+Munn, Z., Peters, M.J., Stern, C., Tufanaru, C., McArthur, A., Aromataris, E., 2018. considering safety in route finding. Transp. Res. Part C: Emerg. Technol. 137,
+Systematic review or scoping review? Guidance for authors when choosing between 103542.
+a systematic or scoping review approach. BMC Med. Res. Method. 18, 1–7. Soni, S., Shankar, V.G., Chaurasia, S., 2019. Route-the safe: A robust model for safest
+Ouyang, W., Yu, C.-W., Yu, K.-M., Lin, K.-J., Chang, H.-T., 2014. Safe path planning route prediction using crime and accidental data. Int. J. Adv. Sci. Technol 28,
+strategy for bike net. Wireless Pers. Commun. 78, 1995–2007. 1415–1428.
+Petridou, E., Moustaki, M., 2000. Human factors in the causation of road traffic crashes. Takeno, R., Seki, Y., Sano, M., Matsuura, K., Ohira, K. & Ueta, T. A route navigation
+Eur. J. Epidemiol. 16, 819–826. system for reducing risk of traffic accidents. 2016 2016. IEEE, 1-5.
+Preda, A., Ro¨nkko¨, M., Pickl, S. & Kolehmainen, M. GIS-based route planning for Tarko, A. P., Guo, Q. & Pineda-Mendez, R. 2021. Using Emerging and Extraordinary Data
+HAZMAT transportation. 2013 2013. Springer, 357-366. Sources to Improve Traffic Safety. 2326-6325, Available: <https://doi.org/10.5703/
+Puthige, I., Bansal, K., Bindra, C., Kapur, M., Singh, D., Mishra, V. K., Aggarwal, A., Lee, 1288284317283>.
+J., Kang, B.-G. & Nam, Y. 2021. Safest Route Detection via Danger Index Calculation Tricco, A.C., Lillie, E., Zarin, W., O’Brien, K.K., Colquhoun, H., Levac, D., Moher, D.,
+and K-Means Clustering. Peters, M.D.J., Horsley, T., Weeks, L., Hempel, S., Akl, E.A., Chang, C., McGowan, J.,
+Qiu, L., Nixon, W.A., 2008. Effects of adverse weather on traffic crashes: systematic Stewart, L., Hartling, L., Aldcroft, A., Wilson, M.G., Garritty, C., Lewin, S.,
+review and meta-analysis. Transp. Res. Rec. 2055, 139–146. Godfrey, C.M., Macdonald, M.T., Langlois, E.V., Soares-Weiser, K., Moriarty, J.,
+Radojiˇci´c, N., Mari´c, M., Takaˇci, A., 2018. A new fuzzy version of the risk-constrained Clifford, T., Tuncalp, O., Straus, S.E., 2018. PRISMA Extension for Scoping Reviews
+Cash-in-Transit Vehicle Routing Problem. In: Information Technology and Control/ (PRISMA-ScR): Checklist and Explanation. Ann. Intern. Med. 169, 467–473.
+Informacine˙s technologijos ir valdymas, pp. 321–337. Utamima, A. & Djunaidy, A. Be-safe travel, a web-based geographic application to
+Santhanavanich, T., Wuerstle, P., Silberer, J., Loidl, V., Rodrigues, P. & Coors, V. 2020. explore safe-route in an area. August 01, 2017 2017. 020023.
+3D Safe routing navigation application for pedestrians and cyclists based on open Washington, S., Karlaftis, M., Mannering, F., Anastasopoulos, P., 2020. Statistical and
+source tools. ISPRS Annals of Photogrammetry, Remote Sensing & Spatial Information econometric methods for transportation data analysis. Chapman and Hall/CRC.
+Sciences, 6. Yew, K. H., Ha, T. T. & Paua, S. D. S. J. SafeJourney: A pedestrian map using safety
+Sargeant, J.M., O’Connor, A.M., 2020. Scoping reviews, systematic reviews, and meta- annotation for route determination. 2010 2010. IEEE, 1376-1381.
+analysis: applications in veterinary medicine. Frontiers in veterinary science 7, 11. Zanakis, S.H., Solomon, A., Wishart, N., Dublish, S., 1998. Multi-attribute decision
+Sarraf, R., McGuire, M.P., 2018. A data driven approach for safe route planning. Int. J. making: A simulation comparison of select methods. Eur. J. Oper. Res. 107,
+Appl. Geospatial Res. (IJAGR) 9, 1–18. 507–529.
+Schmitt, E. & Jula, H. Vehicle Route Guidance Systems: Classification and Comparison. Zeng, W., Miwa, T., Morikawa, T., 2017. Application of the support vector machine and
+2006 IEEE Intelligent Transportation Systems Conference, 17-20 Sept. 2006 2006. heuristic k-shortest path algorithm to determine the most eco-friendly path with a
+242-247. travel time constraint. Transp. Res. Part D: Transp. Environ. 57, 458–473.
+Shah, M., Liu, T., Chauhan, S., Qi, L. & Zhang, X. 2020. CycleSafe: Safe Route Planning Zhou, E., Mao, S. & Li, M. Investigating street accident characteristics and optimal safe
+for Urban Cyclists. route recommendation: A case study of New York City. 2017 25th International
+Conference on Geoinformatics, 2-4 Aug. 2017 2017. 1-7.
+13

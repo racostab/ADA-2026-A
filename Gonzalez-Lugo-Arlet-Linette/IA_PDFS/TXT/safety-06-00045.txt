@@ -1,0 +1,1144 @@
+safety
+Article
+Road Safety Analysis of High-Risk Roads:
+Case Study in Baja California, México
+MarcoMontoya-Alcaraz ,AlejandroMungaray-Moctezuma*,JulioCalderón-Ramírez,
+LeonelGarcía andCynthiaMartinez-Lazcano
+FacultyofEngineering,UniversidadAutónomadeBajaCalifornia,Mexicali21280,Mexico;
+marco.montoya@uabc.edu.mx(M.M.-A.);julio.calderon@uabc.edu.mx(J.C.-R.);
+leonel.garcia@uabc.edu.mx(L.G.);cmartinez8@uabc.edu.mx(C.M.-L.)
+* Correspondence: alejandro.mungaray@uabc.edu.mx;Tel.:+52-686-566-42-70
+(cid:1)(cid:2)(cid:3)(cid:1)(cid:4)(cid:5)(cid:6)(cid:7)(cid:8)(cid:1)
+(cid:1)(cid:2)(cid:3)(cid:4)(cid:5)(cid:6)(cid:7)
+Received: 14August2020;Accepted: 19September2020;Published: 9October2020
+Abstract: Theobjectiveofthisresearchistodevelopausefulproceduretoassessandidentifyrisks
+thatpromoteaccidentsbyroadusers,withthevisionofimprovingsafetythroughtheimplementation
+andtechnicalemploymentofoperativestrategies. Therelevanceofthisproposalliesinthefactthat
+theissueoftrafficaccidentsisaglobalproblem. ThisprojectislocatedinthemountainrangeofBaja
+California,Mexico,intheCentinela–LaRumorosahighwayandintegratesaccidentalandpavement
+surfaceconditiondata, geometricdesignperformance, analysisoftrafficsignals, androadsafety
+devicespresentontheroadusinggeodetictechniques. Itisconcludedthatthisprocedurecontributes
+todeterminingriskareasthatpromoteaccidentsandgenerateariskreductionplantosupportfuture
+decision-makingthatguaranteesbetterperformanceforroadusers. Furthermore,itishighlighted
+thattheanalysisofroadsafetymustbeapermanentprocessforthosewhooperate,design,andbuild
+theroadsystem.
+Keywords: roadsafety;riskassessment;roadadministration
+1. Introduction
+Roadsafetyisapriorityissueforgovernments,mainlyforhumanitarian,health,andeconomic
+reasons. According to the World Health Organization (WHO), road accidents cause the death of
+approximately1.3millionpeopleannually,justfewerthan3400fatalaccidentsperday,additionally,
+between30and50millionpeoplesuffernon-fatalinjuriesperyear[1]. Itisworthmentioningthat
+mostofthevictimsintrafficinjuriesare90%associatedwithlowandmiddle-incomecountries[2].
+Thisisaglobalconcernproblemconsideredsevereandhasbeenaddressedwithdirectsolutions
+thatcanbeimplementedapriorithrougheffectiveinterventionsandthatarecarriedoutfromurban
+andtransportplanninginthedesignofsaferroads, executionofroadsafetyaudits, aswellasthe
+establishmentandapplicationofinternationallyharmonizedlaws[3,4]. Anexampleofthiscorresponds
+tothecaseofEuropeancountries,wheretheidentificationandtreatmentofcriticalareas,improvement
+ofroaddesignandtrafficregulation,reducedthenumberofaccidentsbyapproximately22%[5].
+ThereareinstrumentssuchastheHighwaysafetyguidelines: Accidentreductionandprevention
+developedbytheInstitutionofHighwaysTransportation[6]thatitisintendedtoidentify,analyze,
+andtreatcriticalpointsofaccidents,thisbeingoneofthemosteffectiveapproachesontrafficaccidents
+prevention. Likewise,theRoadSafetyAudit(RSA)processesdevelopedintheUnitedKingdomin
+the1980sandpublishedin1990bytheInstitutionofHighwaysandTransportation[7,8]. Amongthe
+specific benefits that RSA provides are safer new highways, crash prevention, severity reduction,
+safer road networks, reduction of whole-life cost of roads, and eventual safety improvements to
+standardsandprocedures,amongothers[9,10]. Inthissense,WilsonandLipinski[11]carriedouta
+Safety2020,6,45;doi:10.3390/safety6040045 www.mdpi.com/journal/safety
+Safety2020,6,45 2of18
+RSApracticestatereviewininternationalcasessuchastheUnitedStates,Australia,NewZealand,
+Ireland, and Italy. Additionally, Persia et al. [12] performed a review of the main procedures that
+supporttheauthorityindecision-makingrelatedtoimprovingsafetyinroadnetworks,calledRoad
+InfrastructureSafetyManagement(RISM).However,itisrelevanttohighlightthatnotallcountries
+arecapableofimplementingtheseprocedures,emphasizingthelackofresources,staff,knowledge,
+legalregulations,anddatafortheapplicationoftheRISMprocedures.
+InMexico,trafficaccidentsareamongthetenmaincausesofdeath. FiguresfromtheMinistryof
+Healthofthiscountryrevealthatin2015,justover16thousandpeoplediedbecauseofthisreason,
+anestimatedrateof13.3deathsper100,000inhabitants,only0.1%lowerthantheoneregisteredin2014.
+Accordingtothedocument"RoadsafetyintheRegionoftheAmericas"[13],Mexicoranks23of31
+countriesindeathscausedbytraffic. InaccordancewiththeSpecificActionProgramforRoadSafety
+2013–2018[14],deathsanddisabilitiescausedbyroadaccidentinjuriesareagrowingpublichealth
+probleminMexico. Therefore,roadsafetysurveillanceandmonitoringareimperative,sinceessential
+informationcanbeobtainedinordertodesigninterventionsandtimelydecision-making. However,
+thisisnotalwaysfulfilledorcarriedoutcomprehensively.
+Asaresultoftheforegoing,asoftheyear2014,thereisaprojectthatseekstoimproveplanning
+anddecision-makingregardingthesafetyofaroadsection. Thisprojectislocatedinamountainrange
+ofBajaCalifornia,Mexico. Theobjectiveofthisresearchistodevelopausefulproceduretoassessand
+identifyrisksthatpromoteaccidentsintheusersofroads,withtheaimofimprovingsafetythrough
+theimplementationoftechnicalandoperativestrategies.
+2. Background
+Thevastmajorityofpreviousstudiesonaccidents’causesidentificationmainlyfocusonthree
+significantriskfactorsandfromthose,differentsafety-relatedareasofresearchhavebeencreated:
+(1)thehumanfactorandvehicleconditions,(2)theinfluenceofenvironmentalconditions,and(3)
+factorsrelatedtotechnicaldesignandadministrationproblemsforhighways[15].
+Inthefirstoneoftheseriskfactors,TheAmericanAssociationofStateHighwayTransportation
+Officials(AASHTO)throughtheHighwaySafetyManual[16]highlightshumanfactorasthemaincause
+ofroadaccidents. Thisisbecausedriverscanmakejudgmenterrors;presentdistractionsorinattention,
+aswellastiredness; carryoutseveraltasksatthesametime; andgeneratedeliberateviolationsof
+securitydevicesandlaws. Therefore, severalauthorshaveanalyzedtheinfluenceofthesefactors
+ontheseverityandoccurrenceoftheaccidentsand,whenappropriate,createdaccidentprevention
+and reduction strategies [17–20]. Furthermore, Reason et al. [21] developed the Driver Behaviour
+Questionnaire(DBQ)attheUniversityofManchester,oneofthemostwidelyusedinstrumentsto
+measuredriverbehaviorrelatedtocollisionrisk. Thisinstrumentisattributedtoaquestionnairethat
+hasbeenappliedandadaptedtosuitthecontextofdifferentcountries;forexample;Stanojevic´etal.[22]
+appliedtheinstrumentincountriesinsouth-easternEurope;López-de-Cózaretal.[23]adapteditto
+theSpanishcase;Cordazzoetal.[24]analyzedtheNorthAmericancontextandmodernizedit[25].
+Otherstudiesanalyzetherelationshipbetweenvisualandcognitiveproblemsinelderlydrivers
+withtheriskofaccidents[26–29]. Likewise,somestudiesfocusonteenagers,withtrafficaccidents
+beingthemaincauseofdeathinyoungpeopleandadultsbetweentheagesof5and29worldwide[15].
+These results indicate that the main causes of teenage driver accidents are associated with loss of
+controlduetospeeding,visualneglectontheroad,alcoholanddruguse,aswellascellphoneuse
+whendriving[30–34]. Asamatteroffact,therelationshipbetweencellphoneuseandaccidentshas
+becomerelevantbyitselfinthestudyofhumanfactors[35–38]. Althoughtheliteraturefocusedon
+therelationshipbetweenvehicleconditionsandaccidentsislow,accidentreportspointoutthemain
+aspectsthatinfluencevehicleaccidents,includingtirewear,brakesystemfailures,aswellasexhaust
+systemfailures[39].
+In the second area, environmental phenomena that can increase the probability of a vehicle
+accident occurring are highlighted. Malin et al. [40] carried out a research that analyzes the risk
+Safety2020,6,45 3of18
+relationbetweenroadaccidentsandweatherconditionsondifferenttypesofroads. Accordingto
+the results, the relative risk of accidents on roads with icy or slippery surfaces is six times higher;
+additionally,thedrivertendstobemoresusceptibletoanaccidentwhendrivingonahighwaywith
+badweatherconditions. Previousstudieshaveanalyzedtheinfluenceofprecipitationandsnowfall
+withtheincreaseinaccidentrates,duetothelossoffrictiongeneratedbytires,aswellasthelackof
+visibility[41–46]. Moreover,severalauthorshaveanalyzedtherelationoflightingconditionsandhave
+incorporatedotherfactors,suchashigh-speeddriving,badweatherconditions,amongothers[47,48].
+Inthethirdarea,severalstudieshavebeencarriedoutthatanalyzetheempiricalrelationbetween
+roadaccidentsandthedifferentvariablesofgeometricroaddesign,suchasdegreesofcurvature,vertical
+slopes,andthebalanceofverticalandhorizontalalignments,usingdifferentstatisticalmodels[49–52].
+Wangetal.[53]reviewfactorsrelatedtomotorvehicleaccidentsonhighways,withaspecific
+focusontrafficandhighwaysrelatedfactors,whichhelpedinthedevelopmentofmethodsandpolicies
+toimproveroadsafety. Meanwhile,theFederalHighwayAdministration(FHWA)hasdevelopedthe
+InteractiveHighwaySafetyDesignModel[54]. Thistoolprovidesengineerswhodesignroadswith
+informationontherelationsbetweengeometryandaccidents,inanaccessibleformatfordesigners
+thatisviableintheevaluationprocessofdifferentalternatives,consideringthedifferentgeometric
+designvariables.
+On the other hand, several authors have analyzed the existing relation between pavement
+conditionsandthefrequencyandseverityofaccidents. However,thecurrentliteraturediscussion
+hasnotbeenabletoclearlydeterminethisinfluence. Inthiscontext, Chenetal.[55]mentionthat
+the research in this regard is ambiguous; the impact can be positive or negative, depending on
+heterogeneousfactorssuchasdriverbehavior. Forexample,driversmaybehavelessresponsiblyon
+roadswithadequatelevelsofservice(LOS)andmorecarefullyonroadswithlowLOS.Therefore,
+itseemsplausiblethatahighLOSonthepavementcouldexhibitanynumberofaccidents,whichis,
+increasingordecreasing.
+Inaccordancewiththeabove,thecausesoftrafficaccidentsareamatterofstatisticalanalysis,
+where the risk factor, the interaction, and the combination of these determine the preventive
+measures required according to the objective of the managing agency, the design engineer,
+ordecision-maker. RiveraandMendoza[56]mentionthatitispossibletomeasuretheeffectiveness
+of safety interventions through the analysis of accidents, by ranking the effectiveness in different
+criteria, such as reduction of accidents, reduction of deaths, and reduction in costs, among others.
+Forexample,Justo-SilvaandFerreira[57]carriedoutaresearchthatincorporatesaccidentscostsinto
+maintenanceplanningprocessesandpavementsrehabilitation;KonovalovaandZarovnaya[58]present
+amathematicalmodeldevelopedtodeterminetheappropriateactionsofinvestorsandtheprobable
+benefitsthatcanbeobtainedfromprojectsassociatedwithroadsafetyimprovements;Esenouetal.[59]
+andDongetal.[60]analyzeroadsafetyandtechnologylawsimplementationeffectsforspeedcontrol
+invehiclesandtheirimpactonfatalaccidentsreductionintheUnitedStates.
+3. MaterialsandMethods
+3.1. StudyArea
+The Highway Centinela–La Rumorosa is located between the municipalities of Mexicali and
+Tecate in Baja California, Mexico (Figure 1) belonging to the Mexican Federal Highway no. 2 and
+itsmanagedbytheInvestmentTrustFundsAdministration(FIARUMforitsacronyminSpanish).
+With64kilometersinlength,thisroadhastwoseparatebodieswithdifferenttracesandtopographic
+conditions. Fromroadsection0+000to18+000,itisconsideredanurbanareaofMexicali,whichhasa
+flattopographyandstraightroadsections;inthesameway,thisoccurswithroadsection18+000to
+42+000,additionally,thisroadhasamountainouszonewithaconsiderablecurvesystemfromroad
+section42+000to64+000.
+S2a0f2et0y, 72,0 x2 0F,O6,R4 P5EER REVIEW 44 ooff 1280
+Figure1. Centinela–LaRumorosahighwaylocation.
+Figure 1. Centinela–La Rumorosa highway location.
+Although the section is in constant modernization, the average of road accidents that occur
+Although the section is in constant modernization, the average of road accidents that occur
+annually is 200. Therefore, the road is still considered one of the most dangerous in the country.
+annually is 200. Therefore, the road is still considered one of the most dangerous in the country. It is
+Itisworthmentioningthatadditionallytothetopographyandthesystemofcurvesofthehighway,
+worth mentioning that additionally to the topography and the system of curves of the highway, the
+the climatic conditions and the environment where the section is located promote road accidents.
+T
+cl
+h
+im
+em
+at
+i
+i
+n
+c
+im
+co
+u
+n
+m
+dit
+t
+i
+e
+o
+m
+ns
+p e
+a
+r
+n
+a
+d
+tu
+t
+r
+h
+e
+e
+s r
+e
+e
+n
+c
+v
+o
+i
+r
+r
+d
+o
+e
+n
+d
+m
+f
+e
+a
+n
+ll
+t
+b
+w
+el
+h
+o
+e
+w
+re− t
+7
+he
+d e
+s
+g
+e
+r
+c
+e
+ti
+e
+o
+s
+n
+C
+i
+e
+s
+l s
+l
+i
+o
+u
+c
+s
+a
+,
+t
+a
+e
+n
+d
+d
+p
+t
+r
+h
+o
+e
+m
+m
+ot
+a
+e
+x i
+r
+m
+oa
+u
+d
+m
+a
+t
+c
+e
+c
+m
+id
+p
+e
+e
+n
+r
+t
+a
+s
+t
+.
+u
+T
+r
+h
+es
+e
+minimum temperatures recorded fall below −7 degrees Celsius, and the maximum temperatures
+exceed54.3degreesCelsiusplusthepresenceofrainandsnow. Inaddition,thisroadisinaseismic
+z
+e
+o
+x
+n
+ce
+e
+e
+a
+d
+n
+5
+d
+4
+t
+.
+h
+3
+e
+d
+r
+e
+e
+g
+fo
+r
+r
+e
+e
+es
+s u
+Cffe
+e
+ls
+r
+i
+s
+u
+s
+s
+t r
+p
+u
+l
+c
+u
+t
+s
+u
+t
+r
+h
+a
+e
+l d
+p
+a
+r
+m
+es
+a
+e
+g
+n
+e
+ce
+a n
+o
+d
+f r
+l
+a
+a
+i
+n
+n
+d
+a
+s
+n
+li
+d
+d e
+s
+s
+n
+i
+o
+n
+w
+t
+.
+h
+I
+e
+n
+m
+ad
+ou
+d
+n
+it
+t
+i
+a
+o
+i
+n
+n
+,
+o
+t
+u
+h
+s
+is
+a
+r
+r
+o
+ea
+a
+.
+d is in a seismic
+zone and therefore suffers structural damage and landslides in the mountainous area.
+3.2. AnalysisMethodology
+3.2. Analysis Methodology
+Thismethodologyintegratesrepresentativedatagatheredfromaccidentsofacasestudywith
+pavemThenist msuertfhaocedocolongdyit iionntedgaratate;sth reeppreerfsoernmtaatnivcee dofattah eggaethoemreedtr ifcrodmes iagcnc,idtheanttiss ,odf eag creaeseo fstcuudrvya wtuirteh
+apnadveinmaepnptr ospurrifaatcees lcoopneds;itainodn adnaatan;a ltyhseis poefrtfroarffimcasnigcen aolsf atnhde rgoaeodmsaeftertiyc ddeevsiicgens, ptrheaset nitso, ndtehgerereo aodf,
+ucusirnvgatgueroed aentidc itnecahpnpirqoupersiaitne osrlodperest;o adnedt earnm ainnaelryissiks aorfe tarsaftfhica tsipgrnoamlso atendac rcoidaden stasfaentyd dgeevniecreast peraesreisnkt
+roend uthceti oronapdl,a unstiongsu gpepoodrettfiuc ttuercehndieqcuiseiso nin-m oardkienrg toth daettgeurmariannet ereisskb aertteearsp tehrafto rpmroamncoetef oarctchideeunstesr asnodf
+tgheinserroaatde. aT rhiseks rterudcutcutrieono fptlhaen mtoo sdueplpuosretd fuintutrhee dceucrirseinont-rmesaekarinchg wthoart kguisaprarensteeneste bdetbteelro pwer(fFoirgmuraen2c)e.
+for thIte iusscerrusc oiafl tthoism roenadti.o Tnhteh asttrtuhcitsumree othf othdeo lmogoydeisl udseesdcr iinbe tdhes ecpuarrreantetl ryeisneatrhcehf wololorwk iins gprseescetniotneds
+ibneloorwde (rFitgou,rlaet 2e)r. on, carry out an integrated analysis with all the variables involved in this study.
+Instandardpractice,theseanalysesarecarriedoutsporadicallywithoutalinkbetweenthemorthey
+arenotcarriedoutatall. Alloftheresultsmustbeintegratedtoachieveabetterunderstandingofroad
+safetyandtomaketechnicalandoperativeproposalsthatpromoteroadsafetyinareasthatpresented
+higherlevelsofriskduringaperiodofanalysis. Besidesidentifyingtheimpactoftheinterventionsthat
+havealreadybeencarriedout,theintegralanalysisallowsknowingwhichonehasworked,whichone
+shouldcontinuetobeapplied,andwhichonesarenotsoconvenienttocontinuetobeapplieddueto
+theresultsdelivered.
+Safety2020,6,45 5of18
+2020, 7, x FOR PEER REVIEW 5 of 20
+Case study accidents data collection
+Pavement condition survey Geometric design review Traffic signal analysis Road safety devices
+analysis
+Data processing Data processing Data processing Data processing
+Superficial condition Geometric condition Traffic signal Road safety devices map
+map map condition map
+Integrated risk reduction plan
+Figure2. Methodologyflowchart.
+Figure 2. Methodology flowchart.
+3.3. AccidentAnalysis
+It is crucial to mention that this methodology is described separately in the following sections in
+orderI ntot,h liastesre cotnio, nc,arsrtya toisutitc aanl iinnftoergmraatteido nanoanlyascisc iwdeitnht saltlh tahteh vaavreiaobclecus rirnevdolovnedt hine tCheisn tsitnuedlay–. LIna
+Rstuamndoarrods aphraigchtiwcea, ythisesaen aalnyazleyds,eso batraei ncianrgridedat aouret gsaprodriandgicthalelylo wcaittihoonuot fat hlienkac bciedtwenete,nty tpheemof voer htihceley,
+aanred ntoytp ceaorrfiaecdc ioduetn at.t Walli.t hAltlh oisf, tihteis rpesouslstisb lmeutosts btaet iisnttiecaglrlayteadn atoly azcehaicecvied ean btestatenrd utnodoebrstatainndcirnitgic oafl
+aroccaidd esnaftectoyn acnedn ttroa tmioankzeo tneecshnhiicsatol raicnadl lyopaenrdatibvye pperroipodossaolsf ytheaatr sp.roTmhiostien frooramd astaiofentyi sinca aprteuarse dthiant
+aprGeseeongtreadp hhiicghInerfo lremvealtsi oonf Sriysskt edmur(iGngIS )a, wpehriicohd aollfo awnsaliydseins.t iBfyeisnidgetsh iodseensteifcytiinogn sthwei tihmtphaecth iogfh tehset
+dinetgerreveenotfioacncsi dtheantt sh.aAvec caolrrdeaindgy tboeYenu ceatrarli.e[d6 1o]uat,n thade vinatnetgargael oanfasplyastiisa laallnoawlyss kisnomwetinhgod wshisicthh aotnteh hesaes
+mwoetrhkoedds, wcahnicbhe oenasei lsyhoauplpdli ceodnitnintuhee ntoe tbwe oarpkp,liideedn, taifnydin wghcircihti coanlepso ainrets naontd soa cccoindvenentisepnatt itaol cpoanttteinrnuse.
+Wto ibthe raepfperleiendc edtuoe Atol- tAhaem rersiuelttsa ld.e[6li2v]emreedn. tionthataccidentsspatialanalysisallowsdeterminingthe
+influenceoftheroadandcharacteristicsrelatedtotrafficintheoccurrenceofthese. Thatiswhycritical
+p3.o3i.n Atsccaidreenets Atanballiysshies d from the accumulation of accidents at some point on the highway within a
+radiusof200m. Itisimportanttomentionthatthisanalysisismadefromtheinformationgathered
+In this section, statistical information on accidents that have occurred on the Centinela–La
+andprovidedbytheFIARUMagency.
+Rumorosa highway is analyzed, obtaining data regarding the location of the accident, type of vehicle,
+3a.n4d. Ptyavpeem oefn tacScuidpeernfitc.i aWlCithha rthaciste, riits tiisc spossible to statistically analyze accidents and to obtain critical
+accident concentration zones historically and by periods of years. This information is captured in a
+According to what is described in the literature review, it cannot be said that poor surface
+Geographic Information System (GIS), which allows identifying those sections with the highest
+characteristicsare,perse,thedirectcauseofaccidents,buttheconsequencestendtoworsenincertain
+degree of accidents. According to Yu et al. [61] an advantage of spatial analysis methods is that these
+situationswhereaconflicthasoccurred,forexample,suddenbrakingorsuddenchangeinvehicle
+methods can be easily applied in the network, identifying critical points and accident spatial patterns.
+direction [63]. As mentioned above, the main cause is attributed to the human factor. However,
+With reference to Al-Aamri et al. [62] mention that accidents spatial analysis allows determining the
+improvementsininfrastructurecharacteristicstendtoeffectivelyinfluenceroadtrafficsafety. Itis
+influence of the road and characteristics related to traffic in the occurrence of these. That is why
+important to keep into account that, although accidents cannot be avoided entirely by means of
+critical points are established from the accumulation of accidents at some point on the highway
+preventiveinterventions,thereisapotentialtoreducetheseverityofthese[64].
+within a radius of 200 m. It is important to mention that this analysis is made from the information
+Forthedevelopmentofthisanalysis,theinformationobtainedbyMontoyaetal.[65]wasused,
+gathered and provided by the FIARUM agency.
+whichcarriedoutapavementconditionevaluationtoobtainsustainablemaintenanceandrehabilitation
+(M&R)strategies. TheauthorsusedthecriteriaestablishedbytheASHTOOandtheHDM-4programto
+3.4. Pavement Superficial Characteristics
+measurepavementsurfacecondition. Therefore,datagathered,aswellasthedeteriorationinformation
+According to what is described in the literature review, it cannot be said that poor surface
+areclassifiedaccordingtothesecriteria(Table1).
+characteristics are, per se, the direct cause of accidents, but the consequences tend to worsen in certain
+situations where a conflict has occurred, for example, sudden braking or sudden change in vehicle
+direction [63]. As mentioned above, the main cause is attributed to the human factor. However,
+improvements in infrastructure characteristics tend to effectively influence road traffic safety. It is
+important to keep into account that, although accidents cannot be avoided entirely by means of
+preventive interventions, there is a potential to reduce the severity of these [64].
+Safety2020,6,45 6of18
+Table 1. Criteria for pavement conditions classification according to the degree of deterioration.
+Reproducedfrom[65].
+Gradeof Cracking Aggregate NoPotholes EdgeBreak AverageDepth Roughness
+Deterioration (%) Shedding(%) perkm (m2perkm) ofRuts(mm) (mperkm)
+New 0 0 0 0 0 0
+Good 0 1 0 0 2 2
+Fair 5 10 0 10 5 4
+Poor 15 20 5 100 15 6
+Bad 25 30 50 300 25 8
+3.5. GeometricDesignReview
+Theconventionalcriterionforthegeometricprojectdevelopmentisbasedontheuseofproject
+standards, which dimension the components of the road, separately and together, to achieve an
+adequatebalancebetweenthedesirableattributes. Nevertheless,thiscannotbedoneoutsideofthe
+componentorderingprocess,whichdependsonthecreativityofthedesigner. Forthisreason,therules
+areflexible, inthesensethatrulesonlyestablishupperorlowerlimitvaluesbasedonthetypeof
+roadandtheselectionoftheprojectspeed. Withinthegeometricproject,safetyreferstothefactthat
+elementsoftheroadhavecharacteristicsthatminimizetheprobabilityoftrafficaccidentsoccurrence.
+Itisoftensaidthataroadissafewhenthenumberofaccidentsisrelativelylow. Itisworthmentioning
+thatthegeometricprojectmustconsiderthecorrecthorizontalandverticalalignmentdesignsincethey
+areakeypartinreducingaccidents. Thefollowinginformationisobtainedthroughwhatisdescribed
+intheRoadGeometricProjectManualoftheMinistryofCommunicationsandTransport(SCTforits
+acronyminSpanish)[66].
+Thehorizontalalignmentistheprojectionontoahorizontalplaneoftheroadsub-crownaxis.
+Theelementsthatmakeupthisalignmentaretangentsandhorizontalcurves. Toachievebalance
+in road design, all geometric elements must be within practical economic conditions, designed to
+providesafeandcontinuousoperationatanexpectedspeedtoberespectedbydriversundernormal
+roadconditions. Thiscanbeaccomplishedbyusingdesignspeedasanoverallprojectcontrolfactor.
+Therefore,thedesignofcurvesontheroadshouldbebasedonasuitablerelationbetweendesign
+speedandcurvature,aswellasjointrelationswithliftandlateralfriction. Whentwotangentsare
+joinedtogetherbyacurve,itiscalledacircularcurvethatcanbetotheleftortheright. Inthisregard,
+thedegreeofcurvatureistheangleobtainedbya20marcandiscalculatedaccordingtothefollowing
+mathematicalexpressions.
+◦
+Gc 360
+= (1)
+20 2πRc
+1145.92
+Gc= (2)
+Rc
+whereGcisthedegreeofcurvature,andRcistheradiusofcurvature.
+Ontheotherhand,verticalalignmentistheprojectionontoaverticalplaneofthesub-crownaxis
+development. Thisalignmentiscalledthesubgradeline. Thisismadeupoftangentsandvertical
+curvesthataredefinedbyslopeandlength. Table2showsthemaximumslopesaccordingtothespeed
+andtypeofterrainontheroad.
+Table2. Relationbetweenmaximumslope,typeofterrainandprojectspeed.
+MaximumSlope(%)forDifferentProjectSpeeds(Km/h)
+Terrain
+50 60 70 80 90 100 110
+Flat 6 5 4 4 3 3 3
+Plain 7 6 5 5 4 4 4
+Mountain 9 8 7 7 6 5 5
+Safety2020,6,45 7of18
+Thebestgoverningslope,beingthegreatestslopeintheaxisofaroadatagivenlengthandwillbe
+theonethat,foreachcase,allowsobtainingthelowestcostofconstruction,maintenance,andoperation.
+Themaximumslopeisdeterminedbasedonthevehicleandprojectspeedsanddependingonthetype
+ofterrainwheretheroadisdeveloped. Table3showsthegoverningslopesvaluesandmaximum
+slopesbytypeofterrain.
+Table3. Governingandmaximumslopesbytypeofterrain.
+MainSlope(%) MaximumSlope(%)
+HighwayType Terrain Terrain
+Flat Plain Mountain Flat Plain Mountain
+D - 6 8 6 9 12
+C - 5 6 5 7 8
+B - 4 5 4 6 7
+A - 3 4 4 5 6
+Furthermore,itisimportanttodefinetheconceptofover-elevation. Thisistheslopethatthe
+crownhastowardsthecenterofthecurvetopartiallycounteracttheeffectofavehiclecentrifugalforce
+onthecurvesofhorizontalalignment. Therearepracticalupperlimitstothedegreeofover-elevation
+possibleinahorizontalcurve;thelimitsrefertoconsiderationsaboutclimate,easeofconstruction,
+useoftheadjacentterrain,andthefrequencyofvehiclestravelingatlowspeed.
+Therefore,thisanalysisaimstoidentifycriticalareasgeneratedfromgeometricalignmentsofthe
+road. Forthis,degreesofcurvatureandslopesoftheconcernedsectionareanalyzedandrecordedin
+aGIS.
+3.6. TrafficSignalandRoadSafetyDeviceAnalysis
+Among the physical elements that make up the road system, it is important to highlight the
+signageandsafetydevices,sincetheparticipationoftheseisessentialforusers. Thesetofsignsand
+safetydeviceshavetheobjectiveoftransmittingtohighwayusersandurbanroadsenoughinformation
+toguidethemontheplacetheyareinandhowtoreachtheirdestination,preventprevailingconditions
+on the road, and regulate the traffic, in addition to contributing to user road safety during their
+journey[67].
+Inkeepingwiththerecommendationsofinternationalorganizationsonroadmarking,theSCThas
+generatedseveraldocuments,amongwhichareManuals,TechnicalStandards,andOfficialMexican
+Standards. Theforegoing,withthepurposethatallroadsinthecountryhavestandardandadequate
+roadsigns. However,inordertofacilitatetheapplicationofthesedocuments,itisnecessarytohavean
+instrumentthatintegratesandprovidesconsistencyinthespecificationsusedforroadsignsandsafety
+devicesdesign[67]. Roadmarkingallowsregulatingroaduse,facilitatingsafeandefficientoperation
+forusers[68]. Meanwhile,roadsafetydevicesareintendedtocontainvehicles. Asanexampleofthis,
+therearespeedreductionandredirection. Thesedevicesareplannedaccordingtotechnicalcriteriato
+achieveefficiencyandreducetheseverityoftrafficaccidents. Inthisregard,roadsafetydevicesare
+definedasallthosedevicesthathelptocontainandredirectvehiclesindangerofgoingofftheroad,
+suchaspreventivebarriers,shockabsorbers,retainingwalls,andwindbreakermeshes[67,69].
+Thesignalingandsecuritydevicesanalysisconsistsofafieldevaluationfollowingcompliancewith
+theSCTregulations,mainlyinwhatisstatedintheN-PRY-CAR-10-01-001/13,N-PRY-CAR-10-01-002/13,
+andtheN-PRY-CAR-10-01-003/13,regardingthesignalingprojectandsafetydevicesonroadsandurban
+roadnetworks,andtheN.CTR.CAR.1.07.010/00regardingsignalingandsecuritydevices. Inorder
+toidentifytheexistingareasofopportunityintermsofsignalingandsafetydevicesintheanalyzed
+section,thisanalysisalsoallowsustodetect,inaparticularway,thecurrentsituationoftheidentified
+criticalareas.
+2020, 7, x FOR PEER REVIEW 8 of 20
+to technical criteria to achieve efficiency and reduce the severity of traffic accidents. In this regard,
+road safety devices are defined as all those devices that help to contain and redirect vehicles in danger
+of going off the road, such as preventive barriers, shock absorbers, retaining walls, and windbreaker
+meshes [67,69].
+The signaling and security devices analysis consists of a field evaluation following compliance
+with the SCT regulations, mainly in what is stated in the N-PRY-CAR-10-01-001/13, N-PRY-CAR-10-
+01-002/13, and the N-PRY-CAR-10-01-003/13, regarding the signaling project and safety devices on
+roads and urban road networks, and the N.CTR.CAR.1.07.010/00 regarding signaling and security
+devices. In order to identify the existing areas of opportunity in terms of signaling and safety devices
+in the analyzed section, this analysis also allows us to detect, in a particular way, the current situation
+Safety2020,6,45 8of18
+of the identified critical areas.
+33..77.. IInntteeggrraatteedd RRiisskk RReedduuccttiioonn PPllaann
+OOnnccee tthhee ppaarrttiiccuullaarr rreessuullttss aarree oobbttaaiinneedd,, aa GGIISS ssooffttwwaarree iiss uusseedd ttoo iinntteeggrraattee ddaattaa ggaatthheerreedd ffrroomm
+aacccciiddeennttss,, ppaavveemmeenntts usurfrafacecec ocnodnidtiiotinosn,st,h ethpee rpfeorrfmoramncaenocfe tohfe gtheeo mgeeotrmicedtreisci gdne,stihgena, nthaley sainsaolfytsrias ffiocf
+tsriagfnfiacl ss,igannadlst,h aenrdo athdes raofeatdy sdaefevtiyc edsepvriceesse nptreosnentht eonro tahde. rIonadth. iIsnw thaiys, witaisy,p iot siss ipbloesstoiboleb tsoe rovbesehrovwe
+hcroiwtic carliptiocainl tpsocionntsv ecrognevwerigteh wthietha nthaely azneadlyrizsekdf aricstko rfsacatnodrst haunds etxhaums ienxeamthienceh tahrea ccthearrisatcitcesriosftitchse osef
+tahreesaes .aTrehaiss.a Tnhailys sainsawlyilslisa lwloiwll palllaonwn ipnlgantencihnngi ctaelchanndicaolp aenradt ioopnearlasttiroanteagl isetsrainteogridese rinto orreddeur cteo trheedruicsek
+tahned raisckc iadnedn tarcactiedeonftt hraetreo oafd t,hien raocacdor, dina naccecowrditahnfcaec tworitshp fraecsteonrst ipnreascernitti cina lap coriintitc.al point.
+44.. RReessuullttss
+4.1. CaseStudyAccidentsData
+4.1. Case Study Accidents Data
+Asmentionedabove,thehighwayhasahighaccidentrate,whichiswhyitisconsideredhighrisk
+As mentioned above, the highway has a high accident rate, which is why it is considered high
+forinexperiencedusers. Itisbecauseoftheseconditionsthathighwayspromoteaccidentsevenmore
+risk for inexperienced users. It is because of these conditions that highways promote accidents even
+thanotherroads. InFigure3,theannualtraffichistoricalcomparativethatcirculatesonthehighway
+more than other roads. In Figure 3, the annual traffic historical comparative that circulates on the
+andthenumberofaccidentsregisteredduringtheperiod2004to2018arepresented.
+highway and the number of accidents registered during the period 2004 to 2018 are presented.
+Annual traffic Vehicle accidents per year
+300
+3,900,000
+3,700,000 250
+3,500,000
+200
+3,300,000
+3,100,000 150
+2,900,000
+100
+2,700,000
+2,500,000 50
+20042006200820102012201420162018 2004 2006 2008 2010 2012 2014 2016 2018
+(a) (b)
+FFiigguurree 33.. AAnnnunaula tlratrfafi ffi c ccocmopmapraatriavteiv aendan ndumnubmerb oefr aocfciadcecnidtse: n(ats) :an(an)uaanl ntruaafflict rian ffi thcei hnigthhewhayig 2h0w04a–y
+22001084;– (2b0)1 v8;e(hbic)lvee ahciccildeeanctcsi dpeenr tysepaerr iny etahrei hnitghhewhaiyg h2w00a4y–22000148–. 2018.
+In2014ananalysiswasmadeshowingthatthehighestnumberofaccidentsoccursintheperiod
+In 2014 an analysis was made showing that the highest number of accidents occurs in the period
+ffrroomm 11::0000 pp..mm.. ttoo 55::0000 pp..mm..,, aanndd hhiissttoorriiccaallllyy,, 5599%% ooff rrooaadd aacccciiddeennttss ooccccuurr iinn tthhee mmoouunnttaaiinnoouuss ddoowwnnhhiillll
+sseeccttiioonn,, ffoolllloowweedd bbyy tthhee mmoouunnttaaiinnoouuss aasscceenntt sseeccttiioonn wwiitthh 1166%% aanndd ffllaatt ddeesscceenntt wwiitthh 1144%%,, wwhhiillee tthhee
+rreemmaaiinniinngg 1111%% ccoorrrreessppoonnddss ttoo aacccciiddeennttss rreeggiisstteerreedd iinn tthhee flflaatt aasscceenntt sseeccttiioonn ((TTaabbllee4 4))..
+Table4. Locationsofaccidents.
+Location AscendingMountain DescendingMountain AscendingFlat DescendingFlat
+Accidents 16% 59% 11% 14%
+Ontheotherhand,thetypeofaccidentthatoccursthemostarerollovers,andthecausesvary
+dependingontheroadsectionandtheascent(26%)ordescent(54%)condition. Thesecondcause
+of accidents refers to vehicles going off the road; in the uphill section, this represents 28% of total
+accidents,whileinthedownhill,itreaches26%(Table5).
+Regardingthetypeofvehiclesthatgetthemostintoaccidents,intheupwardsection,compact
+sedan-typecarsdoso,representing32%ofaccidents;thesecondtypereferstotractor-trailers. Onthe
+other hand, in the downward section, those involved in the highest percentage of accidents are
+tractor-trailersorheavyvehicleswith41%;insecondplacearesedan-typecars(Table6).
+Safety2020,6,45 9of18
+Table5. Typeofaccidents.
+TypeofAccidents Collision Fire Rollover LoseTrack Other
+Ascending 18% 12% 26% 28% 16%
+Descending 12% 2% 54% 26% 6%
+Table6. Accidentsfortypeofvehicle.
+Location Bus Truck SUV Motor-Home PickUp Motorcycle Car CargoTruck NoRegister
+Descending 1.33% 5.85% 12.27% 0.09% 12.01% 1.06% 25.61% 41.07% 0.71%
+Ascending 2.51% 3.34% 17.90% 0.% 15.87% 2.39% 31.98% 25.54% 0.48%
+AmongtheaccidentsregisteredontheCentinela–LaRumorosaHighway,59%ofthemoccurred
+inmountainouszonesonthedownhillsectionandanother16%ontheuphillsection,whichamounts
+to75%ofthetotalaccidents. Concerningthis, anapproximatecostof653,131dollarsisestimated
+causedbyroadaccidentsintheperiodfrom2000to2018. Theseexpensesarebasedonrepairsmade
+intheaffectedsectionduetoanaccident. However,thereisnotenoughdatatoknowtheeconomic
+lossesderivedfromcargotransportation,vehiclerepairs,ordeathexpenses,sothiscostwouldbeeven
+higher. Asmentionedabove,thetypeofaccidentthatoccursmostfrequentlyisrolloverswith54%in
+thedownhillsection,whileinsecondplaceandtheuphillsection,anothertypeofaccidentrefersto
+goingofftheroadwith28%. Theinformationmentionedaboverevealstheareasofthehighwaywhere
+thehigh2e02s0t, 7n, ux FmObR ePrEEoRf RaEcVcIEidWe ntsareconcentratedannually(Figure4). 10 of 20
+Figure4. Criticalzonesofannualaverageaccidentsinthehighway2000–2018: (a)annualaveragein
+theflatzFoignuer;e (4b. )Carintincaula zloanvese roaf gaenniunaml aovuernatgaei naczciodnenet.s in the highway 2000–2018: (a) annual average in
+the flat zone; (b) annual average in mountain zone.
+4.2. Highway Surface Conditions
+The results from the pavement surface condition in 2014 (Figure 5), show that the most
+deteriorated road section is the descending one, because 28% of this section is in poor condition,
+mainly in the mountainous area where there are a considerable curve system and steep slopes.
+Likewise, the first kilometers in the urban area present the aforementioned condition. On the other
+hand, the ascending road section presents good conditions in 70% of its route, 29% is in fair condition
+and only 1% is in poor condition.
+Safety2020,6,45 10of18
+AsseeninFigure4andtheabove-mentionedinformation,thegreatestnumberofaccidentsis
+concentratedinthemountainousarea,specificallyinthedownhillsection,withpointsthatconcentrate
+anaverageof40to50accidentsperyear. Furthermore, theareacalled“LaHerradura”locatedin
+thedownhilllanebetweenkm51+200andkm49+100standsoutforconcentratingalargenumber
+ofaccidents. Itisimportanttomentionthateventhoughtheflatandstraightzoneofthehighway
+registersfewaccidentsperyear,thesedonothaveadefinedoccurrencepattern,sozoneswherethree
+tofiveaccidentsperyearoccurweredefinedforanalysis.
+4.2. HighwaySurfaceConditions
+Theresultsfromthepavementsurfaceconditionin2014(Figure5),showthatthemostdeteriorated
+roadsectionisthedescendingone, because28%ofthissectionisinpoorcondition, mainlyinthe
+mountainousareawherethereareaconsiderablecurvesystemandsteepslopes. Likewise,thefirst
+kilometersintheurbanareapresenttheaforementionedcondition. Ontheotherhand,theascending
+roadsectionpresentsgoodconditionsin70%ofitsroute,29%isinfairconditionandonly1%isin
+p20o2o0r, 7c, ox nFdOiRt iPoEnE.R REVIEW 11 of 20
+Figure5. Pavementsurfaceconditions.
+Figure 5. Pavement surface conditions.
+4.3. GeometricCondition
+4.3. Geometric Condition
+The horizontal and vertical alignments should not be considered independent in the project
+The horizontal and vertical alignments should not be considered independent in the project
+since these complement each other. If one of the two alignments present poorly projected parts,
+since these complement each other. If one of the two alignments present poorly projected parts, these
+these negatively influence both, the rest of that alignment and the other one. Due to the above,
+negatively influence both, the rest of that alignment and the other one. Due to the above, both
+bothalignmentsmustbeanalyzedconsideringthatthegoodnessintheprojectwillincreasetheuseand
+alignments must be analyzed considering that the goodness in the project will increase the use and
+safety. Itisimportanttomentionthat,oncetheanalysiswascarriedout,riskzonesduetogeometry
+safety. It is important to mention that, once the analysis was carried out, risk zones due to geometry
+werefoundinthemountainoussectiononly,specificallyinthedownhillsection. Theforegoingbecause
+were found in the mountainous section only, specifically in the downhill section. The foregoing
+thissectionwasatwo-lanehighwaybeforetheuphillsectionwasbuiltin2000,sothedownhillsection
+because this section was a two-lane highway before the uphill section was built in 2000, so the
+designhasinconsistenciesandisinappropriateforuseatpresentdays. Meanwhile,therestofthe
+downhill section design has inconsistencies and is inappropriate for use at present days. Meanwhile,
+highway is made up of flat and straight sections. The current situation of horizontal and vertical
+the rest of the highway is made up of flat and straight sections. The current situation of horizontal
+alignmentinthemountainousareaoftheCentinela–LaRumorosaHighwayisshownbelow(Figure6).
+and vertical alignment in the mountainous area of the Centinela–La Rumorosa Highway is shown
+below (Figure 6).
+Figure 6. Geometric condition in mountain zone.
+2020, 7, x FOR PEER REVIEW 11 of 20
+Figure 5. Pavement surface conditions.
+4.3. Geometric Condition
+The horizontal and vertical alignments should not be considered independent in the project
+since these complement each other. If one of the two alignments present poorly projected parts, these
+negatively influence both, the rest of that alignment and the other one. Due to the above, both
+alignments must be analyzed considering that the goodness in the project will increase the use and
+safety. It is important to mention that, once the analysis was carried out, risk zones due to geometry
+were found in the mountainous section only, specifically in the downhill section. The foregoing
+because this section was a two-lane highway before the uphill section was built in 2000, so the
+downhill section design has inconsistencies and is inappropriate for use at present days. Meanwhile,
+the rest of the highway is made up of flat and straight sections. The current situation of horizontal
+aSanfedty v2e02r0ti,c6a,4l 5alignment in the mountainous area of the Centinela–La Rumorosa Highway is s1h1oowf1n8
+below (Figure 6).
+2020, 7, x FOR PEER REVIEW Figure6. Geometricconditioninmountainzone. 12 of 20
+Figure 6. Geometric condition in mountain zone.
+4.4. TrafficSignalandSafetyDevicesCondition
+4.4. Traffic Signal and Safety Devices Condition
+Theresultsoftheanalysiso ftrafficsignsandsafetydevicesdetectedareasonthehighwaythat
+The results of the analysis of traffic signs and safety devices detected areas on the highway that
+do not comply with the regulations related to these. The areas presented below show those areas
+do not comply with the regulations related to these. The areas presented below show those areas
+wherethesignsandsecuritydevicespresentinconsistenciesornonexistenceoftheseinaccordance
+where the signs and security devices present inconsistencies or nonexistence of these in accordance
+withtheprovisionsofcurrentregulations. Itisimportanttomentionthattheflatandstraightareaof
+with the provisions of current regulations. It is important to mention that the flat and straight area of
+thehighwaydoesnotpresenttheexistenceofcriticalpointssothatinFigure7,onlytheresultsofthe
+the highway does not present the existence of critical points so that in Figure 7, only the results of the
+mountainousareaofthehighwayarepresented.
+mountainous area of the highway are presented.
+Figure7. Trafficsignalsandsafetydevicesconditioninmountainzone.
+Figure 7. Traffic signals and safety devices condition in mountain zone.
+4.5. IntegratedRiskReductionPlan
+4.5. Integrated Risk Reduction Plan
+UsingtheGISsoftwareArcgis10.3software,thisintegratesdatagatheredfromaccidentsand
+paveUmseinntg stuhref aGcIeSc soonfdtwitaioren Adarctag,ist h1e0.p3 esroffotrwmaaren,c tehoisf itnhteeggreaotemse dtraitca dgeastihgenr,edth feroamna laycsciisdoenfttsr aa ffi ndc
+psiagvneamlse,natn dsurrofaacde scaofentdyitdioenv idceastap, rtehsee npteorfnotrhmearnocaed o,fi nthoer dgeerotmoedtreitce rdmesinigenr,i stkhea raenaaslythsiast opfr otrmafoftiec
+saicgcnidaelsn, tasnadn drogaedn esraafteetya driesvkicreeds upcrteiosennpt loann ttohes urpoapdo,r tinfu oturdreerd teoc idsieotne-rmmainkein rgistkh aatregausa rthanatt epersobmetoteter
+pacecrifdoermntas nacnedf gorenroeraadteu ase rriss.k reduction plan to support future decision-making that guarantees better
+performance for road users.
+Table 7 concentrates critical points resulting from the accident analysis on the Centinela–La
+Rumorosa Highway, classifying the risk level according to the annual average of accidents that occur
+at each point, the type of terrain, the direction of the road, the location centroid ±100 m, and the risk
+factors present at each point.
+Table 7. Analysis of accident risk levels associated with risk factors 1.
+Risk Factors
+Risk Level Terrain Slope Direction Chainage km
+PC Geometric TS and/or SD
+Very Low Flat - Ascendant 20+500 Good - -
+Very Low Flat - Ascendant 22+000 Good - -
+Very Low Flat - Ascendant 28+400 Good - -
+Very Low Flat - Ascendant 33+500 Good - -
+Very Low Flat - Ascendant 34+800 Good - -
+Very Low Flat - Ascendant 38+000 Good - -
+Very Low Flat - Ascendant 41+000 Good - -
+Low Mountain Positive Ascendant 43+600 Fair - X
+Safety2020,6,45 12of18
+Table 7 concentrates critical points resulting from the accident analysis on the Centinela–La
+RumorosaHighway,classifyingtherisklevelaccordingtotheannualaverageofaccidentsthatoccur
+ateachpoint,thetypeofterrain,thedirectionoftheroad,thelocationcentroid±100m,andtherisk
+factorspresentateachpoint.
+Table7. Analysisofaccidentrisklevelsassociatedwithriskfactors1.
+RiskFactors
+RiskLevel Terrain Slope Direction Chainagekm
+PC Geometric TSand/orSD
+VeryLow Flat - Ascendant 20+500 Good - -
+VeryLow Flat - Ascendant 22+000 Good - -
+VeryLow Flat - Ascendant 28+400 Good - -
+VeryLow Flat - Ascendant 33+500 Good - -
+VeryLow Flat - Ascendant 34+800 Good - -
+VeryLow Flat - Ascendant 38+000 Good - -
+VeryLow Flat - Ascendant 41+000 Good - -
+Low Mountain Positive Ascendant 43+600 Fair - X
+Low Mountain Positive Ascendant 46+700 Good - -
+Low Mountain Positive Ascendant 52+900 Good - X
+Low Mountain Positive Ascendant 53+700 Good - -
+Low Mountain Positive Ascendant 54+600 Good - -
+Low Mountain Positive Ascendant 55+700 Good - X
+Medium Mountain Positive Ascendant 53+100 Good - X
+VeryLow Flat - Descendant 41+500 Good - -
+VeryLow Flat - Descendant 37+500 Good - -
+VeryLow Flat - Descendant 31+600 Good - -
+VeryLow Flat - Descendant 26+900 Poor - -
+VeryLow Flat - Descendant 24+100 Fair - -
+VeryLow Flat - Descendant 21+900 Fair - -
+VeryLow Flat - Descendant 20+400 Fair - -
+VeryLow Flat - Descendant 18+200 Fair - -
+Low Mountain Negative Descendant 61+300 Good X -
+Low Mountain Negative Descendant 60+500 Good X -
+Medium Mountain Negative Descendant 57+000 Poor - -
+Medium Mountain Negative Descendant 54+900 Poor - -
+Medium Mountain Negative Descendant 50+550 Poor - X
+Medium Mountain Negative Descendant 50+300 Poor X -
+Medium Mountain Negative Descendant 49+700 Good X X
+Medium Mountain Negative Descendant 45+550 Good X X
+VeryHigh Mountain Negative Descendant 61+500 Good X -
+VeryHigh Mountain Negative Descendant 58+600 Poor X -
+VeryHigh Mountain Negative Descendant 56+350 Poor X X
+VeryHigh Mountain Negative Descendant 50+400 Poor X X
+VeryHigh Mountain Negative Descendant 49+750 Good X X
+VeryHigh Mountain Negative Descendant 45+000 Good X -
+1Thelevelofriskisassociatedwiththeannualaverageofaccidentsatthecriticalpoint:VeryLow(3–5),Low(10–19),
+Medium(20–29),High(30–39),VeryHigh(40–49).PCissuperficialpavementcondition;TsisTrafficSignals,andSD
+isSafetyDevices.
+AccordingtoTable7,thecombinationoftwoormoreriskfactorsleadstoanincreaseinaccidents
+inacriticalpoint;thegeometricdesigninhigh-riskareasisthemostrecurrentfactor,anditspresence
+inmountainousareasisalsohighlighted,wheretherearepronouncedandinappropriatedescending
+slopes,asexpressedintheaccidentanalysis. Anotherimportantaspecttoconsideristhattheareas
+thatpresentthehighestlevelsofriskarethosewiththeworstpavementconditions.
+Oncetherelationbetweenthecriticalpointswiththehighestaccidentratesandtheriskfactors
+presenthasbeenanalyzed,anintegratedplanisdrawnupthataimstoreducetheriskofaccidentson
+thehighway(Table8). Thisplanestablishestechnicalandoperationalstrategiesinordertoreducethe
+riskandaccidentrateoftheroad,inaccordancewithfactorspresentinacriticalpoint. Itisimportantto
+mentionthattheanalysisofriskfactorsshowsthepresenceoftheseinareaswithlowornoaccidents,
+whichcanbeattendedtofurtherreducethepossibilityofanaccident. However,theresultsofthis
+researchonlypresentstrategiestoattendtoareaswithhighriskorhighaccidentrates.
+Safety2020,6,45 13of18
+Table8. Integratedriskreductionplan1.
+No. RiskLevel RiskFactor RiskReductionStrategies Direction Chainages
+PavementM&Rstrategies,milland 58+600,56+350,
+1 VeryHigh PavementC replace50mmHMA Descendant 50+400
+2 VeryHigh Geometric Planninganddesignofabridgein Descendant 50+400,49+750
+“LaHerradura”area
+Planninganddesignrunawaytruck 58+600,56+350,
+3 VeryHigh Geometric ramp Descendant 50+400
+4 VeryHigh Geometric Caraccidentpreventiontechnology Descendant 61+500,45+000
+5 VeryHigh TSand/orSD “ Im da p n l g em eo e r n u t s a c ti u o r n ve of a w he a a r d n ” in a g n s d ig “ n le a f l t Descendant 5 4 6 9 + + 3 7 5 5 0 0 ,50+400,
+curvesign”
+6 VeryHigh TSand/orSD Implementationorextensionofmetal Descendant 50+400,49+750
+roadsafetybarriers
+PavementM&Rstrategies,milland 54+900,50+550,
+7 Medium PavementC replace50mmHMA Descendant 50+300
+8 Medium Geometric Planninganddesignofabridgein Descendant 50+300,49+700
+“LaHerradura”area
+9 Medium Geometric Caraccidentpreventiontechnology Descendant 45+550
+10 Medium TSand/orSD I r m oa p d le s m af e e n ty ta b ti a o r n rie o r r s extensionofmetal Descendant 5 4 0 5 + + 5 5 5 5 0 0 ,49+700,
+11 Medium TSand/orSD Implementationorextensionofmetal Ascendant 53+100
+roadsafetybarriers
+12 Low Geometric Caraccidentpreventiontechnology Descendant 61+300,60+500
+13 Low TSand/orSD Implementationorextensionofmetal Ascendant 55+700
+roadsafetybarriers
+14 Low PavementC PavementM&Rstrategies,Slurryseal Ascendant 43+600
+Operativeand EnforcementoftrafficlawsandCar 46+600,53+700,
+15 Low Driverbehaviour accidentpreventiontechnology Ascendant 54+600
+PavementM&Rstrategies,milland 26+900,24+100,
+16 VeryLow PavementC replace50mmHMAandSlurryseal Descendant 21+900,20+400
+Operativeand EnforcementoftrafficlawsandCar 41+500,37+500,
+17 VeryLow Driverbehaviour accidentpreventiontechnology Descendant 31+600
+20+500,22+000,
+Operativeand EnforcementoftrafficlawsandCar 28+400,33+500,
+18 VeryLow Driverbehaviour accidentpreventiontechnology Ascendant 34+800,38+000,
+41+000
+1PavementCispavementsurfacecondition.
+Asmentionedabove,Table8showstheintegratedriskreductionplanprioritizingareaswiththe
+highestrisklevel. Itisimportanttomentionthatsince2014theimplementationofsustainablestrategies
+forM&Rwasdesignedonthishighway,leadingtothecreationofaninterventionplanfrom2014to
+2018andtheexecutionofthisduringthealreadymentionedperiod,withthevisionofimproving
+safetyandcomfortforusersofthishighway. TheseresultsarepresentedbyMontoyaetal.[65].
+TheanalysisofTable8denotedtheinfluenceofthegeometricdesignontheaccidentrateofthe
+mountainoussectionofthehighway. However,duetothetopographiclimitationsandthehighway
+layout,resultinginadifficulttasktomodifyslopesanddegreesofcurvature,thisshowstheneedto
+proposetheincorporationofanothertypeofinfrastructureanddesign;thiscouldbethecaseofabridge
+intheareacalled"LaHerradura". Furthermore,theresultsofthealreadymentionedanalysisshowthe
+needtobuildrunawaytruckrampsonthehighwaybecausetheSCTregulationNOM-036-SCT2-2016
+establishesthattheconstructionofemergencybrakingrampsmustbeused,alsoknownasescape
+rampsorjustsimplyemergencyramps,onallroadsthathavesectionswithcontinuousandprolonged
+descendingslopeswithcharacteristicsthatcanleadtofatalaccidentscausedbyvehiclesthatareoutof
+controlduetomechanicalfailures,mainlyinbrakingsystems. Thisdenotestheneedforplanningand
+designoftheseelementsonthehighway.
+Ontheotherhand,areasweredetectedwhereitisnotpossibletocarryoutaprojecttomodifyits
+design. However,theuseoftechnologycanbeimplementedtopreventaccidents. Thesetechnologies
+consistofspeedradarsanddynamicsignalingthatinformdriversaboutphenomenaoreventualities
+onthehighway.
+Safety2020,6,45 14of18
+Anotheraspectimportanttomentionisthatareaswithmoderaterisklevelswerelocatedwithout
+presentinganyassociatedriskfactor,mainlyintheflatandstraightareaofthehighwaywheremost
+accidentsoccurasaresultofdrivingathighspeedsandgoingofftheroad. Therefore,forthesecases,
+itisrecommendedtohighwayadministratorsandauthorities, theenforcementoftrafficlawsina
+stricterwaytowardsdrivers,aswellastheimplementationofassistivetechnology.
+5. Discussion
+Theprimarycauseoftrafficaccidentsisrelatedtothehumanfactor. However,itispossiblethat,
+byimplementingeffectiveinterventionsthroughcorrecturbanplanninganddesigningsaferroads,
+implementingroadsafetyreviewaudits,aswellasbyestablishingandapplyinginternationallaws,
+thisproblemcanbeaddressed. However,thealreadymentionedanalysisisalwaysfulfilledorcarried
+outcomprehensively. TheinformationmentionedaboveishighlightedinPersiaetal.[12]. Inastudy
+of23countries,theypointoutthatthelackofresourcesanddatahasledtothelackofapplicationof
+proceduresthatallowimprovingroadsafetyconditions. Theabove-mentionedreflectsonglobalroad
+safetydata,wherehigh-incomecountriesrecordedaremarkabledecreaseintrafficfatalitiesinrecent
+years,thisduetosafervehicles,roads,anduserbehavior. Inlow-andmiddle-incomecountries,itis
+completelydifferent. Thesecountriesaccountfor90%ofallroaddeathsworldwide.
+Despitetheeffortstoimproveroadsafetyconditions,roadmanagementagenciesindeveloping
+countries have limited resources and staff, which means that these projects are not short-term
+implementedorarenotimplementedatall,soitisnecessarytoregularlycarryoutroadsafetyauditsin
+ordertomaintainareliableandupdateddata,forthecorrectimplementationofariskreductionplan.
+ThissituationwashighlightedbySpeierandCampos[70]whomentionedthatbasedontheirpersonal
+experienceinconductingaudits,inspections,andtrainingthroughoutSouthandCentralAmericaand
+Mexico,resources,staff,knowledge,legalregulations,andqualityofdataaresomeofthereasonswhy
+techniquesandroadsafetyproceduresauditsandinspectionsmaynothavebeenimplementedmore
+widely. Ontheotherhand,thissituationwasalsohighlightedbyRodríguezandBezerra[10],inBrazil,
+wheretheseproceduresarenotincorporatedordisseminatedasacommonpractice. Theyproposeda
+procedurefortheimplementationofthesetypesofprojects.
+ThemainlimitationsofthisworkwerethelackofpreviousstudiesinMexico,andthequality
+andquantityofdataandofficialinformation. Mainlythoserelatedtodatagatheredfromaccidents
+by the highway administration agency; this is because these data omit essential information such
+astheinfluenceofthehumanfactor,thepresenceofenvironmentalphenomena,andtheeconomic
+consequences of accidents. Yu et al. [15] were able to identify factors that influence vehicle crash
+patternsusingtheWisconsintransportationdatabase,whichincludes49variablestodescribethecrash,
+driver’scondition,vehiclecondition,pavementcondition,environmentalcondition,etc. Futurecrash
+reportformscollectedbyFIARUMshouldincludethisinformation.
+Althoughthisanalysisshouldbeconsideredthefirstapproachtoaddresssafetyinthishighway,
+anditfocusesmainlyontheplanningoftechnicalandoperationalstrategies,theresultsshowthe
+need to implement reinforcement laws and assisted technology. Due to what was described by
+Reasonetal.[21],driversdeliberatelyviolateroadlawswhentheyhavetheopportunitytodoso.
+AfutureimprovementofthisstudyshouldincludetheadaptationandapplicationoftheDBQto
+analyzeandcharacterizetheaberrantbehaviorofroadusers,aswellastheinclusionofenvironmental
+variables. InaccordancewithFarooqetal.[17],roadmanagementagenciesmustconsiderthecriteria
+ofdriverbehaviortoimprovetheirroadsafetysituation.
+6. Conclusions
+Inordertoidentifythespatialpatternsresultingfromaccidents,theimportanceofGISuseisnoted,
+andthereby,determinetheareaswithhighaccidentrates,aswellastheinfluenceoftheroadinaccidents
+generationandthecharacteristicsrelatedtotrafficintheoccurrenceofthese. Likewise,thesesystems
+arealsoausefultooltoanalyzetheinteractionofriskvariablesintheirgeospatialenvironment.
+Safety2020,6,45 15of18
+Althoughthecurrentliteraturediscussionhasnotbeenabletoclearlydeterminetheinfluenceof
+thepavementconditiononthefrequencyandseverityofaccidents,itistheresponsibilityofhighway
+administratorstoprovideaqualitytransportsystem,inotherwords,safeandcomfortableforusers.
+Specifically addressing the Centinela–La Rumorosa Highway and the analysis of geometric
+conditionscarriedoutthere,itwasshownthatthereweresevereinconsistenciesinthealignments,
+presentinginappropriatedegreesofcurvatureinthemountainousdescentlane,showingupeightcritical
+zonesinthisfactor,andthusasahighdegreeofaccidents. Inaccordancewiththeaforementioned,this
+sectionconcentratedallthetrafficsincebeforebeingahighway,whenitwasonelaneineachdirection
+until the ascent section was built in 2000. The foregoing led to inconsistencies that have not been
+addressedduetothespatialandtopographiclimitations,andtherefore,theneedarisestoproposeand
+designabridgethatconnectstwopointsofthehighway;thisisasustainabletechnicalmeasurethat
+wouldeliminatethesystemofcurvesintheareaknownas“LaHerradura”inthemountainoussection
+ofthedescent.
+On the other hand, the analysis of signs and safety devices denotes the need to implement
+preventive markings in dangerous curves, as well as more speed radar technology and the
+implementation of safety barriers, in order to prevent accidents and reduce the severity of these.
+Likewise,thisanalysisreflectstheneedtoplananddesignrunawaytruckrampsatspecificcritical
+pointsofthedescendingmountainoussection, sincetheregulationspublishedin2016requirethe
+existenceofthese,forsectionswithsteepslopesandhighdegreesofcurvature,aspresentedinthe
+objectofstudyofthisresearch.
+Riskfactorsreviewonahighwaymakesitpossibletoidentifypointsthat,althoughnotpresenting
+highlevelsofaccidents,showareasthatcanimproveonsafetylevelsbyaddressingdeficienciesin
+termsofpavementcondition,geometricdesign,signaling,andsecuritydevices.
+Finally,itisconcludedthatthisprocedurecontributestodeterminingtheriskareasthatinduce
+the generation of accidents and encourages the development of a risk reduction plan to support
+futuredecision-makingthatguaranteesbetterperformanceforroadusers. Likewise,itisimportant
+toemphasizethattheanalysisofroadsafetyshouldbeapermanentprocessforthosewhooperate,
+design,andbuildtheroadsystem.
+AuthorContributions: Datacuration,J.C.-R.andC.M.-L.;formalanalysis,M.M.-A.;investigation,M.M.-A.and
+J.C.-R.;projectadministration,A.M.-M.;resources,J.C.-R.;software,M.M.-A.andC.M.-L.;supervision,A.M.-M.;
+validation,A.M.-M.andL.G.;writing—originaldraft,M.M.-A.;writing—review&,editing,M.M.-A.,A.M.-M.,
+andL.G.Allauthorshavereadandagreedtothepublishedversionofthemanuscript.
+Funding: Thisresearchreceivednoexternalfunding.
+Acknowledgments: WesincerelyappreciatetheEnginieeringFacultyoftheUniversidadAutónomadeBaja
+CaliforniaandFideicomisoTramoCarreteroCentinela–Rumorosa(FIARUM),fortheirsupportinthisstudy.
+ConflictsofInterest: Theauthorsdeclarenoconflictofinterest.
+References
+1. WHO.InformeSobrelaSituaciónMundialdelaSeguridadVial2015; WorldHealthOrganization: Geneva,
+Switzerland,2015;pp.1–12.
+2. Wegman,F.Thefutureofroadsafety: Aworldwideperspective. IATSSRes. 2017,40,66–71. [CrossRef]
+3. WHO. Global Status Report on Road safety: Time for Action; World Health Organization: Geneva,
+Switzerland,2009.
+4. Amorim,M.;Ferreira,S.;Couto,A.Roadsafetyandtheurbanemergencymedicalservice(uEMS):Strategy
+stationlocation. J.Transp. Health2017,6,60–72. [CrossRef]
+5. Elvik,R.;Høye,A.;Vaa,T.;Sørensen,M.TheContributionofResearchtoRoadSafetyPolicy-Making’,TheHandbook
+ofRoadSafetyMeasures;EmeraldGroupPublishingLimited: Bingley,UK,2009.
+6. IHT.HighwaySafetyguidelines: AccidentReductionandPrevention. InternationalEdition;TheInstitutionof
+HighwaysandTransportation: London,UK,1990.
+Safety2020,6,45 16of18
+7. Karantanos,M.;Vardaki,S.Roadsafetyaudit: Acomparativereviewofcurrentguidelinesanddesigners’
+approach. In Proceedings of the Road Safety and Simulation International Conference, Rome, Italy,
+22–25October2013.
+8. Bank,A.D.CARECRoadSafetyEngineeringManual1: ROADSAFETYAUDIT;AsianDevelopmentBank:
+MetroManila,Philippines,2018;p.65. [CrossRef]
+9. Trentacoste,M.;Boekamp,P.;Depue,L.;Lipinski,M.E.;Manning,D.;Schertz,G.;Shanafelt,J.;Werner,T.;
+Wilson,E.FHWAStudyTourforRoadSafetyAudits,PART1-FINALREPORT;FederalHighwayAdministration:
+Washington,DC,USA,1997.
+10. Rodrigues,J.L.F.;Bezerra,B.S.ImplementingroadsafetyauditsinBrazil. InProceedingsoftheRoadSafety
+onFourContinents,13thInternationalConference,Warsaw,Poland,5–7October2005.
+11. Wilson, E.; Lipinski, M. NCHRP Synthesis 336: Road Safety Audits-A Synthesis of Highway Practice;
+NationalResearchCouncil: Washington,DC,USA,2004.
+12. Persia,L.;Usami,D.S.;DeSimone,F.;DeLaBeaumelle,V.F.;Yannis,G.;Laiou,A.;Han,S.;Machata,K.;
+Pennisi,L.;Marchesini,P.Managementofroadinfrastructuresafety. Transp. Res. Procedia2016,14,3436–3445.
+[CrossRef]
+13. OPS.LaSeguridadVialenlaRegióndelasAméricas;OrganizaciónPanamericanadelaSalud: Washington,DC,
+USA,2016.
+14. GOB.ProgramadeacciónEspecíficoSeguridadVial(2013–2018); GobiernodeMéxico, SecretaríadeSalud:
+DistritoFederal,Mexico,2014.
+15. Yu,S.;Jia,Y.;Sun,D.Identifyingfactorsthatinfluencethepatternsofroadcrashesusingassociationrules:
+AcasestudyfromWisconsin,UnitedStates. Sustainability2019,11,1925. [CrossRef]
+16. AASHTO.HighwaySafetyManual;AASHTO:Washington,DC,USA,2010.
+17. Farooq,D.;Moslem,S.;Duleba,S.Evaluationofdriverbehaviorcriteriaforevolutionofsustainabletraffic
+safety. Sustainability2019,11,3142. [CrossRef]
+18. Norza-Céspedes, E.H.; Granados-León, E.L.; Useche-Hernández, S.A.; Romero-Hernández, M.;
+Moreno-Rodríguez, J. Componentes descriptivos y explicativos de la accidentalidad vial en Colombia:
+Incidenciadelfactorhumano. Rev. Crim. 2014,56,157–187.
+19. Niezgoda, M.; Kamin´ski, T.; Kruszewski, M. Measuring driver behaviour-indicators for traffic safety.
+J.KONES2012,19,503–511. [CrossRef]
+20. Moslem,S.;Farooq,D.;Ghorbanzadeh,O.;Blaschke,T.ApplicationoftheAHP-BWMmodelforevaluating
+driverbehaviorfactorsrelatedtoroadsafety: AcasestudyforBudapest. Symmetry2020,12,243. [CrossRef]
+21. Reason,J.;Manstead,A.;Stradling,S.;Baxter,J.;Campbell,K.Errorsandviolationsontheroads: Areal
+distinction? Ergonomics1990,33,1315–1332. [CrossRef]
+22. Stanojevic´,P.;Lajunen,T.;Jovanovic´,D.;Sârbescu,P.;Kostadinov,S.Thedriverbehaviourquestionnairein
+south-easteuropecountries: Bulgaria,romaniaandserbia. Transp. Res. PartFTrafficPsychol. Behav. 2018,53,
+24–33. [CrossRef]
+23. López-de-Cózar, E.; Molina, J.; Chisvert, M.; Sanmartín, J. Traducción y Adaptación del Driver Behaviour
+QuestionnairealaPoblaciónEspañola; InstitutoUniversitariodeTráficoySeguridadVial-Universidadde
+Valencia: Valencia,Spain,2006.
+24. Cordazzo,S.T.;Scialfa,C.T.;Bubric,K.;Ross,R.J.Thedriverbehaviourquestionnaire: AnorthAmerican
+analysis. J.Saf. Res. 2014,50,99–107. [CrossRef][PubMed]
+25. Cordazzo,S.T.;Scialfa,C.T.;Ross,R.J.Modernizationofthedriverbehaviourquestionnaire. Accid. Anal.
+Prev. 2016,87,83–91. [CrossRef]
+26. Owsley,C.;Ball,K.;Sloane,M.E.;Roenker,D.L.;Bruni,J.R.Visual/cognitivecorrelatesofvehicleaccidentsin
+olderdrivers. Psychol. Aging1991,6,403. [CrossRef]
+27. Ball,K.;Owsley,C.;Sloane,M.E.;Roenker,D.L.;Bruni,J.R.Visualattentionproblemsasapredictorofvehicle
+crashesinolderdrivers. Investig. Ophthalmol. Vis. Sci. 1993,34,3110–3123.
+28. Shimada, H.; Tsutsumimoto, K.; Lee, S.; Doi, T.; Makizako, H.; Lee, S.; Harada, K.; Hotta, R.; Bae, S.;
+Nakakubo,S.Drivingcontinuityincognitivelyimpairedolderdrivers. Geriatr. Gerontol. Int. 2016, 16,
+508–514. [CrossRef][PubMed]
+29. Devlin,A.;McGillivray,J.Self-regulatorydrivingbehavioursamongstolderdriversaccordingtocognitive
+status. Transp. Res. PartF:TrafficPsychol. Behav. 2016,39,1–9. [CrossRef]
+Safety2020,6,45 17of18
+30. González-Iglesias,B.;Gómez-Fraguela,J.A.;Sobral,J.Potentialdeterminantsofdrinkdrivinginyoung
+adults. TrafficInj. Prev. 2015,16,345–352. [CrossRef]
+31. Ferreira,A.I.;Martínez,L.F.;Guisande,M.A.Riskybehavior,personalitytraitsandroadaccidentsamong
+universitystudents. Eur. J.Educ. Psychol. 2009,2,79–98. [CrossRef]
+32. Gershon,P.; Sita,K.R.; Zhu,C.; Ehsani,J.P.; Klauer,S.G.; Dingus,T.A.; Simons-Morton,B.G.Distracted
+driving,visualinattention,andcrashriskamongteenagedrivers. Am. J.Prev. Med. 2019,56,494–500.
+[CrossRef]
+33. Lin,C.;Wu,D.;Liu,H.;Xia,X.;Bhattarai,N.FactorIdentificationandPredictionforTeenDriverCrash
+SeverityUsingMachineLearning: ACaseStudy. Appl. Sci. 2020,10,1675. [CrossRef]
+34. Babic´,D.;Babic´,D.;Cajner,H.;Sruk,A.;Fiolic´,M.Effectofroadmarkingsandtrafficsignspresenceon
+youngdriverstresslevel,eyemovementandbehaviourinnight-timeconditions: Adrivingsimulatorstudy.
+Safety2020,6,24.
+35. WHO. Mobile Phone Use: A Growing Problem of Driver Distraction; World Health Organization: Geneva,
+Switzerland,2011.
+36. Zhao,N.;Reimer,B.;Mehler,B.;D’Ambrosio,L.A.;Coughlin,J.F.Self-reportedandobservedriskydriving
+behaviorsamongfrequentandinfrequentcellphoneusers. Accid. Anal. Prev. 2013,61,71–77. [CrossRef]
+[PubMed]
+37. Simmons,S.M.;Hicks,A.;Caird,J.K.Safety-criticaleventriskassociatedwithcellphonetasksasmeasured
+innaturalisticdrivingstudies: Asystematicreviewandmeta-analysis. Accid. Anal. Prev. 2016,87,161–169.
+[CrossRef][PubMed]
+38. Gariazzo,C.;Stafoggia,M.;Bruzzone,S.;Pelliccioni,A.;Forastiere,F.Associationbetweenmobilephone
+trafficvolumeandroadcrashfatalities: Apopulation-basedcase-crossoverstudy. Accid. Anal. Prev. 2018,
+115,25–33.
+39. Youming,T.;Deliang,Z.;Xinyu,Z.;Na,L.Principalcomponentanalysisoffataltrafficaccidentsbasedon
+vehicleconditionfactors.InProceedingsofthe201811thInternationalConferenceonIntelligentComputation
+TechnologyandAutomation(ICICTA),Changsha,China,22–23September2018;pp.315–317.
+40. Malin,F.; Norros,I.; Innamaa,S.Accidentriskofroadandweatherconditionsondifferentroadtypes.
+Accid.Anal.Prev. 2019,122,181–188. [CrossRef]
+41. Zhan,Z.-Y.;Yu,Y.-M.;Chen,T.-T.;Xu,L.-J.;Ou,C.-Q.Effectsofhourlyprecipitationandtemperatureonroad
+trafficcasualtiesinShenzhen,China(2010–2016): Atime-stratifiedcase-crossoverstudy. Sci. TotalEnviron.
+2020,720,137482. [CrossRef]
+42. Jiang,A.-L.;Sanders,B.F.;Nguyen,P.;Hsu,K.Whatistheroleofrainfallandfloodingonmotorvehicle
+accidentsinLosAngeles? AGUFM2018,2018,H43J-2601.
+43. Stevens,S.E.;Schreck,C.J.,III;Saha,S.;Bell,J.E.;Kunkel,K.E.Precipitationandfatalmotorvehiclecrashes:
+Continental analysis with high-resolution radar data. Bull. Am. Meteorol. Soc. 2019, 100, 1453–1461.
+[CrossRef]
+44. Eisenberg,D.;Warner,K.E.Effectsofsnowfallsonmotorvehiclecollisions,injuries,andfatalities. Am. J.
+PublicHealth2005,95,120–124. [CrossRef]
+45. Seeherman,J.;Liu,Y.Effectsofextraordinarysnowfallontrafficsafety. Accid. Anal. Prev. 2015,81,194–203.
+[CrossRef]
+46. Roebber,P.J.;Butt,M.R.;Reinke,S.J.;Grafenauer,T.J.Real-timeforecastingofsnowfallusinganeuralnetwork.
+WeatherForecast. 2007,22,676–684. [CrossRef]
+47. Fountas,G.;Fonzone,A.;Gharavi,N.;Rye,T.Thejointeffectofweatherandlightingconditionsoninjury
+severitiesofsingle-vehicleaccidents. Anal. MethodsAccid. Res. 2020,27,100124. [CrossRef]
+48. Jägerbrand,A.K.;Sjöbergh,J.Effectsofweatherconditions,lightconditions,androadlightingonvehicle
+speed. SpringerPlus2016,5,505.
+49. Miaou, S.-P.; Lum, H. Modeling vehicle accidents and highway geometric design relationships.
+Accid.Anal.Prev. 1993,25,689–709. [CrossRef]
+50. Milton, J.; Mannering, F. The relationship among highway geometrics, traffic-related elements and
+motor-vehicleaccidentfrequencies. Transp. Res. 1998,25,395–413.
+51. Vayalamkuzhi, P.; Amirthalingam, V. Influence of geometric design characteristics on safety under
+heterogeneoustrafficflow. J.TrafficTransp. Eng. 2016,3,559–570. [CrossRef]
+Safety2020,6,45 18of18
+52. Gooch,J.P.;Gayah,V.V.;Donnell,E.T.Quantifyingthesafetyeffectsofhorizontalcurvesontwo-way,two-lane
+ruralroads. Accid. Anal. Prev. 2016,92,71–81. [CrossRef]
+53. Wang,C.;Quddus,M.A.;Ison,S.G.Theeffectoftrafficandroadcharacteristicsonroadsafety: Areviewand
+futureresearchdirection. Saf. Sci. 2013,57,264–275. [CrossRef]
+54. FHWA. Interactive Highway Safety Design Model (IHSDM): Overview. Available online:
+https://highways.dot.gov/research/safety/interactive-highway-safety-design-model/interactive-highway-
+safety-design-model-ihsdm-overview(accessedon1February2020).
+55. Chen,S.;Saeed,T.U.;Labi,S.Impactofroad-surfaceconditiononruralhighwaysafety: Amultivariate
+randomparametersnegativebinomialapproach. Anal. MethodsAccid. Res. 2017,16,75–89. [CrossRef]
+56. RiveraTrujillo,C.;MendozaDíaz,A.AnálisisCosto-BeneficioyCosto-EfectividaddelasMedidasdeSeguridad
+ImplementadasenCarreterasMexicanas;InstitutoMexicanodelTransporte: Queretaro,Mexico,2009.
+57. Justo-Silva, R.; Ferreira, A. Pavement maintenance considering traffic accident costs. Int. J. Pavement
+Res.Technol. 2019,12,562–573. [CrossRef]
+58. Konovalova,T.;Zarovnaya,L.Theassessmentmodelforeconomicefficiencyoftrafficsafetyimprovements.
+Transp. Res. Procedia2017,20,311–315. [CrossRef]
+59. Eseonu,C.;Gambatese,J.;Nnaji,C.ReducingHighwayConstructionFatalitiesthroughImprovedAdoptionof
+SafetyTechnologies;TheCenterforConstructionResearchTraining: SilverSpring,MD,USA,2018.
+60. Dong,C.;Nambisan,S.S.;Xie,K.;Clarke,D.B.;Yan,X.Analyzingtheeffectivenessofimplementedhighway
+safetylawsfortrafficsafetyacrossUSstates. Transp. ATransp. Sci. 2017,13,91–107.
+61. Yu, H.; Liu, P.; Chen, J.; Wang, H. Comparative analysis of the spatial analysis methods for hotspot
+identification. Accid. Anal. Prev. 2014,66,80–88. [CrossRef][PubMed]
+62. Al-Aamri,A.K.; Hornby,G.; Zhang,L.-C.; Al-Maniri,A.A.; Padmadas,S.S.Mappingroadtrafficcrash
+hotspotsusingGIS-basedmethods: AcasestudyofMuscatGovernorateintheSultanateofOman. Spat.Stat.
+2020,100458. [CrossRef]
+63. Leal,J.;Plaza,J.D.;PérezPérez,I.;delaCruz,E.C.Influenciadelascaracterísticassuperficialesdelosfirmes
+enlaseguridadvial. Rutas: Rev. delaAsoc. TécnicaDeCarret. 2004,100,13–31.
+64. PérezPérez,I.Actuacionesparalamejoradelaseguridaddelacirculaciónvial. Vía182007,5,28–29.
+65. Montoya-Alcaraz,M.;Mungaray-Moctezuma,A.;García,L.SustainableRoadMaintenancePlanningin
+DevelopingCountriesBasedonPavementManagementSystems: CaseStudyinBajaCalifornia,México.
+Sustainability2020,12,36. [CrossRef]
+66. SCT.ManualdeDiseñoGeométricodeCarreteras2018;Técnicos,D.G.d.S.,Ed.;SecretaríadeComunicacionesy
+Transportes: MexicoCity,Mexico,2018.
+67. SCT.ManualdeSeñalizaciónyDispositivosdeSeguridad;Técnicos,D.G.d.S.,Ed.;SecretaríadeComunicaciones
+yTransportes: MexicoCity,Mexico,2014.
+68. SCT.NORMAOficialMexicanaNOM-034-SCT2-2011,SeñalamientoHorizontalyVerticaldeCarreterasyVialidades
+Urbanas;Transportes,S.d.C.y.,Ed.;DiarioOficialdelaFederaciónMéxico: DistritoFederal,Mexico,2011.
+69. SCT.CRTConstrucción;SecretaríadeComunicacionesyTransportes: DistritoFederalMexico,2000.
+70. Speier,G.;Campos,J.RoadSafetyAudits/Inspections: APromiseUnfulfilled. ITEJ.2020,89,43–49.
+©2020bytheauthors. LicenseeMDPI,Basel,Switzerland. Thisarticleisanopenaccess
+articledistributedunderthetermsandconditionsoftheCreativeCommonsAttribution
+(CCBY)license(http://creativecommons.org/licenses/by/4.0/).

@@ -1,0 +1,636 @@
+Journal of Transportation Security (2024) 17:10
+https://doi.org/10.1007/s12198-024-00278-4
+RESEARCH
+What’s the safest way home? Mapping safe transport
+routes in South Africa with (and without) crime data
+K. Theron1 · Gregory Breetzke1
+Received: 13 February 2024 / Accepted: 21 March 2024 / Published online: 15 April 2024
+© The Author(s) 2024
+Abstract
+Safety is arguably the single biggest daily concern for commuters. Popular naviga-
+tion software systems such as Google Maps, TomTom and Waze do not however
+currently give the same weight of consideration to crime risk when directing road
+users to the safest and shortest routes as they do existing traffic knowledge. In this
+study we propose three simple methods to delineate the safest and shortest route
+between any two locations in South Africa considering crime risk. The first method
+uses historical crime data to delineate the safest and shortest route; the second
+method, uses only the location of so-called ‘risky facilities’ to determine the safest
+and shortest route; while the third method uses a combination of both historical
+crime data and facility data to delineate the optimal route. We contrast the resultant
+routes delineating by these three methods and speculate on the policy implications
+of integrating this knowledge into future navigation software systems.
+Keywords Crime analysis · Street segment · Network · Routing · South Africa
+Introduction
+South Africa is synonymous with crime. The most recent crime statistics indicate that
+while crime is slightly decreasing overall, certain categories of crime such as homi-
+cide, attempted homicide, and assault continue to rise unabated, with the country’s
+per capita homicide rate for 2022/23 being the highest in 20 years at 45 per 100,000
+population (a 50% increase compared to 2012/13) (South African Police Services
+Gregory Breetzke
+greg.breetzke@up.ac.za
+K. Theron
+u18006273@tuks.co.za
+1 Department of Geography, Geoinformatics and Meteorology, University of Pretoria,
+Pretoria 0002, South Africa
+1 3
+10 Page 2 of 15 K. Theron, G. Breetzke
+(SAPS), 2023). Crime in South Africa is not ubiquitous however but is rather heavily
+concentrated in certain police precincts of the country, notably in precincts located
+in the so-called townships (see Breetzke 2018). In South Africa, a ‘township’ refers
+to a built-up residential area on the periphery of former Whites-only urban neigh-
+borhoods. Under the spatial planning policies of the former apartheid government,
+these areas were reserved for non-White people only (i.e., Black African, Coloured
+and Indian population groups) although townships are still predominantly (> 95,0%)
+inhabited by non-Whites more than thirty years into democracy. Recent evidence
+has, however, shown that even in high-crime police precincts in South Africa, crime
+is heavily concentrated in certain neighborhoods (Breetzke and Edelstein 2019), and
+even along certain street segments (Theron et al. 2023). Identifying high crime con-
+centrations at the finer street segment level of aggregation is vitally important in
+resource-poor countries such as South Africa as it enables geographically-targeted
+policing intervention strategies to be implemented at these locations. The identifica-
+tion of ‘high-crime’ streets also has important implications for public safety in gen-
+eral as transport routes can potentially be delineated which can reduce an individual’s
+risk of victimization at this spatial level.
+Using environmental criminology as a theoretical backcloth, in this study we out-
+line three simple methods to determine the safest and shortest route between any two
+locations in South Africa considering crime risk. The first method uses historical
+crime data to delineate the safest and shortest route; the second method, uses only the
+location of existing facilities that have previously been shown to be spatially associ-
+ated with crime to determine the safest and shortest route; while the third method
+uses a combination of historical crime data and facility data to delineate the optimal
+route. Importantly, no crime data is employed in the second method. Point level crime
+data is extremely difficult to obtain in South Africa (see Breetzke 2006 for an out-
+line) and we were motivated in this study to demonstrate how a safest and shortest
+route between two locations could still possibly be delineated between locations in
+instances where no crime data is available.
+The geographical focus area for the study is the township of Khayelitsha located
+approximately 30 km to the south east of central Cape Town in the Western Cape
+province of South Africa. Khayelitsha is the largest township in the province with a
+population of roughly 400,000 inhabitants, of which almost 99% are black African
+(Statistics South Africa (SSA), 2011). The township is socially and economically
+marginalized from Cape Town however with roughly 40% of residents unemployed,
+and youth unemployment (aged 15–23) at over 50% (SSA, 2011).1 Notably, crime is
+rampant in Khayelitsha with the main policing precinct in the township consistently
+among the most violent precincts in the country with contact crime2 almost double
+the national average (Crime Hub 2023).
+1 This was the most recent census undertaken for which data is available. The 2021 census was postponed
+due to the Covid-19 pandemic and is in the process of being conducted (July 2022).
+2 ‘Contact crimes’ refer to when a person or people are injured/harmed or threatened with injury/harm
+during the commission of a crime. A further sub-category of ‘contact-related crime’ is used for violent
+crimes committed against property with the intention of causing damage to a person, for example arson or
+malicious damage to property.
+1 3
+What’s the safest way home? Mapping safe transport routes in South… Page 3 of 15 10
+Literature review
+A large number of studies over the past twenty years support the spatial concentration
+of crime at the street segment level of analysis, across varying contexts (see Chainey
+et al. 2019; de Melo et al. 2015; Umar et al. 2021; Weisburd et al. 2012; Wuschke et
+al. 2021). While researchers have historically examined spatial crime concentrations
+at coarser levels of spatial aggregation (see Bursik and Grasmick 1993; Kubrin and
+Weitzer 2003; Sampson et al. 1997), there is a growing realization that these larger
+places are spatially heterogenous (see Braga et al. 2017). This increased acknowl-
+edgement has led to a plethora of studies examining crime at the street segment level
+(see Braga et al. 2010; Groff et al. 2010; Kim and Hipp 2018; Weisburd et al. 2009)
+as well as studies delineating the safest and shortest routes between locations based
+on the underlying crime risk of the street network (see Galbrun et al. 2016; Garvey et
+al. 2016; Goel et al. 2017; Mata et al. 2016; among others). In terms of graph theory,
+street networks are a collection of nodes (intersections) and edges (street segments
+linking intersections) which can either be topological (nonspatial) graphs (with topo-
+logical distance in terms of number of street segments along a path (Goddard and
+Oellermann 2011) or spatial graphs (with spatial/metric distances in meters or kilo-
+meters (Crucitti et al. 2006). Edges between nodes in street networks can be assigned
+‘weights’ which act as external factors that can impede the movement through the
+street network. The kinds of weights are myriad and can include the cost of travel
+in terms of distance (Martínez Mori and Samaranayake 2019), time (Jenelius and
+Koutsopoulos 2013), volume of traffic (Zhong et al. 2014), and, importantly crime
+(de Souza et al. 2019; Hossain et al. 2022; Sarraf and McGuire 2020; Zaoad et al.
+2023).
+In spatial criminology, the cost of movement through a network can determined by
+the level of crime risk per edge (i.e. a street segment in the case of street networks).
+This is most often represented by some form of ‘index’ which assigns a numerical
+level of ‘danger’ to a particular edge. Concomitantly, the safest and shortest routes
+are those that minimize traversing on streets with the highest risk index values whilst
+still getting to the desired destination in the shortest distance possible. In past litera-
+ture, these indices are most often created using historical open crime datasets (see
+Galbrun et al. 2016; Goel et al. 2017; Mata et al. 2016; Puthige et al. 2021), although
+crowdsourced crime data has also been increasingly used (see Mata et al. 2016; Shah
+et al. 2011). Regardless, in both instances a street is assigned a measure of risk based
+on the number of historical crime events (real or perceived) that have occurred there.
+Researchers have also combined open crime datasets with other more dynamic infor-
+mation in order to identify the safest and shortest path for users. For example, Kim et
+al. (2014) used sentiments inferred from real-time, geotagged messages from X (for-
+merly Twitter) to delineate safer transport routes for users in Chicago while Pang et
+al. (2019) proposed a safety application that used street camera video data to identify
+the safety status of streets across the United States. Researchers have also increas-
+ingly integrated other non-crime datasets, notably traffic-related information, to
+assign a level of ‘danger’ per street segment. For example, Alfonso (2017) developed
+a safe routing application in California using historical crime data as well as various
+road barriers that may act as impediments to travel such as intersections, walkways,
+1 3
+10 Page 4 of 15 K. Theron, G. Breetzke
+freeways, and areas that has previously experienced pedestrian collisions. Likewise,
+Eckdale-Dudley et al. (2018) designed a safe routing application in Wisconsin that
+took infrastructural features such as crosswalks and sidewalks, and adequate traffic
+signage into account while Sarraf and McGuire (2020) developed a safe rout naviga-
+tion system which provides users with the safest route based on past motor vehicle
+crash data. Finally, Oh et al. (2017) took historical crime events and various types of
+facilities into account when determining the safest and shortest route between loca-
+tions. The researchers calculated a crime risk rate for a route based on the crime risk
+rate of the facilities included in the user’s route.
+The inclusion of other infrastructural features and/or facilities in delineating safer
+routes is largely informed by crime pattern theory (Brantingham and Brantingham
+1991). Housed within the school of environmental criminology, crime pattern theory
+focuses on the criminal incident itself - specifically when and where a crime occurs
+- rather than on the criminal per se. According to crime pattern theory offences are
+most likely to occur where opportunity spaces—places perceived by the offender
+to contain attractive targets—intersect with awareness spaces—places about which
+an offender has specific environmental knowledge, for example the surroundings of
+his or her home. Of course, street segments and their components (nodes, paths, and
+edges) greatly influence an individuals’ routine patterns and awareness spaces. Paths
+in particular shape individuals’ activities and in turn, determine where individuals go,
+which also influences their awareness space (Brantingham and Brantingham 1995).
+According to crime pattern theory, common urban infrastructure facilities that lie on
+streets such as shopping malls and schools can increase the risk of crime occurring
+on these segments. Collectively, these facilities are known as either crime generators
+or crime attractors. Both types of facilities increase the risk of crime occurring due
+mainly to the fact that they attract a large number of motivated offenders and suit-
+able targets to a particular location. The former places attract a considerable amount
+of people who do not intend to commit a crime at that place necessarily but increase
+the risk of crime in these locations due to the increased number of potential tar-
+gets, while the latter places attract motivated offenders for more nefarious reasons.
+Research indicates that the presence of certain types of facilities on street segments
+can increase the risk of crime (see Kim and Hipp 2018; Xie et al. 2022) which can,
+concomitantly, make certain street segments riskier to traverse than others. Our study
+aims to delineate the safest and shortest route between two locations using historical
+crime data as well as the presence of crime generators (or so-called ‘risky’ facilities
+(see Eck et al. 2007) along street segments.
+Data and methods
+Crime data
+Historical crime data for the study was obtained from the South African Police Ser-
+vice (SAPS). A total of 26,109 point-level crime incidents were captured for the
+Khayelitsha policing precinct from 2012 to 2016 (five calendar years). A number of
+attributes were recorded per crime incident including a unique identifier, an x and y
+1 3
+What’s the safest way home? Mapping safe transport routes in South… Page 5 of 15 10
+coordinate, and the type of crime. All crime types were included in ascribing histori-
+cal crime risk to a street segment. This was done to improve the statistical power of
+the routing analysis as well as it is assumed that most crime, regardless of the offence
+type, poses a threat to public safety although we do readily acknowledge that certain
+types of crime may be more visible and therefore ‘relevant’ to ascribing crime risk to
+road users than others.
+Street centreline data
+Street centreline data for Khayelitsha was obtained from the City of Cape Town Open
+Data Portal (https://odp-cctegis.opendata.arcgis.com/). The data consisted of line
+features which were segmented at every road intersection. Only the formal street net-
+work in Khayelitsha was used in the study (i.e., informal streets and footpaths were
+excluded). A total of 6,089 street segments were obtained for the township.
+Facilities data
+Data were obtained for the location of five different types of facilities in Khayelitsha
+including shopping malls, parks, transport interchanges, alcohol outlets, and schools.
+The selection of these specific five facilities were informed by both local (Breetzke
+and Edelstein 2022; Breetzke et al. 2021; Lancaster and Kamman 2016) and inter-
+national studies (Day et al. 2012; Groff & McCord, 2012; Newton et al. 2015; Pride-
+more and Grubesic 2013) which have previously found these specific five types of
+facilities to be spatially associated with an increase in crime in their surrounding
+areas. The location of shopping malls, and parks were obtained from the City of Cape
+Town Open Data Portal. A total of four shopping malls and 62 district and community
+parks were located within Khayelitsha. The location of transportation interchanges
+including bus stops (n = 38) and railway stations (n = 5) were sourced from Open-
+StreetMap (OSM). A list of officially licensed alcohol outlets was acquired from the
+Western Cape Government Liquor License Authority. The location of 138 alcohol
+outlets in Khayelitsha were obtained and subsequently geocoded. We are aware of
+previous research that has mapped an alarmingly higher number of illegal alcohol
+outlets in Khayelitsha (see Matzopoulos et al., 2017), however, these data were not
+available to us and only the official licensed data was used. Finally, the location of 98
+schools in Khayelitsha was obtained from the Western Cape Department of Educa-
+tion and were also geocoded.
+Analysis
+Three methods were proposed to delineate the safest and shortest route between any
+two locations in Khayelitsha. The first method involved determining the safest and
+shortest route based on historical crime incidents only. For the first method a street
+segment analysis of crime was initially undertaken whereby all crimes within the
+five-year study period were snapped to their nearest street segment and each street
+segment was then assigned a weighting based on the number of crimes per meter per
+1 3
+10 Page 6 of 15 K. Theron, G. Breetzke
+street segment. The safest and shortest route was simply the path that minimized the
+historical crime risk from the origin to the destination locations.
+The second method involved determining the safest and shortest route consider-
+ing only the location of various crime generators (i.e., the five facility types). This
+method demonstrated an approach to finding the safest and shortest route between
+points when no crime data is available. For this method, the five types of facilities
+were geocoded and a 50-metre buffer was generated around each of these facili-
+ties. Street segments that intersected these buffered areas were considered ‘barriers’
+as they can increase the risk of criminal victimization along these segments. It is
+challenging to empirically identify the distance at which the ‘criminogenic’ effect
+of these facilities dissipates. Previous research has shown how the risk of crime will
+dissipate at various distances away from a crime generator (Boessen and Hipp 2018;
+Groff and Lockwood 2014). Ultimately, it was decided on a 50-metre buffer was
+appropriate since this distance broadly approximates a cadastral block in Khayelit-
+sha. These ‘buffer zones’ were used as route polygon barriers for the routing analysis.
+Importantly, these barriers were ascribed as either being at a restriction or a scaled
+cost. A barrier is a restriction if it has to be avoided completely when choosing a
+route to travel. On the other hand, a barrier is a scaled cost if it merely altered the
+cost of travel when being traversed. To illustrate this, if a road user wished to strictly
+avoid any crime generator on their route, for example, then the buffer zones would
+be regarded as restriction barriers so that any street segments that passed through
+these zones would have to be avoided completely. This means that the route could
+be any distance, as long as it avoided the crime generators entirely. Conversely, if a
+road user merely regarded street segments that intersected crime generators as being
+perhaps less safe but was not willing to travel greater lengths to avoid it completely,
+then these crime generators would be scaled cost barriers. This means that these bar-
+riers only further impeded the cost of travel (by a positive scaled value) on the street
+segments that it intersected. In this study, barriers were set as scaled costs meaning
+that the cost of travel increased by a certain scaled value if a street segment inter-
+sected these danger zones. For the second method, all scale costs were set to the same
+value (n = 2) for all facilities. In other words, no type of facility was considered ‘more
+criminogenic’ than another type of facility. Finally, it may be possible for barriers
+to overlap, for example, when crime generators are located close to each other. In
+such instances, their individual scaled costs were multiplied to form a new combined
+weight. For example, if an alcohol outlet polygon barrier overlapped with a transport
+interchange polygon barrier their weights were multiplied, and this multiplied value
+was applied to the portion of the street segment that passed through the overlapping
+polygon barriers.
+The third method combined both historical crime data as well as the location of
+crime generators to create the safest and shortest route. This was done by first exam-
+ining the extent to which crime was spatially associated with each type of facility.
+Similar to Oh et al. (2017), the density of crime that occurred within a 50-metre buf-
+fer from each facility was calculated and aggregated per facility type. This provided a
+measure of spatial clustering of crime or ‘crime risk’ around each facility type. These
+density values per facility type were normalized and the resultant value (scaled cost)
+was ascribed to each street segment depending on its intersection with a facility. The
+1 3
+What’s the safest way home? Mapping safe transport routes in South… Page 7 of 15 10
+resultant risk rates of the facilities along a particular route were combined in order to
+acquire the risk rate of the entire route. In our analysis, the most criminogenic facility
+based on the underlying crime density were shopping malls, followed by bus stops
+and parks.
+Results
+Figure 1 shows the results of the first method and shows the shortest and safest route
+(in green) between a random origin and destination location compared to the shortest
+route (in brown). The shortest route between the two locations was 8.4 km long and
+traversed street segments that encountered a total of 735 historical crime incidents.
+There were approximately seven crimes per meter along this route. On the other
+hand, the safest and shortest route was approximately 12 km and traversed street
+segments with 278 historical crime incidents, resulting in roughly 0.7 crimes per
+metre. It is clear that the road user would have to travel a further distance to reach
+their destination if they wished to follow a path that minimized the overall number of
+historical crime incidents per meter. Despite the longer distance, the safest and short-
+est route avoided just over 450 historical crime incidents in total, when compared to
+the shortest route.
+Figure 2 shows the safest and shortest route (in pink) between the same origin
+and destination points but in this analysis only the location of the crime generators
+(at equal scaled cost) was considered. Although this route was the shortest and saf-
+Fig. 1 The shortest and safest routes between an origin and destination point in Khayelitsha (based on
+historical crime data)
+1 3
+10 Page 8 of 15 K. Theron, G. Breetzke
+Fig. 2 The safest and shortest route between two points in Khayelitsha based on equal polygon barriers
+est route, it still traversed 12 barriers (10 transport interchanges; one park, and one
+school). This resultant safest route was 8.4 km long and encountered a total of 601
+historical crime incidents along the way (n = 4.62 crimes per metre).
+Finally, Fig. 3 shows the safest and shortest route (in blue) between the same ori-
+gin and destination points but with street segments weighted on different scaled costs.
+The safest route and shortest route had a total length of 8.9 km, which was slightly
+longer than the route avoiding the equal scaled costs. This route encountered a total
+of 699 historical crime incidents along the way (n = 7.65 crimes per metre). The delin-
+eated route still traversed a total of 13 barriers including five alcohol outlets, four
+transport interchanges, one park and three schools. This route encountered the least
+amount of scaled added costs while minimizing the total distance travelled.
+Discussion
+Two recent events in South Africa highlight the need for the integration of public
+safety related information into existing navigation software systems. First, an award-
+winning British doctor was shot and killed in August 2023 in Nyanga – a township
+located adjacent to Khayelitsha - after taking a ‘wrong turn’ from the Cape Town
+International airport on the way to his hotel in central Cape Town (Gregory 2023).
+Two months later, an American tourist was robbed and shot in the face (also in
+Nyanga) after the mapping application on his iPhone indicated a route that traversed
+through various high-crime areas that lie adjacent to the Cape Town International
+1 3
+What’s the safest way home? Mapping safe transport routes in South… Page 9 of 15 10
+Fig. 3 The safest and shortest route between two points in Khayelitsha based on weighted polygon
+barriers
+airport (Swart, 2023). Sadly, this situation is not unique to South Africa with simi-
+lar incidents having being reported in Brazil (Phillips 2015) and the United States
+(Shellow-Lavine 2024), among others. Given these collective incidents it is increas-
+ingly clear that crime risk needs to be urgently considered when delineating the safest
+and shortest path for road users. In a country such as South Africa, which is one of
+the most violent countries in the world (World Population Review 2024), it is even
+more imperative for road users to know where the risk of crime is elevated and to
+allow the user of the navigation app to decide what consideration to give historical
+crime risk in proposing a route between two locations. Current navigation software
+systems such as Google Maps, TomTom and Waze do not currently give the same
+consideration to historical crime risk in determining safe routes between an origin
+and destination point. Although this does appear to be changing, at least in South
+Africa. Indeed, fearing the impact that these two criminal events would have on the
+summer tourist season in Cape Town, an agreement was quickly formalized between
+the country’s Minister of Tourism and Google’s Country Director for South Africa
+to “leverage Google’s technological expertise in promoting South Africa as a tourist
+destination and providing digital training support to those operating in the sector.”
+(Haripersad 2023) Among others, Google agreed to, in future, re-route individuals
+via its Google Maps application to avoid 58 crime hot spots in Cape Town although
+no information was provided regarding where these hot spot areas were located, nor
+how they were identified.
+In this study we outline three simple methods to delineate the safest and short-
+est route between any two locations in the country, with (and without) crime data.
+1 3
+10 Page 10 of 15 K. Theron, G. Breetzke
+Similar to previous studies (see Kim et al. 2014; Lisowska-Kierepka 2022; Pang et
+al. 2019; Puthige et al. 2021), in our first method we assigned a level of safety per
+street segment based on historical crime data and determined the safest and shortest
+route based on this information alone. In our second method, we delineated the safest
+and shortest route based solely on the location of 345 crime generators located in the
+study area. In truth, the second method we propose in this study is probably the most
+feasible in a country such as South Africa if such a method were to be incorporated
+into future real-world applications. The main reason being that official and spatially
+replete point-level crime data is notoriously difficult to obtain in the country. Rather
+spatial crime researchers are continuously reliant on official crime data that are
+released quarterly and at the coarse police precinct level of spatial aggregation. There
+are 1144 police precincts in a country covering an area of roughly 1,217,290 square
+kilometers (mean = 1064 square kilometers). Official crime data disseminated at this
+level of aggregation is simply not fine enough to ascribe neighborhood-level crime
+risk let alone street-level risk in the country. Point-level crime data also provides a
+much more nuanced, and accurate, indication of crime risk (see Braga et al. 2017
+for details) and allows for more detailed analysis to be undertaken. In our study we
+were fortunate enough to obtain point-level crime data for Khayelitsha and use this
+to determine the safest and shortest path (in the first method). Notably, the safest and
+shortest routes indicated in the first and second method do differ considerably both in
+terms of route direction and length which highlight the fact that relying solely on the
+location of crime generators in the community may not necessarily be the best proxy
+for actual crime risk per se but there are few viable alternative data sources available
+to act as proxy crime data. Of course, other sources of crime data were considered for
+inclusion in the study such as crowd-sourced crime data as employed in other past
+studies (see Goel et al. 2017; Keler and Mazimpaka 2016; Mata et al. 2016). Again,
+however, these data were not available in South Africa at the level of spatial detail
+required for analysis and in instances where data did exist the coverage was incom-
+plete for Khayelitsha. Notwithstanding the fact that crowd-sourced crime data has a
+number of other associated disadvantages such as self-selection bias (Chataway et
+al. 2017) and the overrepresentation of certain groups (Solymosi and Bowers 2018).
+In terms of policy implications, the identification of certain ‘criminogenic’ streets
+and facilities could inform policing strategies aimed at reducing crime. Specifically,
+hot spot policing which is aimed at directing a variety of police-led crime control
+efforts towards locations abundant with crime (e.g., particularly a neighborhood or
+street segment) in order to have a disproportionate effect on reducing crime outcomes.
+From an urban planning perspective, local authorities could improve the physical
+environment on certain high-crime risk streets through targeted lighting, increased
+visibility, traffic calming measures, and effective signage and marking, among oth-
+ers. ‘Safer’ commuting paths through the township could also be delineated. This is
+particularly relevant for pedestrians in Khayelitsha given the fact that almost every
+individuals’ journey in Khayelitsha starts with walking (City of Cape Town 2021).
+A related strategy could be the development of ‘safe nodes’, or multi-purpose sub-
+centres which are intended to reduce the likelihood of violent behavior along certain
+hot spot routes. Finally, it is worth mentioning that the delineation of ‘safer routes’
+in this particular local context raises a broader ethical dilemma. That is, delineating
+1 3
+What’s the safest way home? Mapping safe transport routes in South… Page 11 of 15 10
+safer commuting routes could lead to the further stigmatization and marginalization
+of certain areas deemed too risky to traverse. Given South Africa’s history in this
+regard under the former apartheid regime, there is no easy solution.
+Last, a short note on some of the limitations of the study. First, crime is notoriously
+under-reported in Khayelitsha (see O’Regan et al. 2014) and this poses significant
+challenges to accurately identify safer routes based on historical crime risk. Several
+factors contribute to this broader issue including a lack of trust in law enforcement
+agencies (Prinsloo 2019), fear of retaliation (Seedat et al. 2009) and the social stigma
+and shame associated with certain types of crime (Jewkes et al. 2017). Given this data
+challenge, researchers in South Africa can either undertake research with the only
+official crime dataset available from the SAPS, whilst acknowledging the limitations,
+or seek alternative ways of getting ‘proxy’ crime data. We choose the former option,
+knowing that what we find may not be the exact magnitude and location of crime
+occurring during this study period in Khayelitsha but being relatively certain that the
+data we have broadly approximates its true magnitude and distribution. Second, we
+are aware that considering only distance and crime-related information to delineate
+safer routes for users does not achieve the desired requirements of proper transpor-
+tation management. Indeed, a range of other factors could impact road user safety
+including road infrastructure, lighting conditions, crowdedness, public transport, and
+traffic congestion, among many others, and that these factors may be more important
+at certain places along a route, than others. From a purely criminological perspective,
+we also did not consider the broader environmental backcloth when considering crime
+risk. These include, among others, the underlying land use, and urban infrastructures
+which collectively can lead to an increase in crime opportunities along certain routes
+(see Umar et al. 2021). In our study, we did not ‘control’ for crime opportunities,
+per se, but rather in a way similar to Garvey et al. (2016) and others, in this study
+we delineate the safest and shortest route in a new and unique location. In fact, to
+our knowledge, this empirical study is the first of its kind in Africa in general, and
+South Africa specifically. Future research could examine whether these routes may
+differ based on these other factors, although it should be noted that identifying other
+crime risk factors in Khayelitsha is challenging. This is largely due to the informal
+nature of the township. The township is notoriously under-developed with relatively
+few formal built facilities. These combined factors make more comprehensive future
+micro-spatial routing analysis incorporating the underlying environmental backcloth
+harder to undertake, but is an avenue for future research. Finally, we not take into
+consideration the fact that the routes delineated would necessarily differ across the
+three methods depending on various temporal resolutions (daily, weekly, monthly).
+Crime varies temporally and facilities also open and close at various times of the day
+and night. These factors would impact street-level crime risk and this would impact
+the delineation of the shortest and safest route. We felt, however, as a first iteration
+of this process to rather delineate an optimal route regardless of the temporal resolu-
+tion of the crime data. Future research could aim to tease out the differences that may
+occur when determining the safest routes by time.
+These limitations notwithstanding this study represents the first empirical attempt
+to undertake a safest path analysis in any context in South Africa. Given the high
+rates of crime in the country, it is becoming increasingly important for individuals to
+1 3
+10 Page 12 of 15 K. Theron, G. Breetzke
+know their risk of being victimized. For residents in Khayelitsha in particular, any
+and all information that can reduce their risk of victimization is better than no infor-
+mation at all, regardless of the limitations. We believe that this study has addressed
+this in a small but meaningful way, and potentially introduce an application in the
+future which will give residents of Khayelitsha access to this vital information. In a
+high crime country like South Africa any and all information that could potentially
+make a trip safer is more relevant and important than ever.
+Author contributions K.T undertook the spatial analysis for the paper. G.D. wrote the paper.
+Funding No funding was received for this study.
+Open access funding provided by University of Pretoria.
+Data availability The data for this study is a combination of open datasets and data compiled by the South
+African Police Services (SAPS). Due to the sensitive nature of some of the datasets, they are not publicly
+accessible. However, the data can be made available by the authors upon reasonable request and subject
+to the approval of the SAPS.
+Declarations
+Competing interests The authors declare no competing interests.
+Open Access This article is licensed under a Creative Commons Attribution 4.0 International License,
+which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long
+as you give appropriate credit to the original author(s) and the source, provide a link to the Creative
+Commons licence, and indicate if changes were made. The images or other third party material in this
+article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line
+to the material. If material is not included in the article’s Creative Commons licence and your intended use
+is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission
+directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/
+licenses/by/4.0/.
+References
+Alfonso JR (2017) Safe walk: A network analyst framework for safe routes to school. Unpublished Mas-
+ter’s thesis, University of Southern California, United States
+Boessen A, Hipp JR (2018) Parks as crime inhibitors or generators: examining parks and the role of their
+nearby context. Soc Sci Res 76:186–201. https://doi.org/10.1016/j.ssresearch.2018.08.008
+Braga AA, Hureau DM, Papachristos AV (2010) The concentration and stability of gun violence at
+micro places in Boston, 1980–2008. J Quant Criminol 26(1):33–53. https://doi.org/10.1007/
+s10940-009-9082-x
+Braga AA, Andresen MA, Lawton B (2017) The law of crime concentration at places: editors’ introduc-
+tion. J Quant Criminol 33(3):421–426. https://doi.org/10.1007/s10940-017-9342-0
+Brantingham PJ, Brantingham PL (1991) Environmental Criminology. Waveland
+Brantingham P, Brantingham P (1995) Criminality of place: crime generators and crime attractors. Eur J
+Criminal Policy Res 3:5–26. https://doi.org/10.1007/BF02242925
+Breetzke GD (2006) Geographical Information Systems (GIS) and policing in South Africa: a review.
+Policing: Int J Polic Strategies Manage 29(4):723–740. https://doi.org/10.1108/13639510610711628
+Breetzke GD (2018) The concentration of urban crime in space by race: evidence from South Africa.
+Urban Geogr 39(8):1195–1220. https://doi.org/10.1080/02723638.2018.1440127
+1 3
+What’s the safest way home? Mapping safe transport routes in South… Page 13 of 15 10
+Breetzke GD, Edelstein IS (2019) The spatial concentration and stability of crime in a South African town-
+ship. Secur J 32(1):63–78. https://doi.org/10.1057/s41284-018-0145-2
+Breetzke GD, Edelstein IS (2022) Do crime generators exist in a developing context? An exploratory
+study in the township of Khayelitsha, South Africa. Secur J 35(2):1–18. https://doi.org/10.1057/
+s41284-020-00264-0
+Breetzke GD, Fabris-Rotelli I, Modiba J, Edelstein IS (2021) The proximity of sexual violence to
+schools: evidence from a township in South Africa. GeoJournal 86:765–776. https://doi.org/10.1007/
+s10708-019-10093-3
+Bursik R Jr., Grasmick H (1993) Neighborhoods and crime: the dimensions of Effective Community Con-
+trol. Lexington Books
+Chainey SP, Pezzuchi G, Guerrero Rojas NO, Ramirez JLH, Monteiro J, Valdez ER (2019) Crime concen-
+tration at micro-places in Latin America. Crime Sci 8(5). https://doi.org/10.1186/s40163-019-0100-5
+Chataway ML, Hart TC, Coomber R, Bond C (2017) The geography of crime fear: a pilot study explor-
+ing event-based perceptions of risk using mobile technology. Appl Geogr 86:300–307. https://doi.
+org/10.1016/j.apgeog.2017.06.010
+City of Cape Town (2021) Non-motorised transport facilities in Khayelitsha in the spotlight. https://www.
+capetown.gov.za/Media-and-news/Non motorised%20transport%20facilities%20in%20Khayelit-
+sha%20in%20the%20spotlight. Accessed 3 September 2023
+Crime Hub (2023) Institute for Security Studies Crime Hub. https://crimehub.org/map Accessed 31 Janu-
+ary 2023
+Crucitti P, Latora V, Porta S (2006) Centrality measures in spatial networks of urban streets. Phys Rev E
+73(3):036125. https://doi.org/10.1103/PhysRevE.73.036125
+Day P, Breetzke GD, Kingham S, Campbell M (2012) Close proximity to alcohol outlets is associated with
+increased serious violent crime in New Zealand. Aust N Z J Public Health 36(1):44–50. https://doi.
+org/10.1111/j.1753-6405.2012.00827.x
+de Melo SN, Matias LF, Andresen MA (2015) Crime concentrations and similarities in spatial crime pat-
+terns in a Brazilian context. Appl Geogr 62:314–324. https://doi.org/10.1016/j.apgeog.2015.05.012
+de Souza AM, Braun T, Botega LC, Cabral R, Garcia IC, Villas LA (2019) Better safe than sorry: a vehicu-
+lar traffic re-routing based on traffic conditions and public safety issues. J Internet Serv Appl 10(17).
+https://doi.org/10.1186/s13174-019-0116-9
+Eck JE, Clarke RV, Guerette RT (2007) Risky facilities: crime concentration in homogeneous sets of estab-
+lishments and facilities. Crime Prev Stud 21:225–264
+Eckdale-Dudley R, Sukupcak A, Engelking K, Simpson D (2018) A smarter, safer way to walk to school.
+https://www.esri.com/esri-news/arcnews/spring18articles/a-smarter-safer-way-to-walk-to-school.
+Accessed 14 August 2023
+Galbrun E, Pelechrinis K, Terzi E (2016) Urban navigation beyond shortest route: the case of safe paths.
+Inform Syst 57:160–171. https://doi.org/10.1016/j.is.2015.10.005
+Garvey M, Das N, Su J, Natraj M, Verma B (2016), March Passage: A travel safety assistant with safe path
+recommendations for pedestrians. In Companion Publication of the 21st International Conference on
+Intelligent User Interfaces (pp. 84–87)
+Goddard W, Oellermann OR (2011) Distance in Graphs. In: Dehmer, M. (Ed.), Structural Analysis of
+Complex Networks (pp. 49–72). Birkhäuser Boston. https://doi.org/10.1007/978-0-8176-4789-6_3
+Goel N, Sharma R, Nikhil N, Mahanoor S, Saini M (2017) A crowdsourced adaptive safe navigation for
+smart cities. In 2017 IEEE International Symposium on Multimedia (ISM) (pp. 382–387). IEEE
+Gregory A (2023) British doctor killed in Cape Town after ‘taking wrong turn’ at airport. https://www.
+independent.co.uk/news/world/africa/doctor-murdered-cape-town-strikes-b2390302.html. Accessed
+31 January 2024
+Groff ER, Lockwood B (2014) Criminogenic facilities and crime across street segments in Philadel-
+phia: uncovering evidence about the spatial extent of facility influence. J Res Crime Delinquency
+51(3):277–314. https://doi.org/10.1177/0022427813512494
+Groff E, McCord ES (2012) The role of neighborhood parks as crime generators. Secur J 25:1–24. https://
+doi.org/10.1057/sj.2011.1
+Groff ER, Weisburd D, Yang SM (2010) Is it important to examine crime trends at a local micro level? A
+longitudinal analysis of street to street variability in crime trajectories. J Quant Criminol 26:7–32.
+https://doi.org/10.1007/s10940-009-9081-y
+Haripersad D (2023) Google and Tourism Ministry ink deal to leverage IT giant’s technological expertise.
+https://www.citizen.co.za/news/south-africa/google-and-tourism-ministry-ink-deal-to-leverage-it-
+giants-technological-expertise/. Accessed 31 January 2024
+1 3
+10 Page 14 of 15 K. Theron, G. Breetzke
+Hossain E, Karim MR, Hasan M, Zaoad SA, Tanjim T, Khan MM (2022) SPaFE: a crowdsourcing and
+multimodal recommender system to ensure travel safety in a city. IEEE Access 10:71221–71232.
+https://doi.org/10.1109/ACCESS.2022.3187964
+Jenelius E, Koutsopoulos HN (2013) Travel time estimation for urban road networks using low fre-
+quency probe vehicle data. Transp Res Part B: Methodological 53:64–81. https://doi.org/10.1016/j.
+trb.2013.03.008
+Jewkes R, Abrahams N, Mathews S (2017) Understanding men’s health and use of violence: Interface of
+rape and HIV in South Africa. Pretoria University Law
+Keler A, Mazimpaka JD (2016) Safety-aware routing for motorised tourists based on open data and VGI. J
+Location Based Serv 10(1):64–77. https://doi.org/10.1080/17489725.2016.1170216
+Kim Y-A, Hipp JR (2018) Physical boundaries and city boundaries: consequences for crime patterns on
+street segments? Crime Delinquency 64:227–254. https://doi.org/10.1177/001112871668775
+Kim J, Cha M, Sandholm T (2014), April SocRoutes: safe routes based on tweet sentiments. In Proceed-
+ings of the 23rd International Conference on World Wide Web (pp. 179–182)
+Kubrin CE, Weitzer R (2003) New directions in social disorganization theory. J Res Crime Delinquency
+40(4):374–402
+Lancaster L, Kamman E (2016) Risky localities: measuring socioeconomic characteristics of high murder
+areas. South Afr Crime Q 56:27–35
+Lisowska-Kierepka A (2022) How to analyse spatial distribution of crime? Crime risk indicator in an
+attempt to design an original method of spatial crime analysis. Cities 120:103403. https://doi.
+org/10.1016/j.cities.2021.103403
+Martínez Mori JC, Samaranayake S (2019) Bounded asymmetry in road networks. Sci Rep 9:11951.
+https://doi.org/10.1038/s41598-019-48463-z
+Mata F, Torres-Ruiz M, Guzmán G, Quintero R, Zagal-Flores R, Moreno-Ibarra M, Loza E (2016) A
+mobile information system based on crowd-sensed and official crime data for finding safe routes: a
+case study of Mexico city. Mob Inform Syst. https://doi.org/10.1155/2016/8068209
+Matzopoulos R, Berens C, Bowman B, Bloch K, Langa M, Kotze E, Lloyd S, Makanga P (2017) A mixed-
+methods study of the nature and extent of the alcohol trade in Khayelitsha – and community percep-
+tions: final report’. Western Cape Department of Community Safety, Cape Town.
+Newton A, Partridge H, Gill A (2015) In and around: Identifying predictors of theft within and near to
+major mass underground transit systems. In: V. Ceccato and A. Newton (Eds.), Safety and Security in
+Transit Environments (pp. 99–115). Palgrave Macmillan. https://doi.org/10.1057/9781137457653_6
+O’Regan C, Pikoli V, Bawa N, Sidaki T, Dissel A (2014) Towards a safer Khayelitsha: The report of the
+commission of inquiry into allegations of police inefficiency and a breakdown in relations between
+SAPS and the community in Khayelitsha. http://www.khayelitshacommission.org.za/. Accessed 2
+June 2022
+Oh SB, Park HJ, Kang BK, Doo IC, Park MH (2017) Safe route recommendation method to prevent crime
+exposure. Adv Sci Lett 23(10):9579–9583. https://doi.org/10.1166/asl.2017.9751
+Pang Y, Zhang L, Ding H, Fang Y, Chen S (2019) SPATH: finding the safest walking path in smart cities.
+IEEE Trans Veh Technol 68(7):7071–7079. https://doi.org/10.1109/TVT.2019.2918576
+Phillips D (2015) How directions on the Waze app led to death in Brazil’s favelas. https://www.wash-
+ingtonpost.com/news/worldviews/wp/2015/10/05/how-directions-on-the-waze-app-led-to-death-in-
+brazils-favelas/. Accessed 31 January 2024
+Pridemore WA, Grubesic TH (2013) Alcohol outlets and community levels of interpersonal violence: spa-
+tial density, outlet type, and seriousness of assault. J Res Crime Delinquency 50(1):132–159. https://
+doi.org/10.1177/0022427810397952
+Prinsloo JC (2019) Corruption, public trust and democratic governance in South Africa. In: Chapman RA,
+Prinsloo JC (eds) Routledge Handbook of Trust and Philosophy. Routledge, pp 214–226
+Puthige I, Bansal K, Bindra C, Kapur M, Singh D, Mishra VK, Aggarwal A, Lee J, Kang BG, Nam Y,
+Mostafa RR (2021) Safest route detection via danger index calculation and k-means clustering. Com-
+puters Mater Continua 69(2):2761–2777
+Sampson RJ, Raudenbush S, Earls F (1997) Neighborhoods and violent crime: a multilevel study of col-
+lective efficacy. Science 277:918–924. https://doi.org/10.1126/science.277.5328.918
+Sarraf R, McGuire MP (2020) Integration and comparison of multi-criteria decision-making methods in
+safe route planner. Expert Syst Appl 154:113399. https://doi.org/10.1016/j.eswa.2020.113399
+Seedat M, Van Niekerk A, Jewkes R, Suffla S, Ratele K (2009) Violence and injuries in South Africa:
+prioritising an agenda for prevention. Lancet 374(9694):1011–1022
+1 3
+What’s the safest way home? Mapping safe transport routes in South… Page 15 of 15 10
+Shah S, Bao F, Lu C-T, Chen I-R (2011) CROWDSAFE: Crowd sourcing of crime incidents and safe rout-
+ing on mobile devices. In Proceedings of the 19th ACM SIGSPATIAL International Conference on
+Advances in Geographic Information Systems (GIS ‘11) (pp. 521–524)
+Shellow-Lavine A (2024) Kevin Monahan found guilty in driveway killing of Kaylin Gillis. https://www.
+wxxinews.org/local-news/2024-01-24/kevin-monahan-found-guilty-in-driveway-killing-of-kaylin-
+gillis. Accessed 1 February 2024
+Solymosi R, Bowers K (2018) The role of innovative data collection methods in advancing criminologi-
+cal understanding. In: Bruinsma GJN, Johnson SD (eds) The Oxford Handbook of Environmental
+Criminology. Oxford University Press, pp 210–237
+South African Police Service. (SAPS) (2023) Archived annual reports. https://www.saps.gov.za/about/
+stratframework/annualreports_arch.php. Accessed 4 September 2023
+Statistics South Africa (2011) http://www.statssa.gov.za/?s=Khayelitsha. Accessed 2 June 2022
+Swart M (2023) American tourist robbed and shot in the face in Nyanga. https://www.capetownetc.com/
+news/american-tourist-shot/. Accessed 31 January 2024
+Theron K, Breetzke GD, Snyman L, Edelstein I (2023) A street segment analysis of crime in a township:
+evidence from South Africa. Police Pract Res 24(5):539–557. https://doi.org/10.1080/15614263.20
+22.2147070
+Umar F, Johnson SD, Cheshire JA (2021) Assessing the spatial concentration of urban crime: an insight
+from Nigeria. J Quant Criminol 37:605–624. https://doi.org/10.1007/s10940-019-09448-3
+Weisburd D, Morris NA, Groff ER (2009) Hot spots of juvenile crime: a longitudinal study of street
+segments in Seattle, Washington. J Quant Criminol 25(4):443–467. https://doi.org/10.1007/
+s10940-009-9075-9
+Weisburd D, Groff ER, Yang SM (2012) The criminology of place: Street segments and our understanding
+of the crime problem. Oxford University Press
+World Population Review (2024) https://worldpopulationreview.com/country-rankings/crime-rate-by-
+country. Accessed 1 February 2024
+Wuschke K, Andresen MA, Brantingham PL (2021) Pathways of crime: measuring crime concentration
+along urban roadways. Can Geogr 65(3):267–280. https://doi.org/10.1111/cag.12676
+Xie H, Liu L, Yue H (2022) Modeling the effect of streetscape environment on crime using street view
+images and interpretable machine-learning technique. Int J Environ Res Public Health 19(21):13833.
+https://doi.org/10.3390/ijerph192113833
+Zaoad SA, Mamun-Or-Rashid M, Khan M (2023) CrowdSPaFE: a crowd-sourced multimodal recom-
+mendation system for urban route safety. IEEE Access 11:23157–23166. https://doi.org/10.1109/
+ACCESS.2023.3252881
+Zhong C, Arisona SM, Huang X, Batty M, Schmitt G (2014) Detecting the dynamics of urban structure
+through spatial network analysis. Int J Geogr Inf Sci 28(11):2178–2199. https://doi.org/10.1080/13
+658816.2014.914521
+Publisher’s Note Springer Nature remains neutral with regard to jurisdictional claims in published maps
+and institutional affiliations.
+1 3
